@@ -1,0 +1,18 @@
+{
+    "CLI-121": {
+        "commit": "4ee0d6c4f1b553858aeabf3ee6fb37d764f263e2",
+        "stack_trace": "Exception in thread \"Thread-1\" javax.xml.transform.TransformerFactoryConfigurationError: Provider for javax.xml.transform.TransformerFactory cannot be found\n        at javax.xml.transform.TransformerFactory.newInstance(Unknown Source)\n        at java.util.prefs.XmlSupport.writeDoc(XmlSupport.java:246)\n        at java.util.prefs.XmlSupport.exportMap(XmlSupport.java:333)\n        at java.util.prefs.FileSystemPreferences$8.run(FileSystemPreferences.java:607)"
+    },
+    "CLI-133": {
+        "commit": "3880640ee6268a2ecb2912e1ae896153dc2229e5",
+        "stack_trace": "java.lang.NullPointerException\n\tat org.apache.commons.cli.Util.stripLeadingHyphens(Util.java:39)\n\tat org.apache.commons.cli.CommandLine.resolveOption(CommandLine.java:166)\n\tat org.apache.commons.cli.CommandLine.hasOption(CommandLine.java:68)"
+    },
+    "CLI-144": {
+        "commit": "c338c8aca40d43efda580057f6d41ba228e26ec1",
+        "stack_trace": "Exception in thread \"main\" java.lang.ClassCastException: java.io.File cannot be cast to java.lang.String\n\tat org.apache.commons.cli2.validation.FileValidator.validate(FileValidator.java:122)\n\tat org.apache.commons.cli2.option.ArgumentImpl.validate(ArgumentImpl.java:250)\n\tat org.apache.commons.cli2.option.ParentImpl.validate(ParentImpl.java:123)\n\tat org.apache.commons.cli2.option.DefaultOption.validate(DefaultOption.java:175)\n\tat org.apache.commons.cli2.option.GroupImpl.validate(GroupImpl.java:264)\n\tat org.apache.commons.cli2.commandline.Parser.parse(Parser.java:105)\n\tat org.apache.commons.cli2.commandline.Parser.parseAndHelp(Parser.java:125)\n\tat org.apache.commons.cli2.issues.CLI2Sample.main(CLI2Sample.java:38)"
+    },
+    "CLI-8": {
+        "commit": "58107ae990fea55d1f8e1c7c30409d4ad11ed4cb",
+        "stack_trace": "java.lang.StringIndexOutOfBoundsException: String index out of range: -1\n\tat java.lang.String.charAt(String.java:582)\n\tat org.apache.commons.cli.HelpFormatter.rtrim(HelpFormatter.java:505)\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:416)\n\tat org.apache.commons.cli.HelpFormatter.printWrapped(HelpFormatter.java:324)\n\tat org.apache.commons.cli.HelpFormatter.printWrapped(HelpFormatter.java:318)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:212)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:165)\n\tat com.nokia.em.bts.swupdateautomate.test.CliError.main(CliError.java:21)"
+    }
+}
