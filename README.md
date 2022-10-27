@@ -1,4 +1,4 @@
-# BugReportsWithLogsMining
+# Bug Reports With Logs Mining
 
 Bug reports mining scripts for Github isses and Jira
 
