@@ -1,8 +1,4 @@
 {
-    "LANG-37": {
-        "commit": "51df5ea90cccdd5904af4d28f1c4024fde2307e4",
-        "log": "ERROR\nnull"
-    },
     "LANG-530": {
         "commit": "485dd97b184fe42bf9b1434633be84cb6acc75f2",
         "log": "INFO\nsearch.SOLRSearchService"

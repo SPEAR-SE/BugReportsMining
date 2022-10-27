@@ -1,8 +1,4 @@
 {
-    "1367": {
-        "commit": "57258449befabf639179a2392e01faff15b19fae",
-        "log": "ERROR 14074"
-    },
     "1645": {
         "commit": "cd5414d524f2f743936941c12c04edd0afc64e55",
         "log": "INFO com.my.test.TestEnum"

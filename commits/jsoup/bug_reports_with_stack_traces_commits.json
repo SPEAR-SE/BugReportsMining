@@ -44,16 +44,12 @@
         "stack_trace": "Caused by: java.io.IOException: Resetting to invalid mark\r\n\tat java.base/java.io.BufferedInputStream.reset(BufferedInputStream.java:446)\r\n\tat org.jsoup@1.15.2/org.jsoup.internal.ConstrainableInputStream.reset(ConstrainableInputStream.java:100)\r\n\tat org.jsoup@1.15.2/org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:151)\r\n\tat org.jsoup@1.15.2/org.jsoup.helper.DataUtil.load(DataUtil.java:109)\r\n\tat org.jsoup@1.15.2/org.jsoup.Jsoup.parse(Jsoup.java:199)\r\n\tat org.jabref/org.jabref.logic.importer.fileformat.ACMPortalParser.parseDoiSearchPage(ACMPortalParser.java:70)\r"
     },
     "32": {
-        "commit": "d2d9ac341dbd48e75c6dd09c571216a81939604f",
+        "commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
         "stack_trace": "java.lang.StringIndexOutOfBoundsException: String index out of range: 13\n    at java.lang.String.charAt(String.java:686)\n    at org.jsoup.parser.TokenQueue.consume(TokenQueue.java:130)\n    at org.jsoup.parser.Parser.parseAttribute(Parser.java:207)\n    at org.jsoup.parser.Parser.parseStartTag(Parser.java:142)\n    at org.jsoup.parser.Parser.parse(Parser.java:91)\n    at org.jsoup.parser.Parser.parseBodyFragment(Parser.java:64)\n    at org.jsoup.Jsoup.parseBodyFragment(Jsoup.java:99)\n    at org.jsoup.Jsoup.isValid(Jsoup.java:155)"
     },
     "34": {
-        "commit": "a049edcdae373ef6c24747845adb846d1298cb72",
+        "commit": "20ed24cefb5df53c48021459af98bef83c55f241",
         "stack_trace": "java.lang.StringIndexOutOfBoundsException: String index out of range: 1\n    at java.lang.String.charAt(String.java:686)\n    at java.util.regex.Matcher.appendReplacement(Matcher.java:711)\n    at org.jsoup.nodes.Entities.unescape(Entities.java:69)\n    at org.jsoup.nodes.TextNode.createFromEncoded(TextNode.java:95)\n    at org.jsoup.parser.Parser.parseTextNode(Parser.java:222)\n    at org.jsoup.parser.Parser.parse(Parser.java:94)\n    at org.jsoup.parser.Parser.parse(Parser.java:54)\n    at org.jsoup.Jsoup.parse(Jsoup.java:30)"
-    },
-    "593": {
-        "commit": "f6d9aa050e3d58b6454d4eaef00f1d061f368eb4",
-        "stack_trace": "java.lang.NullPointerException\n    at org.jsoup.nodes.Node.wrap(Node.java:360)\n    at org.jsoup.nodes.Element.wrap(Element.java:453)"
     },
     "740": {
         "commit": "3b2440a257df45fc49884a5c67bb0c9ce631781d",

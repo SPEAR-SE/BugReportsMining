@@ -51,21 +51,9 @@
         "commit": "09ef69c5b51115300da6df43690cd455d83c8027",
         "stack_trace": "Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: String index out of range: -2147483648\r\n\tat java.lang.String.substring(String.java:1967)\r\n\tat org.apache.commons.lang3.text.WordUtils.wrap(WordUtils.java:291)\r\n\tat org.apache.commons.lang3.text.WordUtils.wrap(WordUtils.java:179)\r"
     },
-    "LANG-144": {
-        "commit": "bc16e0109a30b819c50895e157830fe9b3f8e93f",
-        "stack_trace": "java.lang.NullPointerException\nat org.apache.commons.lang.builder.EqualsBuilder.append(EqualsBuilder.java:513)"
-    },
     "LANG-294": {
         "commit": "8e52e2169b20f7bc3c6c520d4f0c98e5bf06b076",
         "stack_trace": "java.lang.ArrayIndexOutOfBoundsException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang.text.StrBuilder.replaceImpl(StrBuilder.java:1256)\n\tat org.apache.commons.lang.text.StrBuilder.replaceAll(StrBuilder.java:1339)\n\tat org.apache.commons.lang.text.StrBuilderTest.testReplaceAll_String_String(StrBuilderTest.java:763)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:585)\n\tat junit.framework.TestCase.runTest(TestCase.java:154)\n\tat junit.framework.TestCase.runBare(TestCase.java:127)\n\tat junit.framework.TestResult$1.protect(TestResult.java:106)\n\tat junit.framework.TestResult.runProtected(TestResult.java:124)\n\tat junit.framework.TestResult.run(TestResult.java:109)\n\tat junit.framework.TestCase.run(TestCase.java:118)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:208)\n\tat junit.framework.TestSuite.run(TestSuite.java:203)\n\tat org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:128)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)"
-    },
-    "LANG-37": {
-        "commit": "51df5ea90cccdd5904af4d28f1c4024fde2307e4",
-        "stack_trace": "java.util.NoSuchElementException\n\tat java.util.AbstractList$Itr.next(AbstractList.java:427)"
-    },
-    "LANG-43": {
-        "commit": "e49c05bdcedd1f3606e2a0dd1d8d2271742a3646",
-        "stack_trace": "java.lang.NumberFormatException: JavV\nat java.lang.FloatingDecimal.readJavaFormatString(Unknown Source)\n        at java.lang.Float.parseFloat(Unknown Source)\n        at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat"
     },
     "LANG-530": {
         "commit": "485dd97b184fe42bf9b1434633be84cb6acc75f2",
@@ -82,10 +70,6 @@
     "LANG-744": {
         "commit": "5244e89e73cdf5c963e0741480a1436467db14a0",
         "stack_trace": "Caused by: java.security.AccessControlException: access denied (java.lang.RuntimePermission accessClassInPackage.sun.text)\n\tat java.security.AccessControlContext.checkPermission(AccessControlContext.java:374)\n\tat java.security.AccessController.checkPermission(AccessController.java:546)\n\tat java.lang.SecurityManager.checkPermission(SecurityManager.java:532)\n\tat com.google.appengine.tools.development.DevAppServerFactory$CustomSecurityManager.checkPermission(DevAppServerFactory.java:166)\n\tat java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1512)\n\tat java.lang.Class.checkMemberAccess(Class.java:2164)\n\tat java.lang.Class.getMethod(Class.java:1602)\n\tat org.apache.commons.lang3.StringUtils.<clinit>(StringUtils.java:739)"
-    },
-    "LANG-75": {
-        "commit": "d49d8093e2497013c4d78b11d1462a33f451dfda",
-        "stack_trace": "java.lang.StringIndexOutOfBoundsException: String index out of range: 0\n\tat java.lang.String.charAt(String.java:582)\n\tat java.math.BigDecimal.<init>(BigDecimal.java:124)\n\tat org.apache.commons.lang.math.NumberUtils.createBigDecimal(NumberUtils.java:4"
     },
     "LANG-810": {
         "commit": "32b71d09133c2b5e3fea1f6d1effab8bb3776d04",
