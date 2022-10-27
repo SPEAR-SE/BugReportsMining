@@ -1,0 +1,14 @@
+{
+    "LANG-37": {
+        "commit": "51df5ea90cccdd5904af4d28f1c4024fde2307e4",
+        "log": "ERROR\nnull"
+    },
+    "LANG-530": {
+        "commit": "485dd97b184fe42bf9b1434633be84cb6acc75f2",
+        "log": "INFO\nsearch.SOLRSearchService"
+    },
+    "LANG-810": {
+        "commit": "32b71d09133c2b5e3fea1f6d1effab8bb3776d04",
+        "log": "ERROR\nStringUtils.join"
+    }
+}

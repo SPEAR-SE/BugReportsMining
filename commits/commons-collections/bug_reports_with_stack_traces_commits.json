@@ -1,0 +1,26 @@
+{
+    "COLLECTIONS-265": {
+        "commit": "975baeba6172fd711f2a13db791464e6b272a120",
+        "stack_trace": "java.lang.ClassCastException: java.lang.Object\n\tat java.util.TreeMap.compare(TreeMap.java:1093)\n\tat java.util.TreeMap.getEntry(TreeMap.java:347)\n\tat java.util.TreeMap.get(TreeMap.java:265)\n\tat org.apache.commons.collections.bag.AbstractMapBag.getCount(AbstractMapBag.java:116)\n\tat org.apache.commons.collections.bag.AbstractMapBag.toString(AbstractMapBag.java:581)"
+    },
+    "COLLECTIONS-474": {
+        "commit": "fe63f95fbff43495e57ebc37350798dee024cf9a",
+        "stack_trace": "Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index: 2, Size: 1\n\tat java.util.ArrayList.add(ArrayList.java:367)\n\tat org.apache.commons.collections4.map.ListOrderedMap.put(ListOrderedMap.java:448)\n\tat org.apache.commons.collections4.map.ListOrderedMap.putAll(ListOrderedMap.java:246)\n\tat Test.main(Test.java:15)"
+    },
+    "COLLECTIONS-48": {
+        "commit": "894fd838fb695d794fbd28cc66c82b80a9688c91",
+        "stack_trace": "java.lang.IllegalArgumentException: Initial capacity must be greater than 0\n\tat org.apache.commons.collections.map.AbstractHashedMap.<init>"
+    },
+    "COLLECTIONS-521": {
+        "commit": "320c0acf89acb5950a10816ca7dd083842ff739c",
+        "stack_trace": "java.lang.NullPointerException\n\tat org.apache.commons.collections4.map.MultiKeyMap.isEqualKey(MultiKeyMap.java:249)\n\tat org.apache.commons.collections4.map.MultiKeyMap.put(MultiKeyMap.java:180)"
+    },
+    "COLLECTIONS-586": {
+        "commit": "a270ff62852e62b5ac0f943a7e57292a72b77271",
+        "stack_trace": "java.lang.NullPointerException\n\tat org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator.remove(AbstractPatriciaTrie.java:2370)\n\tat java.util.AbstractCollection.clear(AbstractCollection.java:432)\n\tat java.util.AbstractMap.clear(AbstractMap.java:288)\n\tat PatriciaTrieTest.testPrefixMapClear(PatriciaTrieTest.java:39)"
+    },
+    "COLLECTIONS-70": {
+        "commit": "28bd7432bb7bd6c093fc837935057ba4d5f73d61",
+        "stack_trace": "Exception in thread \"main\" java.lang.NullPointerException\n\tat "
+    }
+}

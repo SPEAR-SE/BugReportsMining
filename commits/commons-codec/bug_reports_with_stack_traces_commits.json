@@ -1,0 +1,18 @@
+{
+    "CODEC-101": {
+        "commit": "b57a1aec395cff5156812295c9dbaf9b7edbddcf",
+        "stack_trace": "Exception in thread \"main\" java.io.IOException: Underlying input stream returned zero bytes\n\tat sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:268)\n\tat sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306)\n\tat sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158)\n\tat java.io.InputStreamReader.read(InputStreamReader.java:167)\n\tat java.io.BufferedReader.fill(BufferedReader.java:136)\n\tat java.io.BufferedReader.readLine(BufferedReader.java:299)\n\tat java.io.BufferedReader.readLine(BufferedReader.java:362)\n\tat R.main(R.java:17)"
+    },
+    "CODEC-105": {
+        "commit": "7530ab001fc2f89d3769bc8d8a0d73248e839577",
+        "stack_trace": "java.lang.ArrayIndexOutOfBoundsException: 2\n        at org.apache.commons.codec.binary.Base64.encode(Base64.java:502)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:157)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:109)"
+    },
+    "CODEC-22": {
+        "commit": "d2f27093d7d95a07da901902f894d88b4ecc3e95",
+        "stack_trace": "java.lang.ArrayIndexOutOfBoundsException: -94\n        at org.apache.commons.codec.binary.Base64.isBase64(Base64.java:137)\n        at org.apache.commons.codec.binary.Base64.isArrayByteBase64(Base64.java:163)"
+    },
+    "CODEC-96": {
+        "commit": "9bdd4a43f82ea8a1c373af65bd4f7b1906ca0103",
+        "stack_trace": "java.lang.NullPointerException\n\tat org.apache.commons.codec.binary.Base64.encode(Base64.java:469)\n\tat org.apache.commons.codec.binary.Base64.encode(Base64.java:937)\n\tat ... (application code)"
+    }
+}
