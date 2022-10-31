@@ -1,6 +1,7 @@
 {
     "CSV-100": {
         "commit": "22601f647f2ce9a05fa4ce20ea356492c670940c",
+        "previous_commit": "2b5f84ede12cfadd7946ffb07a56709b8322a02f",
         "stack_trace": "Caused by: java.lang.NullPointerException\nat java.util.HashMap.<init>(HashMap.java:318)\nat java.util.LinkedHashMap.<init>(LinkedHashMap.java:212)\nat org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)"
     }
 }

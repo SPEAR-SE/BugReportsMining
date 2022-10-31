@@ -1,10 +1,12 @@
 {
     "LANG-530": {
         "commit": "485dd97b184fe42bf9b1434633be84cb6acc75f2",
-        "log": "INFO\nsearch.SOLRSearchService"
+        "log": "INFO\nsearch.SOLRSearchService",
+        "previous_commit": "b9a702bb49cd02c1f8e33f52b33312fa0aa467e7"
     },
     "LANG-810": {
         "commit": "32b71d09133c2b5e3fea1f6d1effab8bb3776d04",
-        "log": "ERROR\nStringUtils.join"
+        "log": "ERROR\nStringUtils.join",
+        "previous_commit": "c7adc7e86f118a92ac4eee5a3c6775eec11af115"
     }
 }

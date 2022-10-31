@@ -1,14 +1,17 @@
 {
     "CODEC-101": {
         "commit": "b57a1aec395cff5156812295c9dbaf9b7edbddcf",
+        "previous_commit": "d74fc31604c805a47c44d7853f63a3b06ad6c016",
         "stack_trace": "Exception in thread \"main\" java.io.IOException: Underlying input stream returned zero bytes\n\tat sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:268)\n\tat sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306)\n\tat sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158)\n\tat java.io.InputStreamReader.read(InputStreamReader.java:167)\n\tat java.io.BufferedReader.fill(BufferedReader.java:136)\n\tat java.io.BufferedReader.readLine(BufferedReader.java:299)\n\tat java.io.BufferedReader.readLine(BufferedReader.java:362)\n\tat R.main(R.java:17)"
     },
     "CODEC-105": {
         "commit": "7530ab001fc2f89d3769bc8d8a0d73248e839577",
+        "previous_commit": "c06e641cb04a4fd62234b9381a4c5e2ecd10630e",
         "stack_trace": "java.lang.ArrayIndexOutOfBoundsException: 2\n        at org.apache.commons.codec.binary.Base64.encode(Base64.java:502)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:157)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:109)"
     },
     "CODEC-96": {
         "commit": "9bdd4a43f82ea8a1c373af65bd4f7b1906ca0103",
+        "previous_commit": "5536cf67cf7ae3b72d02f6c398f52a47c9578c0b",
         "stack_trace": "java.lang.NullPointerException\n\tat org.apache.commons.codec.binary.Base64.encode(Base64.java:469)\n\tat org.apache.commons.codec.binary.Base64.encode(Base64.java:937)\n\tat ... (application code)"
     }
 }
