@@ -1,0 +1,11 @@
+File name,Coverage percent
+Assertions.java,20.0
+CSVFormat.java,30.5993690851735
+CSVParser.java,39.8876404494382
+CSVRecord.java,33.84615384615385
+Constants.java,5.0
+ExtendedBufferedReader.java,47.14285714285714
+Lexer.java,39.21568627450981
+Quote.java,83.33333333333334
+Token.java,61.904761904761905
+CSVPrinter.java,50.467289719626166
