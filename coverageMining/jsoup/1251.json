@@ -1,0 +1,92 @@
+{
+    "org.jsoup.parser.CharacterReader.unconsume(CharacterReader.java:111)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.HtmlTreeBuilder.parseFragment(HtmlTreeBuilder.java:126)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "FormElementTest",
+            "CleanerTest",
+            "HtmlParserTest",
+            "NodeTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.parser.Parser.parseFragment(Parser.java:140)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_statement": [
+            "CleanerTest",
+            "HtmlParserTest"
+        ]
+    },
+    "org.jsoup.parser.Tokeniser.read(Tokeniser.java:57)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 24,
+        "tests_that_cover_the_statement": [
+            "CssTest",
+            "ElementTest",
+            "TokeniserStateTest",
+            "TokenQueueTest",
+            "AttributeTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "StringUtilTest",
+            "FormElementTest",
+            "EntitiesTest",
+            "TraversorTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "DocumentTypeTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "ParseTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.parser.TokeniserState$41.read(TokeniserState.java:877)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 17,
+        "tests_that_cover_the_statement": [
+            "CssTest",
+            "ElementTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "FormElementTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "ParseTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    }
+}

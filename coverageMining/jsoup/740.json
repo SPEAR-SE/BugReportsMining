@@ -1,0 +1,130 @@
+{
+    "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:904)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:985)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "java.nio.charset.CharsetEncoder.throwIllegalStateException(CharsetEncoder.java:992)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.Jsoup.clean(Jsoup.java:235)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 1,
+        "tests_that_cover_the_statement": [
+            "CleanerTest"
+        ]
+    },
+    "org.jsoup.nodes.Element.html(Element.java:1197)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 12,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.nodes.Element.html(Element.java:1203)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.nodes.Entities.escape(Entities.java:154)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 15,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "AttributeTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "AttributesTest",
+            "SelectorTest",
+            "ParseTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.nodes.Node$OuterHtmlVisitor.head(Node.java:678)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.nodes.Node.outerHtml(Node.java:551)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 11,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "SelectorTest",
+            "ParseTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 18,
+        "tests_that_cover_the_statement": [
+            "CssTest",
+            "ElementTest",
+            "W3CDomTest",
+            "StringUtilTest",
+            "FormElementTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "DocumentTypeTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "ParseTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    }
+}

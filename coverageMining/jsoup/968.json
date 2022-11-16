@@ -1,0 +1,33 @@
+{
+    "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:537)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:581)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection.timeout(HttpConnection.java:156)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "HttpConnectionTest"
+        ]
+    },
+    "org.jsoup.helper.Validate.isTrue(Validate.java:45)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 3,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "CleanerTest",
+            "HttpConnectionTest"
+        ]
+    }
+}

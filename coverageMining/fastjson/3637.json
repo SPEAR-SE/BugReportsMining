@@ -1,0 +1,29 @@
+{
+    "com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.createInstance(JavaBeanDeserializer.java:1439)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "com.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1126)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "com.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1251)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "com.alibaba.fastjson.util.TypeUtils.castToSqlTime(TypeUtils.java:617)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_statement": [
+            "TypeUtilsTest",
+            "JSONArrayTest2"
+        ]
+    }
+}

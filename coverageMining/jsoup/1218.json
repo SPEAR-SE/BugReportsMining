@@ -1,0 +1,172 @@
+{
+    "JsoupIssue1218.main(JsoupIssue1218.java:7)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:169)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:835)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection.get(HttpConnection.java:285)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 1,
+        "tests_that_cover_the_statement": [
+            "ConnectTest"
+        ]
+    },
+    "org.jsoup.parser.CharacterReader.rewindToMark(CharacterReader.java:132)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.Parser.parseInput(Parser.java:35)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "XmlTreeBuilderTest",
+            "DataUtilTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.parser.Tokeniser.consumeCharacterReference(Tokeniser.java:182)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "TokeniserStateTest",
+            "W3CDomTest",
+            "EntitiesTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "AttributeParseTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.parser.Tokeniser.read(Tokeniser.java:57)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 24,
+        "tests_that_cover_the_statement": [
+            "CssTest",
+            "ElementTest",
+            "TokeniserStateTest",
+            "TokenQueueTest",
+            "AttributeTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "StringUtilTest",
+            "FormElementTest",
+            "EntitiesTest",
+            "TraversorTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "DocumentTypeTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "ParseTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.parser.TokeniserState$2.read(TokeniserState.java:36)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 10,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "ParseTest",
+            "TextNodeTest"
+        ]
+    },
+    "org.jsoup.parser.TokeniserState.access$100(TokeniserState.java:8)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 25,
+        "tests_that_cover_the_statement": [
+            "CssTest",
+            "ElementTest",
+            "TokeniserStateTest",
+            "TokenQueueTest",
+            "AttributeTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "StringUtilTest",
+            "FormElementTest",
+            "EntitiesTest",
+            "TraversorTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "DocumentTypeTest",
+            "NodeTest",
+            "XmlTreeBuilderTest",
+            "AttributeParseTest",
+            "DataUtilTest",
+            "SelectorTest",
+            "ParseTest",
+            "ParserTest",
+            "TextNodeTest",
+            "ElementsTest"
+        ]
+    },
+    "org.jsoup.parser.TokeniserState.readCharRef(TokeniserState.java:1698)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 11,
+        "tests_that_cover_the_statement": [
+            "ElementTest",
+            "TokeniserStateTest",
+            "ConnectTest",
+            "W3CDomTest",
+            "TokeniserTest",
+            "EntitiesTest",
+            "CleanerTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "ParseTest",
+            "TextNodeTest"
+        ]
+    },
+    "org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    }
+}

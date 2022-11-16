@@ -1,0 +1,74 @@
+{
+    "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:151)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "XmlTreeBuilderTest",
+            "DataUtilTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection.get(HttpConnection.java:289)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 1,
+        "tests_that_cover_the_statement": [
+            "ConnectTest"
+        ]
+    },
+    "org.jsoup.parser.CharacterReader.(CharacterReader.java)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.CharacterReader.bufferUp(CharacterReader.java:60)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.HtmlTreeBuilder.initialiseParse(HtmlTreeBuilder.java:66)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.Parser.parseInput(Parser.java:39)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "XmlTreeBuilderTest",
+            "DataUtilTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.parser.TreeBuilder.defaultSettings(TreeBuilder.java:35)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:44)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    }
+}

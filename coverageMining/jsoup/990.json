@@ -1,0 +1,50 @@
+{
+    "java.io.BufferedInputStream.reset(BufferedInputStream.java:336)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:105)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "XmlTreeBuilderTest",
+            "DataUtilTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.jsoup.helper.HttpConnection.get(HttpConnection.java:289)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 1,
+        "tests_that_cover_the_statement": [
+            "ConnectTest"
+        ]
+    },
+    "org.jsoup.internal.ConstrainableInputStream.reset(ConstrainableInputStream.java:103)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 7,
+        "tests_that_cover_the_statement": [
+            "ConnectTest",
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "XmlTreeBuilderTest",
+            "DataUtilTest",
+            "ParseTest"
+        ]
+    }
+}

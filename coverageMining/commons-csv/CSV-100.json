@@ -1,0 +1,23 @@
+{
+    "java.util.HashMap.<init>(HashMap.java:318)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "java.util.LinkedHashMap.<init>(LinkedHashMap.java:212)": {
+        "file_is_buggy": false,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_statement": []
+    },
+    "org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)": {
+        "file_is_buggy": true,
+        "method_coverage": "",
+        "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_statement": [
+            "CSVParserTest",
+            "CSVParserTest#testGetHeaderMap"
+        ]
+    }
+}
