@@ -1,34 +1,60 @@
 {
     "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:904)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:985)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "java.nio.charset.CharsetEncoder.throwIllegalStateException(CharsetEncoder.java:992)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.Jsoup.clean(Jsoup.java:235)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 62.5,
+        "number_of_tests_that_cover_the_method": 1,
         "number_of_tests_that_cover_the_statement": 1,
+        "tests_that_cover_the_method": [
+            "CleanerTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "CleanerTest"
         ]
     },
     "org.jsoup.nodes.Element.html(Element.java:1197)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 33.33333333333333,
+        "number_of_tests_that_cover_the_method": 13,
         "number_of_tests_that_cover_the_statement": 12,
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "ElementTest",
             "EntitiesTest",
@@ -46,14 +72,48 @@
     },
     "org.jsoup.nodes.Element.html(Element.java:1203)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 40.0,
+        "number_of_tests_that_cover_the_method": 13,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.nodes.Entities.escape(Entities.java:154)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 15,
         "number_of_tests_that_cover_the_statement": 15,
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "AttributeTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "ElementTest",
             "AttributeTest",
@@ -74,20 +134,53 @@
     },
     "org.jsoup.nodes.Node$OuterHtmlVisitor.head(Node.java:678)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 37.5,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.nodes.Node.outerHtml(Node.java:551)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 14,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 11,
         "number_of_tests_that_cover_the_statement": 11,
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "ElementTest",
             "EntitiesTest",
@@ -104,8 +197,29 @@
     },
     "org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 52.17391304347826,
+        "number_of_tests_that_cover_the_method": 18,
         "number_of_tests_that_cover_the_statement": 18,
+        "tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "W3CDomTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "CssTest",
             "ElementTest",

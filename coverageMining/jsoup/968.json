@@ -1,20 +1,29 @@
 {
     "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:537)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 25.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:581)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 33.33333333333333,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.helper.HttpConnection.timeout(HttpConnection.java:156)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 40.0,
+        "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_method": [
+            "ConnectTest.json",
+            "HttpConnectionTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "ConnectTest",
             "HttpConnectionTest"
@@ -22,8 +31,37 @@
     },
     "org.jsoup.helper.Validate.isTrue(Validate.java:45)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 40.0,
+        "number_of_tests_that_cover_the_method": 26,
         "number_of_tests_that_cover_the_statement": 3,
+        "tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "AttributeTest.json",
+            "ConnectTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CharacterReaderTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "HttpConnectionTest.json",
+            "ParserSettingsTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "ElementTest",
             "CleanerTest",

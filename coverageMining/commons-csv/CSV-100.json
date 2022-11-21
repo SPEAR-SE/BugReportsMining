@@ -1,20 +1,29 @@
 {
     "java.util.HashMap.<init>(HashMap.java:318)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "java.util.LinkedHashMap.<init>(LinkedHashMap.java:212)": {
         "file_is_buggy": false,
-        "method_coverage": "",
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [],
         "tests_that_cover_the_statement": []
     },
     "org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)": {
         "file_is_buggy": true,
-        "method_coverage": "",
+        "method_coverage": 25.0,
+        "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
+        "tests_that_cover_the_method": [
+            "CSVParserTest.json",
+            "CSVParserTest#testGetHeaderMap.json"
+        ],
         "tests_that_cover_the_statement": [
             "CSVParserTest",
             "CSVParserTest#testGetHeaderMap"
