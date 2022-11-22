@@ -1,6 +1,7 @@
 {
     "Main.main(Main.java:47)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
@@ -9,8 +10,9 @@
     },
     "org.jsoup.Jsoup.parse(Jsoup.java:118)": {
         "file_is_buggy": false,
-        "method_coverage": 25.0,
-        "number_of_tests_that_cover_the_method": 26,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 27,
         "number_of_tests_that_cover_the_statement": 4,
         "tests_that_cover_the_method": [
             "CssTest.json",
@@ -20,6 +22,7 @@
             "AttributeTest.json",
             "ConnectTest.json",
             "W3CDomTest.json",
+            "QueryParserTest.json",
             "TokeniserTest.json",
             "StringUtilTest.json",
             "FormElementTest.json",
@@ -49,17 +52,39 @@
     },
     "org.jsoup.helper.DataUtil.load(DataUtil.java:66)": {
         "file_is_buggy": false,
-        "method_coverage": 25.0,
-        "number_of_tests_that_cover_the_method": 7,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 28,
         "number_of_tests_that_cover_the_statement": 4,
         "tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
             "ConnectTest.json",
             "W3CDomTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
             "DocumentTest.json",
             "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
             "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
             "DataUtilTest.json",
-            "ParseTest.json"
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "ParserTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ],
         "tests_that_cover_the_statement": [
             "DocumentTest",
@@ -70,6 +95,7 @@
     },
     "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:170)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 7,
         "number_of_tests_that_cover_the_statement": 7,
@@ -94,6 +120,7 @@
     },
     "org.jsoup.parser.CharacterReader.rewindToMark(CharacterReader.java:148)": {
         "file_is_buggy": true,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 9,
         "number_of_tests_that_cover_the_statement": 0,
@@ -112,7 +139,8 @@
     },
     "org.jsoup.parser.Parser.parseInput(Parser.java:35)": {
         "file_is_buggy": false,
-        "method_coverage": 75.0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 100.0,
         "number_of_tests_that_cover_the_method": 12,
         "number_of_tests_that_cover_the_statement": 7,
         "tests_that_cover_the_method": [
@@ -141,6 +169,7 @@
     },
     "org.jsoup.parser.Tokeniser.consumeCharacterReference(Tokeniser.java:192)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 13,
         "number_of_tests_that_cover_the_statement": 8,
@@ -172,6 +201,7 @@
     },
     "org.jsoup.parser.Tokeniser.read(Tokeniser.java:59)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 26,
         "number_of_tests_that_cover_the_statement": 26,
@@ -234,22 +264,10 @@
     },
     "org.jsoup.parser.TokeniserState$38.read(TokeniserState.java:759)": {
         "file_is_buggy": false,
-        "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 0,
-        "number_of_tests_that_cover_the_statement": 4,
-        "tests_that_cover_the_method": [],
-        "tests_that_cover_the_statement": [
-            "W3CDomTest",
-            "DocumentTest",
-            "HtmlParserTest",
-            "ParseTest"
-        ]
-    },
-    "org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)": {
-        "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 26,
-        "number_of_tests_that_cover_the_statement": 0,
+        "number_of_tests_that_cover_the_statement": 4,
         "tests_that_cover_the_method": [
             "CssTest.json",
             "ElementTest.json",
@@ -278,11 +296,54 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
+        "tests_that_cover_the_statement": [
+            "W3CDomTest",
+            "DocumentTest",
+            "HtmlParserTest",
+            "ParseTest"
+        ]
+    },
+    "org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)": {
+        "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 0.0,
+        "number_of_tests_that_cover_the_method": 27,
+        "number_of_tests_that_cover_the_statement": 0,
+        "tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "ConnectTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
         "file_is_buggy": false,
-        "method_coverage": 9.090909090909092,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 20.0,
         "number_of_tests_that_cover_the_method": 26,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [

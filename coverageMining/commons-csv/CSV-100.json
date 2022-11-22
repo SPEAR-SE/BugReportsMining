@@ -1,6 +1,7 @@
 {
     "java.util.HashMap.<init>(HashMap.java:318)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
@@ -9,6 +10,7 @@
     },
     "java.util.LinkedHashMap.<init>(LinkedHashMap.java:212)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
@@ -17,7 +19,8 @@
     },
     "org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)": {
         "file_is_buggy": true,
-        "method_coverage": 25.0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
         "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
         "tests_that_cover_the_method": [

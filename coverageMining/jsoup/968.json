@@ -1,23 +1,32 @@
 {
     "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:537)": {
         "file_is_buggy": false,
-        "method_coverage": 25.0,
-        "number_of_tests_that_cover_the_method": 0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 0,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "ConnectTest.json",
+            "HttpConnectionTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:581)": {
         "file_is_buggy": false,
-        "method_coverage": 33.33333333333333,
-        "number_of_tests_that_cover_the_method": 0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 0,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "ConnectTest.json",
+            "HttpConnectionTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.helper.HttpConnection.timeout(HttpConnection.java:156)": {
         "file_is_buggy": false,
-        "method_coverage": 40.0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 66.66666666666666,
         "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
         "tests_that_cover_the_method": [
@@ -31,7 +40,8 @@
     },
     "org.jsoup.helper.Validate.isTrue(Validate.java:45)": {
         "file_is_buggy": false,
-        "method_coverage": 40.0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 100.0,
         "number_of_tests_that_cover_the_method": 26,
         "number_of_tests_that_cover_the_statement": 3,
         "tests_that_cover_the_method": [

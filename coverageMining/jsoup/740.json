@@ -1,22 +1,57 @@
 {
     "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:904)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 0,
+        "number_of_tests_that_cover_the_method": 15,
         "number_of_tests_that_cover_the_statement": 0,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "AttributeTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:985)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 0,
+        "number_of_tests_that_cover_the_method": 15,
         "number_of_tests_that_cover_the_statement": 0,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "AttributeTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "java.nio.charset.CharsetEncoder.throwIllegalStateException(CharsetEncoder.java:992)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": false,
         "method_coverage": 0.0,
         "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 0,
@@ -25,7 +60,8 @@
     },
     "org.jsoup.Jsoup.clean(Jsoup.java:235)": {
         "file_is_buggy": false,
-        "method_coverage": 62.5,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 83.33333333333334,
         "number_of_tests_that_cover_the_method": 1,
         "number_of_tests_that_cover_the_statement": 1,
         "tests_that_cover_the_method": [
@@ -37,11 +73,13 @@
     },
     "org.jsoup.nodes.Element.html(Element.java:1197)": {
         "file_is_buggy": false,
-        "method_coverage": 33.33333333333333,
-        "number_of_tests_that_cover_the_method": 13,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 50.0,
+        "number_of_tests_that_cover_the_method": 16,
         "number_of_tests_that_cover_the_statement": 12,
         "tests_that_cover_the_method": [
             "ElementTest.json",
+            "AttributeTest.json",
             "FormElementTest.json",
             "EntitiesTest.json",
             "CleanerTest.json",
@@ -51,7 +89,9 @@
             "XmlTreeBuilderTest.json",
             "AttributeParseTest.json",
             "DataUtilTest.json",
+            "AttributesTest.json",
             "SelectorTest.json",
+            "ParseTest.json",
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
@@ -72,11 +112,13 @@
     },
     "org.jsoup.nodes.Element.html(Element.java:1203)": {
         "file_is_buggy": false,
-        "method_coverage": 40.0,
-        "number_of_tests_that_cover_the_method": 13,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 100.0,
+        "number_of_tests_that_cover_the_method": 16,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
             "ElementTest.json",
+            "AttributeTest.json",
             "FormElementTest.json",
             "EntitiesTest.json",
             "CleanerTest.json",
@@ -86,7 +128,9 @@
             "XmlTreeBuilderTest.json",
             "AttributeParseTest.json",
             "DataUtilTest.json",
+            "AttributesTest.json",
             "SelectorTest.json",
+            "ParseTest.json",
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
@@ -94,11 +138,13 @@
     },
     "org.jsoup.nodes.Entities.escape(Entities.java:154)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 15,
+        "number_of_tests_that_cover_the_method": 16,
         "number_of_tests_that_cover_the_statement": 15,
         "tests_that_cover_the_method": [
             "ElementTest.json",
+            "TokenQueueTest.json",
             "AttributeTest.json",
             "EntitiesTest.json",
             "CleanerTest.json",
@@ -134,15 +180,22 @@
     },
     "org.jsoup.nodes.Node$OuterHtmlVisitor.head(Node.java:678)": {
         "file_is_buggy": false,
-        "method_coverage": 37.5,
-        "number_of_tests_that_cover_the_method": 0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 60.0,
+        "number_of_tests_that_cover_the_method": 4,
         "number_of_tests_that_cover_the_statement": 0,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DataUtilTest.json"
+        ],
         "tests_that_cover_the_statement": []
     },
     "org.jsoup.nodes.Node.outerHtml(Node.java:551)": {
         "file_is_buggy": false,
-        "method_coverage": 50.0,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 100.0,
         "number_of_tests_that_cover_the_method": 14,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -165,8 +218,9 @@
     },
     "org.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)": {
         "file_is_buggy": false,
+        "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 11,
+        "number_of_tests_that_cover_the_method": 14,
         "number_of_tests_that_cover_the_statement": 11,
         "tests_that_cover_the_method": [
             "ElementTest.json",
@@ -174,8 +228,11 @@
             "CleanerTest.json",
             "DocumentTest.json",
             "HtmlParserTest.json",
+            "DocumentTypeTest.json",
             "NodeTest.json",
             "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
             "SelectorTest.json",
             "ParseTest.json",
             "TextNodeTest.json",
@@ -197,7 +254,8 @@
     },
     "org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)": {
         "file_is_buggy": false,
-        "method_coverage": 52.17391304347826,
+        "file_was_found_in_source_code": true,
+        "method_coverage": 92.3076923076923,
         "number_of_tests_that_cover_the_method": 18,
         "number_of_tests_that_cover_the_statement": 18,
         "tests_that_cover_the_method": [
