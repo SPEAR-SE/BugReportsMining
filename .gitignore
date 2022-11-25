@@ -133,3 +133,6 @@ dmypy.json
 
 # Not commiting the bug reports
 /bug-reports
+
+# JetBrain Metadatas
+.idea

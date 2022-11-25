@@ -20,7 +20,7 @@
     "org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 50.0,
+        "method_coverage": 100.0,
         "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
         "tests_that_cover_the_method": [
