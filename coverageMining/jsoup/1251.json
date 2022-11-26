@@ -34,7 +34,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 7,
+        "number_of_tests_that_cover_the_method": 8,
         "number_of_tests_that_cover_the_statement": 7,
         "tests_that_cover_the_method": [
             "ElementTest.json",
@@ -42,6 +42,7 @@
             "CleanerTest.json",
             "HtmlParserTest.json",
             "NodeTest.json",
+            "XmlTreeBuilderTest.json",
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
@@ -59,11 +60,17 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 100.0,
-        "number_of_tests_that_cover_the_method": 2,
+        "number_of_tests_that_cover_the_method": 8,
         "number_of_tests_that_cover_the_statement": 2,
         "tests_that_cover_the_method": [
+            "ElementTest.json",
+            "FormElementTest.json",
             "CleanerTest.json",
-            "HtmlParserTest.json"
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ],
         "tests_that_cover_the_statement": [
             "CleanerTest",
@@ -133,9 +140,34 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
-        "number_of_tests_that_cover_the_method": 0,
+        "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 17,
-        "tests_that_cover_the_method": [],
+        "tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "ConnectTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ],
         "tests_that_cover_the_statement": [
             "CssTest",
             "ElementTest",
@@ -159,7 +191,7 @@
     "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 25.0,
+        "method_coverage": 20.0,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
