@@ -12,7 +12,7 @@
     "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:169)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 87.75510204081633,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 7,
         "number_of_tests_that_cover_the_statement": 0,
