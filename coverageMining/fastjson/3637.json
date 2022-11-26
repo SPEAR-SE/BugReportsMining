@@ -2,7 +2,7 @@
     "com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.createInstance(JavaBeanDeserializer.java:1439)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 42.63565891472868,
+        "method_coverage": 40.74074074074074,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1144,
         "number_of_tests_that_cover_the_statement": 0,
@@ -1157,7 +1157,7 @@
     "com.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1126)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 54.71698113207547,
+        "method_coverage": 54.20560747663551,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 266,
         "number_of_tests_that_cover_the_statement": 0,
@@ -1434,7 +1434,7 @@
     "com.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1251)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 42.857142857142854,
+        "method_coverage": 46.15384615384615,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 266,
         "number_of_tests_that_cover_the_statement": 0,

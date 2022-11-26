@@ -3,6 +3,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -12,6 +13,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 7,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -28,7 +30,8 @@
     "org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:835)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 112.5,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 25,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -63,7 +66,8 @@
     "org.jsoup.helper.HttpConnection.get(HttpConnection.java:285)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 75.0,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 7,
         "number_of_tests_that_cover_the_statement": 1,
         "tests_that_cover_the_method": [
@@ -83,6 +87,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": true,
         "number_of_tests_that_cover_the_method": 8,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -100,7 +105,8 @@
     "org.jsoup.parser.Parser.parseInput(Parser.java:35)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 50.0,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 10,
         "number_of_tests_that_cover_the_statement": 7,
         "tests_that_cover_the_method": [
@@ -129,6 +135,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": true,
         "number_of_tests_that_cover_the_method": 13,
         "number_of_tests_that_cover_the_statement": 7,
         "tests_that_cover_the_method": [
@@ -160,6 +167,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": true,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 24,
         "tests_that_cover_the_method": [
@@ -219,6 +227,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 10,
         "tests_that_cover_the_method": [
@@ -264,6 +273,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 0,
         "number_of_tests_that_cover_the_statement": 25,
         "tests_that_cover_the_method": [],
@@ -299,6 +309,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 11,
         "number_of_tests_that_cover_the_statement": 11,
         "tests_that_cover_the_method": [
@@ -332,6 +343,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 25,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -366,7 +378,8 @@
     "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 20.0,
+        "method_coverage": 25.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [

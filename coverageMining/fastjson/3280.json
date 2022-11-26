@@ -2,7 +2,8 @@
     "com.alibaba.fastjson.JSON.parseObject(JSON.java:300)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 50.0,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1478,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -1490,7 +1491,8 @@
     "com.alibaba.fastjson.JSON.parseObject(JSON.java:396)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 50.0,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1478,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -2978,7 +2980,8 @@
     "com.alibaba.fastjson.JSON.parseObject(JSON.java:573)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 50.0,
+        "method_coverage": 100.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1478,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -4466,7 +4469,8 @@
     "com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:679)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 75.45454545454545,
+        "method_coverage": 71.42857142857143,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1478,
         "number_of_tests_that_cover_the_statement": 1174,
         "tests_that_cover_the_method": [
@@ -7130,6 +7134,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 78.84615384615384,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1126,
         "number_of_tests_that_cover_the_statement": 844,
         "tests_that_cover_the_method": [
@@ -9110,7 +9115,8 @@
     "com.alibaba.fastjson.parser.ParserConfig.getDeserializer(ParserConfig.java:592)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 76.92307692307693,
+        "method_coverage": 83.33333333333334,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1309,
         "number_of_tests_that_cover_the_statement": 1164,
         "tests_that_cover_the_method": [
@@ -11595,6 +11601,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 0.0,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1309,
         "number_of_tests_that_cover_the_statement": 1121,
         "tests_that_cover_the_method": [
@@ -14035,7 +14042,8 @@
     "com.alibaba.fastjson.parser.deserializer.ASMDeserializerFactory.createJavaBeanDeserializer(ASMDeserializerFactory.java:90)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 79.16666666666666,
+        "method_coverage": 82.6086956521739,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1126,
         "number_of_tests_that_cover_the_statement": 844,
         "tests_that_cover_the_method": [
@@ -16017,6 +16025,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16026,6 +16035,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16035,6 +16045,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16044,6 +16055,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16053,6 +16065,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16062,6 +16075,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16071,6 +16085,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16080,6 +16095,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16089,6 +16105,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16098,6 +16115,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16107,6 +16125,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
@@ -16116,6 +16135,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": false,
         "method_coverage": "N/A",
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": "N/A",
         "number_of_tests_that_cover_the_statement": "N/A",
         "tests_that_cover_the_method": "N/A",
