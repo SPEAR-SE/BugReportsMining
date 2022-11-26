@@ -3,6 +3,7 @@
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
         "method_coverage": 42.63565891472868,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 1144,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -1157,6 +1158,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 54.71698113207547,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 266,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -1433,6 +1435,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 42.857142857142854,
+        "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 266,
         "number_of_tests_that_cover_the_statement": 0,
         "tests_that_cover_the_method": [
@@ -1709,6 +1712,7 @@
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
         "method_coverage": 10.714285714285714,
+        "method_is_buggy": true,
         "number_of_tests_that_cover_the_method": 2,
         "number_of_tests_that_cover_the_statement": 2,
         "tests_that_cover_the_method": [
