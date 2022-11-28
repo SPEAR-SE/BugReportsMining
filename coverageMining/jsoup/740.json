@@ -196,7 +196,7 @@
     "org.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 75.0,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 14,
         "number_of_tests_that_cover_the_statement": 11,

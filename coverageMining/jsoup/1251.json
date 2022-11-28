@@ -2,7 +2,7 @@
     "org.jsoup.parser.CharacterReader.unconsume(CharacterReader.java:111)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 66.66666666666666,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 21,
         "number_of_tests_that_cover_the_statement": 0,
@@ -34,7 +34,7 @@
     "org.jsoup.parser.HtmlTreeBuilder.parseFragment(HtmlTreeBuilder.java:126)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 84.0,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 8,
         "number_of_tests_that_cover_the_statement": 7,
@@ -83,7 +83,7 @@
     "org.jsoup.parser.Tokeniser.read(Tokeniser.java:57)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 82.35294117647058,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 24,
@@ -143,7 +143,7 @@
     "org.jsoup.parser.TokeniserState$41.read(TokeniserState.java:877)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 69.23076923076923,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 17,

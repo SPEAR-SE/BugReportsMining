@@ -258,7 +258,7 @@
     "org.jsoup.select.QueryParser.parse(QueryParser.java:59)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 80.0,
+        "method_coverage": 78.57142857142857,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 25,
         "number_of_tests_that_cover_the_statement": 21,
@@ -316,7 +316,7 @@
     "org.jsoup.select.QueryParser.parse(QueryParser.java:69)": {
         "file_is_buggy": true,
         "file_was_found_in_source_code": true,
-        "method_coverage": 80.0,
+        "method_coverage": 78.57142857142857,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 25,
         "number_of_tests_that_cover_the_statement": 6,

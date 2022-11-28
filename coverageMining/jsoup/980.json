@@ -82,7 +82,7 @@
     "org.jsoup.parser.CharacterReader.(CharacterReader.java)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 71.42857142857143,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 30,
         "number_of_tests_that_cover_the_statement": 0,
@@ -223,7 +223,7 @@
     "org.jsoup.parser.TreeBuilder.defaultSettings(TreeBuilder.java:35)": {
         "file_is_buggy": false,
         "file_was_found_in_source_code": true,
-        "method_coverage": 0.0,
+        "method_coverage": 53.84615384615385,
         "method_is_buggy": false,
         "number_of_tests_that_cover_the_method": 24,
         "number_of_tests_that_cover_the_statement": 0,
