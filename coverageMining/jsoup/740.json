@@ -41,6 +41,9 @@
         ],
         "tests_that_cover_the_statement": [
             "CleanerTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CleanerTest.json"
         ]
     },
     "org.jsoup.nodes.Element.html(Element.java:1197)": {
@@ -81,6 +84,24 @@
             "SelectorTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "AttributeTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.nodes.Element.html(Element.java:1203)": {
@@ -108,7 +129,25 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "AttributeTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ]
     },
     "org.jsoup.nodes.Entities.escape(Entities.java:154)": {
         "file_is_buggy": false,
@@ -151,6 +190,24 @@
             "ParseTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.nodes.Node$OuterHtmlVisitor.head(Node.java:678)": {
@@ -166,7 +223,13 @@
             "HtmlParserTest.json",
             "DataUtilTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DataUtilTest.json"
+        ]
     },
     "org.jsoup.nodes.Node.outerHtml(Node.java:551)": {
         "file_is_buggy": false,
@@ -191,7 +254,23 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ]
     },
     "org.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)": {
         "file_is_buggy": false,
@@ -228,6 +307,22 @@
             "ParseTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)": {
@@ -276,6 +371,26 @@
             "ParseTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "W3CDomTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     }
 }

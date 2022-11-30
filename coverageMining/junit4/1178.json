@@ -2489,7 +2489,8 @@
             "FailingDataPointMethods#shouldIgnoreSingleDataPointMethodExceptionsOnRequest",
             "TestWatcherTest#testWatcherSkippedThrowsException",
             "EnclosedTest#enclosedRunnerIsNamedForEnclosingClass"
-        ]
+        ],
+        "unique_tests_that_cover_the_method": []
     },
     "org.junit.internal.ArrayComparisonFailure.toString(ArrayComparisonFailure.java:61)": {
         "file_is_buggy": true,
@@ -3615,7 +3616,8 @@
             "TestWatcherTest#testWatcherSkippedThrowsException.json",
             "EnclosedTest#enclosedRunnerIsNamedForEnclosingClass.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": []
     },
     "sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)": {
         "file_is_buggy": false,

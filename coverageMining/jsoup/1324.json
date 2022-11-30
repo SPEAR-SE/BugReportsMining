@@ -50,6 +50,30 @@
             "HtmlParserTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.helper.DataUtil.load(DataUtil.java:66)": {
@@ -94,6 +118,31 @@
             "HtmlParserTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParserTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:170)": {
@@ -120,6 +169,10 @@
             "XmlTreeBuilderTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "XmlTreeBuilderTest.json",
+            "DataUtilTest.json"
         ]
     },
     "org.jsoup.parser.CharacterReader.rewindToMark(CharacterReader.java:148)": {
@@ -140,7 +193,13 @@
             "AttributeParseTest.json",
             "ParseTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "EntitiesTest.json",
+            "CharacterReaderTest.json",
+            "AttributeParseTest.json"
+        ]
     },
     "org.jsoup.parser.Parser.parseInput(Parser.java:35)": {
         "file_is_buggy": false,
@@ -171,6 +230,15 @@
             "XmlTreeBuilderTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json"
         ]
     },
     "org.jsoup.parser.Tokeniser.consumeCharacterReference(Tokeniser.java:192)": {
@@ -204,6 +272,16 @@
             "HtmlParserTest",
             "AttributeParseTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokeniserTest.json",
+            "EntitiesTest.json",
+            "CleanerTest.json",
+            "AttributeParseTest.json",
+            "ParserTest.json",
+            "TextNodeTest.json"
         ]
     },
     "org.jsoup.parser.Tokeniser.read(Tokeniser.java:59)": {
@@ -268,6 +346,29 @@
             "LeafNodeTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.parser.TokeniserState$38.read(TokeniserState.java:759)": {
@@ -310,6 +411,29 @@
             "DocumentTest",
             "HtmlParserTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     },
     "org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)": {
@@ -348,7 +472,31 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ]
     },
     "org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)": {
         "file_is_buggy": false,
@@ -385,6 +533,29 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "CommentTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "LeafNodeTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ]
     }
 }

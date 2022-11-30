@@ -33,6 +33,13 @@
             "XmlTreeBuilderTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "W3CDomTest.json",
+            "DocumentTest.json",
+            "XmlTreeBuilderTest.json",
+            "DataUtilTest.json",
+            "ParseTest.json"
         ]
     },
     "org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)": {
@@ -67,7 +74,30 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
+        ]
     },
     "org.jsoup.helper.HttpConnection.get(HttpConnection.java:289)": {
         "file_is_buggy": false,
@@ -86,6 +116,12 @@
         ],
         "tests_that_cover_the_statement": [
             "ConnectTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "ElementTest.json",
+            "CleanerTest.json",
+            "AttributeParseTest.json",
+            "AttributesTest.json"
         ]
     },
     "org.jsoup.internal.ConstrainableInputStream.reset(ConstrainableInputStream.java:103)": {
@@ -127,6 +163,28 @@
             "XmlTreeBuilderTest",
             "DataUtilTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "TokeniserStateTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ElementsTest.json"
         ]
     }
 }

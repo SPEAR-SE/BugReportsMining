@@ -10,7 +10,8 @@
             "ConnectTest.json",
             "HttpConnectionTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": []
     },
     "org.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:581)": {
         "file_is_buggy": false,
@@ -23,7 +24,8 @@
             "ConnectTest.json",
             "HttpConnectionTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": []
     },
     "org.jsoup.helper.HttpConnection.timeout(HttpConnection.java:156)": {
         "file_is_buggy": false,
@@ -39,7 +41,8 @@
         "tests_that_cover_the_statement": [
             "ConnectTest",
             "HttpConnectionTest"
-        ]
+        ],
+        "unique_tests_that_cover_the_method": []
     },
     "org.jsoup.helper.Validate.isTrue(Validate.java:45)": {
         "file_is_buggy": false,
@@ -80,6 +83,32 @@
             "ElementTest",
             "CleanerTest",
             "HttpConnectionTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CssTest.json",
+            "ElementTest.json",
+            "AttributeTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "CharacterReaderTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTest.json",
+            "HtmlParserTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "XmlTreeBuilderTest.json",
+            "AttributeParseTest.json",
+            "DataUtilTest.json",
+            "AttributesTest.json",
+            "SelectorTest.json",
+            "ParseTest.json",
+            "TextNodeTest.json",
+            "ParserSettingsTest.json",
+            "ElementsTest.json"
         ]
     }
 }

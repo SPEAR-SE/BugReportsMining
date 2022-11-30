@@ -33,6 +33,10 @@
         "tests_that_cover_the_statement": [
             "CSVParserTest",
             "CSVParserTest#testGetHeaderMap"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "CSVParserTest.json",
+            "CSVParserTest#testGetHeaderMap.json"
         ]
     }
 }

@@ -39,7 +39,20 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
+        ]
     },
     "java.lang.reflect.Method.invoke(Method.java:498)": {
         "file_is_buggy": false,
@@ -140,7 +153,19 @@
             "TextNodeTest.json",
             "ElementsTest.json"
         ],
-        "tests_that_cover_the_statement": []
+        "tests_that_cover_the_statement": [],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
+        ]
     },
     "org.jsoup.select.QueryParser.combinator(QueryParser.java:87)": {
         "file_is_buggy": true,
@@ -174,6 +199,9 @@
             "SelectorTest",
             "ParseTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "QueryParserTest.json"
         ]
     },
     "org.jsoup.select.QueryParser.parse(QueryParser.java:42)": {
@@ -253,6 +281,23 @@
             "TextNodeTest",
             "ElementsTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
         ]
     },
     "org.jsoup.select.QueryParser.parse(QueryParser.java:59)": {
@@ -311,6 +356,23 @@
             "ParseTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
         ]
     },
     "org.jsoup.select.QueryParser.parse(QueryParser.java:69)": {
@@ -354,6 +416,23 @@
             "HtmlParserTest",
             "SelectorTest",
             "ParseTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "AttributeTest.json",
+            "W3CDomTest.json",
+            "QueryParserTest.json",
+            "TokeniserTest.json",
+            "StringUtilTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "CleanerTest.json",
+            "DocumentTypeTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
         ]
     },
     "org.jsoup.select.Selector.select(Selector.java:91)": {
@@ -406,6 +485,18 @@
             "ParseTest",
             "TextNodeTest",
             "ElementsTest"
+        ],
+        "unique_tests_that_cover_the_method": [
+            "TokeniserStateTest.json",
+            "TokenQueueTest.json",
+            "W3CDomTest.json",
+            "TokeniserTest.json",
+            "FormElementTest.json",
+            "EntitiesTest.json",
+            "TraversorTest.json",
+            "NodeTest.json",
+            "AttributeParseTest.json",
+            "TextNodeTest.json"
         ]
     },
     "org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)": {
