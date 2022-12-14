@@ -1,0 +1,5 @@
+{
+    "TypeUtils.castToSqlTime":  1,
+    "TypeUtils.cast":  2,
+    "JavaBeanDeserializer.createInstance":  4
+}

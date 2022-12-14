@@ -1,0 +1,6 @@
+{
+    "ConstrainableInputStream.reset":  2,
+    "DataUtil.parseInputStream":  3,
+    "HttpConnection$Response.parse":  4,
+    "HttpConnection.get":  5
+}

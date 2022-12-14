@@ -1,0 +1,12 @@
+{
+    "CharacterReader.rewindToMark":  1,
+    "Tokeniser.consumeCharacterReference":  2,
+    "TokeniserState$38.read":  3,
+    "Tokeniser.read":  4,
+    "TreeBuilder.runParser":  5,
+    "TreeBuilder.parse":  6,
+    "Parser.parseInput":  7,
+    "DataUtil.parseInputStream":  8,
+    "DataUtil.load":  9,
+    "Jsoup.parse":  10
+}

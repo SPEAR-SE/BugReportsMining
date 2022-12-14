@@ -1,0 +1,7 @@
+{
+    "ASMDeserializerFactory.createJavaBeanDeserializer":  5,
+    "ParserConfig.createJavaBeanDeserializer":  6,
+    "ParserConfig.getDeserializer":  7,
+    "DefaultJSONParser.parseObject":  9,
+    "JSON.parseObject":  10
+}

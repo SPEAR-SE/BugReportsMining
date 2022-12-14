@@ -1,0 +1,10 @@
+{
+    "CharacterReader.bufferUp":  1,
+    "TreeBuilder.defaultSettings":  4,
+    "HtmlTreeBuilder.initialiseParse":  5,
+    "TreeBuilder.parse":  6,
+    "Parser.parseInput":  7,
+    "DataUtil.parseInputStream":  8,
+    "HttpConnection$Response.parse":  9,
+    "HttpConnection.get":  10
+}

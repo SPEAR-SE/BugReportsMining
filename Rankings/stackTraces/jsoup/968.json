@@ -1,0 +1,5 @@
+{
+    "Validate.isTrue":  1,
+    "HttpConnection$Request.timeout":  2,
+    "HttpConnection.timeout":  4
+}
