@@ -872,6 +872,7 @@
                 "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity",
                 "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds"
             ],
+            "flag_failing_tests_added_in_bugfix": false,
             "log": [
                 "Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: String index out of range: 4\n\tat java.lang.String.charAt(String.java:686)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:49)\n\tat org.apache.commons.lang3.text.translate.AggregateTranslator.translate(AggregateTranslator.java:53)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:88)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:60)\n\tat org.apache.commons.lang3.StringEscapeUtils.unescapeHtml4(StringEscapeUtils.java:351)"
             ]
@@ -882,6 +883,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.lang3.ArrayUtilsAddTest::testJira567"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.ArrayStoreException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:2962)"
             ]
@@ -892,6 +894,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.StringIndexOutOfBoundsException: String index out of range: 2\n\tat java.lang.String.charAt(String.java:658)\n\tat java.lang.Character.codePointAt(Character.java:4668)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:95)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:59)\n\tat org.apache.commons.lang3.StringEscapeUtils.escapeCsv(StringEscapeUtils.java:556)"
             ]
@@ -903,6 +906,7 @@
                 "org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294",
                 "org.apache.commons.lang.text.StrBuilderTest::testLang294"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.ArrayIndexOutOfBoundsException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang.text.StrBuilder.deleteImpl(StrBuilder.java:1114)\n\tat org.apache.commons.lang.text.StrBuilder.deleteAll(StrBuilder.java:1188)\n\tat org.apache.commons.lang.text.StrBuilderTest.testDeleteAll_String(StrBuilderTest.java:606)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:585)\n\tat junit.framework.TestCase.runTest(TestCase.java:154)\n\tat junit.framework.TestCase.runBare(TestCase.java:127)\n\tat junit.framework.TestResult$1.protect(TestResult.java:106)\n\tat junit.framework.TestResult.runProtected(TestResult.java:124)\n\tat junit.framework.TestResult.run(TestResult.java:109)\n\tat junit.framework.TestCase.run(TestCase.java:118)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:208)\n\tat junit.framework.TestSuite.run(TestSuite.java:203)\n\tat org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:128)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)",
                 "java.lang.ArrayIndexOutOfBoundsException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang.text.StrBuilder.replaceImpl(StrBuilder.java:1256)\n\tat org.apache.commons.lang.text.StrBuilder.replaceAll(StrBuilder.java:1339)\n\tat org.apache.commons.lang.text.StrBuilderTest.testReplaceAll_String_String(StrBuilderTest.java:763)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:585)\n\tat junit.framework.TestCase.runTest(TestCase.java:154)\n\tat junit.framework.TestCase.runBare(TestCase.java:127)\n\tat junit.framework.TestResult$1.protect(TestResult.java:106)\n\tat junit.framework.TestResult.runProtected(TestResult.java:124)\n\tat junit.framework.TestResult.run(TestResult.java:109)\n\tat junit.framework.TestCase.run(TestCase.java:118)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:208)\n\tat junit.framework.TestSuite.run(TestSuite.java:203)\n\tat org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:128)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)"
@@ -916,6 +920,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.linear.SparseRealVectorTest::testConcurrentModification"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "Exception in thread \"main\" org.apache.commons.math.MathRuntimeException$6: map has been modified while iterating\n\tat org.apache.commons.math.MathRuntimeException.createConcurrentModificationException(MathRuntimeException.java:373)\n\tat org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator.advance(OpenIntToDoubleHashMap.java:564)\n\tat org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector.java:372)\n\tat org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector.java:1)\n\tat DemoBugOpenMapRealVector.main(DemoBugOpenMapRealVector.java:17)"
             ]
@@ -926,6 +931,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.optimization.fitting.GaussianFitterTest::testMath519"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "org.apache.commons.math.exception.NotStrictlyPositiveException: -1.277 is smaller than, or equal to, the minimum (0)\n\tat org.apache.commons.math.analysis.function.Gaussian$Parametric.validateParameters(Gaussian.java:184)\n\tat org.apache.commons.math.analysis.function.Gaussian$Parametric.value(Gaussian.java:129)"
             ]
@@ -936,6 +942,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testPerformClusterAnalysisDegenerate"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.NullPointerException\n\tat org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer.assignPointsToClusters(KMeansPlusPlusClusterer.java:91)"
             ]
@@ -946,6 +953,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.linear.EigenDecompositionImplTest::testMath308"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.ArrayIndexOutOfBoundsException: -1\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.computeShiftIncrement(EigenDecompositionImpl.java:1545)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.goodStep(EigenDecompositionImpl.java:1072)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.processGeneralBlock(EigenDecompositionImpl.java:894)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.findEigenvalues(EigenDecompositionImpl.java:658)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.decompose(EigenDecompositionImpl.java:246)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.<init>(EigenDecompositionImpl.java:205)\n\tat org.apache.commons.math.linear.EigenDecompositionImplTest.testMath308(EigenDecompositionImplTest.java:136)"
             ]
@@ -956,6 +964,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.distribution.NormalDistributionTest::testMath280"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "org.apache.commons.math.MathException: Number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0\n\tat org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:103)\n\tat org.apache.commons.math.distribution.NormalDistributionImpl.inverseCumulativeProbability(NormalDistributionImpl.java:145)"
             ]
@@ -966,6 +975,7 @@
             "defects4j_failing_tests": [
                 "org.apache.commons.math.analysis.BrentSolverTest::testRootEndpoints"
             ],
+            "flag_failing_tests_added_in_bugfix": true,
             "log": [
                 "java.lang.IllegalArgumentException: Function values at endpoints do not have different signs.  Endpoints: [-100000.0,1.7976931348623157E308]  Values: [0.0,-101945.04630982173]\nat org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver.java:99)\nat org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver.java:62)"
             ]
