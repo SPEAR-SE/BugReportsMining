@@ -1,6 +1,7 @@
 {
     "Cli": {
         "14": {
+            "bug_report": "CLI-144",
             "bugfix_commit": "c338c8aca40d43efda580057f6d41ba228e26ec1",
             "buggy_commit": "b7b2069f9d846c6aea5fee98508ec1491fdf1123",
             "defects4j_failing_tests": [
@@ -12,6 +13,7 @@
             ]
         },
         "5": {
+            "bug_report": "CLI-133",
             "bugfix_commit": "3880640ee6268a2ecb2912e1ae896153dc2229e5",
             "buggy_commit": "2b0a94aee899d9e7d855c402ad40eb4e318f46e7",
             "defects4j_failing_tests": [
@@ -24,6 +26,7 @@
             ]
         },
         "7": {
+            "bug_report": "CLI-121",
             "bugfix_commit": "4ee0d6c4f1b553858aeabf3ee6fb37d764f263e2",
             "buggy_commit": "73276486b1f39510bf27cb6c0684da805b121f5d",
             "defects4j_failing_tests": [
@@ -37,6 +40,7 @@
     },
     "Closure": {
         "106": {
+            "bug_report": "19",
             "bugfix_commit": "e609670bb56e0c7216c9476a5f6a5594e7f1acdb",
             "buggy_commit": "6a36f04485599820ff86441accee002b4deec2eb",
             "defects4j_failing_tests": [
@@ -52,6 +56,7 @@
             ]
         },
         "125": {
+            "bug_report": "1002",
             "bugfix_commit": "8cef00180a5cf67d047919c89668a6405030dbab",
             "buggy_commit": "ddc1299802e88b9814250c369e3fe6f7ee07d4e5",
             "defects4j_failing_tests": [
@@ -64,6 +69,7 @@
             ]
         },
         "143": {
+            "bug_report": "139",
             "bugfix_commit": "7eaa0d8eca2549742649af34671eaf3da83b5c08",
             "buggy_commit": "45fd54a488cfbf27978fc4811a722f1fedb8ddaa",
             "defects4j_failing_tests": [
@@ -77,6 +83,7 @@
             ]
         },
         "152": {
+            "bug_report": "268",
             "bugfix_commit": "de491e70b971caca03f07531c2caf97b878cd1ff",
             "buggy_commit": "08fc2551ca3c811a02407d593b6ae39d2439a88c",
             "defects4j_failing_tests": [
@@ -93,6 +100,7 @@
             ]
         },
         "2": {
+            "bug_report": "884",
             "bugfix_commit": "d1cfe67977d8f3aaa85ec20c262171da394d5977",
             "buggy_commit": "61095090415cff7cae4f3645fa76ee7cdd3ee23d",
             "defects4j_failing_tests": [
@@ -104,6 +112,7 @@
             ]
         },
         "27": {
+            "bug_report": "727",
             "bugfix_commit": "7a8983042131c5a9c2b5421ae42075cbb8ef1aeb",
             "buggy_commit": "1d9ecb5328bbde5ee84dbfe2d74bbd318b89b6d7",
             "defects4j_failing_tests": [
@@ -117,6 +126,7 @@
             ]
         },
         "34": {
+            "bug_report": "691",
             "bugfix_commit": "87b154f89cba3c67045cd7a783b79231d0630a4c",
             "buggy_commit": "bc018d6c44e70b5c02016431a2f3604b3e6fc45c",
             "defects4j_failing_tests": [
@@ -129,6 +139,7 @@
             ]
         },
         "37": {
+            "bug_report": "663",
             "bugfix_commit": "7e93d521cb67ce33018315234fafe8a5aa30ee1e",
             "buggy_commit": "375879beef8fcffaae51749a7ac537d2eb140802",
             "defects4j_failing_tests": [
@@ -140,6 +151,7 @@
             ]
         },
         "55": {
+            "bug_report": "538",
             "bugfix_commit": "f2c0cb1f67ecb3315c0cb11326c9cb04db07ee8a",
             "buggy_commit": "1d13eac7441b980804c7ddfbe48a10a2ec3431d0",
             "defects4j_failing_tests": [
@@ -154,6 +166,7 @@
     },
     "Codec": {
         "8": {
+            "bug_report": "CODEC-105",
             "bugfix_commit": "2c13032a16e37b7bc9e0272d25fc185b5c82b42e",
             "buggy_commit": "931e25921dc0ec705a0055655aa2b2237a0888d7",
             "defects4j_failing_tests": [
@@ -167,6 +180,7 @@
     },
     "Collections": {
         "28": {
+            "bug_report": "COLLECTIONS-586",
             "bugfix_commit": "a270ff62852e62b5ac0f943a7e57292a72b77271",
             "buggy_commit": "796114ea4a9cc57ab17170536e1caa5933520c47",
             "defects4j_failing_tests": [
@@ -180,6 +194,7 @@
     },
     "Compress": {
         "1": {
+            "bug_report": "COMPRESS-28",
             "bugfix_commit": "004124ac5dbf5edbf925078652526267468821e7",
             "buggy_commit": "728b4e814ec88cab556533fa114be0efdde963be",
             "defects4j_failing_tests": [
@@ -191,6 +206,7 @@
             ]
         },
         "12": {
+            "bug_report": "COMPRESS-178",
             "bugfix_commit": "bc84d2083e4b1da77547bb4e810a06553e8f0bed",
             "buggy_commit": "b23b5c8533846374a22b417f7d66c7cb8ceb8962",
             "defects4j_failing_tests": [
@@ -202,6 +218,7 @@
             ]
         },
         "14": {
+            "bug_report": "COMPRESS-181",
             "bugfix_commit": "40f2e6380094ebfdc73e4adaf4059b80e1327aad",
             "buggy_commit": "d39ba76c50f65698213787901ec8dffbda77e43a",
             "defects4j_failing_tests": [
@@ -214,6 +231,7 @@
             ]
         },
         "17": {
+            "bug_report": "COMPRESS-197",
             "bugfix_commit": "ab456436d20f386641e605c17de24cc8cd3c1770",
             "buggy_commit": "db6dda34281d95d495ff4c935b65cf84310bf6be",
             "defects4j_failing_tests": [
@@ -225,6 +243,7 @@
             ]
         },
         "18": {
+            "bug_report": "COMPRESS-203",
             "bugfix_commit": "09b8f6d78e18b927491fc299973146fa74fd977f",
             "buggy_commit": "716666a267169689e3b4559458c1f0d53a96ae0a",
             "defects4j_failing_tests": [
@@ -236,6 +255,7 @@
             ]
         },
         "23": {
+            "bug_report": "COMPRESS-256",
             "bugfix_commit": "cbb5a1ad9b0b80f717ee71dc0fc765afdc1601c0",
             "buggy_commit": "71e4eeadcfc5eb390eca1142fc1f6ee5b1b4d5c1",
             "defects4j_failing_tests": [
@@ -247,6 +267,7 @@
             ]
         },
         "24": {
+            "bug_report": "COMPRESS-262",
             "bugfix_commit": "8da377299d085b4ce1f15dbc0732232ea32e601d",
             "buggy_commit": "c2376685ed5cb56833327cb5f54e5f803a8e8fa9",
             "defects4j_failing_tests": [
@@ -258,6 +279,7 @@
             ]
         },
         "27": {
+            "bug_report": "COMPRESS-278",
             "bugfix_commit": "1ea7e01eb6776071eddf60f7783d650ec7d60e74",
             "buggy_commit": "383d90399e3e2284bca4836197eb92b126095479",
             "defects4j_failing_tests": [
@@ -270,6 +292,7 @@
             ]
         },
         "31": {
+            "bug_report": "COMPRESS-301",
             "bugfix_commit": "f8bf45444c49053a92f6f560c5008d5ac43aa27f",
             "buggy_commit": "4355c0d224342b5c94881b7aabb441f765867dfe",
             "defects4j_failing_tests": [
@@ -282,6 +305,7 @@
             ]
         },
         "32": {
+            "bug_report": "COMPRESS-314",
             "bugfix_commit": "3c4a09bf28e7cd600b919b8c799fbbfd19a94c0b",
             "buggy_commit": "24a3100e9897837b513a0d9f2ae26fd02ec91246",
             "defects4j_failing_tests": [
@@ -293,6 +317,7 @@
             ]
         },
         "34": {
+            "bug_report": "COMPRESS-321",
             "bugfix_commit": "e6e24766377e705e89358fb9cf6253e2e9e645db",
             "buggy_commit": "1dcab3f854e6fffa16c842b8a10a6fa2163795ea",
             "defects4j_failing_tests": [
@@ -306,6 +331,7 @@
     },
     "Csv": {
         "12": {
+            "bug_report": "CSV-128",
             "bugfix_commit": "c81ad0328eefb438cc875b9c9f081be93f9fdcc2",
             "buggy_commit": "bc504117fceb2c254eea5158a62de54c80a5d81d",
             "defects4j_failing_tests": [
@@ -317,6 +343,7 @@
             ]
         },
         "4": {
+            "bug_report": "CSV-100",
             "bugfix_commit": "22601f647f2ce9a05fa4ce20ea356492c670940c",
             "buggy_commit": "2b5f84ede12cfadd7946ffb07a56709b8322a02f",
             "defects4j_failing_tests": [
@@ -330,6 +357,7 @@
     },
     "Gson": {
         "12": {
+            "bug_report": "1013",
             "bugfix_commit": "9e6f2bab20257b6823a5b753739f047d79e9dcbd",
             "buggy_commit": "7719e73a108c450666613c279bedaed724cd9cc9",
             "defects4j_failing_tests": [
@@ -342,6 +370,7 @@
             ]
         },
         "5": {
+            "bug_report": "768",
             "bugfix_commit": "8383f5c7fa34ae68323fe2816ef8c1307b5d0f84",
             "buggy_commit": "af68d70cd55826fa7149effd7397d64667ca264c",
             "defects4j_failing_tests": [
@@ -357,6 +386,7 @@
             ]
         },
         "8": {
+            "bug_report": "817",
             "bugfix_commit": "0f66f4fac441f7d7d7bc4afc907454f3fe4c0faa",
             "buggy_commit": "6f6af8050799bec5321d2c06cd3230daadbb6535",
             "defects4j_failing_tests": [
@@ -375,6 +405,7 @@
     },
     "JacksonCore": {
         "10": {
+            "bug_report": "207",
             "bugfix_commit": "c2823b4de28120d86aeba9215f0231d990a8eb47",
             "buggy_commit": "a71a00e595f87a8eb4a58778e21cf8dab788eb04",
             "defects4j_failing_tests": [
@@ -390,6 +421,7 @@
             ]
         },
         "11": {
+            "bug_report": "216",
             "bugfix_commit": "be4386724ff18232aff492cb9145288df86ea61c",
             "buggy_commit": "7ca3d1cb6f1317863b5b04a1b0a7bac2aee5eefd",
             "defects4j_failing_tests": [
@@ -401,6 +433,7 @@
             ]
         },
         "4": {
+            "bug_report": "152",
             "bugfix_commit": "3baa7d6742f7460bfb0af8edf48bf1575658109a",
             "buggy_commit": "7317dc95b0c9d09b94f37c8ae3a48de8b37729cc",
             "defects4j_failing_tests": [
@@ -412,6 +445,7 @@
             ]
         },
         "7": {
+            "bug_report": "177",
             "bugfix_commit": "5cddffa133e7de41fa9efb5962cf3d0cff9b3e89",
             "buggy_commit": "b0ceb4eeb69f20f0e4242736ae3e19ed2b9c5da3",
             "defects4j_failing_tests": [
@@ -426,6 +460,7 @@
     },
     "JacksonDatabind": {
         "104": {
+            "bug_report": "2167",
             "bugfix_commit": "83c7c4347055c3a70a3115fa106aa69c9cb56456",
             "buggy_commit": "54c744c2c2007eb93dd756cc8581573c9bec97ac",
             "defects4j_failing_tests": [
@@ -438,6 +473,7 @@
             ]
         },
         "14": {
+            "bug_report": "744",
             "bugfix_commit": "817a45a07040297a5db45dd04e79b010146b7e0d",
             "buggy_commit": "0ec81c07bc4be13e1382f7191981ed3f0bf9ef39",
             "defects4j_failing_tests": [
@@ -449,6 +485,7 @@
             ]
         },
         "15": {
+            "bug_report": "731",
             "bugfix_commit": "119ddc9701c94ac184362166742ceaa7437eec8f",
             "buggy_commit": "fa1c2ff7eefd68061ae0cc3f630e87d16d1b2bb5",
             "defects4j_failing_tests": [
@@ -460,6 +497,7 @@
             ]
         },
         "17": {
+            "bug_report": "793",
             "bugfix_commit": "a143c05db7a911f98f8bf59beb13cfcb7689395d",
             "buggy_commit": "7db1f44069bbcac9d884d829f8052a89b5ec271b",
             "defects4j_failing_tests": [
@@ -471,6 +509,7 @@
             ]
         },
         "25": {
+            "bug_report": "890",
             "bugfix_commit": "9917c94d94a285ece80e6c9f3d2b9fba06d98fd7",
             "buggy_commit": "b4ef0a65150a7311ebb9119b1ac6898e33dc0baf",
             "defects4j_failing_tests": [
@@ -482,6 +521,7 @@
             ]
         },
         "28": {
+            "bug_report": "941",
             "bugfix_commit": "b049739cc66a0f79c19dd1cea47e922d95645023",
             "buggy_commit": "e258ee60edc692c80907fd6e4bb16e641692b721",
             "defects4j_failing_tests": [
@@ -493,6 +533,7 @@
             ]
         },
         "3": {
+            "bug_report": "479",
             "bugfix_commit": "fa1d99255915f21c868f28307fd6e3adb2029ea0",
             "buggy_commit": "fd9b65dc45657bb7cd236df5396b901f36469c76",
             "defects4j_failing_tests": [
@@ -505,6 +546,7 @@
             ]
         },
         "32": {
+            "bug_report": "989",
             "bugfix_commit": "d5a25f4300a93f4c411a7b8364d34122bc0a1b62",
             "buggy_commit": "fe25f7e14d92f5d4746549e7df22e9af35fdf54b",
             "defects4j_failing_tests": [
@@ -517,6 +559,7 @@
             ]
         },
         "37": {
+            "bug_report": "1083",
             "bugfix_commit": "dbf0c6f4c93d922a2ebb4d744661e7090fef2aac",
             "buggy_commit": "d5e12f74d2224574ef1e220decc514073303ac5c",
             "defects4j_failing_tests": [
@@ -529,6 +572,7 @@
             ]
         },
         "47": {
+            "bug_report": "1231",
             "bugfix_commit": "ebadfd25ed1244b170f7af2414c35673eb055a29",
             "buggy_commit": "9d3de8cfcf9b50b92db20240d42abafc2bad98e1",
             "defects4j_failing_tests": [
@@ -541,6 +585,7 @@
             ]
         },
         "58": {
+            "bug_report": "877",
             "bugfix_commit": "b2ccdee0fdc52cd46577a90cb50dc011d6d681bf",
             "buggy_commit": "d71de544624bec27e6f4e76548527ae727eb193d",
             "defects4j_failing_tests": [
@@ -552,6 +597,7 @@
             ]
         },
         "59": {
+            "bug_report": "1384",
             "bugfix_commit": "e59194aaff0a6e520184138924c69045160ee9d9",
             "buggy_commit": "b3c65e40abc63a4dde7f63eacf8ee96ccd4341c2",
             "defects4j_failing_tests": [
@@ -563,6 +609,7 @@
             ]
         },
         "61": {
+            "bug_report": "1395",
             "bugfix_commit": "82c346ae999e1e250fb52732419aff9a86b1f455",
             "buggy_commit": "be114a9a286c4d194cd268ac8153173c52619a8d",
             "defects4j_failing_tests": [
@@ -576,6 +623,7 @@
             ]
         },
         "62": {
+            "bug_report": "1392",
             "bugfix_commit": "4e94c0ed9eca0caccb57feb0ceb252fc91198032",
             "buggy_commit": "987a463a185d25086c29ee2efa0c0e24ecf77cb2",
             "defects4j_failing_tests": [
@@ -587,6 +635,7 @@
             ]
         },
         "65": {
+            "bug_report": "1429",
             "bugfix_commit": "9a666887d85349b35e0d80885a7c7cb38029467d",
             "buggy_commit": "9257bd6b6a0227c400e1d008d5ad03d2244a6155",
             "defects4j_failing_tests": [
@@ -598,6 +647,7 @@
             ]
         },
         "68": {
+            "bug_report": "1421",
             "bugfix_commit": "d0cfb645350fab16bf61fac140b69ef55f8cba2e",
             "buggy_commit": "1aeb52554a104f0a2433788be406d53b39654952",
             "defects4j_failing_tests": [
@@ -611,6 +661,7 @@
             ]
         },
         "69": {
+            "bug_report": "1476",
             "bugfix_commit": "d44600d3750e5dba9fac68aee7248ed2a80a2225",
             "buggy_commit": "002a9a3e9b98ebebf53e43aed0536d3c50851c84",
             "defects4j_failing_tests": [
@@ -622,6 +673,7 @@
             ]
         },
         "70": {
+            "bug_report": "1493",
             "bugfix_commit": "d7155de6c37db3301b92b755bd0a02388f7dd07f",
             "buggy_commit": "7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
             "defects4j_failing_tests": [
@@ -633,6 +685,7 @@
             ]
         },
         "72": {
+            "bug_report": "1501",
             "bugfix_commit": "63afa5297a0b8bcbf31b9c91e5d15537e0fdbdd5",
             "buggy_commit": "d3874ebf3c0585270f1fe33eb7030667bacb63b7",
             "defects4j_failing_tests": [
@@ -644,6 +697,7 @@
             ]
         },
         "73": {
+            "bug_report": "935",
             "bugfix_commit": "4d34006e4d8a566c6c64a3a0e04c17e50d63bb82",
             "buggy_commit": "2bb770bcd4cbc0c0c3ede86cedd4a602e328e2f6",
             "defects4j_failing_tests": [
@@ -656,6 +710,7 @@
             ]
         },
         "83": {
+            "bug_report": "1629",
             "bugfix_commit": "9a083ad56b20711eab368a7818fb079a870feb93",
             "buggy_commit": "edaa4ad8204dfda985d3c74ffe542c9eb67a201d",
             "defects4j_failing_tests": [
@@ -667,6 +722,7 @@
             ]
         },
         "9": {
+            "bug_report": "682",
             "bugfix_commit": "00bb11edc3581f42e1f3c78a047538c8ea9eb0d9",
             "buggy_commit": "ae101c63bc8c74466fc137b766faa8793c1e1f10",
             "defects4j_failing_tests": [
@@ -678,6 +734,7 @@
             ]
         },
         "90": {
+            "bug_report": "1804",
             "bugfix_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
             "buggy_commit": "467589680add00ab49108bbbe7db375d81a75837",
             "defects4j_failing_tests": [
@@ -689,6 +746,7 @@
             ]
         },
         "91": {
+            "bug_report": "1809",
             "bugfix_commit": "dfaca81ae7a82b7c3018f265815e98a5138118f7",
             "buggy_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
             "defects4j_failing_tests": [
@@ -700,6 +758,7 @@
             ]
         },
         "93": {
+            "bug_report": "1872",
             "bugfix_commit": "755e3bc0cbea30de0102f6a88519a0c34d571bbd",
             "buggy_commit": "d9bbae43dd474f51b01899bbd83116ab4e2b33ed",
             "defects4j_failing_tests": [
@@ -711,6 +770,7 @@
             ]
         },
         "95": {
+            "bug_report": "1941",
             "bugfix_commit": "18dc249e793b15e40e67753ea5e988bd428b1a92",
             "buggy_commit": "c5bfb9a191240fac1744d6569d48a52ebd53c3cf",
             "defects4j_failing_tests": [
@@ -722,6 +782,7 @@
             ]
         },
         "98": {
+            "bug_report": "1328",
             "bugfix_commit": "12f82c60782f05015336bb6305fd72c133a410b5",
             "buggy_commit": "bf261d404c2f79fd3406237710d40ebb03c99d84",
             "defects4j_failing_tests": [
@@ -737,6 +798,7 @@
     },
     "Jsoup": {
         "27": {
+            "bug_report": "215",
             "bugfix_commit": "8963e2ac79a97e694c388622e935a0471267e9eb",
             "buggy_commit": "009013169754d4869f3a55c27a3443fc72d1d1f1",
             "defects4j_failing_tests": [
@@ -749,6 +811,7 @@
             ]
         },
         "34": {
+            "bug_report": "349",
             "bugfix_commit": "88730bf9f399aab6a150212faeea012598be9ec6",
             "buggy_commit": "2518e92a052d922d81d11e28b8e5205639fed9a7",
             "defects4j_failing_tests": [
@@ -761,6 +824,7 @@
             ]
         },
         "5": {
+            "bug_report": "32",
             "bugfix_commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
             "buggy_commit": "5e52f1b266173593fab32fe9d8a4963066b2f2fe",
             "defects4j_failing_tests": [
@@ -772,6 +836,7 @@
             ]
         },
         "54": {
+            "bug_report": "721",
             "bugfix_commit": "f148f88de365c50eea28d3e14093e13c33104483",
             "buggy_commit": "9e8ba01343f2b39185846821407e93ca5240bdb1",
             "defects4j_failing_tests": [
@@ -783,6 +848,7 @@
             ]
         },
         "6": {
+            "bug_report": "34",
             "bugfix_commit": "20ed24cefb5df53c48021459af98bef83c55f241",
             "buggy_commit": "0b56f3e5e012e689af8dda0e96d6e0c9f31853b6",
             "defects4j_failing_tests": [
@@ -795,6 +861,7 @@
             ]
         },
         "78": {
+            "bug_report": "980",
             "bugfix_commit": "2c4e79b104c0ff32566ce247617d47c0b39cc2c7",
             "buggy_commit": "71561e09e0f29ec5fd1bb918206f3d8e42876518",
             "defects4j_failing_tests": [
@@ -807,6 +874,7 @@
             ]
         },
         "80": {
+            "bug_report": "1015",
             "bugfix_commit": "e9feec90dbd3e428dc1930c3b5efbd9271160d01",
             "buggy_commit": "47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9",
             "defects4j_failing_tests": [
@@ -818,6 +886,7 @@
             ]
         },
         "82": {
+            "bug_report": "1007",
             "bugfix_commit": "6be19a6fa26e6e5e3d716283bad4b5de0348a8b7",
             "buggy_commit": "77966f79996f3fc4c7828b4d02a926c071faf040",
             "defects4j_failing_tests": [
@@ -829,6 +898,7 @@
             ]
         },
         "84": {
+            "bug_report": "848",
             "bugfix_commit": "a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8",
             "buggy_commit": "bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664",
             "defects4j_failing_tests": [
@@ -840,6 +910,7 @@
             ]
         },
         "90": {
+            "bug_report": "1172",
             "bugfix_commit": "7de614ffd01161d8718d7458bab9d9690ad2334f",
             "buggy_commit": "315655cc11c9d49bb821dd800d45580696b02185",
             "defects4j_failing_tests": [
@@ -853,6 +924,7 @@
     },
     "JxPath": {
         "5": {
+            "bug_report": "JXPATH-89",
             "bugfix_commit": "2a01dfaf8d6abbabc7e4cd5cfd05d2e0b4886708",
             "buggy_commit": "458f562cdbe13b42ae325ac88a082047fe05ab89",
             "defects4j_failing_tests": [
@@ -866,6 +938,7 @@
     },
     "Lang": {
         "19": {
+            "bug_report": "LANG-710",
             "bugfix_commit": "0b3a8a3128890f710700d04e38df48b883d11d91",
             "buggy_commit": "85481c8f87075c88a97e793d9a6fcfd8d3c6946f",
             "defects4j_failing_tests": [
@@ -878,6 +951,7 @@
             ]
         },
         "37": {
+            "bug_report": "LANG-567",
             "bugfix_commit": "ea140fb5c327e2b58f6c5bf1057c7dede909a50c",
             "buggy_commit": "b5906d3f325ca3a1147d5fa68912975e2e6c347e",
             "defects4j_failing_tests": [
@@ -889,6 +963,7 @@
             ]
         },
         "6": {
+            "bug_report": "LANG-857",
             "bugfix_commit": "cff0f1ae37bb2b7ab2dcdb10dec1f3cad7532e1c",
             "buggy_commit": "6823c3742ee16f5b28e550a6afb685553befc0c2",
             "defects4j_failing_tests": [
@@ -900,6 +975,7 @@
             ]
         },
         "61": {
+            "bug_report": "LANG-294",
             "bugfix_commit": "88c76d207f642831ca899e144159424aaa60cf8e",
             "buggy_commit": "1313a65c11dea54f1baf492d4185fb2d673b6716",
             "defects4j_failing_tests": [
@@ -915,6 +991,7 @@
     },
     "Math": {
         "49": {
+            "bug_report": "MATH-645",
             "bugfix_commit": "09e35881f1ad74335707e70aa78fd347e37d1066",
             "buggy_commit": "0b78d9accafadffe00697c2c56706043cdba5e64",
             "defects4j_failing_tests": [
@@ -926,6 +1003,7 @@
             ]
         },
         "58": {
+            "bug_report": "MATH-519",
             "bugfix_commit": "45add3a0e7e2e94bfc29e85c9ef0856e2e473a33",
             "buggy_commit": "b1392325d1255f7e3a1b04a12859a8bb75e4d14c",
             "defects4j_failing_tests": [
@@ -937,6 +1015,7 @@
             ]
         },
         "79": {
+            "bug_report": "MATH-305",
             "bugfix_commit": "138baec1c778c2ea1dc1a6efe6d5e76a3b072b1d",
             "buggy_commit": "ca1ca9250b99dd49434468aa5530eb00b2f0680d",
             "defects4j_failing_tests": [
@@ -948,6 +1027,7 @@
             ]
         },
         "81": {
+            "bug_report": "MATH-308",
             "bugfix_commit": "7d903ca533833e5db8d2fe150f1e31b54ddda700",
             "buggy_commit": "6e3ea6857dce8b7a586c3af555e21ba35a59ea54",
             "defects4j_failing_tests": [
@@ -959,6 +1039,7 @@
             ]
         },
         "85": {
+            "bug_report": "MATH-280",
             "bugfix_commit": "9be86f674f91fa3fe0a8694e7b98472dabe6886d",
             "buggy_commit": "8de8a3b6fa5f4d7ea817f915d957ef309441762d",
             "defects4j_failing_tests": [
@@ -970,6 +1051,7 @@
             ]
         },
         "97": {
+            "bug_report": "MATH-204",
             "bugfix_commit": "ed492bd0c5c5c3a0258a65cb31cc8723d8f011fd",
             "buggy_commit": "7cf0c980d5d814daf187502bc07da0542ed7a828",
             "defects4j_failing_tests": [
@@ -983,6 +1065,7 @@
     },
     "Mockito": {
         "17": {
+            "bug_report": "152",
             "bugfix_commit": "77cb2037314dd024eb53ffe2e9e06304088a2d53",
             "buggy_commit": "b6790ee34d8d858a89b80a9ae40f19d87ce1dab8",
             "defects4j_failing_tests": [
@@ -995,6 +1078,7 @@
             ]
         },
         "22": {
+            "bug_report": "484",
             "bugfix_commit": "d0c872e4b0837aef1e1635bf5f15d33c3d8d9698",
             "buggy_commit": "920ec4c3efe3133aa5009fcc9757a3cd07c5ac02",
             "defects4j_failing_tests": [
@@ -1006,6 +1090,7 @@
             ]
         },
         "25": {
+            "bug_report": "230",
             "bugfix_commit": "a6ccf070a267e0a165b8efaaefa8938e787bb6a0",
             "buggy_commit": "d8b18f2e77c3f352677a6993225c4333b98d0481",
             "defects4j_failing_tests": [
@@ -1022,6 +1107,7 @@
             ]
         },
         "30": {
+            "bug_report": "225",
             "bugfix_commit": "3c924f80a4db3692a13341f0da4517052ab77a2a",
             "buggy_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
             "defects4j_failing_tests": [
@@ -1033,6 +1119,7 @@
             ]
         },
         "31": {
+            "bug_report": "225",
             "bugfix_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
             "buggy_commit": "81a380951402d2a158af115ed616ab36e94793b8",
             "defects4j_failing_tests": [
@@ -1044,6 +1131,7 @@
             ]
         },
         "35": {
+            "bug_report": "98",
             "bugfix_commit": "27a2f515197d4688c4df82afb791bf8ce20a5504",
             "buggy_commit": "bff7ae0f4db9c5c0f7bfcdd3a47d4fa0fdaa1232",
             "defects4j_failing_tests": [
@@ -1059,6 +1147,7 @@
             ]
         },
         "4": {
+            "bug_report": "187",
             "bugfix_commit": "42b391d4209024292b6101048389570e4ec36b2a",
             "buggy_commit": "c25cb6bff7eb4774efda345e8bf9eaad4c66a652",
             "defects4j_failing_tests": [
@@ -1073,6 +1162,7 @@
             ]
         },
         "5": {
+            "bug_report": "152",
             "bugfix_commit": "42a24dde02923185db3f79ae57e7819f7d70af55",
             "buggy_commit": "fff76563d9e0ed412dc828c53cfdc7d142997a31",
             "defects4j_failing_tests": [
@@ -1087,6 +1177,7 @@
     },
     "Time": {
         "10": {
+            "bug_report": "22",
             "bugfix_commit": "3a413d7844c22dc6ddd50bf5d0d55ff3589e47ac",
             "buggy_commit": "efce99164f0bbd2c70e7f9d71884a32473e02c6d",
             "defects4j_failing_tests": [
