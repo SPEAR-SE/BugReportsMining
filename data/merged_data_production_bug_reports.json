@@ -1,0 +1,1056 @@
+{
+    "Cli": {
+        "14": {
+            "bug_report": "CLI-144",
+            "origin": "defects4j",
+            "bugfix_commit": "c338c8aca40d43efda580057f6d41ba228e26ec1",
+            "buggy_commit": "b7b2069f9d846c6aea5fee98508ec1491fdf1123",
+            "failing_tests": [
+                "org.apache.commons.cli2.bug.BugCLI144Test::testFileValidator"
+            ],
+            "log": [
+                "Exception in thread \"main\" java.lang.ClassCastException: java.io.File cannot be cast to java.lang.String\n\tat org.apache.commons.cli2.validation.FileValidator.validate(FileValidator.java:122)\n\tat org.apache.commons.cli2.option.ArgumentImpl.validate(ArgumentImpl.java:250)\n\tat org.apache.commons.cli2.option.ParentImpl.validate(ParentImpl.java:123)\n\tat org.apache.commons.cli2.option.DefaultOption.validate(DefaultOption.java:175)\n\tat org.apache.commons.cli2.option.GroupImpl.validate(GroupImpl.java:264)\n\tat org.apache.commons.cli2.commandline.Parser.parse(Parser.java:105)\n\tat org.apache.commons.cli2.commandline.Parser.parseAndHelp(Parser.java:125)\n\tat org.apache.commons.cli2.issues.CLI2Sample.main(CLI2Sample.java:38)"
+            ]
+        },
+        "5": {
+            "bug_report": "CLI-133",
+            "origin": "defects4j",
+            "bugfix_commit": "3880640ee6268a2ecb2912e1ae896153dc2229e5",
+            "buggy_commit": "2b0a94aee899d9e7d855c402ad40eb4e318f46e7",
+            "failing_tests": [
+                "org.apache.commons.cli.UtilTest::testStripLeadingHyphens",
+                "org.apache.commons.cli.bug.BugCLI133Test::testOrder"
+            ],
+            "log": [
+                "java.lang.NullPointerException\n\tat org.apache.commons.cli.Util.stripLeadingHyphens(Util.java:39)\n\tat org.apache.commons.cli.CommandLine.resolveOption(CommandLine.java:166)\n\tat org.apache.commons.cli.CommandLine.hasOption(CommandLine.java:68)"
+            ]
+        }
+    },
+    "Closure": {
+        "106": {
+            "bug_report": "19",
+            "origin": "defects4j",
+            "bugfix_commit": "e609670bb56e0c7216c9476a5f6a5594e7f1acdb",
+            "buggy_commit": "6a36f04485599820ff86441accee002b4deec2eb",
+            "failing_tests": [
+                "com.google.javascript.jscomp.CheckSideEffectsTest::testJSDocComments",
+                "com.google.javascript.jscomp.CollapsePropertiesTest::testTwinReferenceCancelsChildCollapsing",
+                "com.google.javascript.jscomp.CollapsePropertiesTest::testCrashInNestedAssign",
+                "com.google.javascript.jscomp.CollapsePropertiesTest::testCrashInCommaOperator"
+            ],
+            "log": [
+                "java.lang.RuntimeException: java.lang.IllegalArgumentException\r\n\tat com.google.javascript.jscomp.Compiler.runInCompilerThread(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Unknown Source)\r\n\tat com.google.javascript.jscomp.AbstractCompilerRunner.doRun(Unknown Source)\r\n\tat com.google.javascript.jscomp.AbstractCompilerRunner.run(Unknown Source)\r\n\tat com.google.javascript.jscomp.CompilerRunner.main(Unknown Source)\r",
+                "Caused by: java.lang.IllegalArgumentException\r\n\tat com.google.common.base.Preconditions.checkArgument(Preconditions.java:71)\r\n\tat com.google.javascript.jscomp.CollapseProperties.addStubsForUndeclaredProperties(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.updateObjLitOrFunctionDeclarationAtAssignNode(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.updateObjLitOrFunctionDeclaration(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.collapseDeclarationOfNameAndDescendants(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.collapseDeclarationOfNameAndDescendants(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.collapseDeclarationOfNameAndDescendants(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.collapseDeclarationOfNameAndDescendants(Unknown Source)\r\n\tat com.google.javascript.jscomp.CollapseProperties.process(Unknown Source)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$PassFactoryDelegate.processInternal(Unknown Source)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(Unknown Source)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer.process(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler.optimize(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler.compileInternal(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler.access$000(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler$1.call(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler$1.call(Unknown Source)\r\n\tat com.google.javascript.jscomp.Compiler$2.run(Unknown Source)\r\n\tat java.lang.Thread.run(Thread.java:637)\r"
+            ]
+        },
+        "125": {
+            "bug_report": "1002",
+            "origin": "defects4j",
+            "bugfix_commit": "8cef00180a5cf67d047919c89668a6405030dbab",
+            "buggy_commit": "ddc1299802e88b9814250c369e3fe6f7ee07d4e5",
+            "failing_tests": [
+                "com.google.javascript.jscomp.TypeCheckTest::testIssue1002"
+            ],
+            "log": [
+                "java.lang.RuntimeException: java.lang.IllegalStateException\r\n\tat com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:715)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:647)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:603)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:783)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:379)\r\n\tat com.google.javascript.jscomp.CommandLineRunner.main(CommandLineRunner.java:972)\r",
+                "Caused by: java.lang.IllegalStateException\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:133)\r\n\tat com.google.javascript.rhino.jstype.FunctionType.getInstanceType(FunctionType.java:1071)\r\n\tat com.google.javascript.jscomp.TypeCheck.visitNew(TypeCheck.java:1567)\r\n\tat com.google.javascript.jscomp.TypeCheck.visit(TypeCheck.java:569)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:534)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:569)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:522)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:528)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseWithScope(NodeTraversal.java:353)\r\n\tat com.google.javascript.jscomp.TypeCheck.check(TypeCheck.java:400)\r\n\tat com.google.javascript.jscomp.TypeCheck.process(TypeCheck.java:371)\r\n\tat com.google.javascript.jscomp.DefaultPassConfig$30$1.process(DefaultPassConfig.java:1237)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:293)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:237)\r\n\tat com.google.javascript.jscomp.Compiler.check(Compiler.java:830)\r\n\tat com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:742)\r\n\tat com.google.javascript.jscomp.Compiler.access$000(Compiler.java:83)\r\n\tat com.google.javascript.jscomp.Compiler$2.call(Compiler.java:650)\r\n\tat com.google.javascript.jscomp.Compiler$2.call(Compiler.java:647)\r\n\tat com.google.javascript.jscomp.Compiler$3.call(Compiler.java:677)\r\n\tat java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:138)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)\r\n\tat java.lang.Thread.run(Thread.java:680)\r"
+            ]
+        },
+        "143": {
+            "bug_report": "139",
+            "origin": "defects4j",
+            "bugfix_commit": "7eaa0d8eca2549742649af34671eaf3da83b5c08",
+            "buggy_commit": "45fd54a488cfbf27978fc4811a722f1fedb8ddaa",
+            "failing_tests": [
+                "com.google.javascript.jscomp.CommandLineRunnerTest::testDefineFlag3",
+                "com.google.javascript.jscomp.RemoveConstantExpressionsTest::testCall1",
+                "com.google.javascript.jscomp.RemoveConstantExpressionsTest::testNew1"
+            ],
+            "log": [
+                "java.lang.RuntimeException: --define flag syntax invalid: test.VERSION=1.0.0\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.createDefineReplacements(Unknown Source)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.initOptionsFromFlags(Unknown Source)\r\n\tat com.google.javascript.jscomp.CommandLineRunner.createOptions(Unknown Source)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(Unknown Source)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(Unknown Source)\r\n\tat com.google.javascript.jscomp.CommandLineRunner.main(Unknown Source)\r"
+            ]
+        },
+        "152": {
+            "bug_report": "268",
+            "origin": "defects4j",
+            "bugfix_commit": "de491e70b971caca03f07531c2caf97b878cd1ff",
+            "buggy_commit": "08fc2551ca3c811a02407d593b6ae39d2439a88c",
+            "failing_tests": [
+                "com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse1",
+                "com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse2",
+                "com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse3"
+            ],
+            "log": [
+                "        java.lang.RuntimeException: java.lang.ClassCastException: com.google.javascript.rhino.jstype.UnionType cannot be cast to com.google.javascript.rhino.jstype.ObjectType\r\n                at com.google.javascript.jscomp.Compiler.runInCompilerThread(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler.compile(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler.compile(Unknown Source)\r\n                at com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(Unknown Source)\r\n                at com.google.javascript.jscomp.AbstractCommandLineRunner.run(Unknown Source)\r\n                at com.google.javascript.jscomp.CommandLineRunner.main(Unknown Source)\r",
+                "        Caused by: java.lang.ClassCastException: com.google.javascript.rhino.jstype.UnionType cannot be cast to com.google.javascript.rhino.jstype.ObjectType\r\n                at com.google.javascript.rhino.jstype.FunctionType.resolveInternal(Unknown Source)\r\n                at com.google.javascript.rhino.jstype.JSType.resolve(Unknown Source)\r\n                at com.google.javascript.jscomp.TypedScopeCreator$DeferredSetType.resolve(Unknown Source)\r\n                at com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes(Unknown Source)\r\n                at com.google.javascript.jscomp.TypedScopeCreator.createScope(Unknown Source)\r\n                at com.google.javascript.jscomp.MemoizedScopeCreator.createScope(Unknown Source)\r\n                at com.google.javascript.jscomp.DefaultPassConfig$GlobalTypeResolver.process(Unknown Source)\r\n                at com.google.javascript.jscomp.PhaseOptimizer$PassFactoryDelegate.processInternal(Unknown Source)\r\n                at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(Unknown Source)\r\n                at com.google.javascript.jscomp.PhaseOptimizer.process(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler.check(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler.compileInternal(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler.access$000(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler$1.call(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler$1.call(Unknown Source)\r\n                at com.google.javascript.jscomp.Compiler$2.run(Unknown Source)\r\n                at java.lang.Thread.run(Thread.java:662)\r",
+                "        java.lang.RuntimeException: java.lang.ClassCastException: com.google.javascript.rhino.jstype.UnionType cannot be cast to com.google.javascript.rhino.jstype.ObjectType\r\n                at com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:590)\r\n                at com.google.javascript.jscomp.Compiler.compile(Compiler.java:528)\r\n                at com.google.javascript.jscomp.Compiler.compile(Compiler.java:487)\r\n                at com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:583)\r\n                at com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:252)\r\n                at com.google.javascript.jscomp.CommandLineRunner.main(CommandLineRunner.java:618)\r",
+                "        Caused by: java.lang.ClassCastException: com.google.javascript.rhino.jstype.UnionType cannot be cast to com.google.javascript.rhino.jstype.ObjectType\r\n                at com.google.javascript.rhino.jstype.FunctionType.resolveInternal(FunctionType.java:856)\r\n                at com.google.javascript.rhino.jstype.JSType.resolve(JSType.java:894)\r\n                at com.google.javascript.jscomp.TypedScopeCreator$DeferredSetType.resolve(TypedScopeCreator.java:136)\r\n                at com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes(TypedScopeCreator.java:399)\r\n                at com.google.javascript.jscomp.TypedScopeCreator.createScope(TypedScopeCreator.java:178)\r\n                at com.google.javascript.jscomp.MemoizedScopeCreator.createScope(MemoizedScopeCreator.java:53)\r\n                at com.google.javascript.jscomp.DefaultPassConfig$GlobalTypeResolver.process(DefaultPassConfig.java:1053)\r\n                at com.google.javascript.jscomp.PhaseOptimizer$PassFactoryDelegate.processInternal(PhaseOptimizer.java:271)\r\n                at com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:248)\r\n                at com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:167)\r\n                at com.google.javascript.jscomp.Compiler.check(Compiler.java:694)\r\n                at com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:613)\r\n                at com.google.javascript.jscomp.Compiler.access$000(Compiler.java:64)\r\n                at com.google.javascript.jscomp.Compiler$1.call(Compiler.java:530)\r\n                at com.google.javascript.jscomp.Compiler$1.call(Compiler.java:528)\r\n                at com.google.javascript.jscomp.Compiler$2.run(Compiler.java:562)\r\n                at java.lang.Thread.run(Thread.java:662)"
+            ]
+        },
+        "2": {
+            "bug_report": "884",
+            "origin": "defects4j",
+            "bugfix_commit": "d1cfe67977d8f3aaa85ec20c262171da394d5977",
+            "buggy_commit": "61095090415cff7cae4f3645fa76ee7cdd3ee23d",
+            "failing_tests": [
+                "com.google.javascript.jscomp.TypeCheckTest::testBadInterfaceExtendsNonExistentInterfaces"
+            ],
+            "log": [
+                "23: java.lang.NullPointerException\r\n\tat com.google.javascript.jscomp.TypeCheck.checkInterfaceConflictProperties(TypeCheck.java:1544)\r\n\tat com.google.javascript.jscomp.TypeCheck.visitFunction(TypeCheck.java:1635)\r\n\tat com.google.javascript.jscomp.TypeCheck.visit(TypeCheck.java:761)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:509)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:502)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:502)\r\n\tat com.google.javascript.jscomp.NodeTraversal.traverseWithScope(NodeTraversal.java:347)\r\n\tat com.google.javascript.jscomp.TypeCheck.check(TypeCheck.java:400)\r\n\tat com.google.javascript.jscomp.TypeCheck.process(TypeCheck.java:371)\r\n\tat com.google.javascript.jscomp.DefaultPassConfig$29$1.process(DefaultPassConfig.java:1209)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$PassFactoryDelegate.processInternal(PhaseOptimizer.java:303)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:279)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:191)\r\n\tat com.google.javascript.jscomp.Compiler.check(Compiler.java:814)\r\n\tat com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:729)\r\n\tat com.google.javascript.jscomp.Compiler.access$000(Compiler.java:85)\r\n\tat com.google.javascript.jscomp.Compiler$2.call(Compiler.java:637)\r\n\tat com.google.javascript.jscomp.Compiler$2.call(Compiler.java:634)\r\n\tat com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:694)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:634)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:590)\r\n\tat com.google.javascript.jscomp.webservice.backend.CompilerInvokerImpl.compile(CompilerInvokerImpl.java:47)\r\n\tat com.google.javascript.jscomp.webservice.backend.ServerController.executeRequest(ServerController.java:177)\r\n\tat com.google.javascript.jscomp.webservice.backend.CompilationRequestHandler.serviceParsedRequest(CompilationRequestHandler.java:180)\r\n\tat com.google.javascript.jscomp.webservice.backend.CompilationRequestHandler.service(CompilationRequestHandler.java:162)\r\n\tat com.google.javascript.jscomp.webservice.frontend.CompilationServlet.doPost(CompilationServlet.java:83)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:637)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:717)\r\n\tat org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)\r\n\tat org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)\r\n\tat com.google.apphosting.utils.servlet.ParseBlobUploadFilter.doFilter(ParseBlobUploadFilter.java:102)\r\n\tat org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)\r\n\tat com.google.apphosting.runtime.jetty.SaveSessionFilter.doFilter(SaveSessionFilter.java:35)\r\n\tat org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)\r\n\tat com.google.apphosting.utils.servlet.TransactionCleanupFilter.doFilter(TransactionCleanupFilter.java:43)\r\n\tat org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)\r\n\tat org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)\r\n\tat org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)\r\n\tat org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)\r\n\tat org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)\r\n\tat org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)\r\n\tat com.google.apphosting.runtime.jetty.AppVersionHandlerMap.handle(AppVersionHandlerMap.java:266)\r\n\tat org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)\r\n\tat org.mortbay.jetty.Server.handle(Server.java:326)\r\n\tat org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)\r\n\tat org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:923)\r\n\tat com.google.apphosting.runtime.jetty.RpcRequestParser.parseAvailable(RpcRequestParser.java:76)\r\n\tat org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)\r\n\tat com.google.apphosting.runtime.jetty.JettyServletEngineAdapter.serviceRequest(JettyServletEngineAdapter.java:146)\r\n\tat com.google.apphosting.runtime.JavaRuntime$RequestRunnable.run(JavaRuntime.java:447)\r\n\tat com.google.tracing.TraceContext$TraceContextRunnable.runInContext(TraceContext.java:454)\r\n\tat com.google.tracing.TraceContext$TraceContextRunnable$1.run(TraceContext.java:461)\r\n\tat com.google.tracing.TraceContext.runInContext(TraceContext.java:703)\r\n\tat com.google.tracing.TraceContext$AbstractTraceContextCallback.runInInheritedContextNoUnref(TraceContext.java:338)\r\n\tat com.google.tracing.TraceContext$AbstractTraceContextCallback.runInInheritedContext(TraceContext.java:330)\r\n\tat com.google.tracing.TraceContext$TraceContextRunnable.run(TraceContext.java:458)\r\n\tat com.google.apphosting.runtime.ThreadGroupPool$PoolEntry.run(ThreadGroupPool.java:251)\r\n\tat java.lang.Thread.run(Thread.java:679)\r"
+            ]
+        },
+        "27": {
+            "bug_report": "727",
+            "origin": "defects4j",
+            "bugfix_commit": "7a8983042131c5a9c2b5421ae42075cbb8ef1aeb",
+            "buggy_commit": "1d9ecb5328bbde5ee84dbfe2d74bbd318b89b6d7",
+            "failing_tests": [
+                "com.google.javascript.rhino.IRTest::testIssue727_1",
+                "com.google.javascript.rhino.IRTest::testIssue727_2",
+                "com.google.javascript.rhino.IRTest::testIssue727_3"
+            ],
+            "log": [
+                "ERROR\r\n\r\nException"
+            ]
+        },
+        "34": {
+            "bug_report": "691",
+            "origin": "defects4j",
+            "bugfix_commit": "87b154f89cba3c67045cd7a783b79231d0630a4c",
+            "buggy_commit": "bc018d6c44e70b5c02016431a2f3604b3e6fc45c",
+            "failing_tests": [
+                "com.google.javascript.jscomp.CodePrinterTest::testManyAdds"
+            ],
+            "log": [
+                "java.lang.RuntimeException: java.lang.RuntimeException: java.lang.StackOverflowError\r\n        at com.google.javascript.jscomp.Compiler.runCallable(Compiler.java:643)\r\n        at com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:588)\r\n        at com.google.javascript.jscomp.Compiler.toSource(Compiler.java:1492)\r\n        at com.google.javascript.jscomp.AbstractCommandLineRunner.processResults(AbstractCommandLineRunner.java:788)\r\n        at com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:726)\r\n        at com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:334)\r\n        at com.google.javascript.jscomp.CommandLineRunner.main(CommandLineRunner.java:871)\r",
+                "Caused by: java.lang.RuntimeException: java.lang.StackOverflowError\r\n        at com.google.javascript.jscomp.Compiler.runCallable(Compiler.java:643)\r\n        at com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:588)\r\n        at com.google.javascript.jscomp.Compiler.toSource(Compiler.java:1608)\r\n        at com.google.javascript.jscomp.Compiler$5.call(Compiler.java:1503)\r\n        at com.google.javascript.jscomp.Compiler$5.call(Compiler.java:1492)\r\n        at com.google.javascript.jscomp.Compiler$2.run(Compiler.java:615)\r\n        at java.lang.Thread.run(Unknown Source)\r"
+            ]
+        },
+        "37": {
+            "bug_report": "663",
+            "origin": "defects4j",
+            "bugfix_commit": "7e93d521cb67ce33018315234fafe8a5aa30ee1e",
+            "buggy_commit": "375879beef8fcffaae51749a7ac537d2eb140802",
+            "failing_tests": [
+                "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction"
+            ],
+            "log": [
+                "Caused by: java.lang.RuntimeException: INTERNAL COMPILER ERROR.\r\nat com.google.common.base.Preconditions.checkState(Preconditions.java:135)\r\nat com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:544)\r\nat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:493)\r\nat com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:501)\r\nat com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:281)\r\nat com.google.javascript.jscomp.NodeTraversal.traverse(NodeTraversal.java:459)\r\nat com.google.javascript.jscomp.PrepareAst.process(PrepareAst.java:70)\r\nat com.google.javascript.jscomp.Compiler.prepareAst(Compiler.java:1836)\r\nat com.google.javascript.jscomp.JsAst.parse(JsAst.java:100)\r\nat com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:53)\r\nat com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:120)\r\nat com.google.javascript.jscomp.Compiler.parseInputs(Compiler.java:1303)\r\nat com.google.javascript.jscomp.Compiler.parse(Compiler.java:697)\r"
+            ]
+        },
+        "55": {
+            "bug_report": "538",
+            "origin": "defects4j",
+            "bugfix_commit": "f2c0cb1f67ecb3315c0cb11326c9cb04db07ee8a",
+            "buggy_commit": "1d13eac7441b980804c7ddfbe48a10a2ec3431d0",
+            "failing_tests": [
+                "com.google.javascript.jscomp.FunctionRewriterTest::testIssue538"
+            ],
+            "log": [
+                "java.lang.RuntimeException: java.lang.IllegalStateException: Expected function but was call Reference node CALL 128 [free_call: 1] [source_file: Settings.js]\r\n\tat com.google.javascript.jscomp.Compiler.runCallable(Compiler.java:629)\r\n\tat com.google.javascript.jscomp.Compiler.runInCompilerThread(Compiler.java:574)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:556)\r\n\tat com.google.javascript.jscomp.Compiler.compile(Compiler.java:515)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:662)\r\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:295)\r\n\tat com.google.javascript.jscomp.CommandLineRunner.main(CommandLineRunner.java:758)\r",
+                "Caused by: java.lang.IllegalStateException: Expected function but was call Reference node CALL 128 [free_call: 1] [source_file: Settings.js]\r\n\tat com.google.javascript.jscomp.AstValidator$1.handleViolation(AstValidator.java:51)\r\n\tat com.google.javascript.jscomp.AstValidator.violation(AstValidator.java:763)\r\n\tat com.google.javascript.jscomp.AstValidator.validateNodeType(AstValidator.java:768)\r\n\tat com.google.javascript.jscomp.AstValidator.validateFunctionExpression(AstValidator.java:359)\r\n\tat com.google.javascript.jscomp.AstValidator.validateObjectLitGetKey(AstValidator.java:696)\r\n\tat com.google.javascript.jscomp.AstValidator.validateObjectLitKey(AstValidator.java:677)\r\n\tat com.google.javascript.jscomp.AstValidator.validateObjectLit(AstValidator.java:670)\r\n\tat com.google.javascript.jscomp.AstValidator.validateExpression(AstValidator.java:252)\r\n\tat com.google.javascript.jscomp.AstValidator.validateAssignmentExpression(AstValidator.java:603)\r\n\tat com.google.javascript.jscomp.AstValidator.validateExpression(AstValidator.java:219)\r\n\tat com.google.javascript.jscomp.AstValidator.validateExprStmt(AstValidator.java:476)\r\n\tat com.google.javascript.jscomp.AstValidator.validateStatement(AstValidator.java:126)\r\n\tat com.google.javascript.jscomp.AstValidator.validateScript(AstValidator.java:89)\r\n\tat com.google.javascript.jscomp.AstValidator.validateCodeRoot(AstValidator.java:79)\r\n\tat com.google.javascript.jscomp.AstValidator.process(AstValidator.java:63)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$PassFactoryDelegate.processInternal(PhaseOptimizer.java:273)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer$NamedPass.process(PhaseOptimizer.java:250)\r\n\tat com.google.javascript.jscomp.PhaseOptimizer.process(PhaseOptimizer.java:168)\r\n\tat com.google.javascript.jscomp.Compiler.optimize(Compiler.java:1634)\r\n\tat com.google.javascript.jscomp.Compiler.compileInternal(Compiler.java:664)\r\n\tat com.google.javascript.jscomp.Compiler.access$000(Compiler.java:70)\r\n\tat com.google.javascript.jscomp.Compiler$1.call(Compiler.java:559)\r\n\tat com.google.javascript.jscomp.Compiler$1.call(Compiler.java:556)\r\n\tat com.google.javascript.jscomp.Compiler$2.run(Compiler.java:601)\r\n\tat java.lang.Thread.run(Thread.java:680)"
+            ]
+        }
+    },
+    "Codec": {
+        "8": {
+            "bug_report": "CODEC-105",
+            "origin": "defects4j",
+            "bugfix_commit": "2c13032a16e37b7bc9e0272d25fc185b5c82b42e",
+            "buggy_commit": "931e25921dc0ec705a0055655aa2b2237a0888d7",
+            "failing_tests": [
+                "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec105"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException: 2\n        at org.apache.commons.codec.binary.Base64.encode(Base64.java:502)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:157)\n        at org.apache.commons.codec.binary.Base64InputStream.read(Base64InputStream.java:109)"
+            ]
+        }
+    },
+    "Collections": {
+        "28": {
+            "bug_report": "COLLECTIONS-586",
+            "origin": "defects4j",
+            "bugfix_commit": "a270ff62852e62b5ac0f943a7e57292a72b77271",
+            "buggy_commit": "796114ea4a9cc57ab17170536e1caa5933520c47",
+            "failing_tests": [
+                "org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMapClear"
+            ],
+            "log": [
+                "java.lang.NullPointerException\n\tat org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator.remove(AbstractPatriciaTrie.java:2370)\n\tat java.util.AbstractCollection.clear(AbstractCollection.java:432)\n\tat java.util.AbstractMap.clear(AbstractMap.java:288)\n\tat PatriciaTrieTest.testPrefixMapClear(PatriciaTrieTest.java:39)"
+            ]
+        }
+    },
+    "Compress": {
+        "1": {
+            "bug_report": "COMPRESS-28",
+            "origin": "defects4j",
+            "bugfix_commit": "004124ac5dbf5edbf925078652526267468821e7",
+            "buggy_commit": "728b4e814ec88cab556533fa114be0efdde963be",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive"
+            ],
+            "log": [
+                "java.io.EOFException\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.readFully(CpioArchiveInputStream.java:293)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.getNextCPIOEntry(CpioArchiveInputStream.java:168)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamTest.testCpioUnpack(CpioArchiveInputStreamTest.java:26)"
+            ]
+        },
+        "12": {
+            "bug_report": "COMPRESS-178",
+            "origin": "defects4j",
+            "bugfix_commit": "bc84d2083e4b1da77547bb4e810a06553e8f0bed",
+            "buggy_commit": "b23b5c8533846374a22b417f7d66c7cb8ceb8962",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178"
+            ],
+            "log": [
+                "java.lang.IllegalArgumentException: Invalid byte -1 at offset 7 in '<some bytes>' len=8\n\tat org.apache.commons.compress.archivers.tar.TarUtils.parseOctal(TarUtils.java:86)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(TarArchiveEntry.java:790)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveEntry.<init>(TarArchiveEntry.java:308)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry(TarArchiveInputStream.java:198)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextEntry(TarArchiveInputStream.java:380)\n\tat de.schlichtherle.truezip.fs.archive.tar.TarInputShop.<init>(TarInputShop.java:91)\n\tat de.schlichtherle.truezip.fs.archive.tar.TarDriver.newTarInputShop(TarDriver.java:159)\n\tat de.schlichtherle.truezip.fs.archive.tar.TarGZipDriver.newTarInputShop(TarGZipDriver.java:82)\n\tat de.schlichtherle.truezip.fs.archive.tar.TarDriver.newInputShop(TarDriver.java:151)\n\tat de.schlichtherle.truezip.fs.archive.tar.TarDriver.newInputShop(TarDriver.java:47)\n\tat de.schlichtherle.truezip.fs.archive.FsDefaultArchiveController.mount(FsDefaultArchiveController.java:170)\n\tat de.schlichtherle.truezip.fs.archive.FsFileSystemArchiveController$ResetFileSystem.autoMount(FsFileSystemArchiveController.java:98)\n\tat de.schlichtherle.truezip.fs.archive.FsFileSystemArchiveController.autoMount(FsFileSystemArchiveController.java:47)\n\tat de.schlichtherle.truezip.fs.archive.FsArchiveController.autoMount(FsArchiveController.java:129)\n\tat de.schlichtherle.truezip.fs.archive.FsArchiveController.getEntry(FsArchiveController.java:160)\n\tat de.schlichtherle.truezip.fs.archive.FsContextController.getEntry(FsContextController.java:117)\n\tat de.schlichtherle.truezip.fs.FsDecoratingController.getEntry(FsDecoratingController.java:76)\n\tat de.schlichtherle.truezip.fs.FsDecoratingController.getEntry(FsDecoratingController.java:76)\n\tat de.schlichtherle.truezip.fs.FsConcurrentController.getEntry(FsConcurrentController.java:164)\n\tat de.schlichtherle.truezip.fs.FsSyncController.getEntry(FsSyncController.java:108)\n\tat de.schlichtherle.truezip.fs.FsFederatingController.getEntry(FsFederatingController.java:156)\n\tat de.schlichtherle.truezip.nio.file.TFileSystem.newDirectoryStream(TFileSystem.java:348)\n\tat de.schlichtherle.truezip.nio.file.TPath.newDirectoryStream(TPath.java:963)\n\tat de.schlichtherle.truezip.nio.file.TFileSystemProvider.newDirectoryStream(TFileSystemProvider.java:344)\n\tat java.nio.file.Files.newDirectoryStream(Files.java:400)\n\tat com.googlecode.boostmavenproject.GetSourcesMojo.convertToJar(GetSourcesMojo.java:248)\n\tat com.googlecode.boostmavenproject.GetSourcesMojo.download(GetSourcesMojo.java:221)\n\tat com.googlecode.boostmavenproject.GetSourcesMojo.execute(GetSourcesMojo.java:111)\n\tat org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)"
+            ]
+        },
+        "14": {
+            "bug_report": "COMPRESS-181",
+            "origin": "defects4j",
+            "bugfix_commit": "40f2e6380094ebfdc73e4adaf4059b80e1327aad",
+            "buggy_commit": "d39ba76c50f65698213787901ec8dffbda77e43a",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::workaroundForBrokenTimeHeader"
+            ],
+            "log": [
+                "java.io.IOException: Error detected parsing the header\n\tat org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry(TarArchiveInputStream.java:201)\n\tat Extractor.extract(Extractor.java:13)\n\tat Extractor.main(Extractor.java:28)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:597)\n\tat org.apache.tools.ant.taskdefs.ExecuteJava.run(ExecuteJava.java:217)\n\tat org.apache.tools.ant.taskdefs.ExecuteJava.execute(ExecuteJava.java:152)\n\tat org.apache.tools.ant.taskdefs.Java.run(Java.java:771)\n\tat org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:221)\n\tat org.apache.tools.ant.taskdefs.Java.executeJava(Java.java:135)\n\tat org.apache.tools.ant.taskdefs.Java.execute(Java.java:108)\n\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:597)\n\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)\n\tat org.apache.tools.ant.Task.perform(Task.java:348)\n\tat org.apache.tools.ant.Target.execute(Target.java:390)\n\tat org.apache.tools.ant.Target.performTasks(Target.java:411)\n\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)\n\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)\n\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)\n\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)\n\tat org.apache.tools.ant.Main.runBuild(Main.java:809)\n\tat org.apache.tools.ant.Main.startAnt(Main.java:217)\n\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)\n\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)",
+                "Caused by: java.lang.IllegalArgumentException: Invalid byte 0 at offset 0 in '{NUL}1722000726 ' len=12\n\tat org.apache.commons.compress.archivers.tar.TarUtils.parseOctal(TarUtils.java:99)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(TarArchiveEntry.java:819)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveEntry.<init>(TarArchiveEntry.java:314)\n\tat org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry(TarArchiveInputStream.java:199)"
+            ]
+        },
+        "17": {
+            "bug_report": "COMPRESS-197",
+            "origin": "defects4j",
+            "bugfix_commit": "ab456436d20f386641e605c17de24cc8cd3c1770",
+            "buggy_commit": "db6dda34281d95d495ff4c935b65cf84310bf6be",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::testCompress197"
+            ],
+            "log": [
+                "java.lang.IllegalArgumentException: Invalid byte 0 at offset 5 in '01750{NUL}{NUL}{NUL}' len=8\n    at org.apache.commons.compress.archivers.tar.TarUtils.parseOctal(TarUtils.java:99)\n    at org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(TarArchiveEntry.java:788)\n    at org.apache.commons.compress.archivers.tar.TarArchiveEntry.<init>(TarArchiveEntry.java:308)"
+            ]
+        },
+        "18": {
+            "bug_report": "COMPRESS-203",
+            "origin": "defects4j",
+            "bugfix_commit": "09b8f6d78e18b927491fc299973146fa74fd977f",
+            "buggy_commit": "716666a267169689e3b4559458c1f0d53a96ae0a",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode"
+            ],
+            "log": [
+                "java.io.IOException: request to write '114' bytes exceeds size in header of '0' bytes for entry './PaxHeaders.X/layers/openstreetmap__osm.disy.net/.tiles/1.0.0/openstreetmap__osm.disy.net/default/'\n\n            at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.write(TarArchiveOutputStream.java:385)\n\n            at java.io.OutputStream.write(Unknown Source)\n\n            at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders(TarArchiveOutputStream.java:485)\n\n            at org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.putArchiveEntry(TarArchiveOutputStream.java:312)\n\n            at net.disy.lib.io.tar.TarUtilities.addFile(TarUtilities.java:116)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:158)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.addDirectory(TarUtilities.java:162)\n\n            at net.disy.lib.io.tar.TarUtilities.tar(TarUtilities.java:77)\n\n            at net.disy.lib.io.tar.TarUtilities.tar(TarUtilities.java:42)\n\n            at net.disy.gisterm.tilecacheset.export.TileCacheSetExporter.tarTreeStructure(TileCacheSetExporter.java:262)\n\n            at net.disy.gisterm.tilecacheset.export.TileCacheSetExporter.export(TileCacheSetExporter.java:111)\n\n            at net.disy.gisterm.tilecacheset.desktop.controller.ExportController$1.run(ExportController.java:81)"
+            ]
+        },
+        "23": {
+            "bug_report": "COMPRESS-256",
+            "origin": "defects4j",
+            "bugfix_commit": "cbb5a1ad9b0b80f717ee71dc0fc765afdc1601c0",
+            "buggy_commit": "71e4eeadcfc5eb390eca1142fc1f6ee5b1b4d5c1",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.sevenz.SevenZFileTest::testCompressedHeaderWithNonDefaultDictionarySize"
+            ],
+            "log": [
+                "org.tukaani.xz.UnsupportedOptionsException: LZMA dictionary is too big for this implementation\n\tat org.tukaani.xz.LZMAInputStream.initialize(Unknown Source)\n\tat org.tukaani.xz.LZMAInputStream.<init>(Unknown Source)\n\tat org.apache.commons.compress.archivers.sevenz.Coders$LZMADecoder.decode(Coders.java:117)\n\tat org.apache.commons.compress.archivers.sevenz.Coders.addDecoder(Coders.java:48)\n\tat org.apache.commons.compress.archivers.sevenz.SevenZFile.readEncodedHeader(SevenZFile.java:278)\n\tat org.apache.commons.compress.archivers.sevenz.SevenZFile.readHeaders(SevenZFile.java:190)\n\tat org.apache.commons.compress.archivers.sevenz.SevenZFile.<init>(SevenZFile.java:94)\n\tat org.apache.commons.compress.archivers.sevenz.SevenZFile.<init>(SevenZFile.java:116)\n\tat compress.SevenZipError.main(SevenZipError.java:28)"
+            ]
+        },
+        "32": {
+            "bug_report": "COMPRESS-314",
+            "origin": "defects4j",
+            "bugfix_commit": "3c4a09bf28e7cd600b919b8c799fbbfd19a94c0b",
+            "buggy_commit": "24a3100e9897837b513a0d9f2ae26fd02ec91246",
+            "failing_tests": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldReadBigGid"
+            ],
+            "log": [
+                "[1] java.lang.NumberFormatException: For input string: \"4294967294\"\n        at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n        at java.lang.Integer.parseInt(Integer.java:495)\n        at java.lang.Integer.parseInt(Integer.java:527)\n        at org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry(TarArchiveInputStream.java:488)\n        at org.apache.commons.compress.archivers.tar.TarArchiveInputStream.paxHeaders(TarArchiveInputStream.java:415)\n        at org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry(TarArchiveInputStream.java:295)"
+            ]
+        }
+    },
+    "Csv": {
+        "12": {
+            "bug_report": "CSV-128",
+            "origin": "defects4j",
+            "bugfix_commit": "c81ad0328eefb438cc875b9c9f081be93f9fdcc2",
+            "buggy_commit": "bc504117fceb2c254eea5158a62de54c80a5d81d",
+            "failing_tests": [
+                "org.apache.commons.csv.CSVParserTest::testExcelHeaderCountLessThanData"
+            ],
+            "log": [
+                "java.lang.IllegalArgumentException: The header contains a duplicate name: \"\" in [A, B, C, , ]\n\tat org.apache.commons.csv.CSVParser.initializeHeader(CSVParser.java:368)\n\tat org.apache.commons.csv.CSVParser.<init>(CSVParser.java:248)\n\tat org.apache.commons.csv.CSVParser.parse(CSVParser.java:206)"
+            ]
+        },
+        "4": {
+            "bug_report": "CSV-100",
+            "origin": "defects4j/t-evos",
+            "bugfix_commit": "22601f647f2ce9a05fa4ce20ea356492c670940c",
+            "buggy_commit": "2b5f84ede12cfadd7946ffb07a56709b8322a02f",
+            "failing_tests": [
+                "org.apache.commons.csv.CSVParserTest::testNoHeaderMap"
+            ],
+            "log": [
+                "Caused by: java.lang.NullPointerException\nat java.util.HashMap.<init>(HashMap.java:318)\nat java.util.LinkedHashMap.<init>(LinkedHashMap.java:212)\nat org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)"
+            ]
+        }
+    },
+    "Gson": {
+        "12": {
+            "bug_report": "1013",
+            "origin": "defects4j",
+            "bugfix_commit": "9e6f2bab20257b6823a5b753739f047d79e9dcbd",
+            "buggy_commit": "7719e73a108c450666613c279bedaed724cd9cc9",
+            "failing_tests": [
+                "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_filledJsonObject",
+                "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_emptyJsonObject"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException: -1\n\tat com.google.gson.internal.bind.JsonTreeReader.skipValue(JsonTreeReader.java:262)"
+            ]
+        },
+        "8": {
+            "bug_report": "817",
+            "origin": "defects4j",
+            "bugfix_commit": "0f66f4fac441f7d7d7bc4afc907454f3fe4c0faa",
+            "buggy_commit": "6f6af8050799bec5321d2c06cd3230daadbb6535",
+            "failing_tests": [
+                "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation",
+                "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testAbstractClassInstantiation"
+            ],
+            "log": [
+                "ERROR IN",
+                "ERROR IN",
+                "ERROR IN",
+                "ERROR IN",
+                "04-12 21:38:04.239 7803-7803/ionspin.com.unsafetest E/MainActivity: java.lang.reflect.InvocationTargetException\n                                                                        at java.lang.reflect.Method.invokeNative(Native Method)\n                                                                        at java.lang.reflect.Method.invoke(Method.java:515)\n                                                                        at com.google.gson.internal.UnsafeAllocator$1.newInstance(UnsafeAllocator.java:48)"
+            ]
+        }
+    },
+    "JacksonCore": {
+        "4": {
+            "bug_report": "152",
+            "origin": "defects4j",
+            "bugfix_commit": "3baa7d6742f7460bfb0af8edf48bf1575658109a",
+            "buggy_commit": "7317dc95b0c9d09b94f37c8ae3a48de8b37729cc",
+            "failing_tests": [
+                "com.fasterxml.jackson.core.util.TestTextBuffer::testExpand"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException\n    at java.lang.System.arraycopy(Native Method)\n    at com.fasterxml.jackson.core.util.TextBuffer.expandCurrentSegment(TextBuffer.java:604)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.addName(UTF8StreamJsonParser.java:2034)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.findName(UTF8StreamJsonParser.java:1928)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.parseLongFieldName(UTF8StreamJsonParser.java:1534)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.parseMediumFieldName(UTF8StreamJsonParser.java:1502)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseFieldName(UTF8StreamJsonParser.java:1437)\n    at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:668)"
+            ]
+        },
+        "7": {
+            "bug_report": "177",
+            "origin": "defects4j",
+            "bugfix_commit": "5cddffa133e7de41fa9efb5962cf3d0cff9b3e89",
+            "buggy_commit": "b0ceb4eeb69f20f0e4242736ae3e19ed2b9c5da3",
+            "failing_tests": [
+                "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
+                "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars"
+            ],
+            "log": [
+                "Caused by: com.fasterxml.jackson.core.JsonGenerationException: Can not write a field name, expecting a value\n    at com.fasterxml.jackson.core.JsonGenerator._reportError(JsonGenerator.java:1644)\n    at com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeFieldName(WriterBasedJsonGenerator.java:120)\n    at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:654)\n    at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)\n    at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:156)\n    at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)\n    at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)\n    at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)\n    at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:656)\n    at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)\n    at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:156)\n    at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:656)\n    at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)\n    at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeWithType(BeanSerializerBase.java:564)\n    at com.fasterxml.jackson.databind.ser.impl.TypeWrappedSerializer.serialize(TypeWrappedSerializer.java:32)\n    at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)\n    at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:3525)\n    at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:2915)"
+            ]
+        }
+    },
+    "JacksonDatabind": {
+        "104": {
+            "bug_report": "2167",
+            "origin": "defects4j",
+            "bugfix_commit": "83c7c4347055c3a70a3115fa106aa69c9cb56456",
+            "buggy_commit": "54c744c2c2007eb93dd756cc8581573c9bec97ac",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
+                "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_BCE"
+            ],
+            "log": [
+                "java.text.ParseException: Cannot parse date \"\u75dd055-12-02T16:47:04.192+0000\": not compatible with any of standard forms (\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\", \"yyyy-MM-dd'T'HH:mm:ss.SSS\", \"EEE, dd MMM yyyy HH:mm:ss zzz\", \"yyyy-MM-dd\")\n\tat com.fasterxml.jackson.databind.util.StdDateFormat.parse(StdDateFormat.java:372)"
+            ]
+        },
+        "14": {
+            "bug_report": "744",
+            "origin": "defects4j",
+            "bugfix_commit": "817a45a07040297a5db45dd04e79b010146b7e0d",
+            "buggy_commit": "0ec81c07bc4be13e1382f7191981ed3f0bf9ef39",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.convert.TestUpdateValue::testIssue744"
+            ],
+            "log": [
+                "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"i\" (class myorg.TestDeserTest$DataB), not marked as ignorable (2 known properties: \"da\", \"k\"])\n at [Source: N/A; line: -1, column: -1] (through reference chain: myorg.DataB[\"da\"]->myorg.DataB[\"i\"])\n    at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:51)\n    at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:817)\n    at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:954)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1324)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1302)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:249)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:136)\n    at com.fasterxml.jackson.databind.ObjectReader._bindAsTree(ObjectReader.java:1478)\n    at com.fasterxml.jackson.databind.ObjectReader.readTree(ObjectReader.java:1020)\n    at myorg.TestDeserTest$DataADeserializer.deserialize(TestDeserTest.java:39)\n    at myorg.TestDeserTest$DataADeserializer.deserialize(TestDeserTest.java:1)\n    at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:523)\n    at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:101)\n    at com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.findDeserializeAndSet(BeanPropertyMap.java:285)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:220)\n    at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1443)\n    at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1154)\n    at myorg.TestDeserTest.test(TestDeserTest.java:81)\n    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n    at java.lang.reflect.Method.invoke(Method.java:606)\n    at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n    at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n    at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n    at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n    at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n    at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n    at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n    at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n    at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n    at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n    at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n    at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n    at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n    at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)\n    at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\n    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\n    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\n    at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)"
+            ]
+        },
+        "15": {
+            "bug_report": "731",
+            "origin": "defects4j",
+            "bugfix_commit": "119ddc9701c94ac184362166742ceaa7437eec8f",
+            "buggy_commit": "fa1c2ff7eefd68061ae0cc3f630e87d16d1b2bb5",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.convert.TestConvertingSerializer::testIssue731"
+            ],
+            "log": [
+                "com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class java.lang.String and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) ) (through reference chain: SomeIntListHolder[\"listOne\"])\n    at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:59)\n    at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:26)\n    at com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer.serialize(StdDelegatingSerializer.java:157)\n    at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:575)\n    at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:663)\n    at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:156)\n    at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:129)\n    at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:3385)\n    at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:2779)"
+            ]
+        },
+        "17": {
+            "bug_report": "793",
+            "origin": "defects4j",
+            "bugfix_commit": "a143c05db7a911f98f8bf59beb13cfcb7689395d",
+            "buggy_commit": "7db1f44069bbcac9d884d829f8052a89b5ec271b",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.node.TestJsonNode::testArrayWithDefaultTyping"
+            ],
+            "log": [
+                "    at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:148)\n    at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:927)\n    at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:127)\n    at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:93)\n    at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:68)\n    at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.deserializeWithType(JsonNodeDeserializer.java:144)\n    at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserializeWithType(JsonNodeDeserializer.java:14)\n    at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:42)\n    at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3562)\n    at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2136)\n    at test.App.main(App.java:23)"
+            ]
+        },
+        "25": {
+            "bug_report": "890",
+            "origin": "defects4j",
+            "bugfix_commit": "9917c94d94a285ece80e6c9f3d2b9fba06d98fd7",
+            "buggy_commit": "b4ef0a65150a7311ebb9119b1ac6898e33dc0baf",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.deser.TestArrayDeserialization::testByteArrayTypeOverride890"
+            ],
+            "log": [
+                "java.lang.IllegalArgumentException: Can not deserialize Class [B (of type array) as a Bean\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.isPotentialBeanType(BeanDeserializerFactory.java:808)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:138)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:403)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:352)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n        at com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer(DeserializationContext.java:428)\n        at com.fasterxml.jackson.databind.deser.std.StdDeserializer.findDeserializer(StdDeserializer.java:947)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.resolve(BeanDeserializerBase.java:439)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:296)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n        at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:461)\n        at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:3804)\n        at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:3418)\n        at com.fasterxml.jackson.databind.ObjectMapper.convertValue(ObjectMapper.java:3351)"
+            ]
+        },
+        "28": {
+            "bug_report": "941",
+            "origin": "defects4j",
+            "bugfix_commit": "b049739cc66a0f79c19dd1cea47e922d95645023",
+            "buggy_commit": "e258ee60edc692c80907fd6e4bb16e641692b721",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.node.TestObjectNode::testIssue941"
+            ],
+            "log": [
+                "Exception in thread \"main\" com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of com.fasterxml.jackson.databind.node.ObjectNode out of END_OBJECT token\n at [Source: {}; line: 1, column: 2]\n        at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:148)\n        at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:854)\n        at com.fasterxml.jackson.databind.DeserializationContext.mappingException(DeserializationContext.java:850)\n        at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer$ObjectDeserializer.deserialize(JsonNodeDeserializer.java:104)\n        at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer$ObjectDeserializer.deserialize(JsonNodeDeserializer.java:83)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1095)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:294)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:131)\n        at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3731)\n        at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2724)\n        at Main.main(Main.java:35)"
+            ]
+        },
+        "32": {
+            "bug_report": "989",
+            "origin": "defects4j",
+            "bugfix_commit": "d5a25f4300a93f4c411a7b8364d34122bc0a1b62",
+            "buggy_commit": "fe25f7e14d92f5d4746549e7df22e9af35fdf54b",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.deser.TestUntypedDeserialization::testNestedUntyped989"
+            ],
+            "log": [
+                "Exception in thread \"main\" com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.Object out of END_OBJECT token\n at [Source: {}; line: 1, column: 2]",
+                "com.fasterxml.jackson.core.JsonParseException: Invalid type marker byte 0xfa for expected field name (or END_OBJECT marker)\n at [Source: file:/var/lib/tomcat8/webapps/ROOT/WEB-INF/classes/layoutData/layouts.smile; line: -1, column: 3700060]\n        at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)\n        at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)\n        at com.fasterxml.jackson.dataformat.smile.SmileParser._handleFieldName(SmileParser.java:1571)\n        at com.fasterxml.jackson.dataformat.smile.SmileParser.nextToken(SmileParser.java:587)\n        at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringMap(MapDeserializer.java:484)\n        at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:341)\n        at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:26)\n        at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3736)\n        at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2698)"
+            ]
+        },
+        "58": {
+            "bug_report": "877",
+            "origin": "defects4j",
+            "bugfix_commit": "b2ccdee0fdc52cd46577a90cb50dc011d6d681bf",
+            "buggy_commit": "d71de544624bec27e6f4e76548527ae727eb193d",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.misc.AccessFixTest::testCauseOfThrowableIgnoral"
+            ],
+            "log": [
+                "Caused by: java.lang.IllegalArgumentException: Can not access private java.lang.Throwable java.lang.Throwable.cause (from class java.lang.Throwable; failed to set access: java.lang.IllegalAccessException: Reflection is not allowed on private java.lang.Throwable java.lang.Throwable.cause\n    at com.fasterxml.jackson.databind.util.ClassUtil.checkAndFixAccess(ClassUtil.java:505)\n    at com.fasterxml.jackson.databind.introspect.AnnotatedMember.fixAccess(AnnotatedMember.java:123)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:704)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:501)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildThrowableDeserializer(BeanDeserializerFactory.java:356)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:114)"
+            ]
+        },
+        "61": {
+            "bug_report": "1395",
+            "origin": "defects4j",
+            "bugfix_commit": "82c346ae999e1e250fb52732419aff9a86b1f455",
+            "buggy_commit": "be114a9a286c4d194cd268ac8153173c52619a8d",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.jsontype.DefaultTypingWithPrimitivesTest::testDefaultTypingWithLong"
+            ],
+            "log": [
+                "Exception in thread \"main\" com.fasterxml.jackson.databind.JsonMappingException: Class java.lang.Long not subtype of [simple type, class long] (through reference chain: java.util.HashMap[\"longAsField\"]->com.pinkmatter.bean.serialization.Data[\"key\"])\n  at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)\n  at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)\n  at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1591)\n  at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:278)",
+                "Caused by: java.lang.IllegalArgumentException: Class java.lang.Long not subtype of [simple type, class long]\n  at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:359)\n  at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:72)\n  at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:42)",
+                "com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (VALUE_NUMBER_INT), expected START_ARRAY: need JSON Array to contain As.WRAPPER_ARRAY type information for class java.lang.Long\n at [Source: (String)\"{"
+            ]
+        },
+        "69": {
+            "bug_report": "1476",
+            "origin": "defects4j",
+            "bugfix_commit": "d44600d3750e5dba9fac68aee7248ed2a80a2225",
+            "buggy_commit": "002a9a3e9b98ebebf53e43aed0536d3c50851c84",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice"
+            ],
+            "log": [
+                "com.fasterxml.jackson.databind.JsonMappingException: Could not find creator property with name 'stringField' (in class org.apache.drill.TestJackson$SimplePojo)\n at [Source: { \"intField\": 1, \"stringField\": \"foo\" }; line: 1, column: 1]\n\tat com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)\n\tat com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:551)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:226)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:141)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:403)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n\tat com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:476)\n\tat com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:3899)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3794)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)\n\tat TestJackson.testJackson(TestJackson.java:45)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)"
+            ]
+        },
+        "70": {
+            "bug_report": "1493",
+            "origin": "defects4j",
+            "bugfix_commit": "d7155de6c37db3301b92b755bd0a02388f7dd07f",
+            "buggy_commit": "7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.struct.TestUnwrapped::testCaseInsensitiveUnwrap"
+            ],
+            "log": [
+                "java.util.NoSuchElementException: No entry 'businessAddress' found, can't remove\n\tat com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.remove(BeanPropertyMap.java:447)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.resolve(BeanDeserializerBase.java:534)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:293)"
+            ]
+        },
+        "72": {
+            "bug_report": "1501",
+            "origin": "defects4j",
+            "bugfix_commit": "63afa5297a0b8bcbf31b9c91e5d15537e0fdbdd5",
+            "buggy_commit": "d3874ebf3c0585270f1fe33eb7030667bacb63b7",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest::testIssue1501"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException: -1\n\n\tat com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter(PropertyValueBuffer.java:210)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:380)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1123)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:298)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:133)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3807)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2797)"
+            ]
+        },
+        "9": {
+            "bug_report": "682",
+            "origin": "defects4j",
+            "bugfix_commit": "00bb11edc3581f42e1f3c78a047538c8ea9eb0d9",
+            "buggy_commit": "ae101c63bc8c74466fc137b766faa8793c1e1f10",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.ser.TestMapSerialization::testClassKey"
+            ],
+            "log": [
+                "com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not construct     Map key of type java.lang.Class from String \"class java.util.ArrayList\": not a valid representation: Can not construct Map key of type java.lang.Class from String \"class java.util.ArrayList\": unable to parse key as Class\n at [Source: ..."
+            ]
+        },
+        "90": {
+            "bug_report": "1804",
+            "origin": "defects4j",
+            "bugfix_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
+            "buggy_commit": "467589680add00ab49108bbbe7db375d81a75837",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804"
+            ],
+            "log": [
+                "Exception in thread \"main\" com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `ArrayDelegateDeserializationTest$MyType` (no Creators, like default construct, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information\n at [Source: (String)\"[]\"; line: 1, column: 1]\n\tat com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)\n\tat com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1451)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1027)\n\tat com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:265)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)\n\tat ArrayDelegateDeserializationTest.main(ArrayDelegateDeserializationTest.java:35)"
+            ]
+        },
+        "91": {
+            "bug_report": "1809",
+            "origin": "defects4j",
+            "bugfix_commit": "dfaca81ae7a82b7c3018f265815e98a5138118f7",
+            "buggy_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
+            "failing_tests": ["",
+                "com.fasterxml.jackson.databind.deser.jdk.MapDeserializerCachingTest::testCachedSerialize"
+            ],
+            "log": [
+                "org.apache.logging.log4j.core.parser.ParseException: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.apache.logging.log4j.Level` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('INFO')\n at [Source: (byte[])\"{"
+            ]
+        },
+        "93": {
+            "bug_report": "1872",
+            "origin": "defects4j",
+            "bugfix_commit": "755e3bc0cbea30de0102f6a88519a0c34d571bbd",
+            "buggy_commit": "d9bbae43dd474f51b01899bbd83116ab4e2b33ed",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1872"
+            ],
+            "log": [
+                "java.lang.NullPointerException\n\tat com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType(SubTypeValidator.java:86)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerFactory._validateSubType(BeanDeserializerFactory.java:916)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:135)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:411)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n\tat com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer(DeserializationContext.java:444)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createContextual(CollectionDeserializer.java:183)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.createContextual(CollectionDeserializer.java:27)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handlePrimaryContextualization(DeserializationContext.java:651)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.resolve(BeanDeserializerBase.java:471)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:293)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n\tat com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n\tat com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:477)\n\tat com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4178)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3997)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)"
+            ]
+        },
+        "98": {
+            "bug_report": "1328",
+            "origin": "defects4j",
+            "bugfix_commit": "12f82c60782f05015336bb6305fd72c133a410b5",
+            "buggy_commit": "bf261d404c2f79fd3406237710d40ebb03c99d84",
+            "failing_tests": [
+                "com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test::testExample"
+            ],
+            "log": [
+                "Exception in thread \"main\" com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance of enum.Invite, problem: argument type mismatch\n at [Source: {",
+                "    at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:268)\n    at com.fasterxml.jackson.databind.DeserializationContext.instantiationException(DeserializationContext.java:1405)\n    at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.wrapAsJsonMappingException(StdValueInstantiator.java:468)\n    at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.rewrapCtorProblem(StdValueInstantiator.java:487)\n    at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromObjectWith(StdValueInstantiator.java:276)\n    at com.fasterxml.jackson.module.kotlin.KotlinValueInstantiator.createFromObjectWith(KotlinValueInstantiator.kt:30)\n    at com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.build(PropertyBasedCreator.java:135)\n    at com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete(ExternalTypeHandler.java:225)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeUsingPropertyBasedWithExternalTypeId(BeanDeserializer.java:937)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeWithExternalTypeId(BeanDeserializer.java:792)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:312)\n    at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:148)\n    at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)\n    at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2852)\n    at enum.Reproduction_KindEnumKt.main(Reproduction-KindEnum.kt:49)\n    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n    at java.lang.reflect.Method.invoke(Method.java:498)\n    at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)",
+                "Caused by: java.lang.IllegalArgumentException: argument type mismatch\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n    at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n    at com.fasterxml.jackson.databind.introspect.AnnotatedConstructor.call(AnnotatedConstructor.java:124)\n    at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromObjectWith(StdValueInstantiator.java:274)"
+            ]
+        }
+    },
+    "Jsoup": {
+        "34": {
+            "bug_report": "349",
+            "origin": "defects4j",
+            "bugfix_commit": "88730bf9f399aab6a150212faeea012598be9ec6",
+            "buggy_commit": "2518e92a052d922d81d11e28b8e5205639fed9a7",
+            "failing_tests": [
+                "org.jsoup.parser.CharacterReaderTest::nextIndexOfUnmatched",
+                "org.jsoup.parser.HtmlParserTest::handlesUnclosedCdataAtEOF"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException: 8666\n    at org.jsoup.parser.CharacterReader.nextIndexOf(CharacterReader.java:92)\n    at org.jsoup.parser.CharacterReader.consumeTo(CharacterReader.java:112)\n    at org.jsoup.parser.TokeniserState$67.read(TokeniserState.java:1789)\n    at org.jsoup.parser.Tokeniser.read(Tokeniser.java:42)\n    at org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:47)\n    at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:41)\n    at org.jsoup.parser.HtmlTreeBuilder.parse(HtmlTreeBuilder.java:37)\n    at org.jsoup.parser.Parser.parse(Parser.java:90)\n    at org.jsoup.Jsoup.parse(Jsoup.java:58)"
+            ]
+        },
+        "5": {
+            "bug_report": "32",
+            "origin": "defects4j",
+            "bugfix_commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
+            "buggy_commit": "5e52f1b266173593fab32fe9d8a4963066b2f2fe",
+            "failing_tests": [
+                "org.jsoup.parser.ParserTest::parsesQuiteRoughAttributes"
+            ],
+            "log": [
+                "java.lang.StringIndexOutOfBoundsException: String index out of range: 13\nat java.lang.String.charAt(String.java:686)\nat org.jsoup.parser.TokenQueue.consume(TokenQueue.java:130)\nat org.jsoup.parser.Parser.parseAttribute(Parser.java:207)\nat org.jsoup.parser.Parser.parseStartTag(Parser.java:142)\nat org.jsoup.parser.Parser.parse(Parser.java:91)\nat org.jsoup.parser.Parser.parseBodyFragment(Parser.java:64)\nat org.jsoup.Jsoup.parseBodyFragment(Jsoup.java:99)\nat org.jsoup.Jsoup.isValid(Jsoup.java:155)"
+            ]
+        },
+        "54": {
+            "bug_report": "721",
+            "origin": "defects4j",
+            "bugfix_commit": "f148f88de365c50eea28d3e14093e13c33104483",
+            "buggy_commit": "9e8ba01343f2b39185846821407e93ca5240bdb1",
+            "failing_tests": [
+                "org.jsoup.helper.W3CDomTest::handlesInvalidAttributeNames"
+            ],
+            "log": [
+                "Exception in thread \"main\" org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. \n    at org.apache.xerces.dom.CoreDocumentImpl.createAttribute(Unknown Source)\n    at org.apache.xerces.dom.ElementImpl.setAttribute(Unknown Source)\n    at org.jsoup.helper.W3CDom$W3CBuilder.copyAttributes(W3CDom.java:124)\n    at org.jsoup.helper.W3CDom$W3CBuilder.head(W3CDom.java:92)\n    at org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)\n    at org.jsoup.helper.W3CDom.convert(W3CDom.java:66)\n    at org.jsoup.helper.W3CDom.fromJsoup(W3CDom.java:46)"
+            ]
+        },
+        "6": {
+            "bug_report": "34",
+            "origin": "defects4j",
+            "bugfix_commit": "20ed24cefb5df53c48021459af98bef83c55f241",
+            "buggy_commit": "0b56f3e5e012e689af8dda0e96d6e0c9f31853b6",
+            "failing_tests": [
+                "org.jsoup.integration.ParseTest::testYahooArticle",
+                "org.jsoup.nodes.EntitiesTest::quoteReplacements"
+            ],
+            "log": [
+                "java.lang.StringIndexOutOfBoundsException: String index out of range: 1\nat java.lang.String.charAt(String.java:686)\nat java.util.regex.Matcher.appendReplacement(Matcher.java:711)\nat org.jsoup.nodes.Entities.unescape(Entities.java:69)\nat org.jsoup.nodes.TextNode.createFromEncoded(TextNode.java:95)\nat org.jsoup.parser.Parser.parseTextNode(Parser.java:222)\nat org.jsoup.parser.Parser.parse(Parser.java:94)\nat org.jsoup.parser.Parser.parse(Parser.java:54)\nat org.jsoup.Jsoup.parse(Jsoup.java:30)"
+            ]
+        },
+        "78": {
+            "bug_report": "980",
+            "origin": "defects4j/t-evos",
+            "bugfix_commit": "2c4e79b104c0ff32566ce247617d47c0b39cc2c7",
+            "buggy_commit": "71561e09e0f29ec5fd1bb918206f3d8e42876518",
+            "failing_tests": [
+                "org.jsoup.integration.ConnectTest::handlesEmptyStreamDuringParseRead"
+            ],
+            "log": [
+                "Caused by org.jsoup.c: java.io.IOException: Underlying input stream returned zero bytes\n       at org.jsoup.parser.CharacterReader.bufferUp(CharacterReader.java:60)\n       at org.jsoup.parser.CharacterReader.(CharacterReader.java)\n       at org.jsoup.parser.CharacterReader.(CharacterReader.java)\n       at org.jsoup.parser.TreeBuilder.defaultSettings(TreeBuilder.java:35)\n       at org.jsoup.parser.HtmlTreeBuilder.initialiseParse(HtmlTreeBuilder.java:66)\n       at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:44)\n       at org.jsoup.parser.Parser.parseInput(Parser.java:39)\n       at org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:151)\n       at org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)\n       at org.jsoup.helper.HttpConnection.get(HttpConnection.java:289)",
+                "org.jsoup.UncheckedIOException: java.io.IOException: Underlying input stream returned zero bytes\n  at org.jsoup.parser.CharacterReader.bufferUp(CharacterReader.java:60)\n  at org.jsoup.parser.CharacterReader.current(CharacterReader.java:85)\n  at org.jsoup.parser.TokeniserState.readData(TokeniserState.java:1669)\n  at org.jsoup.parser.TokeniserState.access$200(TokeniserState.java:8)\n  at org.jsoup.parser.TokeniserState$6.read(TokeniserState.java:76)\n  at org.jsoup.parser.Tokeniser.read(Tokeniser.java:45)\n  at org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:51)\n  at org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:45)\n  at org.jsoup.parser.Parser.parseInput(Parser.java:39)\n  at org.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:151)\n  at org.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)"
+            ]
+        },
+        "80": {
+            "bug_report": "1015",
+            "origin": "defects4j",
+            "bugfix_commit": "e9feec90dbd3e428dc1930c3b5efbd9271160d01",
+            "buggy_commit": "47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9",
+            "failing_tests": [
+                "org.jsoup.parser.XmlTreeBuilderTest::handlesDodgyXmlDecl"
+            ],
+            "log": [
+                "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\n\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:657)\n\tat java.util.ArrayList.get(ArrayList.java:433)\n\tat org.jsoup.nodes.Element.child(Element.java:254)\n\tat org.jsoup.parser.XmlTreeBuilder.insert(XmlTreeBuilder.java:91)\n\tat org.jsoup.parser.XmlTreeBuilder.process(XmlTreeBuilder.java:49)\n\tat org.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:52)\n\tat org.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:45)\n\tat org.jsoup.parser.Parser.parseInput(Parser.java:34)\n\tat org.jsoup.Jsoup.parse(Jsoup.java:45)"
+            ]
+        },
+        "82": {
+            "bug_report": "1007",
+            "origin": "defects4j",
+            "bugfix_commit": "6be19a6fa26e6e5e3d716283bad4b5de0348a8b7",
+            "buggy_commit": "77966f79996f3fc4c7828b4d02a926c071faf040",
+            "failing_tests": [
+                "org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode"
+            ],
+            "log": [
+                "Exception in thread \"main\" java.lang.UnsupportedOperationException\n\tat sun.nio.cs.ext.ISO2022_CN.newEncoder(ISO2022_CN.java:76)\n\tat org.jsoup.nodes.Document$OutputSettings.prepareEncoder(Document.java:443)\n\tat org.jsoup.nodes.Node$OuterHtmlVisitor.(Node.java:704)\n\tat org.jsoup.nodes.Node.outerHtml(Node.java:573)\n\tat org.jsoup.nodes.Element.html(Element.java:1395)\n\tat org.jsoup.nodes.Element.html(Element.java:1389)\n\tat org.jsoup.nodes.Document.outerHtml(Document.java:195)\n\tat org.jsoup.nodes.Element.toString(Element.java:1422)\n\tat java.lang.String.valueOf(String.java:2982)\n\tat java.io.PrintStream.println(PrintStream.java:821)"
+            ]
+        },
+        "84": {
+            "bug_report": "848",
+            "origin": "defects4j",
+            "bugfix_commit": "a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8",
+            "buggy_commit": "bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664",
+            "failing_tests": [
+                "org.jsoup.helper.W3CDomTest::treatsUndeclaredNamespaceAsLocalName"
+            ],
+            "log": [
+                "org.w3c.dom.DOMException\nat com.sun.org.apache.xerces.internal.dom.ElementNSImpl.setName(ElementNSImpl.java:153)\nat com.sun.org.apache.xerces.internal.dom.ElementNSImpl.(ElementNSImpl.java:84)\nat com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createElementNS(CoreDocumentImpl.java:2121)\nat org.jsoup.helper.W3CDom$W3CBuilder.head(W3CDom.java:90)\nat org.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:45)\nat org.jsoup.helper.W3CDom.convert(W3CDom.java:63)\nat org.jsoup.helper.W3CDom.fromJsoup(W3CDom.java:44)\nat edu.usc.irds.sparkler.plugin.AmpConverterParser.parseMetadata(AmpConverterParser.java:45)\nat edu.usc.irds.sparkler.plugin.AmpConverterParserTest.testAdd(AmpConverterParserTest.java:29)\nat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\nat java.lang.reflect.Method.invoke(Method.java:498)\nat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\nat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\nat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\nat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\nat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\nat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\nat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\nat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\nat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\nat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\nat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\nat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\nat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\nat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\nat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\nat java.lang.reflect.Method.invoke(Method.java:498)\nat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\nat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\nat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\nat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\nat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)"
+            ]
+        },
+        "90": {
+            "bug_report": "1172",
+            "origin": "defects4j",
+            "bugfix_commit": "7de614ffd01161d8718d7458bab9d9690ad2334f",
+            "buggy_commit": "315655cc11c9d49bb821dd800d45580696b02185",
+            "failing_tests": [
+                "org.jsoup.helper.HttpConnectionTest::handlesHeaderEncodingOnRequest"
+            ],
+            "log": [
+                "Caused by: java.lang.ArrayIndexOutOfBoundsException: 11\n\tat org.jsoup.helper.HttpConnection$Base.looksLikeUtf8(HttpConnection.java:437)\n\tat org.jsoup.helper.HttpConnection$Base.fixHeaderEncoding(HttpConnection.java:400)\n\tat org.jsoup.helper.HttpConnection$Base.addHeader(HttpConnection.java:386)\n\tat org.jsoup.helper.HttpConnection$Response.processResponseHeaders(HttpConnection.java:1075)\n\tat org.jsoup.helper.HttpConnection$Response.setupFromConnection(HttpConnection.java:1019)\n\tat org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:752)\n\tat org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:722)\n\tat org.jsoup.helper.HttpConnection.execute(HttpConnection.java:306)"
+            ]
+        },
+        "1098": {
+            "bug_report": "1098",
+            "origin": "t-evos",
+            "bugfix_commit": "e02085409f0bdd7e71441fc62448192720305444",
+            "buggy_commit": "fb50d9635874185fc050735057b8a7363cd53f3f",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.apache.xerces.parsers.DOMParser.parse(Unknown Source)\norg.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)\njavax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)\nplayground.Test130e.parseXml(Test130.java:116)\nplayground.Test130e.main(Test130.java:110)"
+            ]
+        },
+        "1218": {
+            "bug_report": "1218",
+            "origin": "t-evos",
+            "bugfix_commit": "a0b87bf10a9a520b49748c619c868caed8d7a109",
+            "buggy_commit": "8d1d503913a68e549b5c4a94717c62cf3f64507a",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.jsoup.parser.CharacterReader.rewindToMark(CharacterReader.java:132)\norg.jsoup.parser.Tokeniser.consumeCharacterReference(Tokeniser.java:182)\norg.jsoup.parser.TokeniserState.readCharRef(TokeniserState.java:1698)\norg.jsoup.parser.TokeniserState.access$100(TokeniserState.java:8)\norg.jsoup.parser.TokeniserState$2.read(TokeniserState.java:36)\norg.jsoup.parser.Tokeniser.read(Tokeniser.java:57)\norg.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)\norg.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)\norg.jsoup.parser.Parser.parseInput(Parser.java:35)\norg.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:169)\norg.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:835)\norg.jsoup.helper.HttpConnection.get(HttpConnection.java:285)\nJsoupIssue1218.main(JsoupIssue1218.java:7)"
+            ]
+        },
+        "1251": {
+            "bug_report": "1251",
+            "origin": "t-evos",
+            "bugfix_commit": "c2b1fe73129e9c23d93e5393ce8007995c1630dc",
+            "buggy_commit": "de97030ff54ee0bd306cbc58bd8093645cc8a5dc",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.jsoup.parser.CharacterReader.unconsume(CharacterReader.java:111)\norg.jsoup.parser.TokeniserState$41.read(TokeniserState.java:877)\norg.jsoup.parser.Tokeniser.read(Tokeniser.java:57)\norg.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)\norg.jsoup.parser.HtmlTreeBuilder.parseFragment(HtmlTreeBuilder.java:126)\norg.jsoup.parser.Parser.parseFragment(Parser.java:140)"
+            ]
+        },
+        "1274": {
+            "bug_report": "1274",
+            "origin": "t-evos",
+            "bugfix_commit": "f5fc1bb04c224865f8eee5ed718f4ffee0e18712",
+            "buggy_commit": "de1ced99d4dae991a546534454d5f7d9dc26f0b1",
+            "failing_tests": [
+            ],
+            "log": [
+                "at org.jsoup.select.QueryParser.findElements(QueryParser.java:206)\norg.jsoup.select.QueryParser.parse(QueryParser.java:59)\norg.jsoup.select.QueryParser.parse(QueryParser.java:42)\norg.jsoup.select.QueryParser.combinator(QueryParser.java:87)\norg.jsoup.select.QueryParser.parse(QueryParser.java:69)\norg.jsoup.select.QueryParser.parse(QueryParser.java:42)\norg.jsoup.select.Selector.select(Selector.java:91)\norg.jsoup.nodes.Element.select(Element.java:363)\nUTD.SeLab.BBI.BugDetection.TestJsoup.demo(TestJsoup.java:41)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\norg.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\norg.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\norg.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\norg.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\norg.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\norg.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\norg.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\norg.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\norg.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\norg.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\norg.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\norg.junit.runners.ParentRunner.run(ParentRunner.java:363)\norg.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\norg.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\norg.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\norg.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\norg.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\norg.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)"
+            ]
+        },
+        "1324": {
+            "bug_report": "1324",
+            "origin": "t-evos",
+            "bugfix_commit": "62c0595813b817ec593b0941ca4c3f29d10fac55",
+            "buggy_commit": "528ba552b19ab2ae949feecb373ef85a0b126566",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.jsoup.parser.CharacterReader.rewindToMark(CharacterReader.java:148)\norg.jsoup.parser.Tokeniser.consumeCharacterReference(Tokeniser.java:192)\norg.jsoup.parser.TokeniserState$38.read(TokeniserState.java:759)\norg.jsoup.parser.Tokeniser.read(Tokeniser.java:59)\norg.jsoup.parser.TreeBuilder.runParser(TreeBuilder.java:55)\norg.jsoup.parser.TreeBuilder.parse(TreeBuilder.java:47)\norg.jsoup.parser.Parser.parseInput(Parser.java:35)\norg.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:170)\norg.jsoup.helper.DataUtil.load(DataUtil.java:66)\norg.jsoup.Jsoup.parse(Jsoup.java:118)\nMain.main(Main.java:47)"
+
+            ]
+        },
+        "740": {
+            "bug_report": "740",
+            "origin": "t-evos",
+            "bugfix_commit": "3b2440a257df45fc49884a5c67bb0c9ce631781d",
+            "buggy_commit": "222feb1791388d1e94e2c99bb5858cf160904d16",
+            "failing_tests": [
+            ],
+            "log": [
+                "java.nio.charset.CharsetEncoder.throwIllegalStateException(CharsetEncoder.java:992)\njava.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:904)\njava.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:985)\norg.jsoup.nodes.Entities.escape(Entities.java:154)\norg.jsoup.nodes.TextNode.outerHtmlHead(TextNode.java:100)\norg.jsoup.nodes.Node$OuterHtmlVisitor.head(Node.java:678)\norg.jsoup.select.NodeTraversor.traverse(NodeTraversor.java:31)\norg.jsoup.nodes.Node.outerHtml(Node.java:551)\norg.jsoup.nodes.Element.html(Element.java:1203)\norg.jsoup.nodes.Element.html(Element.java:1197)\norg.jsoup.Jsoup.clean(Jsoup.java:235)"
+            ]
+        },
+        "968": {
+            "bug_report": "968",
+            "origin": "t-evos",
+            "bugfix_commit": "c19acbb96c1c02deb310488677201683f6309708",
+            "buggy_commit": "d32321351ced83c7c2edff2abe4a8b2fa17a6bd7",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.jsoup.helper.Validate.isTrue(Validate.java:45)\norg.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:581)\norg.jsoup.helper.HttpConnection$Request.timeout(HttpConnection.java:537)\norg.jsoup.helper.HttpConnection.timeout(HttpConnection.java:156)"
+            ]
+        },
+        "990": {
+            "bug_report": "990",
+            "origin": "t-evos",
+            "bugfix_commit": "45c54996c4e8d74cf84304e767934ff584c24702",
+            "buggy_commit": "02668f757c59f0c1a7ad8f3169faf061b4b787c1",
+            "failing_tests": [
+            ],
+            "log": [
+                "java.io.BufferedInputStream.reset(BufferedInputStream.java:336)\norg.jsoup.internal.ConstrainableInputStream.reset(ConstrainableInputStream.java:103)\norg.jsoup.helper.DataUtil.parseInputStream(DataUtil.java:105)\norg.jsoup.helper.HttpConnection$Response.parse(HttpConnection.java:832)\norg.jsoup.helper.HttpConnection.get(HttpConnection.java:289)"
+            ]
+        }
+    },
+    "JxPath": {
+        "5": {
+            "bug_report": "JXPATH-89",
+            "origin": "defects4j",
+            "bugfix_commit": "2a01dfaf8d6abbabc7e4cd5cfd05d2e0b4886708",
+            "buggy_commit": "458f562cdbe13b42ae325ac88a082047fe05ab89",
+            "failing_tests": [
+                "org.apache.commons.jxpath.ri.compiler.VariableTest::testUnionOfVariableAndNode"
+            ],
+            "log": [
+                "org.apache.commons.jxpath.JXPathException: Cannot compare pointers that do not belong to the same tree: '$var' and ''\n\tat org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers(NodePointer.java:665)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers(NodePointer.java:649)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers(NodePointer.java:649)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.compareTo(NodePointer.java:639)\n\tat java.util.Arrays.mergeSort(Arrays.java:1152)\n\tat java.util.Arrays.sort(Arrays.java:1079)\n\tat java.util.Collections.sort(Collections.java:113)\n\tat org.apache.commons.jxpath.ri.EvalContext.constructIterator(EvalContext.java:176)\n\tat org.apache.commons.jxpath.ri.EvalContext.hasNext(EvalContext.java:100)\n\tat org.apache.commons.jxpath.JXPathContext.selectNodes(JXPathContext.java:648)\n\tat org.apache.commons.jxpath.ri.model.VariablePointerTestCase.testUnionOfVariableAndNode(VariablePointerTestCase.java:76)"
+            ]
+        }
+    },
+    "Lang": {
+        "37": {
+            "bug_report": "LANG-567",
+            "origin": "defects4j",
+            "bugfix_commit": "ea140fb5c327e2b58f6c5bf1057c7dede909a50c",
+            "buggy_commit": "b5906d3f325ca3a1147d5fa68912975e2e6c347e",
+            "failing_tests": [
+                "org.apache.commons.lang3.ArrayUtilsAddTest::testJira567"
+            ],
+            "log": [
+                "java.lang.ArrayStoreException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:2962)"
+            ]
+        },
+        "6": {
+            "bug_report": "LANG-857",
+            "origin": "defects4j",
+            "bugfix_commit": "cff0f1ae37bb2b7ab2dcdb10dec1f3cad7532e1c",
+            "buggy_commit": "6823c3742ee16f5b28e550a6afb685553befc0c2",
+            "failing_tests": [
+                "org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs"
+            ],
+            "log": [
+                "java.lang.StringIndexOutOfBoundsException: String index out of range: 2\n\tat java.lang.String.charAt(String.java:658)\n\tat java.lang.Character.codePointAt(Character.java:4668)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:95)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:59)\n\tat org.apache.commons.lang3.StringEscapeUtils.escapeCsv(StringEscapeUtils.java:556)"
+            ]
+        },
+        "61": {
+            "bug_report": "LANG-294",
+            "origin": "defects4j",
+            "bugfix_commit": "88c76d207f642831ca899e144159424aaa60cf8e",
+            "buggy_commit": "1313a65c11dea54f1baf492d4185fb2d673b6716",
+            "failing_tests": [
+                "org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294",
+                "org.apache.commons.lang.text.StrBuilderTest::testLang294"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang.text.StrBuilder.deleteImpl(StrBuilder.java:1114)\n\tat org.apache.commons.lang.text.StrBuilder.deleteAll(StrBuilder.java:1188)\n\tat org.apache.commons.lang.text.StrBuilderTest.testDeleteAll_String(StrBuilderTest.java:606)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:585)\n\tat junit.framework.TestCase.runTest(TestCase.java:154)\n\tat junit.framework.TestCase.runBare(TestCase.java:127)\n\tat junit.framework.TestResult$1.protect(TestResult.java:106)\n\tat junit.framework.TestResult.runProtected(TestResult.java:124)\n\tat junit.framework.TestResult.run(TestResult.java:109)\n\tat junit.framework.TestCase.run(TestCase.java:118)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:208)\n\tat junit.framework.TestSuite.run(TestSuite.java:203)\n\tat org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:128)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)",
+                "java.lang.ArrayIndexOutOfBoundsException\n\tat java.lang.System.arraycopy(Native Method)\n\tat org.apache.commons.lang.text.StrBuilder.replaceImpl(StrBuilder.java:1256)\n\tat org.apache.commons.lang.text.StrBuilder.replaceAll(StrBuilder.java:1339)\n\tat org.apache.commons.lang.text.StrBuilderTest.testReplaceAll_String_String(StrBuilderTest.java:763)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)\n\tat java.lang.reflect.Method.invoke(Method.java:585)\n\tat junit.framework.TestCase.runTest(TestCase.java:154)\n\tat junit.framework.TestCase.runBare(TestCase.java:127)\n\tat junit.framework.TestResult$1.protect(TestResult.java:106)\n\tat junit.framework.TestResult.runProtected(TestResult.java:124)\n\tat junit.framework.TestResult.run(TestResult.java:109)\n\tat junit.framework.TestCase.run(TestCase.java:118)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:208)\n\tat junit.framework.TestSuite.run(TestSuite.java:203)\n\tat org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:128)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)"
+            ]
+        }
+    },
+    "Math": {
+        "49": {
+            "bug_report": "MATH-645",
+            "origin": "defects4j",
+            "bugfix_commit": "09e35881f1ad74335707e70aa78fd347e37d1066",
+            "buggy_commit": "0b78d9accafadffe00697c2c56706043cdba5e64",
+            "failing_tests": [
+                "org.apache.commons.math.linear.SparseRealVectorTest::testConcurrentModification"
+            ],
+            "log": [
+                "Exception in thread \"main\" org.apache.commons.math.MathRuntimeException$6: map has been modified while iterating\n\tat org.apache.commons.math.MathRuntimeException.createConcurrentModificationException(MathRuntimeException.java:373)\n\tat org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator.advance(OpenIntToDoubleHashMap.java:564)\n\tat org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector.java:372)\n\tat org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector.java:1)\n\tat DemoBugOpenMapRealVector.main(DemoBugOpenMapRealVector.java:17)"
+            ]
+        },
+        "58": {
+            "bug_report": "MATH-519",
+            "origin": "defects4j",
+            "bugfix_commit": "45add3a0e7e2e94bfc29e85c9ef0856e2e473a33",
+            "buggy_commit": "b1392325d1255f7e3a1b04a12859a8bb75e4d14c",
+            "failing_tests": [
+                "org.apache.commons.math.optimization.fitting.GaussianFitterTest::testMath519"
+            ],
+            "log": [
+                "org.apache.commons.math.exception.NotStrictlyPositiveException: -1.277 is smaller than, or equal to, the minimum (0)\n\tat org.apache.commons.math.analysis.function.Gaussian$Parametric.validateParameters(Gaussian.java:184)\n\tat org.apache.commons.math.analysis.function.Gaussian$Parametric.value(Gaussian.java:129)"
+            ]
+        },
+        "79": {
+            "bug_report": "MATH-305",
+            "origin": "defects4j",
+            "bugfix_commit": "138baec1c778c2ea1dc1a6efe6d5e76a3b072b1d",
+            "buggy_commit": "ca1ca9250b99dd49434468aa5530eb00b2f0680d",
+            "failing_tests": [
+                "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testPerformClusterAnalysisDegenerate"
+            ],
+            "log": [
+                "java.lang.NullPointerException\n\tat org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer.assignPointsToClusters(KMeansPlusPlusClusterer.java:91)"
+            ]
+        },
+        "81": {
+            "bug_report": "MATH-308",
+            "origin": "defects4j",
+            "bugfix_commit": "7d903ca533833e5db8d2fe150f1e31b54ddda700",
+            "buggy_commit": "6e3ea6857dce8b7a586c3af555e21ba35a59ea54",
+            "failing_tests": [
+                "org.apache.commons.math.linear.EigenDecompositionImplTest::testMath308"
+            ],
+            "log": [
+                "java.lang.ArrayIndexOutOfBoundsException: -1\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.computeShiftIncrement(EigenDecompositionImpl.java:1545)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.goodStep(EigenDecompositionImpl.java:1072)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.processGeneralBlock(EigenDecompositionImpl.java:894)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.findEigenvalues(EigenDecompositionImpl.java:658)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.decompose(EigenDecompositionImpl.java:246)\n\tat org.apache.commons.math.linear.EigenDecompositionImpl.<init>(EigenDecompositionImpl.java:205)\n\tat org.apache.commons.math.linear.EigenDecompositionImplTest.testMath308(EigenDecompositionImplTest.java:136)"
+            ]
+        },
+        "85": {
+            "bug_report": "MATH-280",
+            "origin": "defects4j",
+            "bugfix_commit": "9be86f674f91fa3fe0a8694e7b98472dabe6886d",
+            "buggy_commit": "8de8a3b6fa5f4d7ea817f915d957ef309441762d",
+            "failing_tests": [
+                "org.apache.commons.math.distribution.NormalDistributionTest::testMath280"
+            ],
+            "log": [
+                "org.apache.commons.math.MathException: Number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0\n\tat org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:103)\n\tat org.apache.commons.math.distribution.NormalDistributionImpl.inverseCumulativeProbability(NormalDistributionImpl.java:145)"
+            ]
+        },
+        "97": {
+            "bug_report": "MATH-204",
+            "origin": "defects4j",
+            "bugfix_commit": "ed492bd0c5c5c3a0258a65cb31cc8723d8f011fd",
+            "buggy_commit": "7cf0c980d5d814daf187502bc07da0542ed7a828",
+            "failing_tests": [
+                "org.apache.commons.math.analysis.BrentSolverTest::testRootEndpoints"
+            ],
+            "log": [
+                "java.lang.IllegalArgumentException: Function values at endpoints do not have different signs.  Endpoints: [-100000.0,1.7976931348623157E308]  Values: [0.0,-101945.04630982173]\nat org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver.java:99)\nat org.apache.commons.math.analysis.BrentSolver.solve(BrentSolver.java:62)"
+            ]
+        }
+    },
+    "Mockito": {
+        "17": {
+            "bug_report": "152",
+            "origin": "defects4j",
+            "bugfix_commit": "77cb2037314dd024eb53ffe2e9e06304088a2d53",
+            "buggy_commit": "b6790ee34d8d858a89b80a9ae40f19d87ce1dab8",
+            "failing_tests": [
+                "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces"
+            ],
+            "log": [
+                "Caused by: java.lang.ClassNotFoundException: junit.framework.ComparisonFailure\n    at java.net.URLClassLoader$1.run(URLClassLoader.java:202)\n    at java.security.AccessController.doPrivileged(Native Method)\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:190)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:306)\n    at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:247)",
+                "Caused by: java.lang.ClassNotFoundException: junit.framework.ComparisonFailure\nat java.net.URLClassLoader$1.run(URLClassLoader.java:202)\nat java.security.AccessController.doPrivileged(Native Method)\nat java.net.URLClassLoader.findClass(URLClassLoader.java:190)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:306)\nat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:247)"
+            ]
+        },
+        "25": {
+            "bug_report": "230",
+            "origin": "defects4j",
+            "bugfix_commit": "a6ccf070a267e0a165b8efaaefa8938e787bb6a0",
+            "buggy_commit": "d8b18f2e77c3f352677a6993225c4333b98d0481",
+            "failing_tests": [
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::will_return_default_value_on_non_mockable_nested_generic",
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class",
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_return_types_declared_with_a_bounded_wildcard",
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class",
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::generic_deep_mock_frenzy__look_at_these_chained_calls",
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class"
+            ],
+            "log": [
+                "java.lang.NullPointerException\nat java.lang.Class.isAssignableFrom(Native Method)\nat org.powermock.reflect.internal.WhiteboxImpl.checkIfParameterTypesAreSame(WhiteboxImpl.java:2257)\nat org.powermock.reflect.internal.WhiteboxImpl.getMethods(WhiteboxImpl.java:1800)\nat org.powermock.reflect.internal.WhiteboxImpl.getBestMethodCandidate(WhiteboxImpl.java:955)\nat org.powermock.reflect.internal.WhiteboxImpl.findMethodOrThrowException(WhiteboxImpl.java:832)\nat org.powermock.reflect.internal.WhiteboxImpl.doInvokeMethod(WhiteboxImpl.java:770)\nat org.powermock.reflect.internal.WhiteboxImpl.invokeMethod(WhiteboxImpl.java:638)\nat org.powermock.reflect.Whitebox.invokeMethod(Whitebox.java:401)"
+            ]
+        },
+        "30": {
+            "bug_report": "225",
+            "origin": "defects4j",
+            "bugfix_commit": "3c924f80a4db3692a13341f0da4517052ab77a2a",
+            "buggy_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
+            "failing_tests": [
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
+            ],
+            "log": [
+                "Caused by: java.lang.ClassNotFoundException: classes with prefix : [junit, org.junit] are excluded\n    at org.mockitoutil.ClassLoaders$LocalExcludingURLClassLoader.findClass(ClassLoaders.java:155)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:424)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:357)"
+            ]
+        },
+        "31": {
+            "bug_report": "225",
+            "origin": "defects4j",
+            "bugfix_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
+            "buggy_commit": "81a380951402d2a158af115ed616ab36e94793b8",
+            "failing_tests": [
+                "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersWhenCallingAMethodWithArgs"
+            ],
+            "log": [
+                "Caused by: java.lang.ClassNotFoundException: classes with prefix : [junit, org.junit] are excluded\n    at org.mockitoutil.ClassLoaders$LocalExcludingURLClassLoader.findClass(ClassLoaders.java:155)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:424)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:357)"
+            ]
+        },
+        "4": {
+            "bug_report": "187",
+            "origin": "defects4j",
+            "bugfix_commit": "42b391d4209024292b6101048389570e4ec36b2a",
+            "buggy_commit": "c25cb6bff7eb4774efda345e8bf9eaad4c66a652",
+            "failing_tests": [
+                "org.mockito.exceptions.ReporterTest::can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted_in_order",
+                "org.mockito.exceptions.ReporterTest::can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_injection_failure",
+                "org.mockito.exceptions.ReporterTest::can_use_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted",
+                "org.mockitousage.bugs.ClassCastExOnVerifyZeroInteractionsTest::should_not_throw_a_ClassCastException"
+            ],
+            "log": [
+                "java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String\n    at org.mockitousage.bugs.ClassCastExOnVerifyZeroInteractionsTest$TestMock$$EnhancerByMockitoWithCGLIB$$91d883c5.toString(<generated>)\n    at java.lang.String.valueOf(String.java:2847)\n    at java.lang.StringBuilder.append(StringBuilder.java:128)\n    at org.mockito.exceptions.Reporter.noMoreInteractionsWanted(Reporter.java:420)\n    at org.mockito.internal.verification.NoMoreInteractions.verify(NoMoreInteractions.java:24)\n    at org.mockito.internal.MockitoCore.verifyNoMoreInteractions(MockitoCore.java:113)\n    at org.mockito.Mockito.verifyZeroInteractions(Mockito.java:1674)\n    at org.mockitousage.bugs.ClassCastExOnVerifyZeroInteractionsTest.test(ClassCastExOnVerifyZeroInteractionsTest.java:23)"
+            ]
+        },
+        "5": {
+            "bug_report": "152",
+            "origin": "defects4j",
+            "bugfix_commit": "42a24dde02923185db3f79ae57e7819f7d70af55",
+            "buggy_commit": "fff76563d9e0ed412dc828c53cfdc7d142997a31",
+            "failing_tests": [
+                "org.mockitointegration.NoJUnitDependenciesTest::pure_mockito_should_not_depend_JUnit"
+            ],
+            "log": [
+                "Caused by: java.lang.ClassNotFoundException: junit.framework.ComparisonFailure\n    at java.net.URLClassLoader$1.run(URLClassLoader.java:202)\n    at java.security.AccessController.doPrivileged(Native Method)\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:190)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:306)\n    at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:247)",
+                "Caused by: java.lang.ClassNotFoundException: junit.framework.ComparisonFailure\nat java.net.URLClassLoader$1.run(URLClassLoader.java:202)\nat java.security.AccessController.doPrivileged(Native Method)\nat java.net.URLClassLoader.findClass(URLClassLoader.java:190)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:306)\nat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:247)"
+            ]
+        }
+    },
+    "Time": {
+        "10": {
+            "bug_report": "22",
+            "origin": "defects4j",
+            "bugfix_commit": "3a413d7844c22dc6ddd50bf5d0d55ff3589e47ac",
+            "buggy_commit": "efce99164f0bbd2c70e7f9d71884a32473e02c6d",
+            "failing_tests": [
+                "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay",
+                "org.joda.time.TestMonths::testFactory_monthsBetween_RPartial_MonthDay"
+            ],
+            "log": [
+                "org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]\nat org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:217)\nat org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)\nat org.joda.time.chrono.BaseChronology.set(BaseChronology.java:240)\nat org.joda.time.base.BaseSingleFieldPeriod.between(BaseSingleFieldPeriod.java:103)\nat org.joda.time.Days.daysBetween(Days.java:141)",
+                "org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]\nat org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:217)\nat org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)\nat org.joda.time.chrono.BasicMonthOfYearDateTimeField.add(BasicMonthOfYearDateTimeField.java:212)\nat org.joda.time.field.BaseDateTimeField.add(BaseDateTimeField.java:344)\nat org.joda.time.MonthDay.withFieldAdded(MonthDay.java:519)\nat org.joda.time.MonthDay.minusDays(MonthDay.java:672)"
+            ]
+        }
+    },
+    "fastjson": {
+        "2351": {
+            "bug_report": "2351",
+            "origin": "t-evos",
+            "bugfix_commit": "d30069235d846b910d8371171aa855e4eea3a97b",
+            "buggy_commit": "8e985930057c21c95a3065ca9f2cad3b5e42d4ba",
+            "failing_tests": [
+            ],
+            "log": [
+                "com.alibaba.fastjson.parser.DefaultJSONParser.throwException(DefaultJSONParser.java:1431)\ncom.alibaba.fastjson.parser.deserializer.FastjsonASMDeserializer_1_Bean1.deserialzeArrayMapping(Unknown Source)\ncom.alibaba.fastjson.parser.deserializer.FastjsonASMDeserializer_1_Bean1.deserialze(Unknown Source)\ncom.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:208)\ncom.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:642)\ncom.alibaba.fastjson.JSON.parseObject(JSON.java:350)\ncom.alibaba.fastjson.JSON.parseObject(JSON.java:254)"
+            ]
+        }
+    },
+    "3119": {
+        "bug_report": "3119",
+        "origin": "t-evos",
+        "bugfix_commit": "2a603b9d03a2de3fd48dfeaaf5df64a08955ed56",
+        "buggy_commit": "307f6637b9f8502a081468443c2b3c85cea5e545",
+        "failing_tests": [
+        ],
+        "log": [
+            "com.alibaba.fastjson.serializer.SerializeConfig.createJavaBeanSerializer(SerializeConfig.java:264)\ncom.alibaba.fastjson.serializer.SerializeConfig.createJavaBeanSerializer(SerializeConfig.java:120)\ncom.alibaba.fastjson.serializer.SerializeConfig.getObjectWriter(SerializeConfig.java:792)\ncom.alibaba.fastjson.serializer.SerializeConfig.getObjectWriter(SerializeConfig.java:436)\ncom.alibaba.fastjson.serializer.JSONSerializer.getObjectWriter(JSONSerializer.java:416)\ncom.alibaba.fastjson.serializer.ListSerializer.write(ListSerializer.java:128)\ncom.alibaba.fastjson.serializer.JSONSerializer.write(JSONSerializer.java:285)\ncom.alibaba.fastjson.JSON.toJSONString(JSON.java:758)\ncom.alibaba.fastjson.JSON.toJSONString(JSON.java:696)\ncom.alibaba.fastjson.JSON.toJSONString(JSON.java:661)\ncom.lk.crm.addr.AddrServiceTest.testList(AddrServiceTest.java:96)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.junit.internal.runners.TestMethod.invoke(TestMethod.java:68)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:326)\norg.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89)\norg.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:310)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTestInSuper(PowerMockJUnit47RunnerDelegateImpl.java:131)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.access$100(PowerMockJUnit47RunnerDelegateImpl.java:59)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner$TestExecutorStatement.evaluate(PowerMockJUnit47RunnerDelegateImpl.java:147)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.evaluateStatement(PowerMockJUnit47RunnerDelegateImpl.java:107)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit47RunnerDelegateImpl$PowerMockJUnit47MethodRunner.executeTest(PowerMockJUnit47RunnerDelegateImpl.java:82)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:298)\norg.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87)\norg.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:218)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:160)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:134)\norg.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)\norg.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)\norg.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:136)\norg.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:117)\norg.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:57)\norg.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:59)\norg.junit.runner.JUnitCore.run(JUnitCore.java:137)\ncom.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\ncom.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\ncom.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\ncom.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\ncom.intellij.rt.execution.CommandLineWrapper.main(CommandLineWrapper.java:66)\ncom.alibaba.fastjson.serializer.ASMSerializerFactory.createJavaBeanSerializer(ASMSerializerFactory.java:151)\ncom.alibaba.fastjson.serializer.SerializeConfig.createASMSerializer(SerializeConfig.java:92)\ncom.alibaba.fastjson.serializer.SerializeConfig.createJavaBeanSerializer(SerializeConfig.java:248)"
+        ]
+    },
+    "3280": {
+        "bug_report": "3280",
+        "origin": "t-evos",
+        "bugfix_commit": "92fd0cb92cd876e01384418b6dbcae557a8a630c",
+        "buggy_commit": "cc7dfab3dde888b81577fb18c0eb223761b5e31f",
+        "failing_tests": [
+        ],
+        "log": [
+            "java.lang.Class.getDeclaredConstructors0(Native Method)\njava.lang.Class.privateGetDeclaredConstructors(Class.java:2595)\njava.lang.Class.getConstructor0(Class.java:2895)\njava.lang.Class.getConstructor(Class.java:1731)\ncom.alibaba.fastjson.parser.deserializer.ASMDeserializerFactory.createJavaBeanDeserializer(ASMDeserializerFactory.java:90)\ncom.alibaba.fastjson.parser.ParserConfig.createJavaBeanDeserializer(ParserConfig.java:1075)\ncom.alibaba.fastjson.parser.ParserConfig.getDeserializer(ParserConfig.java:882)\ncom.alibaba.fastjson.parser.ParserConfig.getDeserializer(ParserConfig.java:592)\ncom.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:679)\ncom.alibaba.fastjson.JSON.parseObject(JSON.java:396)\ncom.alibaba.fastjson.JSON.parseObject(JSON.java:300)\ncom.alibaba.fastjson.JSON.parseObject(JSON.java:573)\ncom.rkhd.ienterprise.dbinfo.DbInfoTest.main(DbInfoTest.java:11)\njava.net.URLClassLoader$1.run(URLClassLoader.java:366)\njava.net.URLClassLoader$1.run(URLClassLoader.java:355)\njava.security.AccessController.doPrivileged(Native Method)\njava.net.URLClassLoader.findClass(URLClassLoader.java:354)\njava.lang.ClassLoader.loadClass(ClassLoader.java:425)\nsun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)\njava.lang.ClassLoader.loadClass(ClassLoader.java:358)"
+        ]
+    },
+    "3637": {
+        "bug_report": "3637",
+        "origin": "t-evos",
+        "bugfix_commit": "8d42fd87c00b9691d393c15998135b5281d895f5",
+        "buggy_commit": "00cdc53606111e7802f8f5559d44feeccba2657f",
+        "failing_tests": [
+        ],
+        "log": [
+            "com.alibaba.fastjson.util.TypeUtils.castToSqlTime(TypeUtils.java:617)\ncom.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1126)\ncom.alibaba.fastjson.util.TypeUtils.cast(TypeUtils.java:1251)\ncom.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.createInstance(JavaBeanDeserializer.java:1439)"
+        ]
+    },
+    "junit4": {
+        "1178": {
+            "bug_report": "1178",
+            "origin": "t-evos",
+            "bugfix_commit": "e6a20043db694056ac00456f6076091012ecba87",
+            "buggy_commit": "c07965ab1b232b04a13ea84fdbcdd8be04ea0182",
+            "failing_tests": [
+            ],
+            "log": [
+                "org.junit.internal.ArrayComparisonFailure.getMessage(ArrayComparisonFailure.java:52)\norg.junit.internal.ArrayComparisonFailure.toString(ArrayComparisonFailure.java:61)\njava.lang.String.valueOf(String.java:2982)\njava.io.PrintWriter.println(PrintWriter.java:754)\njava.lang.Throwable$WrappedPrintWriter.println(Throwable.java:764)\njava.lang.Throwable.printStackTrace(Throwable.java:655)\njava.lang.Throwable.printStackTrace(Throwable.java:721)\norg.gradle.api.internal.tasks.testing.junit.result.TestReportDataCollector.stackTrace(TestReportDataCollector.java:100)\norg.gradle.api.internal.tasks.testing.junit.result.TestReportDataCollector.afterTest(TestReportDataCollector.java:69)\nsun.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:497)\norg.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)\norg.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)\norg.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:83)\norg.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)\norg.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)\ncom.sun.proxy.$Proxy35.afterTest(Unknown Source)\norg.gradle.api.internal.tasks.testing.results.TestListenerAdapter.completed(TestListenerAdapter.java:48)\norg.gradle.api.internal.tasks.testing.results.StateTrackingTestResultProcessor.completed(StateTrackingTestResultProcessor.java:65)\norg.gradle.api.internal.tasks.testing.results.AttachParentTestResultProcessor.completed(AttachParentTestResultProcessor.java:52)\nsun.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:497)\norg.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)\norg.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)\norg.gradle.messaging.dispatch.FailureHandlingDispatch.dispatch(FailureHandlingDispatch.java:29)\norg.gradle.messaging.dispatch.AsyncDispatch.dispatchMessages(AsyncDispatch.java:132)\norg.gradle.messaging.dispatch.AsyncDispatch.access$000(AsyncDispatch.java:33)\norg.gradle.messaging.dispatch.AsyncDispatch$1.run(AsyncDispatch.java:72)\norg.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)\njava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\njava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\njava.lang.Thread.run(Thread.java:745)"
+            ]
+        }
+    }
+}
