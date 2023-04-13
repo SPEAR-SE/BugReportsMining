@@ -1,0 +1,48 @@
+package ca.concordia;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class FileUtil {
+
+    public static String read(String filename) throws IOException {
+
+        Path path = Paths.get(filename);
+        try (Stream<String> lines = Files.lines(path)) {
+            return lines.collect(Collectors.joining("\n"));
+        }
+
+    }
+
+    public static void writeJsonFile(JsonObject Json, String folder_name, String filename){
+
+        try {
+            File folder = new File(folder_name);
+            if (!folder.exists()) {
+                boolean mkdir_result = folder.mkdirs();
+                if (!mkdir_result) {
+                    throw new IOException("Output directory creation failed.");
+                }
+            }
+
+            FileWriter writer = new FileWriter(folder + File.separator + filename +".json");
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(Json, writer);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+}
