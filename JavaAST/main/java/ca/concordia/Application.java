@@ -34,8 +34,6 @@ public class Application {
 
 
     public static void main(String[] args){
-        List<String> addedLinesMethods = new ArrayList<>();
-        List<String> deletedLinesMethods = new ArrayList<>();
 
         Gson gson = new Gson();
         try (FileReader reader = new FileReader(data_file_path)) {
@@ -50,14 +48,19 @@ public class Application {
                 String path_to_repo = projectsList.get(project);
                 Map<String, Object> bugs = data.get(project);
                 for (String bugID : bugs.keySet()) {
+                    List<String> addedLinesMethods = new ArrayList<>();
+                    List<String> deletedLinesMethods = new ArrayList<>();
+                    Set<String> buggyMethods = new HashSet<>();
+                    Set<String> newMethods = new HashSet<>();
                     System.out.println("  Bug ID: " + bugID);
                     Map<String, Object> bug = (Map<String, Object>) bugs.get(bugID);
                     String buggyCommit = (String) bug.get("buggy_commit");
                     String bugfixCommit = (String) bug.get("bugfix_commit");
                     Map<String, Map<String, Object>> modifiedCode = (Map<String, Map<String, Object>>) bug.get("modified_code");
                     for (String filePath : modifiedCode.keySet()) {
+                        String filePathFixed = filePath;
                         if (filePath.startsWith("b/")) {
-                            filePath = filePath.substring(2);
+                            filePathFixed = filePath.substring(2);
                         }
                         String absolute_file_path = path_to_repo + filePath;
                         Map<String, Object> fileInfo = modifiedCode.get(filePath);
@@ -71,31 +74,45 @@ public class Application {
                             }
                             for (Integer line: deletedLines){
                                 String methodName = MethodFinder.findMethodName(absolute_file_path, line);
-                                if (!deletedLinesMethods.contains(filePath+ " - " +methodName)) {
-                                    deletedLinesMethods.add(filePath+ " - " + methodName);
+                                if (methodName != null && !deletedLinesMethods.contains(filePathFixed+ " - " +methodName)) {
+                                    deletedLinesMethods.add(filePathFixed+ " - " + methodName);
                                 }
                             }
                         }
                         GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
                         List<Double> addedLinesDouble = (List<Double>) fileInfo.get("added_lines");
+                        List<Integer> addedLines = new ArrayList<>();
                         if (addedLinesDouble != null) {
-                            List<Integer> addedLines = new ArrayList<>();
-
                             for (Double d : addedLinesDouble) {
                                 addedLines.add(d.intValue());
                             }
                             for (Integer line: addedLines){
                                 String methodName = MethodFinder.findMethodName(absolute_file_path, line);
-                                if (!addedLinesMethods.contains(filePath+ " - " +methodName)) {
-                                    addedLinesMethods.add(filePath+ " - " + methodName);
+                                if (methodName != null && !addedLinesMethods.contains(filePathFixed+ " - " +methodName)) {
+                                    addedLinesMethods.add(filePathFixed+ " - " + methodName);
                                 }
                             }
                         }
-                        System.out.println("Added: ");
-                        System.out.println(addedLinesMethods);
-                        System.out.println("Deleted: ");
-                        System.out.println(deletedLinesMethods);
+
+                        buggyMethods.addAll(deletedLinesMethods);
+                        // If a method was added in the bugfix commit, it is not a buggy method
+                        GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
+                        for (String method : addedLinesMethods){
+                            if (!deletedLinesMethods.contains(method)){
+                                String methodName = method.split(" - ")[1];
+                                boolean newMethod = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, methodName );
+                                if (newMethod){
+                                    newMethods.add(method);
+                                } else{
+                                    buggyMethods.add(method);
+                                }
+                            }
+                        }
                     }
+                    System.out.println("buggyMethods: ");
+                    System.out.println(buggyMethods);
+                    System.out.println("newMethods: ");
+                    System.out.println(newMethods);
                 }
             }
         } catch (IOException e) {

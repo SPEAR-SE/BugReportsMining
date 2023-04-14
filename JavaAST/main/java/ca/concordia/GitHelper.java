@@ -17,9 +17,7 @@ public class GitHelper {
             Process process = processBuilder.start();
             int exitCode = process.waitFor();
 
-            if (exitCode == 0) {
-                System.out.println("Successfully checked out commit " + commitHash);
-            } else {
+            if (exitCode != 0) {
                 System.err.println("Error checking out commit " + commitHash);
                 printErrorOutput(process);
             }
