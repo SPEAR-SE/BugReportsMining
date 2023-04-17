@@ -3,6 +3,11 @@
     "14": {
       "bug_report": "CLI-144",
       "bugfix_commit": "c338c8aca40d43efda580057f6d41ba228e26ec1",
+      "buggyMethods": {
+        "src/java/org/apache/commons/cli2/option/GroupImpl.java": [
+          "validate"
+        ]
+      },
       "buggy_commit": "b7b2069f9d846c6aea5fee98508ec1491fdf1123",
       "failing_tests": [
         "org.apache.commons.cli2.bug.BugCLI144Test::testFileValidator"
@@ -24,6 +29,7 @@
             249.0,
             250.0,
             251.0,
+            252.0,
             253.0,
             254.0,
             255.0
@@ -50,8 +56,11 @@
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
+            20.0,
             21.0,
+            22.0,
             23.0,
             24.0,
             25.0,
@@ -60,6 +69,7 @@
             28.0,
             29.0,
             30.0,
+            31.0,
             32.0,
             33.0,
             34.0,
@@ -87,6 +97,7 @@
             56.0,
             57.0,
             58.0,
+            59.0,
             60.0,
             61.0,
             62.0,
@@ -97,23 +108,23 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/java/org/apache/commons/cli2/option/GroupImpl.java": [
-          "validate"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/org/apache/commons/cli2/bug/BugCLI144Test.java": [
           "testFileValidator"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "5": {
       "bug_report": "CLI-133",
       "bugfix_commit": "3880640ee6268a2ecb2912e1ae896153dc2229e5",
+      "buggyMethods": {
+        "src/java/org/apache/commons/cli/Util.java": [
+          "stripLeadingHyphens"
+        ]
+      },
       "buggy_commit": "2b0a94aee899d9e7d855c402ad40eb4e318f46e7",
       "failing_tests": [
         "org.apache.commons.cli.UtilTest::testStripLeadingHyphens",
@@ -151,7 +162,9 @@
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
+            20.0,
             21.0,
             22.0,
             23.0,
@@ -183,8 +196,10 @@
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
+            21.0,
             22.0,
             23.0,
             24.0,
@@ -201,14 +216,7 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/java/org/apache/commons/cli/Util.java": [
-          "stripLeadingHyphens"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/org/apache/commons/cli/UtilTest.java": [
           "testStripLeadingHyphens"
@@ -216,13 +224,23 @@
         "src/test/org/apache/commons/cli/bug/BugCLI133Test.java": [
           "testOrder"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "Closure": {
     "106": {
       "bug_report": "19",
       "bugfix_commit": "e609670bb56e0c7216c9476a5f6a5594e7f1acdb",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/GlobalNamespace.java": [
+          "canCollapseUnannotatedChildNames"
+        ],
+        "src/com/google/javascript/rhino/JSDocInfoBuilder.java": [
+          "recordBlockDescription"
+        ]
+      },
       "buggy_commit": "6a36f04485599820ff86441accee002b4deec2eb",
       "failing_tests": [
         "com.google.javascript.jscomp.CheckSideEffectsTest::testJSDocComments",
@@ -237,13 +255,15 @@
       "modified_code": {
         "src/com/google/javascript/jscomp/GlobalNamespace.java": {
           "added_lines": [
+            903.0,
             904.0,
             905.0,
             906.0,
             907.0,
             908.0,
             909.0,
-            910.0
+            910.0,
+            911.0
           ]
         },
         "src/com/google/javascript/rhino/JSDocInfoBuilder.java": {
@@ -260,6 +280,7 @@
       "modified_tests": {
         "test/com/google/javascript/jscomp/CheckSideEffectsTest.java": {
           "added_lines": [
+            84.0,
             85.0,
             86.0,
             87.0,
@@ -268,14 +289,17 @@
         },
         "test/com/google/javascript/jscomp/CollapsePropertiesTest.java": {
           "added_lines": [
+            1099.0,
             1100.0,
             1101.0,
             1102.0,
             1103.0,
+            1104.0,
             1105.0,
             1106.0,
             1107.0,
             1108.0,
+            1109.0,
             1110.0,
             1111.0,
             1112.0,
@@ -283,17 +307,7 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/GlobalNamespace.java": [
-          "canCollapseUnannotatedChildNames"
-        ],
-        "src/com/google/javascript/rhino/JSDocInfoBuilder.java": [
-          "recordBlockDescription"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/jscomp/CheckSideEffectsTest.java": [
           "testJSDocComments"
@@ -303,11 +317,19 @@
           "testCrashInNestedAssign",
           "testTwinReferenceCancelsChildCollapsing"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "125": {
       "bug_report": "1002",
       "bugfix_commit": "8cef00180a5cf67d047919c89668a6405030dbab",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/TypeCheck.java": [
+          "propertyIsImplicitCast",
+          "visitNew"
+        ]
+      },
       "buggy_commit": "ddc1299802e88b9814250c369e3fe6f7ee07d4e5",
       "failing_tests": [
         "com.google.javascript.jscomp.TypeCheckTest::testIssue1002"
@@ -345,6 +367,7 @@
             6751.0,
             6752.0,
             6753.0,
+            6754.0,
             10134.0
           ],
           "deleted_lines": [
@@ -352,28 +375,46 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/TypeCheck.java": [
-          "propertyIsImplicitCast",
-          "visitNew"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
-          "getInstanceType"
-        ]
-      },
       "newTests": {
         "test/com/google/javascript/jscomp/TypeCheckTest.java": [
           "testIssue1002"
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
+          "getInstanceType"
         ]
       }
     },
     "143": {
       "bug_report": "139",
       "bugfix_commit": "7eaa0d8eca2549742649af34671eaf3da83b5c08",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/NodeUtil.java": [
+          "nodeTypeMayHaveSideEffects",
+          "canBeSideEffected",
+          "tryMergeBlock",
+          "isHoistedFunctionDeclaration",
+          "isVarArgsFunction",
+          "isObjectCallMethod",
+          "containsTypeInOuterScope",
+          "isValidPropertyName",
+          "getVarsDeclaredInBranch",
+          "isPrototypePropertyDeclaration"
+        ],
+        "src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": [
+          "createJsModules",
+          "createDefineReplacements"
+        ],
+        "src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java": [
+          "build"
+        ],
+        "src/com/google/javascript/jscomp/RemoveConstantExpressions.java": [
+          "trySimplify"
+        ]
+      },
       "buggy_commit": "45fd54a488cfbf27978fc4811a722f1fedb8ddaa",
       "failing_tests": [
         "com.google.javascript.jscomp.CommandLineRunnerTest::testDefineFlag3",
@@ -386,6 +427,7 @@
       "modified_code": {
         "src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
           "added_lines": [
+            326.0,
             868.0,
             869.0,
             870.0,
@@ -394,6 +436,7 @@
             877.0
           ],
           "deleted_lines": [
+            326.0,
             868.0,
             869.0,
             870.0,
@@ -432,12 +475,20 @@
         },
         "src/com/google/javascript/jscomp/RemoveConstantExpressions.java": {
           "added_lines": [
+            74.0,
             90.0,
             91.0,
-            92.0
+            92.0,
+            115.0,
+            120.0,
+            127.0
           ],
           "deleted_lines": [
-            90.0
+            74.0,
+            90.0,
+            113.0,
+            118.0,
+            125.0
           ]
         },
         "src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java": {
@@ -459,56 +510,37 @@
             137.0,
             138.0,
             139.0,
+            140.0,
             141.0,
             142.0,
             143.0,
             144.0,
-            145.0
+            145.0,
+            146.0
           ]
         },
         "test/com/google/javascript/jscomp/RemoveConstantExpressionsTest.java": {
           "added_lines": [
+            280.0,
             281.0,
             282.0,
             283.0,
+            284.0,
             285.0,
             286.0,
             287.0,
+            288.0,
             289.0,
             290.0,
             291.0,
+            292.0,
             293.0,
             294.0,
             295.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/NodeUtil.java": [
-          "nodeTypeMayHaveSideEffects",
-          "canBeSideEffected",
-          "tryMergeBlock",
-          "isHoistedFunctionDeclaration",
-          "isVarArgsFunction",
-          "isObjectCallMethod",
-          "containsTypeInOuterScope",
-          "isValidPropertyName",
-          "getVarsDeclaredInBranch",
-          "isPrototypePropertyDeclaration"
-        ],
-        "src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": [
-          "createDefineReplacements"
-        ],
-        "src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java": [
-          "build"
-        ],
-        "src/com/google/javascript/jscomp/RemoveConstantExpressions.java": [
-          "trySimplify"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/jscomp/RemoveConstantExpressionsTest.java": [
           "testCall1",
@@ -520,11 +552,21 @@
           "testDefineFlag2",
           "testDefineFlag3"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "152": {
       "bug_report": "268",
       "bugfix_commit": "de491e70b971caca03f07531c2caf97b878cd1ff",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": [
+          "inferThisType"
+        ],
+        "src/com/google/javascript/rhino/jstype/FunctionType.java": [
+          "resolveInternal"
+        ]
+      },
       "buggy_commit": "08fc2551ca3c811a02407d593b6ae39d2439a88c",
       "failing_tests": [
         "com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse1",
@@ -546,6 +588,7 @@
             131.0,
             132.0,
             133.0,
+            134.0,
             175.0,
             176.0,
             177.0,
@@ -562,6 +605,7 @@
             188.0,
             189.0,
             190.0,
+            191.0,
             416.0
           ],
           "deleted_lines": [
@@ -584,6 +628,7 @@
         },
         "src/com/google/javascript/rhino/jstype/FunctionType.java": {
           "added_lines": [
+            867.0,
             868.0,
             869.0,
             870.0,
@@ -607,47 +652,47 @@
             2613.0,
             2614.0,
             2615.0,
+            2616.0,
             2617.0,
             2618.0,
             2619.0,
             2620.0,
             2621.0,
+            2622.0,
             2623.0,
             2624.0,
             2625.0,
             2626.0,
             2627.0,
             2628.0,
-            2629.0
+            2629.0,
+            2630.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": [
-          "inferThisType"
-        ],
-        "src/com/google/javascript/rhino/jstype/FunctionType.java": [
-          "resolveInternal"
-        ]
       },
       "newMethods": {
         "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": [
           "apply"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/jscomp/TypeCheckTest.java": [
           "testBackwardsTypedefUse1",
           "testBackwardsTypedefUse2",
           "testBackwardsTypedefUse3"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "2": {
       "bug_report": "884",
       "bugfix_commit": "d1cfe67977d8f3aaa85ec20c262171da394d5977",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/TypeCheck.java": [
+          "checkInterfaceConflictProperties"
+        ]
+      },
       "buggy_commit": "61095090415cff7cae4f3645fa76ee7cdd3ee23d",
       "failing_tests": [
         "com.google.javascript.jscomp.TypeCheckTest::testBadInterfaceExtendsNonExistentInterfaces"
@@ -688,27 +733,30 @@
             3778.0,
             3779.0,
             3780.0,
-            3781.0
+            3781.0,
+            3782.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/TypeCheck.java": [
-          "checkInterfaceConflictProperties"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/jscomp/TypeCheckTest.java": [
           "testBadInterfaceExtendsNonExistentInterfaces"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "27": {
       "bug_report": "727",
       "bugfix_commit": "7a8983042131c5a9c2b5421ae42075cbb8ef1aeb",
+      "buggyMethods": {
+        "src/com/google/javascript/rhino/IR.java": [
+          "tryFinally",
+          "tryCatch",
+          "tryCatchFinally"
+        ]
+      },
       "buggy_commit": "1d9ecb5328bbde5ee84dbfe2d74bbd318b89b6d7",
       "failing_tests": [
         "com.google.javascript.rhino.IRTest::testIssue727_1",
@@ -724,6 +772,7 @@
             111.0,
             112.0,
             113.0,
+            114.0,
             227.0,
             228.0,
             236.0,
@@ -778,8 +827,11 @@
             35.0,
             36.0,
             37.0,
+            38.0,
             39.0,
+            40.0,
             41.0,
+            42.0,
             43.0,
             44.0,
             45.0,
@@ -794,6 +846,7 @@
             54.0,
             55.0,
             56.0,
+            57.0,
             58.0,
             59.0,
             60.0,
@@ -808,6 +861,7 @@
             69.0,
             70.0,
             71.0,
+            72.0,
             73.0,
             74.0,
             75.0,
@@ -822,6 +876,7 @@
             84.0,
             85.0,
             86.0,
+            87.0,
             88.0,
             89.0,
             90.0,
@@ -829,20 +884,11 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/rhino/IR.java": [
-          "tryFinally",
-          "tryCatch",
-          "tryCatchFinally"
-        ]
-      },
       "newMethods": {
         "src/com/google/javascript/rhino/IR.java": [
           "blockUnchecked"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/rhino/IRTest.java": [
           "testIssue727_1",
@@ -850,11 +896,21 @@
           "testIssue727_3",
           "testIR"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "34": {
       "bug_report": "691",
       "bugfix_commit": "87b154f89cba3c67045cd7a783b79231d0630a4c",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/CodePrinter.java": [
+          "appendOp"
+        ],
+        "src/com/google/javascript/jscomp/CodeGenerator.java": [
+          "add"
+        ]
+      },
       "buggy_commit": "bc018d6c44e70b5c02016431a2f3604b3e6fc45c",
       "failing_tests": [
         "com.google.javascript.jscomp.CodePrinterTest::testManyAdds"
@@ -886,19 +942,23 @@
             743.0,
             744.0,
             745.0,
+            746.0,
             747.0,
+            748.0,
             749.0,
             750.0,
             751.0,
             752.0,
             753.0,
             754.0,
-            755.0
+            755.0,
+            756.0
           ],
           "deleted_lines": [
             103.0,
             104.0,
             120.0,
+            221.0,
             222.0,
             223.0,
             224.0,
@@ -908,13 +968,16 @@
             228.0,
             229.0,
             230.0,
+            231.0,
             232.0,
+            233.0,
             234.0,
             235.0,
             236.0,
             237.0,
             238.0,
-            239.0
+            239.0,
+            240.0
           ]
         },
         "src/com/google/javascript/jscomp/CodePrinter.java": {
@@ -935,49 +998,53 @@
             1360.0,
             1361.0,
             1362.0,
+            1363.0,
             1382.0,
             1383.0,
             1384.0,
             1385.0,
             1386.0,
             1387.0,
+            1388.0,
             1389.0,
             1390.0,
             1391.0,
             1392.0,
             1393.0,
+            1394.0,
             1395.0,
             1396.0,
             1397.0,
-            1398.0
+            1398.0,
+            1399.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/CodePrinter.java": [
-          "appendOp"
-        ],
+      "newMethods": {
         "src/com/google/javascript/jscomp/CodeGenerator.java": [
-          "add",
           "unrollBinaryOperator"
-        ]
-      },
-      "newMethods": {},
-      "updatedTests": {
-        "test/com/google/javascript/jscomp/CodePrinterTest.java": [
-          "testManyAdds"
         ]
       },
       "newTests": {
         "test/com/google/javascript/jscomp/CodePrinterTest.java": [
-          "testCommaSpacing"
+          "testCommaSpacing",
+          "testManyAdds"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "37": {
       "bug_report": "663",
       "bugfix_commit": "7e93d521cb67ce33018315234fafe8a5aa30ee1e",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/NodeTraversal.java": [
+          "traverseFunction"
+        ],
+        "src/com/google/javascript/jscomp/parsing/IRFactory.java": [
+          "processFunctionNode"
+        ]
+      },
       "buggy_commit": "375879beef8fcffaae51749a7ac537d2eb140802",
       "failing_tests": [
         "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction"
@@ -1023,6 +1090,7 @@
             1948.0,
             1949.0,
             1950.0,
+            1951.0,
             2035.0,
             2036.0,
             2037.0,
@@ -1031,6 +1099,7 @@
             2040.0,
             2041.0,
             2042.0,
+            2043.0,
             2044.0,
             2045.0,
             2046.0,
@@ -1039,34 +1108,29 @@
             2049.0,
             2050.0,
             2051.0,
-            2052.0
+            2052.0,
+            2053.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/NodeTraversal.java": [
-          "traverseFunction"
-        ],
-        "src/com/google/javascript/jscomp/parsing/IRFactory.java": [
-          "processFunctionNode"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "test/com/google/javascript/jscomp/IntegrationTest.java": [
+          "testIncompleteFunction",
           "test"
         ]
       },
-      "newTests": {
-        "test/com/google/javascript/jscomp/IntegrationTest.java": [
-          "testIncompleteFunction"
-        ]
-      }
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "55": {
       "bug_report": "538",
       "bugfix_commit": "f2c0cb1f67ecb3315c0cb11326c9cb04db07ee8a",
+      "buggyMethods": {
+        "src/com/google/javascript/jscomp/FunctionRewriter.java": [
+          "reduce"
+        ]
+      },
       "buggy_commit": "1d13eac7441b980804c7ddfbe48a10a2ec3431d0",
       "failing_tests": [
         "com.google.javascript.jscomp.FunctionRewriterTest::testIssue538"
@@ -1082,6 +1146,7 @@
             117.0,
             118.0,
             119.0,
+            120.0,
             308.0,
             368.0,
             422.0,
@@ -1113,33 +1178,40 @@
             177.0,
             178.0,
             179.0,
-            180.0
+            180.0,
+            181.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/com/google/javascript/jscomp/FunctionRewriter.java": [
-          "reduce"
-        ]
       },
       "newMethods": {
         "src/com/google/javascript/jscomp/FunctionRewriter.java": [
           "isReduceableFunctionExpression"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "test/com/google/javascript/jscomp/FunctionRewriterTest.java": [
           "testIssue538"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "Codec": {
     "8": {
       "bug_report": "CODEC-105",
       "bugfix_commit": "2c13032a16e37b7bc9e0272d25fc185b5c82b42e",
+      "buggyMethods": {
+        "src/java/org/apache/commons/codec/binary/Base64InputStream.java": [
+          "read"
+        ],
+        "src/java/org/apache/commons/codec/binary/Base64.java": [
+          "readResults",
+          "setInitialBuffer",
+          "encode",
+          "decode"
+        ]
+      },
       "buggy_commit": "931e25921dc0ec705a0055655aa2b2237a0888d7",
       "failing_tests": [
         "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec105"
@@ -1191,15 +1263,18 @@
             442.0,
             443.0,
             444.0,
+            445.0,
             496.0,
             754.0,
             755.0,
             756.0,
+            759.0,
             760.0,
             761.0,
             762.0,
             763.0,
             764.0,
+            765.0,
             949.0,
             950.0,
             951.0,
@@ -1239,7 +1314,8 @@
             57.0,
             58.0,
             59.0,
-            60.0
+            60.0,
+            61.0
           ]
         },
         "src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java": {
@@ -1260,9 +1336,12 @@
             14.0,
             15.0,
             16.0,
+            17.0,
             18.0,
+            19.0,
             20.0,
             21.0,
+            22.0,
             23.0,
             24.0,
             25.0,
@@ -1274,7 +1353,9 @@
             31.0,
             32.0,
             33.0,
+            34.0,
             35.0,
+            36.0,
             37.0,
             38.0,
             39.0,
@@ -1282,6 +1363,7 @@
             41.0,
             42.0,
             43.0,
+            44.0,
             45.0,
             46.0,
             47.0,
@@ -1294,20 +1376,7 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/java/org/apache/commons/codec/binary/Base64InputStream.java": [
-          "read"
-        ],
-        "src/java/org/apache/commons/codec/binary/Base64.java": [
-          "readResults",
-          "setInitialBuffer",
-          "encode",
-          "decode"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java": [
           "read"
@@ -1315,13 +1384,16 @@
         "src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java": [
           "testCodec105"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "Collections": {
     "28": {
       "bug_report": "COLLECTIONS-586",
       "bugfix_commit": "a270ff62852e62b5ac0f943a7e57292a72b77271",
+      "buggyMethods": {},
       "buggy_commit": "796114ea4a9cc57ab17170536e1caa5933520c47",
       "failing_tests": [
         "org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMapClear"
@@ -1332,6 +1404,7 @@
       "modified_code": {
         "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java": {
           "added_lines": [
+            2261.0,
             2262.0,
             2263.0,
             2264.0,
@@ -1365,6 +1438,7 @@
             382.0,
             383.0,
             384.0,
+            385.0,
             386.0,
             387.0,
             388.0,
@@ -1372,11 +1446,13 @@
             390.0,
             391.0,
             392.0,
+            393.0,
             394.0,
             395.0,
             396.0,
             397.0,
             398.0,
+            399.0,
             400.0,
             401.0,
             402.0,
@@ -1384,6 +1460,7 @@
             404.0,
             405.0,
             406.0,
+            407.0,
             408.0,
             409.0,
             410.0,
@@ -1396,6 +1473,7 @@
             417.0,
             418.0,
             419.0,
+            420.0,
             421.0,
             422.0,
             423.0,
@@ -1404,31 +1482,40 @@
             426.0,
             427.0,
             428.0,
-            429.0
+            429.0,
+            430.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {},
       "newMethods": {
         "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java": [
           "clear"
         ]
       },
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java": [
           "testPrefixMapClear",
           "testPrefixMapClearNothing",
           "testPrefixMapClearUsingRemove"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "Compress": {
     "1": {
       "bug_report": "COMPRESS-28",
       "bugfix_commit": "004124ac5dbf5edbf925078652526267468821e7",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java": [
+          "putNextEntry",
+          "closeEntry",
+          "finish",
+          "closeArchiveEntry",
+          "close"
+        ]
+      },
       "buggy_commit": "728b4e814ec88cab556533fa114be0efdde963be",
       "failing_tests": [
         "org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive"
@@ -1472,7 +1559,8 @@
             403.0,
             404.0,
             405.0,
-            406.0
+            406.0,
+            407.0
           ]
         }
       },
@@ -1483,37 +1571,48 @@
             27.0,
             35.0,
             36.0,
+            37.0,
             38.0,
             39.0,
+            40.0,
             41.0,
             43.0,
             44.0,
             45.0,
+            46.0,
             47.0,
             48.0,
             49.0,
+            50.0,
             51.0,
             52.0,
+            53.0,
             54.0,
             55.0,
             56.0,
             57.0,
             58.0,
+            59.0,
             60.0,
             61.0,
             62.0,
             63.0,
             64.0,
+            65.0,
             66.0,
             67.0,
             68.0,
+            69.0,
             70.0,
             71.0,
             72.0,
+            73.0,
             74.0,
             75.0,
             76.0,
             77.0,
+            78.0,
+            79.0,
             80.0,
             81.0,
             82.0,
@@ -1523,11 +1622,14 @@
             86.0,
             87.0,
             88.0,
+            90.0,
             91.0,
+            92.0,
             93.0,
             94.0,
             95.0,
             96.0,
+            97.0,
             98.0,
             99.0,
             100.0,
@@ -1537,40 +1639,51 @@
           "deleted_lines": [
             33.0,
             34.0,
+            35.0,
             36.0,
             37.0,
+            38.0,
             39.0,
             41.0,
             42.0,
             43.0,
+            44.0,
             45.0,
             46.0,
             47.0,
+            48.0,
             49.0,
             50.0,
+            51.0,
             52.0,
             53.0,
             54.0,
             55.0,
             56.0,
+            57.0,
             58.0,
             59.0,
             60.0,
             61.0,
             62.0,
+            63.0,
             64.0,
             65.0,
             66.0,
             67.0,
             68.0,
+            69.0,
             70.0,
             71.0,
             72.0,
             73.0,
             74.0,
+            75.0,
             76.0,
             77.0,
+            78.0,
             79.0,
+            80.0,
             81.0,
             83.0
           ]
@@ -1578,17 +1691,24 @@
         "src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
+            6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
             12.0,
             13.0,
+            14.0,
+            15.0,
             16.0,
             17.0,
             18.0,
+            19.0,
             20.0,
             21.0,
             22.0,
@@ -1604,31 +1724,28 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java": [
-          "putNextEntry",
-          "closeEntry",
-          "finish",
-          "closeArchiveEntry",
-          "close"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java": [
           "testCpioUnarchive"
-        ],
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
         "src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java": [
           "testCpioArchiveCreation",
           "testCpioUnarchive"
         ]
-      },
-      "newTests": {}
+      }
     },
     "12": {
       "bug_report": "COMPRESS-178",
       "bugfix_commit": "bc84d2083e4b1da77547bb4e810a06553e8f0bed",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
+          "getNextTarEntry"
+        ]
+      },
       "buggy_commit": "b23b5c8533846374a22b417f7d66c7cb8ceb8962",
       "failing_tests": [
         "org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178"
@@ -1655,6 +1772,7 @@
       "modified_tests": {
         "src/test/java/org/apache/commons/compress/archivers/TarTestCase.java": {
           "added_lines": [
+            303.0,
             304.0,
             305.0,
             306.0,
@@ -1667,27 +1785,28 @@
             313.0,
             314.0,
             315.0,
-            316.0
+            316.0,
+            317.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
-          "getNextTarEntry"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/TarTestCase.java": [
           "testCOMPRESS178"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "14": {
       "bug_report": "COMPRESS-181",
       "bugfix_commit": "40f2e6380094ebfdc73e4adaf4059b80e1327aad",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
+          "parseOctal"
+        ]
+      },
       "buggy_commit": "d39ba76c50f65698213787901ec8dffbda77e43a",
       "failing_tests": [
         "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::workaroundForBrokenTimeHeader"
@@ -1735,6 +1854,7 @@
             25.0,
             26.0,
             30.0,
+            49.0,
             50.0,
             51.0,
             52.0,
@@ -1751,7 +1871,8 @@
             63.0,
             64.0,
             65.0,
-            66.0
+            66.0,
+            67.0
           ]
         },
         "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": {
@@ -1765,27 +1886,27 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
-          "parseOctal"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": [
-          "testParseOctalInvalid"
-        ]
-      },
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
           "workaroundForBrokenTimeHeader"
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": [
+          "testParseOctalInvalid"
         ]
       }
     },
     "17": {
       "bug_report": "COMPRESS-197",
       "bugfix_commit": "ab456436d20f386641e605c17de24cc8cd3c1770",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
+          "parseOctal"
+        ]
+      },
       "buggy_commit": "db6dda34281d95d495ff4c935b65cf84310bf6be",
       "failing_tests": [
         "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::testCompress197"
@@ -1827,10 +1948,12 @@
             136.0,
             137.0,
             138.0,
+            139.0,
             140.0,
             141.0,
             142.0,
             143.0,
+            144.0,
             145.0
           ],
           "deleted_lines": [
@@ -1838,24 +1961,24 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
-          "parseOctal"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
           "testCompress197",
           "getTestStream"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "18": {
       "bug_report": "COMPRESS-203",
       "bugfix_commit": "09b8f6d78e18b927491fc299973146fa74fd977f",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java": [
+          "writePaxHeaders"
+        ]
+      },
       "buggy_commit": "716666a267169689e3b4559458c1f0d53a96ae0a",
       "failing_tests": [
         "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode"
@@ -1883,12 +2006,14 @@
             378.0,
             379.0,
             380.0,
+            381.0,
             382.0,
             383.0,
             384.0,
             385.0,
             386.0,
             387.0,
+            388.0,
             389.0,
             390.0,
             391.0,
@@ -1908,6 +2033,7 @@
             405.0,
             406.0,
             407.0,
+            408.0,
             409.0,
             410.0,
             411.0,
@@ -1927,18 +2053,12 @@
             425.0,
             426.0,
             427.0,
-            428.0
+            428.0,
+            429.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java": [
-          "writePaxHeaders"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStreamTest.java": [
           "testWriteLongDirectoryNameGnuMode",
@@ -1946,11 +2066,18 @@
           "testWriteLongDirectoryName",
           "testWriteNonAsciiDirectoryNamePosixMode"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "23": {
       "bug_report": "COMPRESS-256",
       "bugfix_commit": "cbb5a1ad9b0b80f717ee71dc0fc765afdc1601c0",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java": [
+          "decode"
+        ]
+      },
       "buggy_commit": "71e4eeadcfc5eb390eca1142fc1f6ee5b1b4d5c1",
       "failing_tests": [
         "org.apache.commons.compress.archivers.sevenz.SevenZFileTest::testCompressedHeaderWithNonDefaultDictionarySize"
@@ -1985,27 +2112,28 @@
             86.0,
             87.0,
             88.0,
-            89.0
+            89.0,
+            90.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java": [
-          "decode"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/sevenz/SevenZFileTest.java": [
           "testCompressedHeaderWithNonDefaultDictionarySize"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "32": {
       "bug_report": "COMPRESS-314",
       "bugfix_commit": "3c4a09bf28e7cd600b919b8c799fbbfd19a94c0b",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
+          "applyPaxHeadersToCurrentEntry"
+        ]
+      },
       "buggy_commit": "24a3100e9897837b513a0d9f2ae26fd02ec91246",
       "failing_tests": [
         "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldReadBigGid"
@@ -2047,29 +2175,26 @@
             254.0,
             255.0,
             256.0,
-            257.0
+            257.0,
+            258.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
-          "applyPaxHeadersToCurrentEntry"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
           "shouldReadBigGid"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "Csv": {
     "12": {
       "bug_report": "CSV-128",
       "bugfix_commit": "c81ad0328eefb438cc875b9c9f081be93f9fdcc2",
+      "buggyMethods": {},
       "buggy_commit": "bc504117fceb2c254eea5158a62de54c80a5d81d",
       "failing_tests": [
         "org.apache.commons.csv.CSVParserTest::testExcelHeaderCountLessThanData"
@@ -2129,6 +2254,7 @@
             98.0,
             99.0,
             100.0,
+            101.0,
             102.0,
             103.0,
             120.0,
@@ -2191,6 +2317,7 @@
             385.0,
             386.0,
             387.0,
+            388.0,
             400.0,
             401.0,
             402.0,
@@ -2251,6 +2378,8 @@
             110.0,
             111.0,
             112.0,
+            113.0,
+            114.0,
             115.0,
             116.0,
             133.0,
@@ -2261,6 +2390,7 @@
             139.0,
             140.0,
             141.0,
+            144.0,
             145.0,
             146.0,
             159.0,
@@ -2383,9 +2513,13 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {},
       "newMethods": {},
+      "newTests": {
+        "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
+          "testExcelHeaderCountLessThanData"
+        ]
+      },
+      "origin": "defects4j",
       "updatedTests": {
         "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
           "testBackslashEscaping",
@@ -2410,16 +2544,16 @@
           "validateLineNumbers",
           "validateRecordNumbers"
         ]
-      },
-      "newTests": {
-        "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
-          "testExcelHeaderCountLessThanData"
-        ]
       }
     },
     "4": {
       "bug_report": "CSV-100",
       "bugfix_commit": "22601f647f2ce9a05fa4ce20ea356492c670940c",
+      "buggyMethods": {
+        "src/main/java/org/apache/commons/csv/CSVParser.java": [
+          "getHeaderMap"
+        ]
+      },
       "buggy_commit": "2b5f84ede12cfadd7946ffb07a56709b8322a02f",
       "failing_tests": [
         "org.apache.commons.csv.CSVParserTest::testNoHeaderMap"
@@ -2446,29 +2580,30 @@
             668.0,
             669.0,
             670.0,
-            671.0
+            671.0,
+            672.0
           ]
         }
       },
-      "origin": "defects4j/t-evos",
-      "buggyMethods": {
-        "src/main/java/org/apache/commons/csv/CSVParser.java": [
-          "getHeaderMap"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
           "testNoHeaderMap"
         ]
-      }
+      },
+      "origin": "defects4j/t-evos",
+      "updatedTests": {}
     }
   },
   "Gson": {
     "12": {
       "bug_report": "1013",
       "bugfix_commit": "9e6f2bab20257b6823a5b753739f047d79e9dcbd",
+      "buggyMethods": {
+        "gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": [
+          "skipValue"
+        ]
+      },
       "buggy_commit": "7719e73a108c450666613c279bedaed724cd9cc9",
       "failing_tests": [
         "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_filledJsonObject",
@@ -2512,12 +2647,14 @@
             14.0,
             15.0,
             16.0,
+            17.0,
             18.0,
             19.0,
             20.0,
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
             27.0,
@@ -2525,6 +2662,7 @@
             29.0,
             30.0,
             31.0,
+            32.0,
             33.0,
             34.0,
             35.0,
@@ -2546,24 +2684,24 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": [
-          "skipValue"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "gson/src/test/java/com/google/gson/internal/bind/JsonTreeReaderTest.java": [
           "testSkipValue_emptyJsonObject",
           "testSkipValue_filledJsonObject"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "8": {
       "bug_report": "817",
       "bugfix_commit": "0f66f4fac441f7d7d7bc4afc907454f3fe4c0faa",
+      "buggyMethods": {
+        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": [
+          "newInstance"
+        ]
+      },
       "buggy_commit": "6f6af8050799bec5321d2c06cd3230daadbb6535",
       "failing_tests": [
         "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation",
@@ -2583,6 +2721,7 @@
             49.0,
             73.0,
             93.0,
+            108.0,
             109.0,
             110.0,
             111.0,
@@ -2619,18 +2758,24 @@
             14.0,
             15.0,
             16.0,
+            17.0,
             18.0,
+            19.0,
             20.0,
             21.0,
             22.0,
             23.0,
             24.0,
+            25.0,
             26.0,
             27.0,
+            28.0,
             29.0,
             30.0,
+            31.0,
             32.0,
             33.0,
+            34.0,
             35.0,
             36.0,
             37.0,
@@ -2644,6 +2789,7 @@
             45.0,
             46.0,
             47.0,
+            48.0,
             49.0,
             50.0,
             51.0,
@@ -2657,6 +2803,7 @@
             59.0,
             60.0,
             61.0,
+            62.0,
             63.0,
             64.0,
             65.0,
@@ -2672,31 +2819,31 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": [
-          "newInstance"
-        ]
-      },
       "newMethods": {
         "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": [
           "assertInstantiable"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "gson/src/test/java/com/google/gson/internal/UnsafeAllocatorInstantiationTest.java": [
           "testInterfaceInstantiation",
           "testAbstractClassInstantiation",
           "testConcreteClassInstantiation"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     }
   },
   "JacksonCore": {
     "4": {
       "bug_report": "152",
       "bugfix_commit": "3baa7d6742f7460bfb0af8edf48bf1575658109a",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java": [
+          "expandCurrentSegment"
+        ]
+      },
       "buggy_commit": "7317dc95b0c9d09b94f37c8ae3a48de8b37729cc",
       "failing_tests": [
         "com.fasterxml.jackson.core.util.TestTextBuffer::testExpand"
@@ -2724,11 +2871,13 @@
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java": {
           "added_lines": [
+            65.0,
             66.0,
             67.0,
             68.0,
             69.0,
             70.0,
+            71.0,
             72.0,
             73.0,
             74.0,
@@ -2740,23 +2889,53 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java": [
-          "expandCurrentSegment"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java": [
           "testExpand"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "7": {
       "bug_report": "177",
       "bugfix_commit": "5cddffa133e7de41fa9efb5962cf3d0cff9b3e89",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java": [
+          "writeValue"
+        ],
+        "src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": [
+          "writeString",
+          "writeBinary",
+          "writeNumber",
+          "writeBoolean",
+          "writeNull"
+        ],
+        "src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": [
+          "writeStartObject",
+          "writeEndObject",
+          "writeFieldName",
+          "writeString"
+        ],
+        "src/main/java/com/fasterxml/jackson/core/json/JsonGeneratorImpl.java": [
+          "writeStringField"
+        ],
+        "src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java": [
+          "writeString",
+          "writeRawUTF8String",
+          "writeUTF8String",
+          "writeRawValue",
+          "writeBinary",
+          "writeNumber",
+          "writeBoolean",
+          "writeNull",
+          "_verifyValueWrite",
+          "_verifyPrettyValueWrite",
+          "flush",
+          "close"
+        ]
+      },
       "buggy_commit": "b0ceb4eeb69f20f0e4242736ae3e19ed2b9c5da3",
       "failing_tests": [
         "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
@@ -2796,12 +2975,14 @@
         "src/main/java/com/fasterxml/jackson/core/base/GeneratorBase.java": {
           "added_lines": [
             34.0,
+            35.0,
             36.0,
             37.0,
             38.0,
             39.0,
             40.0,
-            41.0
+            41.0,
+            42.0
           ]
         },
         "src/main/java/com/fasterxml/jackson/core/json/JsonGeneratorImpl.java": {
@@ -2822,9 +3003,17 @@
         },
         "src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java": {
           "added_lines": [
+            16.0,
+            21.0,
+            29.0,
+            41.0,
+            70.0,
+            76.0,
+            81.0,
             419.0,
             467.0,
             491.0,
+            507.0,
             511.0,
             526.0,
             593.0,
@@ -2846,9 +3035,17 @@
             1045.0
           ],
           "deleted_lines": [
+            16.0,
+            21.0,
+            29.0,
+            41.0,
+            70.0,
+            76.0,
+            81.0,
             419.0,
             467.0,
             491.0,
+            507.0,
             511.0,
             526.0,
             593.0,
@@ -2915,37 +3112,45 @@
         "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
+            5.0,
             6.0,
             7.0,
             8.0,
             9.0,
+            10.0,
             11.0,
             12.0,
             13.0,
             14.0,
+            15.0,
             16.0,
             17.0,
             18.0,
             19.0,
             20.0,
             21.0,
+            22.0,
             23.0,
             24.0,
             25.0,
             26.0,
             27.0,
             28.0,
+            29.0,
             30.0,
             31.0,
             32.0,
             33.0,
+            34.0,
             35.0,
             36.0,
             37.0,
             38.0,
             39.0,
+            40.0,
             41.0,
             42.0,
             43.0,
@@ -2957,6 +3162,7 @@
             49.0,
             50.0,
             51.0,
+            52.0,
             53.0,
             54.0,
             55.0,
@@ -2967,6 +3173,7 @@
             60.0,
             61.0,
             62.0,
+            63.0,
             64.0,
             65.0,
             66.0,
@@ -2977,6 +3184,7 @@
             71.0,
             72.0,
             73.0,
+            74.0,
             75.0,
             76.0,
             77.0,
@@ -2987,6 +3195,8 @@
             82.0,
             83.0,
             84.0,
+            85.0,
+            86.0,
             87.0
           ]
         },
@@ -2999,6 +3209,7 @@
             233.0,
             234.0,
             235.0,
+            236.0,
             237.0,
             238.0,
             239.0,
@@ -3010,6 +3221,7 @@
             245.0,
             246.0,
             247.0,
+            248.0,
             255.0,
             256.0,
             257.0,
@@ -3021,6 +3233,7 @@
             263.0,
             264.0,
             265.0,
+            266.0,
             267.0,
             268.0,
             269.0,
@@ -3031,6 +3244,7 @@
             274.0,
             275.0,
             276.0,
+            277.0,
             278.0,
             279.0,
             280.0,
@@ -3041,6 +3255,7 @@
             285.0,
             286.0,
             287.0,
+            288.0,
             289.0,
             290.0,
             291.0,
@@ -3050,63 +3265,27 @@
             295.0,
             296.0,
             297.0,
-            298.0
+            298.0,
+            299.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java": [
-          "writeValue"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": [
-          "writeString",
-          "writeBinary",
-          "writeNumber",
-          "writeBoolean",
-          "writeNull"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": [
-          "writeStartObject",
-          "writeEndObject",
-          "writeFieldName",
-          "writeString"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/JsonGeneratorImpl.java": [
-          "writeStringField"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java": [
-          "writeString",
-          "writeRawUTF8String",
-          "writeUTF8String",
-          "writeRawValue",
-          "writeBinary",
-          "writeNumber",
-          "writeBoolean",
-          "writeNull",
-          "_verifyValueWrite",
-          "_verifyPrettyValueWrite",
-          "flush",
-          "close"
+      "newMethods": {},
+      "newTests": {
+        "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": [
+          "testDupFieldNameWrites",
+          "testFailOnWritingStringNotFieldNameBytes",
+          "testFailOnWritingStringNotFieldNameChars",
+          "_testDupFieldNameWrites",
+          "_testFailOnWritingStringNotFieldName"
         ]
       },
-      "newMethods": {},
+      "origin": "defects4j",
       "updatedTests": {
         "src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java": [
           "testDupFieldNameWrites",
           "_testDupFieldNameWrites",
           "_testFailOnWritingStringNotFieldName"
-        ],
-        "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": [
-          "_testDupFieldNameWrites",
-          "_testFailOnWritingStringNotFieldName"
-        ]
-      },
-      "newTests": {
-        "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": [
-          "testDupFieldNameWrites",
-          "testFailOnWritingStringNotFieldNameBytes",
-          "testFailOnWritingStringNotFieldNameChars"
         ]
       }
     }
@@ -3115,6 +3294,12 @@
     "104": {
       "bug_report": "2167",
       "bugfix_commit": "83c7c4347055c3a70a3115fa106aa69c9cb56456",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": [
+          "_format",
+          "pad4"
+        ]
+      },
       "buggy_commit": "54c744c2c2007eb93dd756cc8581573c9bec97ac",
       "failing_tests": [
         "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
@@ -3156,6 +3341,7 @@
             501.0,
             502.0,
             503.0,
+            504.0,
             532.0,
             533.0,
             534.0,
@@ -3173,11 +3359,13 @@
           "added_lines": [
             120.0,
             121.0,
+            122.0,
             123.0,
             124.0,
             125.0,
             126.0,
             127.0,
+            128.0,
             129.0,
             130.0,
             131.0,
@@ -3187,19 +3375,23 @@
             135.0,
             136.0,
             137.0,
+            138.0,
             139.0,
             140.0,
             141.0,
             142.0,
             143.0,
+            144.0,
             145.0,
             146.0,
+            147.0,
             148.0,
             149.0,
             150.0,
             151.0,
             362.0,
             363.0,
+            364.0,
             365.0,
             366.0
           ],
@@ -3211,34 +3403,33 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": [
-          "_format",
-          "pad4"
-        ]
-      },
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": [
           "_formatBCEYear"
-        ]
-      },
-      "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": [
-          "testDateISO8601",
-          "serialize",
-          "testDateISO8601_BCE"
         ]
       },
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": [
           "testDateISO8601_10k"
         ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": [
+          "testDateISO8601",
+          "serialize",
+          "testDateISO8601_BCE"
+        ]
       }
     },
     "14": {
       "bug_report": "744",
       "bugfix_commit": "817a45a07040297a5db45dd04e79b010146b7e0d",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": [
+          "_bindAsTree"
+        ]
+      },
       "buggy_commit": "0ec81c07bc4be13e1382f7191981ed3f0bf9ef39",
       "failing_tests": [
         "com.fasterxml.jackson.databind.convert.TestUpdateValue::testIssue744"
@@ -3269,7 +3460,8 @@
             1587.0,
             1588.0,
             1589.0,
-            1590.0
+            1590.0,
+            1591.0
           ],
           "deleted_lines": [
             141.0,
@@ -3285,20 +3477,26 @@
             8.0,
             9.0,
             10.0,
+            50.0,
             51.0,
             52.0,
             53.0,
             54.0,
+            55.0,
             56.0,
+            57.0,
             58.0,
             59.0,
             60.0,
             61.0,
+            62.0,
             63.0,
             64.0,
+            65.0,
             66.0,
             67.0,
             68.0,
+            69.0,
             70.0,
             71.0,
             72.0,
@@ -3306,11 +3504,14 @@
             74.0,
             75.0,
             76.0,
+            77.0,
             78.0,
             79.0,
             80.0,
             81.0,
             82.0,
+            83.0,
+            185.0,
             186.0,
             187.0,
             188.0,
@@ -3318,28 +3519,35 @@
             190.0,
             191.0,
             192.0,
+            193.0,
             194.0,
             195.0,
             196.0,
             197.0,
             198.0,
+            199.0,
             200.0,
             201.0,
             202.0,
             203.0,
+            204.0,
             205.0,
             206.0,
             207.0,
+            208.0,
             209.0,
             210.0,
             211.0,
+            212.0,
             213.0,
             214.0,
             215.0,
             216.0,
             217.0,
+            218.0,
             219.0,
             220.0,
+            221.0,
             222.0,
             223.0,
             224.0,
@@ -3347,36 +3555,47 @@
           ],
           "deleted_lines": [
             6.0,
-            7.0
+            7.0,
+            47.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": [
-          "_bindAsTree"
-        ]
       },
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": [
           "_findTreeDeserializer"
         ]
       },
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/convert/TestUpdateValue.java": [
+          "DataADeserializer",
           "deserialize",
           "testIssue744"
         ]
       },
-      "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/convert/TestUpdateValue.java": [
-          "DataADeserializer"
-        ]
-      }
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "15": {
       "bug_report": "731",
       "bugfix_commit": "119ddc9701c94ac184362166742ceaa7437eec8f",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": [
+          "createContextual",
+          "serialize",
+          "serializeWithType",
+          "isEmpty",
+          "acceptJsonFormatVisitor"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java": [
+          "createSerializer"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdSerializer.java": [
+          "findConvertingContentSerializer"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java": [
+          "findConvertingSerializer"
+        ]
+      },
       "buggy_commit": "fa1c2ff7eefd68061ae0cc3f630e87d16d1b2bb5",
       "failing_tests": [
         "com.fasterxml.jackson.databind.convert.TestConvertingSerializer::testIssue731"
@@ -3396,6 +3615,11 @@
             299.0,
             300.0,
             301.0,
+            302.0,
+            303.0,
+            313.0
+          ],
+          "deleted_lines": [
             302.0
           ]
         },
@@ -3452,6 +3676,7 @@
             242.0,
             243.0,
             244.0,
+            267.0,
             268.0,
             269.0,
             270.0,
@@ -3483,6 +3708,7 @@
             262.0
           ],
           "deleted_lines": [
+            253.0,
             262.0
           ]
         }
@@ -3490,6 +3716,7 @@
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/databind/convert/TestConvertingSerializer.java": {
           "added_lines": [
+            125.0,
             126.0,
             127.0,
             128.0,
@@ -3498,6 +3725,7 @@
             131.0,
             132.0,
             133.0,
+            134.0,
             135.0,
             136.0,
             137.0,
@@ -3506,6 +3734,7 @@
             140.0,
             141.0,
             142.0,
+            143.0,
             144.0,
             145.0,
             146.0,
@@ -3513,6 +3742,8 @@
             148.0,
             149.0,
             150.0,
+            151.0,
+            197.0,
             198.0,
             199.0,
             200.0,
@@ -3520,27 +3751,11 @@
             202.0,
             203.0,
             204.0
+          ],
+          "deleted_lines": [
+            125.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": [
-          "createContextual",
-          "serialize",
-          "serializeWithType",
-          "isEmpty",
-          "acceptJsonFormatVisitor"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java": [
-          "createSerializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdSerializer.java": [
-          "findConvertingContentSerializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java": [
-          "findConvertingSerializer"
-        ]
       },
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": [
@@ -3550,7 +3765,6 @@
           "isJavaLangObject"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/convert/TestConvertingSerializer.java": [
           "DummyBean",
@@ -3558,11 +3772,18 @@
           "convert",
           "testIssue731"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "17": {
       "bug_report": "793",
       "bugfix_commit": "a143c05db7a911f98f8bf59beb13cfcb7689395d",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
+          "useForType"
+        ]
+      },
       "buggy_commit": "7db1f44069bbcac9d884d829f8052a89b5ec271b",
       "failing_tests": [
         "com.fasterxml.jackson.databind.node.TestJsonNode::testArrayWithDefaultTyping"
@@ -3578,6 +3799,7 @@
             178.0,
             179.0,
             180.0,
+            181.0,
             190.0
           ],
           "deleted_lines": [
@@ -3590,14 +3812,17 @@
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": {
           "added_lines": [
+            107.0,
             108.0,
             109.0,
             110.0,
             111.0,
             112.0,
+            113.0,
             114.0,
             115.0,
             116.0,
+            117.0,
             118.0,
             119.0,
             120.0,
@@ -3605,30 +3830,51 @@
             122.0
           ],
           "deleted_lines": [
+            88.0,
             89.0,
             104.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
-          "useForType"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": [
-          "testBinary",
-          "testPOJO",
           "testArrayWithDefaultTyping"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {
+        "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": [
+          "testBinary",
+          "testPOJO"
+        ]
+      }
     },
     "25": {
       "bug_report": "890",
       "bugfix_commit": "9917c94d94a285ece80e6c9f3d2b9fba06d98fd7",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.java": [
+          "deserialize",
+          "constructSet",
+          "EnumSetDeserializer"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java": [
+          "_findDeserializer"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver.java": [
+          "findTypeMapping"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java": [
+          "modifyTypeByAnnotation"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": [
+          "narrowBy"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
+          "modifyTypeByAnnotation"
+        ]
+      },
       "buggy_commit": "b4ef0a65150a7311ebb9119b1ac6898e33dc0baf",
       "failing_tests": [
         "com.fasterxml.jackson.databind.deser.TestArrayDeserialization::testByteArrayTypeOverride890"
@@ -3637,7 +3883,15 @@
         "java.lang.IllegalArgumentException: Can not deserialize Class [B (of type array) as a Bean\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.isPotentialBeanType(BeanDeserializerFactory.java:808)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:138)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:403)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:352)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n        at com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer(DeserializationContext.java:428)\n        at com.fasterxml.jackson.databind.deser.std.StdDeserializer.findDeserializer(StdDeserializer.java:947)\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.resolve(BeanDeserializerBase.java:439)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:296)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\n        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\n        at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:461)\n        at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:3804)\n        at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:3418)\n        at com.fasterxml.jackson.databind.ObjectMapper.convertValue(ObjectMapper.java:3351)"
       ],
       "modified_code": {
-        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": {},
+        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": {
+          "added_lines": [
+            150.0,
+            152.0
+          ],
+          "deleted_lines": [
+            151.0
+          ]
+        },
         "src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java": {
           "added_lines": [
             1757.0
@@ -3706,15 +3960,18 @@
           "added_lines": [
             11.0,
             98.0,
+            131.0,
             132.0,
             133.0,
             134.0,
             135.0,
+            136.0,
             554.0,
             555.0,
             556.0,
             557.0,
             558.0,
+            559.0,
             560.0,
             561.0,
             562.0,
@@ -3723,44 +3980,37 @@
             565.0,
             566.0,
             567.0,
-            568.0
+            568.0,
+            569.0
           ],
           "deleted_lines": [
-            99.0
+            3.0,
+            9.0,
+            99.0,
+            132.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.java": [
-          "deserialize",
-          "constructSet",
-          "EnumSetDeserializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java": [
-          "_findDeserializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver.java": [
-          "findTypeMapping"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java": [
-          "modifyTypeByAnnotation"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
-          "modifyTypeByAnnotation"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/deser/TestArrayDeserialization.java": [
           "testByteArrayTypeOverride890"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "28": {
       "bug_report": "941",
       "bugfix_commit": "b049739cc66a0f79c19dd1cea47e922d95645023",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": [
+          "deserialize"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": [
+          "deserialize"
+        ]
+      },
       "buggy_commit": "e258ee60edc692c80907fd6e4bb16e641692b721",
       "failing_tests": [
         "com.fasterxml.jackson.databind.node.TestObjectNode::testIssue941"
@@ -3805,53 +4055,60 @@
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/databind/node/TestObjectNode.java": {
           "added_lines": [
+            50.0,
             51.0,
             52.0,
             53.0,
             54.0,
+            55.0,
             56.0,
             57.0,
+            58.0,
             59.0,
             60.0,
             61.0,
+            62.0,
+            400.0,
             401.0,
             402.0,
             403.0,
+            404.0,
             405.0,
             406.0,
+            407.0,
             408.0,
             409.0,
+            410.0,
             411.0,
             412.0,
             413.0
+          ],
+          "deleted_lines": [
+            50.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": [
-          "deserialize"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": [
-          "deserialize"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/node/TestObjectNode.java": [
-          "testIssue941"
-        ]
-      },
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/node/TestObjectNode.java": [
           "MyValue",
-          "getObject"
+          "getObject",
+          "testIssue941"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "32": {
       "bug_report": "989",
       "bugfix_commit": "d5a25f4300a93f4c411a7b8364d34122bc0a1b62",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializer.java": [
+          "deserialize",
+          "deserializeWithType",
+          "mapObject"
+        ]
+      },
       "buggy_commit": "fe25f7e14d92f5d4746549e7df22e9af35fdf54b",
       "failing_tests": [
         "com.fasterxml.jackson.databind.deser.TestUntypedDeserialization::testNestedUntyped989"
@@ -3871,11 +4128,13 @@
             536.0,
             537.0,
             538.0,
-            539.0
+            539.0,
+            540.0
           ],
           "deleted_lines": [
             272.0,
             317.0,
+            403.0,
             404.0,
             491.0,
             537.0
@@ -3886,25 +4145,31 @@
         "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": {
           "added_lines": [
             6.0,
+            94.0,
             95.0,
             96.0,
+            97.0,
             98.0,
             99.0,
             100.0,
             101.0,
             102.0,
+            109.0,
             110.0,
             120.0,
             169.0,
             182.0,
+            253.0,
             254.0,
             255.0,
             256.0,
             257.0,
+            258.0,
             259.0,
             260.0,
             261.0,
             262.0,
+            263.0,
             264.0,
             265.0,
             266.0,
@@ -3919,31 +4184,32 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializer.java": [
-          "deserialize",
-          "deserializeWithType",
-          "mapObject"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": [
-          "testSampleDoc",
-          "testNestedUntypes",
+          "Untyped989",
           "testNestedUntyped989"
         ]
       },
-      "newTests": {
+      "origin": "defects4j",
+      "updatedTests": {
         "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": [
-          "Untyped989"
+          "testSampleDoc",
+          "testNestedUntypes"
         ]
       }
     },
     "58": {
       "bug_report": "877",
       "bugfix_commit": "b2ccdee0fdc52cd46577a90cb50dc011d6d681bf",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": [
+          "checkAndFixAccess"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
+          "constructSettableProperty"
+        ]
+      },
       "buggy_commit": "d71de544624bec27e6f4e76548527ae727eb193d",
       "failing_tests": [
         "com.fasterxml.jackson.databind.misc.AccessFixTest::testCauseOfThrowableIgnoral"
@@ -3971,7 +4237,8 @@
         "src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": {
           "added_lines": [
             783.0,
-            784.0
+            784.0,
+            791.0
           ],
           "deleted_lines": [
             776.0,
@@ -3979,7 +4246,8 @@
             785.0,
             786.0,
             787.0,
-            793.0
+            793.0,
+            795.0
           ]
         }
       },
@@ -3987,9 +4255,12 @@
         "src/test/java/com/fasterxml/jackson/databind/misc/AccessFixTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
+            5.0,
             6.0,
+            7.0,
             8.0,
             9.0,
             10.0,
@@ -4003,6 +4274,7 @@
             18.0,
             19.0,
             20.0,
+            21.0,
             22.0,
             23.0,
             24.0,
@@ -4015,6 +4287,7 @@
             31.0,
             32.0,
             33.0,
+            34.0,
             35.0,
             36.0,
             37.0,
@@ -4026,28 +4299,29 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": [
-          "checkAndFixAccess"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
-          "constructSettableProperty"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/misc/AccessFixTest.java": [
           "checkPermission",
           "testCauseOfThrowableIgnoral",
           "_testCauseOfThrowableIgnoral"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "61": {
       "bug_report": "1395",
       "bugfix_commit": "82c346ae999e1e250fb52732419aff9a86b1f455",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
+          "useForType"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java": [
+          "buildTypeSerializer",
+          "buildTypeDeserializer"
+        ]
+      },
       "buggy_commit": "be114a9a286c4d194cd268ac8153173c52619a8d",
       "failing_tests": [
         "com.fasterxml.jackson.databind.jsontype.DefaultTypingWithPrimitivesTest::testDefaultTypingWithLong"
@@ -4068,7 +4342,8 @@
             231.0,
             232.0,
             233.0,
-            234.0
+            234.0,
+            235.0
           ],
           "deleted_lines": [
             136.0
@@ -4093,16 +4368,21 @@
         "src/test/java/com/fasterxml/jackson/databind/jsontype/DefaultTypingWithPrimitivesTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
             6.0,
+            7.0,
             8.0,
+            9.0,
             10.0,
             11.0,
             12.0,
             13.0,
             14.0,
             15.0,
+            16.0,
             17.0,
             18.0,
             19.0,
@@ -4110,6 +4390,7 @@
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
             27.0,
@@ -4118,8 +4399,10 @@
             30.0,
             31.0,
             32.0,
+            33.0,
             34.0,
             35.0,
+            36.0,
             37.0,
             38.0,
             39.0,
@@ -4129,27 +4412,25 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
-          "useForType"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java": [
-          "buildTypeSerializer",
-          "buildTypeDeserializer"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/jsontype/DefaultTypingWithPrimitivesTest.java": [
           "testDefaultTypingWithLong"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "69": {
       "bug_report": "1476",
       "bugfix_commit": "d44600d3750e5dba9fac68aee7248ed2a80a2225",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java": [
+          "addDelegatingCreator",
+          "addPropertyCreator",
+          "verifyNonDup"
+        ]
+      },
       "buggy_commit": "002a9a3e9b98ebebf53e43aed0536d3c50851c84",
       "failing_tests": [
         "com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice"
@@ -4213,6 +4494,7 @@
             190.0,
             194.0,
             296.0,
+            304.0,
             308.0,
             330.0
           ]
@@ -4222,34 +4504,44 @@
         "src/test/java/com/fasterxml/jackson/databind/creators/Creator1476Test.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
+            6.0,
             7.0,
             8.0,
             9.0,
             10.0,
             11.0,
+            12.0,
             13.0,
             14.0,
             15.0,
+            16.0,
             17.0,
             18.0,
             19.0,
+            20.0,
             21.0,
             22.0,
             23.0,
             24.0,
             25.0,
+            26.0,
             27.0,
             28.0,
             29.0,
+            30.0,
             31.0,
             32.0,
             33.0,
             34.0,
+            35.0,
             36.0,
             37.0,
             38.0,
+            39.0,
             40.0,
             41.0,
             42.0,
@@ -4257,31 +4549,27 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java": [
-          "addDelegatingCreator",
-          "addPropertyCreator",
-          "verifyNonDup"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/creators/Creator1476Test.java": [
-          "testConstructorChoice"
-        ]
-      },
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/creators/Creator1476Test.java": [
           "SimplePojo",
           "getIntField",
-          "getStringField"
+          "getStringField",
+          "testConstructorChoice"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "70": {
       "bug_report": "1493",
       "bugfix_commit": "d7155de6c37db3301b92b755bd0a02388f7dd07f",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": [
+          "init",
+          "remove"
+        ]
+      },
       "buggy_commit": "7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
       "failing_tests": [
         "com.fasterxml.jackson.databind.struct.TestUnwrapped::testCaseInsensitiveUnwrap"
@@ -4292,6 +4580,7 @@
       "modified_code": {
         "src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": {
           "added_lines": [
+            95.0,
             426.0,
             427.0,
             438.0,
@@ -4299,6 +4588,7 @@
             440.0
           ],
           "deleted_lines": [
+            95.0,
             426.0,
             437.0
           ]
@@ -4312,6 +4602,7 @@
             102.0,
             103.0,
             104.0,
+            105.0,
             106.0,
             107.0,
             108.0,
@@ -4319,6 +4610,7 @@
             110.0,
             111.0,
             112.0,
+            113.0,
             210.0,
             211.0,
             213.0,
@@ -4328,12 +4620,16 @@
             217.0
           ],
           "deleted_lines": [
+            195.0,
             196.0,
             197.0,
+            198.0,
             199.0,
             200.0,
+            201.0,
             202.0,
             203.0,
+            204.0,
             205.0,
             206.0,
             207.0,
@@ -4342,6 +4638,7 @@
             211.0,
             212.0,
             213.0,
+            214.0,
             215.0,
             217.0,
             218.0,
@@ -4350,6 +4647,7 @@
             221.0,
             222.0,
             223.0,
+            224.0,
             225.0,
             226.0,
             227.0,
@@ -4364,23 +4662,19 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": [
-          "remove"
-        ]
-      },
       "newMethods": {},
+      "newTests": {},
+      "origin": "defects4j",
       "updatedTests": {
         "src/test/java/com/fasterxml/jackson/databind/struct/TestUnwrapped.java": [
           "testCaseInsensitiveUnwrap"
         ]
-      },
-      "newTests": {}
+      }
     },
     "72": {
       "bug_report": "1501",
       "bugfix_commit": "63afa5297a0b8bcbf31b9c91e5d15537e0fdbdd5",
+      "buggyMethods": {},
       "buggy_commit": "d3874ebf3c0585270f1fe33eb7030667bacb63b7",
       "failing_tests": [
         "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest::testIssue1501"
@@ -4391,10 +4685,13 @@
       "modified_code": {
         "src/main/java/com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.java": {
           "added_lines": [
+            86.0,
             87.0,
             88.0,
+            89.0,
             90.0,
             91.0,
+            92.0,
             93.0,
             94.0
           ]
@@ -4404,23 +4701,29 @@
         "src/test/java/com/fasterxml/jackson/databind/creators/InnerClassCreatorTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
             8.0,
             9.0,
             10.0,
             11.0,
+            12.0,
             13.0,
             14.0,
             15.0,
+            16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
             27.0,
@@ -4432,8 +4735,6 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {},
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.java": [
           "assignIndex",
@@ -4441,18 +4742,27 @@
           "getCreatorIndex"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/creators/InnerClassCreatorTest.java": [
           "Something",
           "InnerSomething",
           "testIssue1501"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "9": {
       "bug_report": "682",
       "bugfix_commit": "00bb11edc3581f42e1f3c78a047538c8ea9eb0d9",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializer.java": [
+          "serialize"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": [
+          "getStdKeySerializer"
+        ]
+      },
       "buggy_commit": "ae101c63bc8c74466fc137b766faa8793c1e1f10",
       "failing_tests": [
         "com.fasterxml.jackson.databind.ser.TestMapSerialization::testClassKey"
@@ -4465,6 +4775,7 @@
           "added_lines": [
             26.0,
             27.0,
+            28.0,
             29.0,
             30.0,
             31.0,
@@ -4484,9 +4795,12 @@
             40.0,
             41.0,
             42.0,
+            102.0,
             103.0,
             104.0,
+            105.0,
             106.0,
+            107.0,
             108.0,
             109.0,
             110.0,
@@ -4498,6 +4812,7 @@
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/databind/ser/TestMapSerialization.java": {
           "added_lines": [
+            250.0,
             251.0,
             252.0,
             253.0,
@@ -4508,31 +4823,35 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializer.java": [
-          "serialize"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": [
-          "getStdKeySerializer"
-        ]
-      },
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": [
           "ClassKeySerializer",
           "serialize"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/ser/TestMapSerialization.java": [
           "testClassKey"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "90": {
       "bug_report": "1804",
       "bugfix_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/ValueInstantiator.java": [
+          "canInstantiate"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": [
+          "canCreateUsingDelegate",
+          "canCreateUsingArrayDelegate"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
+          "buildBeanDeserializer"
+        ]
+      },
       "buggy_commit": "467589680add00ab49108bbbe7db375d81a75837",
       "failing_tests": [
         "com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804"
@@ -4567,8 +4886,11 @@
         },
         "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": {
           "added_lines": [
+            186.0,
+            211.0,
             219.0,
             224.0,
+            226.0,
             232.0,
             233.0,
             234.0,
@@ -4576,11 +4898,17 @@
             236.0,
             237.0,
             238.0,
-            239.0
+            239.0,
+            240.0,
+            275.0
           ],
           "deleted_lines": [
+            186.0,
+            211.0,
             219.0,
-            224.0
+            224.0,
+            226.0,
+            266.0
           ]
         }
       },
@@ -4588,31 +4916,40 @@
         "src/test/java/com/fasterxml/jackson/databind/creators/DelegatingArrayCreator1804Test.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
             6.0,
             7.0,
             8.0,
+            9.0,
             10.0,
             11.0,
             12.0,
             13.0,
+            14.0,
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
             27.0,
+            28.0,
             29.0,
             30.0,
             31.0,
             32.0,
             33.0,
+            34.0,
+            35.0,
             36.0,
             37.0,
             38.0,
@@ -4622,25 +4959,11 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/ValueInstantiator.java": [
-          "canInstantiate"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": [
-          "canCreateUsingDelegate",
-          "canCreateUsingArrayDelegate"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
-          "buildBeanDeserializer"
-        ]
-      },
       "newMethods": {
         "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": [
           "canInstantiate"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/creators/DelegatingArrayCreator1804Test.java": [
           "MyTypeImpl",
@@ -4648,11 +4971,22 @@
           "of",
           "testDelegatingArray1804"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "91": {
       "bug_report": "1809",
       "bugfix_commit": "dfaca81ae7a82b7c3018f265815e98a5138118f7",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
+          "_findCachedDeserializer",
+          "_createAndCache2",
+          "_hasCustomValueHandler",
+          "_handleUnknownValueDeserializer",
+          "_hasCustomHandlers"
+        ]
+      },
       "buggy_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
       "failing_tests": [
         "",
@@ -4697,40 +5031,50 @@
         "src/test/java/com/fasterxml/jackson/databind/deser/jdk/MapDeserializerCachingTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
             8.0,
+            9.0,
             10.0,
             11.0,
             12.0,
             13.0,
             14.0,
             15.0,
+            16.0,
             17.0,
             18.0,
             19.0,
             20.0,
+            21.0,
             22.0,
             23.0,
             24.0,
             25.0,
             26.0,
             27.0,
+            28.0,
             29.0,
             30.0,
             31.0,
             32.0,
             33.0,
+            34.0,
             35.0,
             36.0,
             37.0,
+            38.0,
             39.0,
             40.0,
             41.0,
             42.0,
+            43.0,
             44.0,
+            45.0,
             46.0,
             47.0,
             48.0,
@@ -4741,31 +5085,24 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
-          "_findCachedDeserializer",
-          "_createAndCache2",
-          "_hasCustomValueHandler",
-          "_handleUnknownValueDeserializer",
-          "_hasCustomHandlers"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/deser/jdk/MapDeserializerCachingTest.java": [
+          "deserializeKey",
           "testCachedSerialize"
         ]
       },
-      "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/deser/jdk/MapDeserializerCachingTest.java": [
-          "deserializeKey"
-        ]
-      }
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "93": {
       "bug_report": "1872",
       "bugfix_commit": "755e3bc0cbea30de0102f6a88519a0c34d571bbd",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.java": [
+          "validateSubType"
+        ]
+      },
       "buggy_commit": "d9bbae43dd474f51b01899bbd83116ab4e2b33ed",
       "failing_tests": [
         "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1872"
@@ -4795,47 +5132,61 @@
         "src/test/java/com/fasterxml/jackson/databind/interop/IllegalTypesCheckTest.java": {
           "added_lines": [
             3.0,
+            4.0,
             7.0,
+            28.0,
             29.0,
             30.0,
             31.0,
+            32.0,
             104.0,
             105.0,
             106.0,
             107.0,
             108.0,
+            109.0,
             110.0,
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0
+          ],
+          "deleted_lines": [
+            25.0
           ]
         },
         "src/test/java/org/springframework/jacksontest/GrantedAuthority.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.java": [
-          "validateSubType"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/com/fasterxml/jackson/databind/interop/IllegalTypesCheckTest.java": [
           "testJDKTypes1872"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "98": {
       "bug_report": "1328",
       "bugfix_commit": "12f82c60782f05015336bb6305fd72c133a410b5",
+      "buggyMethods": {
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java": [
+          "complete"
+        ],
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": [
+          "getParameters",
+          "assignParameter"
+        ]
+      },
       "buggy_commit": "bf261d404c2f79fd3406237710d40ebb03c99d84",
       "failing_tests": [
         "com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test::testExample"
@@ -4862,40 +5213,56 @@
             307.0
           ],
           "deleted_lines": [
-            297.0
+            265.0,
+            297.0,
+            301.0
           ]
         },
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": {}
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": {
+          "deleted_lines": [
+            180.0,
+            266.0
+          ]
+        }
       },
       "modified_tests": {
         "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
             8.0,
             9.0,
             10.0,
             11.0,
+            12.0,
             13.0,
             14.0,
             15.0,
+            16.0,
             17.0,
             18.0,
             19.0,
+            20.0,
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
+            27.0,
             28.0,
             29.0,
             30.0,
             31.0,
             32.0,
+            33.0,
             34.0,
+            35.0,
             36.0,
             37.0,
             38.0,
@@ -4903,97 +5270,7 @@
             40.0,
             41.0,
             42.0,
-            44.0,
-            45.0,
-            46.0,
-            48.0,
-            49.0,
-            50.0,
-            51.0,
-            53.0,
-            54.0,
-            55.0,
-            56.0,
-            58.0,
-            59.0,
-            60.0,
-            61.0,
-            63.0,
-            64.0,
-            65.0,
-            66.0,
-            67.0,
-            68.0,
-            69.0,
-            71.0,
-            72.0,
-            73.0,
-            74.0,
-            76.0,
-            77.0,
-            78.0,
-            79.0,
-            80.0,
-            82.0,
-            83.0,
-            85.0,
-            86.0,
-            87.0,
-            88.0,
-            89.0,
-            90.0,
-            91.0
-          ]
-        }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java": [
-          "complete"
-        ]
-      },
-      "newMethods": {},
-      "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": [
-          "testExample"
-        ]
-      },
-      "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": [
-          "AnimalAndType",
-          "init",
-          "idFromValue",
-          "idFromValueAndType",
-          "idFromBaseType",
-          "typeFromId",
-          "getDescForKnownTypeIds",
-          "getMechanism"
-        ]
-      }
-    }
-  },
-  "Jsoup": {
-    "1098": {
-      "bug_report": "1098",
-      "bugfix_commit": "e02085409f0bdd7e71441fc62448192720305444",
-      "buggy_commit": "fb50d9635874185fc050735057b8a7363cd53f3f",
-      "failing_tests": [],
-      "log": [
-        "org.apache.xerces.parsers.DOMParser.parse(Unknown Source)\norg.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)\njavax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)\nplayground.Test130e.parseXml(Test130.java:116)\nplayground.Test130e.main(Test130.java:110)"
-      ],
-      "modified_code": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": {
-          "added_lines": [
-            9.0,
-            11.0,
-            18.0,
-            26.0,
-            30.0,
-            37.0,
-            39.0,
-            40.0,
-            41.0,
-            42.0,
+            43.0,
             44.0,
             45.0,
             46.0,
@@ -5003,6 +5280,7 @@
             50.0,
             51.0,
             52.0,
+            53.0,
             54.0,
             55.0,
             56.0,
@@ -5033,6 +5311,111 @@
             81.0,
             82.0,
             83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0
+          ]
+        }
+      },
+      "newMethods": {},
+      "newTests": {
+        "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": [
+          "AnimalAndType",
+          "init",
+          "idFromValue",
+          "idFromValueAndType",
+          "idFromBaseType",
+          "typeFromId",
+          "getDescForKnownTypeIds",
+          "getMechanism",
+          "testExample"
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
+    }
+  },
+  "Jsoup": {
+    "1098": {
+      "bug_report": "1098",
+      "bugfix_commit": "e02085409f0bdd7e71441fc62448192720305444",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/W3CDom.java": [
+          "fromJsoup",
+          "asString",
+          "convert",
+          "head"
+        ],
+        "src/main/java/org/jsoup/nodes/DocumentType.java": [
+          "DocumentType"
+        ]
+      },
+      "buggy_commit": "fb50d9635874185fc050735057b8a7363cd53f3f",
+      "failing_tests": [],
+      "log": [
+        "org.apache.xerces.parsers.DOMParser.parse(Unknown Source)\norg.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)\njavax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121)\nplayground.Test130e.parseXml(Test130.java:116)\nplayground.Test130e.main(Test130.java:110)"
+      ],
+      "modified_code": {
+        "src/main/java/org/jsoup/helper/W3CDom.java": {
+          "added_lines": [
+            9.0,
+            11.0,
+            18.0,
+            26.0,
+            30.0,
+            37.0,
+            38.0,
+            39.0,
+            40.0,
+            41.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            61.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
             85.0,
             86.0,
             87.0,
@@ -5045,25 +5428,31 @@
             94.0,
             95.0,
             96.0,
+            97.0,
             98.0,
             99.0,
+            100.0,
             101.0,
             102.0,
             103.0,
             104.0,
+            105.0,
             106.0,
             107.0,
             108.0,
             109.0,
             110.0,
+            111.0,
             112.0,
             113.0,
             114.0,
             115.0,
+            116.0,
             117.0,
             118.0,
             119.0,
             120.0,
+            121.0,
             122.0,
             123.0,
             124.0,
@@ -5072,12 +5461,14 @@
             130.0,
             139.0,
             140.0,
+            141.0,
             142.0,
             143.0,
             144.0,
             145.0,
             146.0,
             147.0,
+            149.0,
             160.0,
             173.0,
             174.0,
@@ -5089,6 +5480,7 @@
             180.0,
             181.0,
             182.0,
+            183.0,
             233.0
           ],
           "deleted_lines": [
@@ -5098,6 +5490,7 @@
             45.0,
             46.0,
             48.0,
+            166.0,
             167.0,
             168.0,
             169.0,
@@ -5106,6 +5499,7 @@
             172.0,
             173.0,
             174.0,
+            175.0,
             176.0,
             177.0,
             178.0,
@@ -5132,6 +5526,7 @@
         },
         "src/main/java/org/jsoup/nodes/Document.java": {
           "added_lines": [
+            62.0,
             63.0,
             64.0,
             65.0,
@@ -5159,6 +5554,7 @@
             75.0,
             76.0,
             77.0,
+            78.0,
             79.0,
             80.0,
             81.0,
@@ -5166,6 +5562,7 @@
             83.0,
             84.0,
             85.0,
+            86.0,
             87.0,
             88.0,
             89.0,
@@ -5173,13 +5570,15 @@
             91.0,
             92.0,
             93.0,
+            94.0,
             95.0,
             96.0,
             97.0,
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0
           ],
           "deleted_lines": [
             34.0,
@@ -5225,7 +5624,9 @@
             98.0,
             99.0,
             100.0,
+            101.0,
             102.0,
+            253.0,
             254.0,
             255.0,
             256.0,
@@ -5233,25 +5634,32 @@
             258.0,
             259.0,
             260.0,
+            261.0,
             262.0,
             263.0,
             264.0,
+            265.0,
             266.0,
             267.0,
             268.0,
+            269.0,
             270.0,
             271.0,
             272.0,
+            273.0,
             274.0,
             275.0,
             276.0,
             277.0,
+            278.0,
             279.0,
             280.0,
             281.0,
+            282.0,
             283.0,
             284.0,
-            285.0
+            285.0,
+            286.0
           ],
           "deleted_lines": [
             23.0,
@@ -5271,6 +5679,7 @@
             103.0,
             109.0,
             179.0,
+            457.0,
             458.0,
             459.0,
             460.0,
@@ -5297,18 +5706,6 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "fromJsoup",
-          "asString",
-          "convert",
-          "head"
-        ],
-        "src/main/java/org/jsoup/nodes/DocumentType.java": [
-          "DocumentType"
-        ]
-      },
       "newMethods": {
         "src/main/java/org/jsoup/helper/W3CDom.java": [
           "W3CDom",
@@ -5327,13 +5724,22 @@
           "documentType"
         ]
       },
+      "newTests": {
+        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
+          "resolveEntity",
+          "testRoundTripDoctype",
+          "output"
+        ],
+        "src/test/java/org/jsoup/nodes/DocumentTest.java": [
+          "testDocumentTypeGet"
+        ]
+      },
+      "origin": "t-evos",
       "updatedTests": {
         "src/test/java/org/jsoup/helper/W3CDomTest.java": [
           "parseXml",
           "simpleConversion",
-          "convertsGoogle",
-          "testRoundTripDoctype",
-          "output"
+          "convertsGoogle"
         ],
         "src/test/java/org/jsoup/nodes/DocumentTest.java": [
           "testLocation",
@@ -5343,19 +5749,25 @@
         "src/test/java/org/jsoup/nodes/DocumentTypeTest.java": [
           "outerHtmlGeneration"
         ]
-      },
-      "newTests": {
-        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
-          "resolveEntity"
-        ],
-        "src/test/java/org/jsoup/nodes/DocumentTest.java": [
-          "testDocumentTypeGet"
-        ]
       }
     },
     "1218": {
       "bug_report": "1218",
       "bugfix_commit": "a0b87bf10a9a520b49748c619c868caed8d7a109",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/Tokeniser.java": [
+          "read",
+          "consumeCharacterReference"
+        ],
+        "src/main/java/org/jsoup/parser/TokeniserState.java": [
+          "read"
+        ],
+        "src/main/java/org/jsoup/parser/CharacterReader.java": [
+          "bufferUp",
+          "mark",
+          "rewindToMark"
+        ]
+      },
       "buggy_commit": "8d1d503913a68e549b5c4a94717c62cf3f64507a",
       "failing_tests": [],
       "log": [
@@ -5370,7 +5782,8 @@
             108.0,
             109.0,
             110.0,
-            111.0
+            111.0,
+            112.0
           ]
         },
         "src/main/java/org/jsoup/parser/CharacterReader.java": {
@@ -5379,6 +5792,7 @@
             51.0,
             53.0,
             54.0,
+            55.0,
             63.0,
             64.0,
             65.0,
@@ -5392,9 +5806,11 @@
             138.0,
             139.0,
             140.0,
+            141.0,
             146.0,
             147.0,
             148.0,
+            149.0,
             155.0
           ],
           "deleted_lines": [
@@ -5416,7 +5832,9 @@
             63.0,
             64.0,
             65.0,
+            158.0,
             159.0,
+            202.0,
             203.0
           ],
           "deleted_lines": [
@@ -5437,15 +5855,18 @@
       "modified_tests": {
         "src/test/java/org/jsoup/integration/ConnectTest.java": {
           "added_lines": [
+            489.0,
             490.0,
             491.0,
             492.0,
             493.0,
             494.0,
             495.0,
+            496.0,
             497.0,
             498.0,
             499.0,
+            500.0,
             501.0,
             502.0,
             503.0,
@@ -5458,8 +5879,10 @@
             54.0,
             55.0,
             57.0,
+            58.0,
             59.0,
             60.0,
+            61.0,
             62.0,
             70.0,
             75.0,
@@ -5483,21 +5906,6 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Tokeniser.java": [
-          "read",
-          "consumeCharacterReference"
-        ],
-        "src/main/java/org/jsoup/parser/TokeniserState.java": [
-          "read"
-        ],
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "bufferUp",
-          "mark",
-          "rewindToMark"
-        ]
-      },
       "newMethods": {
         "src/main/java/org/jsoup/helper/Validate.java": [
           "wtf"
@@ -5506,21 +5914,28 @@
           "unmark"
         ]
       },
+      "newTests": {
+        "src/test/java/org/jsoup/integration/ConnectTest.java": [
+          "handlesUnknownEscapesAcrossBuffer"
+        ]
+      },
+      "origin": "t-evos",
       "updatedTests": {
         "src/test/java/org/jsoup/parser/CharacterReaderTest.java": [
           "unconsume",
           "mark",
           "notEmptyAtBufferSplitPoint"
-        ],
-        "src/test/java/org/jsoup/integration/ConnectTest.java": [
-          "handlesUnknownEscapesAcrossBuffer"
         ]
-      },
-      "newTests": {}
+      }
     },
     "1251": {
       "bug_report": "1251",
       "bugfix_commit": "c2b1fe73129e9c23d93e5393ce8007995c1630dc",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/TokeniserState.java": [
+          "read"
+        ]
+      },
       "buggy_commit": "de97030ff54ee0bd306cbc58bd8093645cc8a5dc",
       "failing_tests": [],
       "log": [
@@ -5556,10 +5971,13 @@
         "src/test/java/org/jsoup/parser/ParserIT.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
             6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
@@ -5579,6 +5997,7 @@
         },
         "src/test/java/org/jsoup/parser/TokeniserStateTest.java": {
           "added_lines": [
+            209.0,
             210.0,
             211.0,
             212.0,
@@ -5586,57 +6005,67 @@
             214.0,
             215.0,
             216.0,
+            217.0,
             218.0,
+            219.0,
             220.0,
             221.0,
+            222.0,
             223.0,
             224.0,
             225.0,
             226.0,
+            227.0,
             228.0,
+            229.0,
             230.0,
             231.0,
+            232.0,
             233.0,
             234.0,
             235.0,
             236.0,
+            237.0,
             238.0,
+            239.0,
             240.0,
             241.0,
+            242.0,
             243.0,
             244.0,
             245.0,
             246.0,
+            247.0,
             248.0,
+            249.0,
             250.0,
             251.0
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/TokeniserState.java": [
-          "read"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/parser/TokeniserStateTest.java": [
           "testUnconsumeAtBufferBoundary",
           "testOpeningAngleBracketInsteadOfAttribute",
           "testMalformedSelfClosingTag",
           "testOpeningAngleBracketInTagName"
-        ]
-      },
-      "newTests": {
+        ],
         "src/test/java/org/jsoup/parser/ParserIT.java": [
           "testIssue1251"
         ]
-      }
+      },
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "1274": {
       "bug_report": "1274",
       "bugfix_commit": "f5fc1bb04c224865f8eee5ed718f4ffee0e18712",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/select/QueryParser.java": [
+          "QueryParser"
+        ]
+      },
       "buggy_commit": "de1ced99d4dae991a546534454d5f7d9dc26f0b1",
       "failing_tests": [],
       "log": [
@@ -5653,14 +6082,18 @@
       "modified_tests": {
         "src/test/java/org/jsoup/select/QueryParserTest.java": {
           "added_lines": [
+            50.0,
+            51.0,
             52.0,
             53.0,
             54.0,
             55.0,
+            56.0,
             57.0,
             58.0,
             59.0,
             60.0,
+            61.0,
             62.0,
             63.0,
             64.0,
@@ -5669,6 +6102,7 @@
         },
         "src/test/java/org/jsoup/select/SelectorTest.java": {
           "added_lines": [
+            927.0,
             928.0,
             929.0,
             930.0,
@@ -5680,14 +6114,7 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/select/QueryParser.java": [
-          "QueryParser"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/jsoup/select/QueryParserTest.java": [
           "exceptOnEmptySelector",
@@ -5697,11 +6124,21 @@
         "src/test/java/org/jsoup/select/SelectorTest.java": [
           "trimSelector"
         ]
-      }
+      },
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "1324": {
       "bug_report": "1324",
       "bugfix_commit": "62c0595813b817ec593b0941ca4c3f29d10fac55",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/Token.java": [
+          "toString"
+        ],
+        "src/main/java/org/jsoup/parser/CharacterReader.java": [
+          "bufferUp"
+        ]
+      },
       "buggy_commit": "528ba552b19ab2ae949feecb373ef85a0b126566",
       "failing_tests": [],
       "log": [
@@ -5751,11 +6188,13 @@
             178.0,
             179.0,
             180.0,
+            181.0,
             182.0,
             183.0,
             184.0,
             185.0,
-            186.0
+            186.0,
+            187.0
           ]
         },
         "src/test/java/org/jsoup/parser/CharacterReaderTest.java": {
@@ -5765,30 +6204,28 @@
           "deleted_lines": [
             8.0,
             9.0,
-            10.0
+            10.0,
+            341.0
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Token.java": [
-          "toString"
-        ],
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "bufferUp"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/integration/ParseTest.java": [
           "testXwiki"
         ]
       },
-      "newTests": {}
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "34": {
       "bug_report": "349",
       "bugfix_commit": "88730bf9f399aab6a150212faeea012598be9ec6",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/CharacterReader.java": [
+          "nextIndexOf"
+        ]
+      },
       "buggy_commit": "2518e92a052d922d81d11e28b8e5205639fed9a7",
       "failing_tests": [
         "org.jsoup.parser.CharacterReaderTest::nextIndexOfUnmatched",
@@ -5817,7 +6254,8 @@
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0
           ]
         },
         "src/test/java/org/jsoup/parser/HtmlParserTest.java": {
@@ -5827,18 +6265,12 @@
             292.0,
             293.0,
             294.0,
-            295.0
+            295.0,
+            296.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "nextIndexOf"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/jsoup/parser/CharacterReaderTest.java": [
           "nextIndexOfUnmatched"
@@ -5846,11 +6278,18 @@
         "src/test/java/org/jsoup/parser/HtmlParserTest.java": [
           "handlesUnclosedCdataAtEOF"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "5": {
       "bug_report": "32",
       "bugfix_commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/Parser.java": [
+          "parseAttribute"
+        ]
+      },
       "buggy_commit": "5e52f1b266173593fab32fe9d8a4963066b2f2fe",
       "failing_tests": [
         "org.jsoup.parser.ParserTest::parsesQuiteRoughAttributes"
@@ -5862,7 +6301,8 @@
         "src/main/java/org/jsoup/parser/Parser.java": {
           "added_lines": [
             206.0,
-            207.0
+            207.0,
+            208.0
           ],
           "deleted_lines": [
             206.0
@@ -5872,35 +6312,38 @@
       "modified_tests": {
         "src/test/java/org/jsoup/parser/ParserTest.java": {
           "added_lines": [
+            42.0,
             43.0,
             44.0,
             45.0,
             46.0,
+            47.0,
             48.0,
             49.0,
+            50.0,
             51.0,
             52.0,
             53.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Parser.java": [
-          "parseAttribute"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/parser/ParserTest.java": [
           "parsesQuiteRoughAttributes"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "54": {
       "bug_report": "721",
       "bugfix_commit": "f148f88de365c50eea28d3e14093e13c33104483",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/W3CDom.java": [
+          "copyAttributes"
+        ]
+      },
       "buggy_commit": "9e8ba01343f2b39185846821407e93ca5240bdb1",
       "failing_tests": [
         "org.jsoup.helper.W3CDomTest::handlesInvalidAttributeNames"
@@ -5925,6 +6368,7 @@
         "src/test/java/org/jsoup/helper/W3CDomTest.java": {
           "added_lines": [
             5.0,
+            83.0,
             84.0,
             85.0,
             86.0,
@@ -5933,28 +6377,29 @@
             89.0,
             90.0,
             91.0,
+            92.0,
             93.0,
             94.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "copyAttributes"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/helper/W3CDomTest.java": [
           "handlesInvalidAttributeNames"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "6": {
       "bug_report": "34",
       "bugfix_commit": "20ed24cefb5df53c48021459af98bef83c55f241",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/nodes/Entities.java": [
+          "unescape"
+        ]
+      },
       "buggy_commit": "0b56f3e5e012e689af8dda0e96d6e0c9f31853b6",
       "failing_tests": [
         "org.jsoup.integration.ParseTest::testYahooArticle",
@@ -5979,6 +6424,7 @@
       "modified_tests": {
         "src/test/java/org/jsoup/integration/ParseTest.java": {
           "added_lines": [
+            141.0,
             142.0,
             143.0,
             144.0,
@@ -5990,35 +6436,37 @@
         },
         "src/test/java/org/jsoup/nodes/EntitiesTest.java": {
           "added_lines": [
+            37.0,
             38.0,
             39.0,
             40.0,
+            41.0,
             42.0,
             43.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/nodes/Entities.java": [
-          "unescape"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/nodes/EntitiesTest.java": [
           "quoteReplacements"
-        ]
-      },
-      "newTests": {
+        ],
         "src/test/java/org/jsoup/integration/ParseTest.java": [
           "testYahooArticle"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "740": {
       "bug_report": "740",
       "bugfix_commit": "3b2440a257df45fc49884a5c67bb0c9ce631781d",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/nodes/Document.java": [
+          "charset",
+          "encoder"
+        ]
+      },
       "buggy_commit": "222feb1791388d1e94e2c99bb5858cf160904d16",
       "failing_tests": [],
       "log": [
@@ -6036,20 +6484,22 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/nodes/Document.java": [
-          "charset",
-          "encoder"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
-      "newTests": {}
+      "newTests": {},
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "78": {
       "bug_report": "980",
       "bugfix_commit": "2c4e79b104c0ff32566ce247617d47c0b39cc2c7",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/DataUtil.java": [
+          "parseInputStream"
+        ],
+        "src/main/java/org/jsoup/Connection.java": [
+          "bufferUp"
+        ]
+      },
       "buggy_commit": "71561e09e0f29ec5fd1bb918206f3d8e42876518",
       "failing_tests": [
         "org.jsoup.integration.ConnectTest::handlesEmptyStreamDuringParseRead"
@@ -6092,12 +6542,15 @@
           "added_lines": [
             5.0,
             9.0,
+            386.0,
             387.0,
             388.0,
             389.0,
+            390.0,
             391.0,
             392.0,
             393.0,
+            394.0,
             395.0,
             396.0,
             397.0,
@@ -6107,11 +6560,13 @@
             401.0,
             402.0,
             403.0,
+            404.0,
             405.0,
             406.0,
             407.0,
             408.0,
             409.0,
+            410.0,
             411.0,
             412.0,
             413.0,
@@ -6119,32 +6574,41 @@
             415.0,
             416.0,
             417.0,
+            418.0,
             419.0
           ]
         },
         "src/test/java/org/jsoup/integration/servlets/InterruptedServlet.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
+            5.0,
             6.0,
             7.0,
             8.0,
             9.0,
+            10.0,
             11.0,
             12.0,
+            13.0,
             14.0,
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
             21.0,
             22.0,
             23.0,
             24.0,
+            25.0,
             26.0,
+            27.0,
             28.0,
+            29.0,
             30.0,
             31.0
           ]
@@ -6155,17 +6619,8 @@
           ]
         }
       },
-      "origin": "defects4j/t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ],
-        "src/main/java/org/jsoup/Connection.java": [
-          "bufferUp"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/integration/servlets/InterruptedServlet.java": [
           "doGet"
         ],
@@ -6174,11 +6629,17 @@
           "handlesEmtpyStreamDuringBufferdRead"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j/t-evos",
+      "updatedTests": {}
     },
     "80": {
       "bug_report": "1015",
       "bugfix_commit": "e9feec90dbd3e428dc1930c3b5efbd9271160d01",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/parser/XmlTreeBuilder.java": [
+          "insert"
+        ]
+      },
       "buggy_commit": "47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9",
       "failing_tests": [
         "org.jsoup.parser.XmlTreeBuilderTest::handlesDodgyXmlDecl"
@@ -6205,6 +6666,7 @@
       "modified_tests": {
         "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java": {
           "added_lines": [
+            223.0,
             224.0,
             225.0,
             226.0,
@@ -6214,23 +6676,23 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/parser/XmlTreeBuilder.java": [
-          "insert"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java": [
           "handlesDodgyXmlDecl"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "82": {
       "bug_report": "1007",
       "bugfix_commit": "6be19a6fa26e6e5e3d716283bad4b5de0348a8b7",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/DataUtil.java": [
+          "parseInputStream"
+        ]
+      },
       "buggy_commit": "77966f79996f3fc4c7828b4d02a926c071faf040",
       "failing_tests": [
         "org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode"
@@ -6257,35 +6719,39 @@
         "src/test/java/org/jsoup/parser/HtmlParserTest.java": {
           "added_lines": [
             21.0,
+            1198.0,
             1199.0,
             1200.0,
+            1201.0,
             1202.0,
             1203.0,
+            1204.0,
             1205.0,
             1206.0,
+            1207.0,
             1208.0,
             1209.0,
             1210.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/parser/HtmlParserTest.java": [
           "fallbackToUtfIfCantEncode"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "84": {
       "bug_report": "848",
       "bugfix_commit": "a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/W3CDom.java": [
+          "head"
+        ]
+      },
       "buggy_commit": "bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664",
       "failing_tests": [
         "org.jsoup.helper.W3CDomTest::treatsUndeclaredNamespaceAsLocalName"
@@ -6310,39 +6776,44 @@
         "src/test/java/org/jsoup/helper/W3CDomTest.java": {
           "added_lines": [
             15.0,
+            139.0,
             140.0,
             141.0,
             142.0,
+            143.0,
             144.0,
             145.0,
+            146.0,
             147.0,
             148.0,
             149.0,
+            150.0,
             151.0,
             152.0,
             153.0,
             154.0,
+            155.0,
             156.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "head"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/helper/W3CDomTest.java": [
           "treatsUndeclaredNamespaceAsLocalName"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "90": {
       "bug_report": "1172",
       "bugfix_commit": "7de614ffd01161d8718d7458bab9d9690ad2334f",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/HttpConnection.java": [
+          "looksLikeUtf8"
+        ]
+      },
       "buggy_commit": "315655cc11c9d49bb821dd800d45580696b02185",
       "failing_tests": [
         "org.jsoup.helper.HttpConnectionTest::handlesHeaderEncodingOnRequest"
@@ -6354,7 +6825,8 @@
         "src/main/java/org/jsoup/helper/HttpConnection.java": {
           "added_lines": [
             424.0,
-            425.0
+            425.0,
+            426.0
           ]
         }
       },
@@ -6362,6 +6834,7 @@
         "src/test/java/org/jsoup/helper/HttpConnectionTest.java": {
           "added_lines": [
             4.0,
+            253.0,
             254.0,
             255.0,
             256.0,
@@ -6369,23 +6842,23 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/HttpConnection.java": [
-          "looksLikeUtf8"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/jsoup/helper/HttpConnectionTest.java": [
           "handlesHeaderEncodingOnRequest"
         ]
-      }
+      },
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "968": {
       "bug_report": "968",
       "bugfix_commit": "c19acbb96c1c02deb310488677201683f6309708",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/internal/ConstrainableInputStream.java": [
+          "expired"
+        ]
+      },
       "buggy_commit": "d32321351ced83c7c2edff2abe4a8b2fa17a6bd7",
       "failing_tests": [],
       "log": [
@@ -6412,29 +6885,31 @@
             269.0,
             270.0,
             271.0,
+            272.0,
             273.0,
             274.0,
-            275.0
+            275.0,
+            276.0
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/internal/ConstrainableInputStream.java": [
-          "expired"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/jsoup/integration/ConnectTest.java": [
           "infiniteReadSupported"
         ]
       },
-      "newTests": {}
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "990": {
       "bug_report": "990",
       "bugfix_commit": "45c54996c4e8d74cf84304e767934ff584c24702",
+      "buggyMethods": {
+        "src/main/java/org/jsoup/helper/DataUtil.java": [
+          "parseInputStream"
+        ]
+      },
       "buggy_commit": "02668f757c59f0c1a7ad8f3169faf061b4b787c1",
       "failing_tests": [],
       "log": [
@@ -6452,21 +6927,21 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
-      "newTests": {}
+      "newTests": {},
+      "origin": "t-evos",
+      "updatedTests": {}
     }
   },
   "JxPath": {
     "5": {
       "bug_report": "JXPATH-89",
       "bugfix_commit": "2a01dfaf8d6abbabc7e4cd5cfd05d2e0b4886708",
+      "buggyMethods": {
+        "src/java/org/apache/commons/jxpath/ri/model/NodePointer.java": [
+          "compareNodePointers"
+        ]
+      },
       "buggy_commit": "458f562cdbe13b42ae325ac88a082047fe05ab89",
       "failing_tests": [
         "org.apache.commons.jxpath.ri.compiler.VariableTest::testUnionOfVariableAndNode"
@@ -6491,14 +6966,19 @@
           "added_lines": [
             19.0,
             20.0,
+            21.0,
             22.0,
+            23.0,
             27.0,
             28.0,
+            94.0,
+            276.0,
             277.0,
             278.0,
             279.0,
             280.0,
             281.0,
+            282.0,
             283.0,
             284.0,
             285.0,
@@ -6507,22 +6987,24 @@
             288.0,
             289.0,
             290.0
+          ],
+          "deleted_lines": [
+            87.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/java/org/apache/commons/jxpath/ri/model/NodePointer.java": [
-          "compareNodePointers"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": [
           "testUnionOfVariableAndNode"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {
+        "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": [
+          "testInvalidVariableName"
+        ]
+      }
     }
   },
   "Lang": {
@@ -7258,6 +7740,15 @@
     "17": {
       "bug_report": "152",
       "bugfix_commit": "77cb2037314dd024eb53ffe2e9e06304088a2d53",
+      "buggyMethods": {
+        "src/org/mockito/internal/util/MockUtil.java": [
+          "createMock"
+        ],
+        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
+          "serializable",
+          "isSerializable"
+        ]
+      },
       "buggy_commit": "b6790ee34d8d858a89b80a9ae40f19d87ce1dab8",
       "failing_tests": [
         "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces"
@@ -7277,6 +7768,7 @@
           "deleted_lines": [
             12.0,
             13.0,
+            14.0,
             25.0,
             77.0,
             78.0,
@@ -7286,6 +7778,7 @@
         "src/org/mockito/internal/util/ArrayUtils.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
@@ -7300,12 +7793,15 @@
         "src/org/mockito/internal/util/MockUtil.java": {
           "added_lines": [
             19.0,
+            20.0,
+            44.0,
             45.0,
             46.0,
             47.0,
             48.0,
             49.0,
-            50.0
+            50.0,
+            51.0
           ],
           "deleted_lines": [
             42.0
@@ -7315,6 +7811,7 @@
       "modified_tests": {
         "test/org/mockito/internal/creation/MockSettingsImplTest.java": {
           "added_lines": [
+            10.0,
             11.0,
             12.0,
             13.0,
@@ -7325,6 +7822,7 @@
             8.0,
             9.0,
             10.0,
+            11.0,
             15.0,
             62.0
           ]
@@ -7332,25 +7830,33 @@
         "test/org/mockito/internal/util/ArrayUtilsTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
             8.0,
             9.0,
+            10.0,
             11.0,
+            12.0,
             13.0,
+            14.0,
             15.0,
             16.0,
             17.0,
             18.0,
+            19.0,
             20.0,
             21.0,
             22.0,
+            23.0,
             24.0,
             25.0,
             26.0,
             27.0,
+            28.0,
             29.0,
             30.0,
             31.0,
@@ -7359,11 +7865,13 @@
         },
         "test/org/mockitousage/basicapi/MocksSerializationTest.java": {
           "added_lines": [
+            298.0,
             299.0,
             300.0,
             301.0,
             302.0,
             303.0,
+            304.0,
             305.0,
             306.0,
             307.0,
@@ -7371,38 +7879,48 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/internal/util/MockUtil.java": [
-          "createMock"
-        ],
-        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
-          "serializable",
-          "isSerializable"
-        ]
-      },
       "newMethods": {
         "src/org/mockito/internal/util/ArrayUtils.java": [
           "concat"
         ]
       },
-      "updatedTests": {
+      "newTests": {
         "test/org/mockito/internal/util/ArrayUtilsTest.java": [
           "shouldConcatenateItemToAnEmptyArray",
           "shouldConcatenateItemToFullArray"
         ],
         "test/org/mockitousage/basicapi/MocksSerializationTest.java": [
           "shouldBeSerializeAndHaveExtraInterfaces"
-        ],
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
         "test/org/mockito/internal/creation/MockSettingsImplTest.java": [
           "shouldSetMockToBeSerializable"
         ]
-      },
-      "newTests": {}
+      }
     },
     "25": {
       "bug_report": "230",
       "bugfix_commit": "a6ccf070a267e0a165b8efaaefa8938e787bb6a0",
+      "buggyMethods": {
+        "src/org/mockito/internal/creation/settings/CreationSettings.java": [
+          "getInvocationListeners",
+          "CreationSettings"
+        ],
+        "src/org/mockito/internal/util/ConsoleMockitoLogger.java": [
+          "log"
+        ],
+        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
+          "defaultAnswer"
+        ],
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": [
+          "answer",
+          "getMock",
+          "recordDeepStubMock",
+          "createNewDeepStubMock"
+        ]
+      },
       "buggy_commit": "d8b18f2e77c3f352677a6993225c4333b98d0481",
       "failing_tests": [
         "org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::will_return_default_value_on_non_mockable_nested_generic",
@@ -7420,14 +7938,16 @@
           "added_lines": [
             751.0,
             752.0,
-            753.0
+            753.0,
+            754.0
           ]
         },
         "src/org/mockito/internal/creation/MockSettingsImpl.java": {
           "added_lines": [
             76.0,
             77.0,
-            78.0
+            78.0,
+            173.0
           ]
         },
         "src/org/mockito/internal/creation/settings/CreationSettings.java": {
@@ -7437,7 +7957,8 @@
             36.0,
             92.0,
             93.0,
-            94.0
+            94.0,
+            95.0
           ],
           "deleted_lines": [
             30.0,
@@ -7457,6 +7978,7 @@
             14.0,
             20.0,
             21.0,
+            22.0,
             28.0,
             29.0,
             30.0,
@@ -7469,6 +7991,7 @@
             37.0,
             38.0,
             43.0,
+            44.0,
             45.0,
             48.0,
             49.0,
@@ -7479,6 +8002,7 @@
             59.0,
             71.0,
             72.0,
+            73.0,
             74.0,
             75.0,
             76.0,
@@ -7495,9 +8019,11 @@
             89.0,
             90.0,
             91.0,
+            92.0,
             93.0,
             94.0,
             95.0,
+            96.0,
             97.0,
             98.0,
             99.0,
@@ -7506,7 +8032,9 @@
             102.0,
             103.0,
             104.0,
+            105.0,
             106.0,
+            116.0,
             117.0,
             118.0,
             119.0,
@@ -7520,6 +8048,7 @@
             7.0,
             23.0,
             28.0,
+            29.0,
             30.0,
             33.0,
             35.0,
@@ -7553,7 +8082,8 @@
             1.0,
             2.0,
             3.0,
-            4.0
+            4.0,
+            33.0
           ],
           "deleted_lines": [
             1.0,
@@ -7569,12 +8099,17 @@
             3.0,
             4.0,
             5.0,
+            6.0,
+            7.0,
             8.0,
             9.0,
             10.0,
             11.0,
+            12.0,
             13.0,
             14.0,
+            15.0,
+            16.0,
             17.0,
             18.0,
             19.0,
@@ -7623,11 +8158,15 @@
             62.0,
             63.0,
             64.0,
+            65.0,
             66.0,
+            67.0,
             68.0,
             69.0,
             70.0,
             71.0,
+            72.0,
+            73.0,
             74.0,
             75.0,
             76.0,
@@ -7638,6 +8177,7 @@
             81.0,
             82.0,
             83.0,
+            84.0,
             85.0,
             86.0,
             87.0,
@@ -7646,12 +8186,14 @@
             90.0,
             91.0,
             92.0,
+            93.0,
             94.0,
             95.0,
             96.0,
             97.0,
             98.0,
             99.0,
+            100.0,
             101.0,
             102.0,
             103.0,
@@ -7663,6 +8205,7 @@
             109.0,
             110.0,
             111.0,
+            112.0,
             113.0,
             114.0,
             115.0,
@@ -7674,49 +8217,70 @@
             121.0,
             122.0,
             123.0,
+            124.0,
             125.0,
             126.0,
             127.0,
             128.0,
+            129.0,
             130.0,
             131.0,
+            132.0,
+            133.0,
+            134.0,
             135.0,
             136.0,
             137.0,
             138.0,
+            139.0,
+            140.0,
+            141.0,
             142.0,
             143.0,
             144.0,
             145.0,
             146.0,
             147.0,
+            148.0,
             149.0,
             150.0,
             151.0,
             152.0,
             153.0,
             154.0,
+            155.0,
+            156.0,
+            157.0,
             158.0,
             159.0,
             160.0,
             161.0,
             162.0,
             163.0,
+            164.0,
             165.0,
+            166.0,
             167.0,
+            168.0,
             169.0,
             170.0,
             171.0,
+            172.0,
             173.0,
             174.0,
+            175.0,
             176.0,
             177.0,
             178.0,
             179.0,
             180.0,
             181.0,
+            182.0,
             183.0,
             184.0,
+            185.0,
+            186.0,
+            187.0,
             188.0,
             189.0,
             190.0,
@@ -7726,6 +8290,7 @@
             194.0,
             195.0,
             196.0,
+            197.0,
             198.0,
             199.0,
             200.0,
@@ -7735,8 +8300,10 @@
             204.0,
             205.0,
             206.0,
+            207.0,
             208.0,
             209.0,
+            210.0,
             211.0,
             212.0,
             213.0,
@@ -7757,11 +8324,15 @@
             228.0,
             229.0,
             230.0,
+            231.0,
             232.0,
             233.0,
+            234.0,
+            235.0,
             236.0,
             237.0,
             238.0,
+            239.0,
             240.0,
             241.0,
             242.0,
@@ -7770,10 +8341,12 @@
             245.0,
             246.0,
             247.0,
+            248.0,
             249.0,
             250.0,
             251.0,
             252.0,
+            253.0,
             254.0,
             255.0,
             256.0,
@@ -7781,11 +8354,14 @@
             258.0,
             259.0,
             260.0,
+            261.0,
             262.0,
             263.0,
             264.0,
             265.0,
             266.0,
+            267.0,
+            268.0,
             269.0,
             270.0,
             271.0,
@@ -7799,43 +8375,56 @@
             279.0,
             280.0,
             281.0,
+            282.0,
             283.0,
             284.0,
             285.0,
             286.0,
+            287.0,
             288.0,
             289.0,
             290.0,
             291.0,
+            292.0,
             293.0,
             294.0,
             295.0,
             296.0,
             297.0,
+            298.0,
+            299.0,
             300.0,
             301.0,
             302.0,
             303.0,
             304.0,
             305.0,
+            306.0,
             307.0,
             308.0,
             309.0,
             310.0,
+            311.0,
             312.0,
             313.0,
             314.0,
+            315.0,
             316.0,
             317.0,
             318.0,
+            319.0,
             320.0,
             321.0,
             322.0,
+            323.0,
             324.0,
             325.0,
             326.0,
             327.0,
+            328.0,
             329.0,
+            330.0,
+            331.0,
             332.0,
             333.0,
             334.0,
@@ -7843,22 +8432,29 @@
             336.0,
             337.0,
             338.0,
+            339.0,
+            340.0,
+            341.0,
             342.0,
             343.0,
             344.0,
             345.0,
+            346.0,
             347.0,
             348.0,
             349.0,
+            350.0,
             351.0,
             352.0,
             353.0,
+            354.0,
             355.0,
             356.0,
             357.0,
             358.0,
             359.0,
             360.0,
+            361.0,
             362.0,
             363.0,
             364.0,
@@ -7866,6 +8462,7 @@
             366.0,
             367.0,
             368.0,
+            369.0,
             370.0,
             371.0,
             372.0,
@@ -7885,6 +8482,7 @@
             386.0,
             387.0,
             388.0,
+            389.0,
             390.0,
             391.0,
             392.0,
@@ -7899,6 +8497,7 @@
             401.0,
             402.0,
             403.0,
+            404.0,
             405.0,
             406.0,
             407.0,
@@ -7915,6 +8514,7 @@
             418.0,
             419.0,
             420.0,
+            421.0,
             422.0,
             423.0,
             424.0,
@@ -7933,19 +8533,27 @@
             437.0,
             438.0,
             439.0,
+            440.0,
+            441.0,
+            442.0,
             443.0,
             444.0,
             445.0,
             446.0,
             447.0,
+            448.0,
             449.0,
             450.0,
             451.0,
+            452.0,
             453.0,
             454.0,
             455.0,
             456.0,
             457.0,
+            458.0,
+            459.0,
+            460.0,
             461.0,
             462.0,
             463.0,
@@ -7956,8 +8564,10 @@
             468.0,
             469.0,
             470.0,
+            471.0,
             472.0,
             473.0,
+            474.0,
             475.0,
             476.0,
             477.0,
@@ -7980,15 +8590,19 @@
             494.0,
             495.0,
             496.0,
+            497.0,
+            498.0,
             499.0,
             500.0,
             501.0,
+            502.0,
             503.0,
             504.0,
             505.0,
             506.0,
             507.0,
             508.0,
+            509.0,
             510.0,
             511.0,
             512.0,
@@ -8001,16 +8615,21 @@
             519.0,
             520.0,
             521.0,
+            522.0,
             523.0,
             524.0,
             525.0,
             526.0,
+            527.0,
             528.0,
+            529.0,
             530.0,
+            531.0,
             532.0,
             533.0,
             534.0,
             535.0,
+            536.0,
             537.0,
             538.0,
             539.0,
@@ -8019,10 +8638,12 @@
             542.0,
             543.0,
             544.0,
+            545.0,
             546.0,
             547.0,
             548.0,
             549.0,
+            550.0,
             551.0,
             552.0,
             553.0,
@@ -8033,33 +8654,43 @@
             558.0,
             559.0,
             560.0,
+            561.0,
+            562.0,
             563.0,
             564.0,
             565.0,
+            566.0,
             567.0,
             568.0,
             569.0,
             570.0,
             571.0,
             572.0,
+            573.0,
             574.0,
             575.0,
+            576.0,
             577.0,
             578.0,
             579.0,
             580.0,
             581.0,
             582.0,
+            583.0,
             584.0,
             585.0,
             586.0,
             587.0,
+            588.0,
             589.0,
+            590.0,
             591.0,
+            592.0,
             593.0,
             594.0,
             595.0,
             596.0,
+            597.0,
             598.0,
             599.0,
             600.0,
@@ -8067,11 +8698,15 @@
             602.0,
             603.0,
             604.0,
+            605.0,
             606.0,
             607.0,
             608.0,
             609.0,
-            611.0
+            610.0,
+            611.0,
+            612.0,
+            613.0
           ]
         }
       },
@@ -8093,17 +8728,22 @@
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
             12.0,
+            13.0,
             14.0,
             15.0,
             16.0,
+            17.0,
             18.0,
             19.0,
             20.0,
+            21.0,
             22.0,
             23.0,
             24.0,
@@ -8114,61 +8754,79 @@
             29.0,
             30.0,
             31.0,
+            32.0,
             33.0,
             34.0,
             35.0,
+            36.0,
             37.0,
             38.0,
             39.0,
+            40.0,
             41.0,
             42.0,
+            43.0,
             44.0,
             45.0,
             46.0,
             47.0,
+            48.0,
             49.0,
             50.0,
             51.0,
+            52.0,
             53.0,
             54.0,
             55.0,
             56.0,
             57.0,
+            58.0,
             59.0,
             60.0,
             61.0,
+            62.0,
             63.0,
             64.0,
             65.0,
+            66.0,
             67.0,
             68.0,
             69.0,
+            70.0,
             71.0,
             72.0,
             73.0,
+            74.0,
             75.0,
             76.0,
             77.0,
+            78.0,
             79.0,
             80.0,
             81.0,
             82.0,
+            83.0,
             84.0,
             85.0,
             86.0,
+            87.0,
             88.0,
             89.0,
             90.0,
+            91.0,
             92.0,
             93.0,
             94.0,
             95.0,
+            96.0,
             97.0,
             98.0,
             99.0,
+            100.0,
             101.0,
             102.0,
             103.0,
+            104.0,
             105.0,
             106.0,
             107.0,
@@ -8186,16 +8844,22 @@
             10.0,
             11.0,
             13.0,
+            25.0,
             26.0,
             27.0,
             28.0,
+            29.0,
             30.0,
             31.0,
             32.0,
             33.0,
+            34.0,
+            35.0,
+            36.0,
             38.0,
             45.0,
-            50.0
+            50.0,
+            58.0
           ],
           "deleted_lines": [
             1.0,
@@ -8208,6 +8872,7 @@
             12.0,
             13.0,
             15.0,
+            27.0,
             29.0,
             36.0,
             41.0
@@ -8220,7 +8885,9 @@
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
@@ -8229,11 +8896,14 @@
             14.0,
             15.0,
             16.0,
+            17.0,
             18.0,
             19.0,
             20.0,
+            21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
             26.0,
             27.0,
@@ -8242,6 +8912,7 @@
             30.0,
             31.0,
             32.0,
+            33.0,
             34.0,
             35.0,
             36.0,
@@ -8252,18 +8923,22 @@
             41.0,
             42.0,
             43.0,
+            44.0,
             45.0,
             46.0,
             47.0,
             48.0,
             49.0,
             50.0,
+            51.0,
+            52.0,
             53.0,
             54.0,
             55.0,
             56.0,
             57.0,
             58.0,
+            59.0,
             60.0,
             61.0,
             62.0,
@@ -8272,6 +8947,7 @@
             65.0,
             66.0,
             67.0,
+            68.0,
             69.0,
             70.0,
             71.0,
@@ -8279,85 +8955,114 @@
             73.0,
             74.0,
             75.0,
+            76.0,
             77.0,
             78.0,
             79.0,
+            80.0,
             81.0,
             82.0,
             83.0,
+            84.0,
             85.0,
             86.0,
             87.0,
+            88.0,
             89.0,
             90.0,
             91.0,
             92.0,
+            93.0,
             94.0,
             95.0,
             96.0,
+            97.0,
             98.0,
             99.0,
             100.0,
+            101.0,
             102.0,
             103.0,
             104.0,
+            105.0,
             106.0,
             107.0,
             108.0,
             109.0,
             110.0,
+            111.0,
             112.0,
             113.0,
             114.0,
+            115.0,
             116.0,
             117.0,
             118.0,
             119.0,
+            120.0,
             121.0,
             122.0,
             123.0,
+            124.0,
             125.0,
             126.0,
             127.0,
             128.0,
+            129.0,
             130.0,
             131.0,
             132.0,
+            133.0,
             134.0,
             135.0,
             136.0,
+            137.0,
+            138.0,
+            139.0,
             140.0,
             141.0,
             142.0,
+            143.0,
             144.0,
             145.0,
             146.0,
             147.0,
             148.0,
+            149.0,
             150.0,
             151.0,
             152.0,
+            153.0,
             154.0,
             155.0,
+            156.0,
             157.0,
             158.0,
+            159.0,
             160.0,
             161.0,
             162.0,
+            163.0,
             164.0,
             165.0,
+            166.0,
             167.0,
             168.0,
             169.0,
+            170.0,
+            171.0,
+            172.0,
             173.0,
             174.0,
             175.0,
             176.0,
             177.0,
             178.0,
+            179.0,
             180.0,
             181.0,
             182.0,
+            183.0,
             184.0,
             185.0,
             186.0,
@@ -8366,62 +9071,42 @@
             189.0,
             190.0,
             191.0,
+            192.0,
+            193.0,
             194.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/internal/creation/settings/CreationSettings.java": [
-          "getInvocationListeners",
-          "CreationSettings"
-        ],
-        "src/org/mockito/internal/util/ConsoleMockitoLogger.java": [
-          "log"
-        ],
-        "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java": [
-          "registerTypeVariablesOn",
-          "boundsOf",
-          "actualTypeArguments",
-          "getActualTypeArgumentFor",
-          "resolveGenericReturnType",
-          "inferFrom",
-          "ParameterizedReturnType",
-          "TypeVariableReturnType",
-          "firstBound",
-          "equals"
-        ],
-        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
-          "defaultAnswer"
-        ],
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": [
-          "answer",
-          "getMock",
-          "recordDeepStubMock",
-          "createNewDeepStubMock",
-          "withSettingsUsing"
-        ]
       },
       "newMethods": {
         "src/org/mockito/exceptions/Reporter.java": [
           "defaultAnswerDoesNotAcceptNullParameter"
         ],
         "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java": [
+          "registerTypeVariablesOn",
           "registerTypeParametersOn",
+          "boundsOf",
           "rawType",
           "extraInterfaces",
           "rawExtraInterfaces",
+          "actualTypeArguments",
+          "getActualTypeArgumentFor",
+          "resolveGenericReturnType",
+          "inferFrom",
           "FromClassGenericMetadataSupport",
           "readActualTypeParametersOnDeclaringClass",
           "FromParameterizedTypeGenericMetadataSupport",
           "readActualTypeParameters",
+          "ParameterizedReturnType",
           "readTypeParameters",
           "readTypeVariables",
+          "TypeVariableReturnType",
           "extractRawTypeOf",
           "extractActualBoundedTypeOf",
           "NotGenericReturnTypeSupport",
+          "firstBound",
           "interfaceBounds",
           "TypeVarBoundedType",
+          "equals",
           "hashCode",
           "toString",
           "typeVariable",
@@ -8429,44 +9114,9 @@
           "wildCard"
         ],
         "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": [
+          "withSettingsUsing",
           "returnsDeepStubsAnswerUsing",
           "actualParameterizedType"
-        ]
-      },
-      "updatedTests": {
-        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": [
-          "shouldFindGenericClass",
-          "shouldGetObjectForNonGeneric",
-          "shouldDealWithNestedGenerics",
-          "should_find_generic_class",
-          "should_get_object_for_non_generic",
-          "should_deal_with_nested_generics"
-        ],
-        "test/org/concurrentmockito/ThreadsRunAllTestsHalfManualTest.java": [
-          "run"
-        ],
-        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsGenericDeepStubsTest.java": [
-          "generic_deep_mock_frenzy__look_at_these_chained_calls",
-          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_return_types_declared_with_a_bounded_wildcard",
-          "can_still_work_with_raw_type_in_the_return_type",
-          "will_return_default_value_on_non_mockable_nested_generic",
-          "as_expected_fail_with_a_CCE_on_callsite_when_erasure_takes_place_for_example___StringBuilder_is_subject_to_erasure"
-        ],
-        "test/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java": [
-          "typeVariable_return_type_of____get____resolved_to_Set_and_type_argument_to_Number",
-          "bounded_typeVariable_return_type_of____returningK____resolved_to_Comparable_and_with_BoundedType",
-          "fixed_ParamType_return_type_of____remove____resolved_to_Set_and_type_argument_to_Number",
-          "paramType_return_type_of____values____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
-          "paramType_with_type_parameters_return_type_of____paramType_with_type_params____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
-          "typeVariable_with_type_parameters_return_type_of____typeVar_with_type_params____resolved_K_hence_to_Comparable_and_with_BoundedType",
-          "class_return_type_of____append____resolved_to_StringBuilder_and_type_arguments",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_class_lower_bound____resolved_to_List_and_type_argument_to_Integer",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_lower_bound____resolved_to_List_and_type_argument_to_Integer",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_upper_bound____resolved_to_List_and_type_argument_to_Integer",
-          "typeVariableValue"
         ]
       },
       "newTests": {
@@ -8484,7 +9134,15 @@
           "paramTypeWithTypeParams",
           "twoTypeParams",
           "typeVarWithTypeParams",
-          "returnsNormalType"
+          "returnsNormalType",
+          "generic_deep_mock_frenzy__look_at_these_chained_calls",
+          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class",
+          "can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class",
+          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class",
+          "can_create_mock_from_return_types_declared_with_a_bounded_wildcard",
+          "can_still_work_with_raw_type_in_the_return_type",
+          "will_return_default_value_on_non_mockable_nested_generic",
+          "as_expected_fail_with_a_CCE_on_callsite_when_erasure_takes_place_for_example___StringBuilder_is_subject_to_erasure"
         ],
         "test/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java": [
           "get",
@@ -8500,13 +9158,60 @@
           "can_get_raw_type_from_ParameterizedType",
           "can_get_type_variables_from_Class",
           "can_get_type_variables_from_ParameterizedType",
+          "typeVariable_return_type_of____get____resolved_to_Set_and_type_argument_to_Number",
+          "bounded_typeVariable_return_type_of____returningK____resolved_to_Comparable_and_with_BoundedType",
+          "fixed_ParamType_return_type_of____remove____resolved_to_Set_and_type_argument_to_Number",
+          "paramType_return_type_of____values____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
+          "paramType_with_type_parameters_return_type_of____paramType_with_type_params____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
+          "typeVariable_with_type_parameters_return_type_of____typeVar_with_type_params____resolved_K_hence_to_Comparable_and_with_BoundedType",
+          "class_return_type_of____append____resolved_to_StringBuilder_and_type_arguments",
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_class_lower_bound____resolved_to_List_and_type_argument_to_Integer",
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_lower_bound____resolved_to_List_and_type_argument_to_Integer",
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_upper_bound____resolved_to_List_and_type_argument_to_Integer",
+          "typeVariableValue",
           "firstNamedMethod"
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": [
+          "shouldFindGenericClass",
+          "shouldGetObjectForNonGeneric",
+          "shouldDealWithNestedGenerics",
+          "should_find_generic_class",
+          "should_get_object_for_non_generic",
+          "should_deal_with_nested_generics"
+        ],
+        "test/org/concurrentmockito/ThreadsRunAllTestsHalfManualTest.java": [
+          "run"
         ]
       }
     },
     "30": {
       "bug_report": "225",
       "bugfix_commit": "3c924f80a4db3692a13341f0da4517052ab77a2a",
+      "buggyMethods": {
+        "src/org/mockito/exceptions/Reporter.java": [
+          "unfinishedVerificationException",
+          "nullPassedToVerify",
+          "nullPassedToWhenMethod",
+          "notAMockPassedWhenCreatingInOrder",
+          "invalidUseOfMatchers",
+          "argumentsAreDifferent",
+          "wantedButNotInvoked",
+          "neverWantedButInvoked",
+          "createTooLittleInvocationsMessage",
+          "tooLittleActualInvocations",
+          "tooLittleActualInvocationsInOrder",
+          "noMoreInteractionsWanted",
+          "smartNullPointerException",
+          "extraInterfacesCannotContainMockedType",
+          "unsupportedCombinationOfAnnotations"
+        ],
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
+          "intercept"
+        ]
+      },
       "buggy_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
       "failing_tests": [
         "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
@@ -8519,15 +9224,41 @@
           "added_lines": [
             7.0,
             8.0,
+            61.0,
+            104.0,
+            107.0,
+            118.0,
             128.0,
+            129.0,
+            137.0,
             142.0,
+            146.0,
+            164.0,
             181.0,
+            182.0,
+            191.0,
+            200.0,
+            209.0,
             214.0,
             224.0,
             227.0,
+            235.0,
+            242.0,
+            259.0,
+            272.0,
+            302.0,
             312.0,
+            313.0,
             323.0,
+            325.0,
             330.0,
+            335.0,
+            338.0,
+            341.0,
+            344.0,
+            353.0,
+            363.0,
+            373.0,
             438.0,
             442.0,
             480.0,
@@ -8536,15 +9267,41 @@
           "deleted_lines": [
             7.0,
             8.0,
+            61.0,
+            104.0,
+            107.0,
+            118.0,
             128.0,
+            129.0,
+            137.0,
             142.0,
+            146.0,
+            164.0,
             181.0,
+            182.0,
+            191.0,
+            200.0,
+            209.0,
             214.0,
             224.0,
             227.0,
+            235.0,
+            242.0,
+            259.0,
+            272.0,
+            302.0,
             312.0,
+            313.0,
             323.0,
+            325.0,
             330.0,
+            335.0,
+            338.0,
+            341.0,
+            344.0,
+            353.0,
+            363.0,
+            373.0,
             438.0,
             479.0,
             528.0
@@ -8562,10 +9319,13 @@
       "modified_tests": {
         "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
           "added_lines": [
+            59.0,
             60.0,
             61.0,
             62.0,
+            63.0,
             64.0,
+            65.0,
             66.0,
             67.0,
             68.0,
@@ -8578,35 +9338,23 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "nullPassedToVerify",
-          "nullPassedToWhenMethod",
-          "notAMockPassedWhenCreatingInOrder",
-          "invalidUseOfMatchers",
-          "argumentsAreDifferent",
-          "neverWantedButInvoked",
-          "createTooLittleInvocationsMessage",
-          "smartNullPointerException",
-          "extraInterfacesCannotContainMockedType",
-          "unsupportedCombinationOfAnnotations"
-        ],
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
-          "intercept"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
           "shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
         ]
       },
-      "newTests": {}
+      "origin": "defects4j",
+      "updatedTests": {}
     },
     "31": {
       "bug_report": "225",
       "bugfix_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
+      "buggyMethods": {
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
+          "intercept"
+        ]
+      },
       "buggy_commit": "81a380951402d2a158af115ed616ab36e94793b8",
       "failing_tests": [
         "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersWhenCallingAMethodWithArgs"
@@ -8620,7 +9368,10 @@
             7.0,
             8.0,
             9.0,
+            10.0,
             53.0,
+            55.0,
+            59.0,
             60.0,
             61.0,
             62.0,
@@ -8629,52 +9380,80 @@
           "deleted_lines": [
             17.0,
             18.0,
-            52.0
+            19.0,
+            52.0,
+            54.0
           ]
         }
       },
       "modified_tests": {
         "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
           "added_lines": [
+            13.0,
+            24.0,
             27.0,
+            29.0,
+            33.0,
+            35.0,
+            41.0,
+            45.0,
+            47.0,
+            50.0,
             51.0,
             52.0,
             53.0,
+            54.0,
             55.0,
+            56.0,
             57.0,
             58.0
           ],
           "deleted_lines": [
+            13.0,
+            24.0,
+            28.0,
+            32.0,
+            34.0,
+            40.0,
+            44.0,
+            46.0,
             47.0
           ]
         }
-      },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
-          "intercept"
-        ]
       },
       "newMethods": {
         "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
           "formatMethodCall"
         ]
       },
-      "updatedTests": {
+      "newTests": {
         "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
-          "shouldReturnAnObjectThatAllowsObjectMethods",
+          "withArgs",
           "shouldPrintTheParametersWhenCallingAMethodWithArgs"
         ]
       },
-      "newTests": {
+      "origin": "defects4j",
+      "updatedTests": {
         "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
-          "withArgs"
+          "shouldReturnAnObjectThatFailsOnAnyMethodInvocationForNonPrimitives",
+          "shouldReturnAnObjectThatAllowsObjectMethods"
         ]
       }
     },
     "4": {
       "bug_report": "187",
       "bugfix_commit": "42b391d4209024292b6101048389570e4ec36b2a",
+      "buggyMethods": {
+        "src/org/mockito/exceptions/Reporter.java": [
+          "noMoreInteractionsWanted",
+          "noMoreInteractionsWantedInOrder",
+          "cannotInjectDependency",
+          "invalidArgumentPositionRangeAtInvocationTime",
+          "wrongTypeOfArgumentToReturn",
+          "delegatedMethodHasWrongReturnType",
+          "delegatedMethodDoesNotExistOnDelegate"
+        ]
+      },
       "buggy_commit": "c25cb6bff7eb4774efda345e8bf9eaad4c66a652",
       "failing_tests": [
         "org.mockito.exceptions.ReporterTest::can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted_in_order",
@@ -8699,10 +9478,13 @@
             679.0,
             680.0,
             681.0,
+            682.0,
             710.0,
             743.0,
+            776.0,
             780.0,
             790.0,
+            800.0,
             801.0,
             802.0,
             803.0
@@ -8714,6 +9496,7 @@
             670.0,
             702.0,
             735.0,
+            768.0,
             772.0,
             782.0
           ]
@@ -8731,57 +9514,70 @@
             18.0,
             21.0,
             22.0,
+            23.0,
             24.0,
+            25.0,
             28.0,
             29.0,
+            32.0,
             33.0,
             34.0,
             35.0,
             36.0,
+            37.0,
             38.0,
             39.0,
             40.0,
             41.0,
             42.0,
+            43.0,
             44.0,
             45.0,
             46.0,
             47.0,
             48.0,
+            49.0,
             50.0,
             51.0,
             52.0,
             53.0,
             54.0,
+            55.0,
             56.0,
             57.0,
             58.0,
             59.0,
             60.0,
+            61.0,
             62.0,
             63.0,
             64.0,
             65.0,
             66.0,
             67.0,
+            68.0,
             69.0,
             70.0,
             71.0,
             72.0,
             73.0,
+            75.0,
             76.0,
             77.0,
             78.0,
             79.0,
             80.0,
+            81.0,
             82.0,
             83.0,
-            84.0
+            84.0,
+            85.0
           ],
           "deleted_lines": [
             12.0,
             17.0,
             18.0,
+            21.0,
             22.0,
             23.0,
             24.0
@@ -8790,16 +9586,20 @@
         "test/org/mockitousage/bugs/ClassCastExOnVerifyZeroInteractionsTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
             6.0,
+            7.0,
             8.0,
             9.0,
+            10.0,
             11.0,
             12.0,
             13.0,
             14.0,
+            15.0,
             16.0,
             17.0,
             18.0,
@@ -8814,30 +9614,10 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "noMoreInteractionsWanted",
-          "noMoreInteractionsWantedInOrder",
-          "cannotInjectDependency",
-          "invalidArgumentPositionRangeAtInvocationTime",
-          "wrongTypeOfArgumentToReturn",
-          "delegatedMethodHasWrongReturnType",
-          "delegatedMethodDoesNotExistOnDelegate"
-        ]
-      },
       "newMethods": {
         "src/org/mockito/exceptions/Reporter.java": [
           "exceptionCauseMessageIfAvailable",
           "safelyGetMockName"
-        ]
-      },
-      "updatedTests": {
-        "test/org/mockito/exceptions/ReporterTest.java": [
-          "shouldLetPassingNullLastActualStackTrace",
-          "shouldThrowCorrectExceptionForNullInvocationListener",
-          "should_let_passing_null_last_actual_stack_trace",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_has_wrong_return_type"
         ]
       },
       "newTests": {
@@ -8856,11 +9636,25 @@
           "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_injection_failure",
           "someField"
         ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "test/org/mockito/exceptions/ReporterTest.java": [
+          "shouldLetPassingNullLastActualStackTrace",
+          "shouldThrowCorrectExceptionForNullInvocationListener",
+          "should_let_passing_null_last_actual_stack_trace",
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_has_wrong_return_type"
+        ]
       }
     },
     "5": {
       "bug_report": "152",
       "bugfix_commit": "42a24dde02923185db3f79ae57e7819f7d70af55",
+      "buggyMethods": {
+        "src/org/mockito/internal/verification/VerificationOverTimeImpl.java": [
+          "verify"
+        ]
+      },
       "buggy_commit": "fff76563d9e0ed412dc828c53cfdc7d142997a31",
       "failing_tests": [
         "org.mockitointegration.NoJUnitDependenciesTest::pure_mockito_should_not_depend_JUnit"
@@ -8884,13 +9678,16 @@
         "test/org/mockitointegration/NoJUnitDependenciesTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
             6.0,
             7.0,
             8.0,
+            9.0,
             10.0,
+            11.0,
             12.0,
             13.0,
             14.0,
@@ -8903,11 +9700,14 @@
             21.0,
             22.0,
             23.0,
+            24.0,
             25.0,
+            26.0,
             27.0,
             28.0,
             29.0,
             30.0,
+            31.0,
             32.0,
             33.0,
             34.0,
@@ -8928,6 +9728,7 @@
             12.0,
             13.0,
             19.0,
+            20.0,
             35.0,
             36.0,
             37.0,
@@ -8940,6 +9741,7 @@
             47.0,
             48.0,
             49.0,
+            50.0,
             51.0,
             81.0,
             91.0,
@@ -8951,6 +9753,7 @@
             171.0,
             172.0,
             173.0,
+            174.0,
             181.0,
             186.0,
             189.0,
@@ -8959,14 +9762,17 @@
             203.0,
             204.0,
             205.0,
+            206.0,
             207.0,
             208.0,
             209.0,
             210.0,
             211.0,
+            212.0,
             213.0,
             214.0,
             215.0,
+            216.0,
             217.0,
             218.0,
             219.0,
@@ -8977,11 +9783,14 @@
             224.0,
             225.0,
             226.0,
+            227.0,
             228.0,
             229.0,
+            230.0,
             231.0,
             232.0,
             233.0,
+            234.0,
             235.0,
             236.0,
             237.0,
@@ -8996,26 +9805,34 @@
             247.0,
             248.0,
             249.0,
+            250.0,
             251.0,
             252.0,
             253.0,
             254.0,
             255.0,
+            272.0,
+            289.0,
             290.0,
             291.0,
             292.0,
+            293.0,
             294.0,
             295.0,
             296.0,
+            297.0,
             298.0,
             299.0,
             300.0,
             301.0,
+            302.0,
             303.0,
             304.0,
+            305.0,
             306.0,
             307.0,
             308.0,
+            309.0,
             310.0,
             311.0,
             312.0,
@@ -9026,16 +9843,20 @@
             317.0,
             318.0,
             319.0,
+            320.0,
             321.0,
             322.0,
             323.0,
             324.0,
+            325.0,
             326.0,
             327.0,
             328.0,
             329.0,
             330.0,
             331.0,
+            332.0,
+            333.0,
             334.0,
             335.0,
             336.0,
@@ -9054,16 +9875,19 @@
             349.0,
             350.0,
             351.0,
+            352.0,
             353.0,
             354.0,
             355.0,
             356.0,
             357.0,
             358.0,
+            359.0,
             360.0,
             361.0,
             362.0,
             363.0,
+            364.0,
             365.0
           ],
           "deleted_lines": [
@@ -9086,7 +9910,9 @@
             179.0,
             180.0,
             181.0,
+            182.0,
             183.0,
+            184.0,
             185.0,
             186.0,
             187.0,
@@ -9096,6 +9922,7 @@
             191.0,
             192.0,
             193.0,
+            194.0,
             195.0,
             196.0,
             197.0,
@@ -9105,9 +9932,11 @@
             201.0,
             202.0,
             203.0,
+            204.0,
             205.0,
             206.0,
             207.0,
+            208.0,
             209.0,
             210.0,
             211.0,
@@ -9115,39 +9944,20 @@
             213.0,
             214.0,
             215.0,
+            216.0,
             217.0,
             218.0,
             219.0,
-            220.0
+            220.0,
+            221.0
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/org/mockito/internal/verification/VerificationOverTimeImpl.java": [
-          "verify"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "test/org/mockitoutil/ClassLoadersTest.java": [
-          "cannot_load_a_class_file_not_in_parent",
-          "can_list_all_classes_reachable_in_a_classloader"
-        ],
-        "test/org/mockitoutil/ClassLoaders.java": [
-          "LocalIsolatedURLClassLoader",
-          "LocalExcludingURLClassLoader",
-          "build",
-          "InMemoryClassLoader",
-          "inMemoryOnly",
-          "listOwnedClasses"
-        ],
-        "test/org/mockitointegration/NoJUnitDependenciesTest.java": [
-          "pure_mockito_should_not_depend_JUnit"
-        ]
-      },
       "newTests": {
         "test/org/mockitoutil/ClassLoadersTest.java": [
+          "cannot_load_a_class_file_not_in_parent",
+          "can_list_all_classes_reachable_in_a_classloader",
           "return_bootstrap_classloader",
           "return_current_classloader"
         ],
@@ -9158,6 +9968,7 @@
           "currentClassLoader",
           "withParent",
           "getResources",
+          "inMemoryOnly",
           "hasMoreElements",
           "nextElement",
           "MemHandler",
@@ -9167,6 +9978,7 @@
           "getInputStream",
           "ReachableClassesFinder",
           "omit",
+          "listOwnedClasses",
           "addFromFileBasedClassLoader",
           "addFromInMemoryBasedClassLoader",
           "findClassQualifiedNames",
@@ -9174,7 +9986,17 @@
           "classNameFor"
         ],
         "test/org/mockitointegration/NoJUnitDependenciesTest.java": [
+          "pure_mockito_should_not_depend_JUnit",
           "checkDependency"
+        ]
+      },
+      "origin": "defects4j",
+      "updatedTests": {
+        "test/org/mockitoutil/ClassLoaders.java": [
+          "LocalIsolatedURLClassLoader",
+          "LocalExcludingURLClassLoader",
+          "build",
+          "InMemoryClassLoader"
         ]
       }
     }
@@ -9183,6 +10005,11 @@
     "10": {
       "bug_report": "22",
       "bugfix_commit": "3a413d7844c22dc6ddd50bf5d0d55ff3589e47ac",
+      "buggyMethods": {
+        "src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java": [
+          "between"
+        ]
+      },
       "buggy_commit": "efce99164f0bbd2c70e7f9d71884a32473e02c6d",
       "failing_tests": [
         "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay",
@@ -9217,25 +10044,31 @@
             112.0,
             113.0,
             114.0,
+            115.0,
             116.0,
             117.0,
+            118.0,
             119.0,
             120.0,
             121.0,
+            122.0,
             123.0,
             124.0,
             125.0,
             126.0,
             127.0,
+            128.0,
             129.0,
             130.0,
             131.0,
             132.0,
+            133.0,
             134.0,
             135.0,
             136.0,
             137.0,
             138.0,
+            139.0,
             140.0,
             153.0
           ],
@@ -9258,18 +10091,22 @@
             126.0,
             127.0,
             128.0,
+            129.0,
             130.0,
             131.0,
             132.0,
             133.0,
             134.0,
+            135.0,
             136.0,
             137.0,
             138.0,
+            139.0,
             140.0,
             141.0,
             142.0,
             143.0,
+            144.0,
             145.0
           ],
           "deleted_lines": [
@@ -9278,29 +10115,26 @@
           ]
         }
       },
-      "origin": "defects4j",
-      "buggyMethods": {
-        "src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java": [
-          "between"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
+      "newTests": {
         "src/test/java/org/joda/time/TestMonths.java": [
-          "testFactory_monthsBetween_RPartial",
-          "testFactory_monthsBetween_RPartial_LocalDate",
+          "testFactory_monthsBetween_RPartial_YearMonth",
           "testFactory_monthsBetween_RPartial_MonthDay"
         ],
         "src/test/java/org/joda/time/TestDays.java": [
-          "testFactory_daysBetween_RPartial",
-          "testFactory_daysBetween_RPartial_LocalDate",
           "testFactory_daysBetween_RPartial_YearMonth",
           "testFactory_daysBetween_RPartial_MonthDay"
         ]
       },
-      "newTests": {
+      "origin": "defects4j",
+      "updatedTests": {
         "src/test/java/org/joda/time/TestMonths.java": [
-          "testFactory_monthsBetween_RPartial_YearMonth"
+          "testFactory_monthsBetween_RPartial",
+          "testFactory_monthsBetween_RPartial_LocalDate"
+        ],
+        "src/test/java/org/joda/time/TestDays.java": [
+          "testFactory_daysBetween_RPartial",
+          "testFactory_daysBetween_RPartial_LocalDate"
         ]
       }
     }
@@ -9309,6 +10143,14 @@
     "2351": {
       "bug_report": "2351",
       "bugfix_commit": "d30069235d846b910d8371171aa855e4eea3a97b",
+      "buggyMethods": {
+        "src/main/java/com/alibaba/fastjson/parser/JSONLexerBase.java": [
+          "scanString"
+        ],
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/ASMDeserializerFactory.java": [
+          "_deserialzeArrayMapping"
+        ]
+      },
       "buggy_commit": "8e985930057c21c95a3065ca9f2cad3b5e42d4ba",
       "failing_tests": [],
       "log": [
@@ -9338,36 +10180,47 @@
         "src/test/java/com/alibaba/json/bvt/issue_2300/Issue2351.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
             6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
+            11.0,
             12.0,
             13.0,
             14.0,
             15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
             21.0,
             22.0,
+            23.0,
             24.0,
             25.0,
             26.0,
             27.0,
+            28.0,
             29.0,
+            30.0,
             31.0,
+            32.0,
             33.0,
             34.0,
+            35.0,
             36.0,
             37.0,
+            38.0,
             39.0,
             40.0,
             41.0,
+            42.0,
             43.0,
             44.0,
             45.0,
@@ -9376,31 +10229,25 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/parser/JSONLexerBase.java": [
-          "scanString"
-        ],
-        "src/main/java/com/alibaba/fastjson/parser/deserializer/ASMDeserializerFactory.java": [
-          "_deserialzeArrayMapping"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {
-        "src/test/java/com/alibaba/json/bvt/issue_2300/Issue2351.java": [
-          "test_for_issue"
-        ]
-      },
       "newTests": {
         "src/test/java/com/alibaba/json/bvt/issue_2300/Issue2351.java": [
+          "test_for_issue",
           "getC",
           "setC"
         ]
-      }
+      },
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "3119": {
       "bug_report": "3119",
       "bugfix_commit": "2a603b9d03a2de3fd48dfeaaf5df64a08955ed56",
+      "buggyMethods": {
+        "src/main/java/com/alibaba/fastjson/serializer/ASMSerializerFactory.java": [
+          "createJavaBeanSerializer"
+        ]
+      },
       "buggy_commit": "307f6637b9f8502a081468443c2b3c85cea5e545",
       "failing_tests": [],
       "log": [
@@ -9409,23 +10256,28 @@
       "modified_code": {
         "src/main/java/com/alibaba/fastjson/serializer/ASMSerializerFactory.java": {
           "deleted_lines": [
-            151.0
+            151.0,
+            152.0,
+            153.0
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/serializer/ASMSerializerFactory.java": [
-          "createJavaBeanSerializer"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
-      "newTests": {}
+      "newTests": {},
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "3280": {
       "bug_report": "3280",
       "bugfix_commit": "92fd0cb92cd876e01384418b6dbcae557a8a630c",
+      "buggyMethods": {
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java": [
+          "createInstance"
+        ],
+        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
+          "castToLocalDateTime"
+        ]
+      },
       "buggy_commit": "cc7dfab3dde888b81577fb18c0eb223761b5e31f",
       "failing_tests": [],
       "log": [
@@ -9442,13 +10294,16 @@
         },
         "src/main/java/com/alibaba/fastjson/parser/deserializer/Jdk8DateCodec.java": {
           "added_lines": [
+            595.0,
             596.0,
             597.0,
             598.0,
             599.0,
+            600.0,
             601.0,
             602.0,
             603.0,
+            604.0,
             605.0,
             606.0,
             607.0
@@ -9458,38 +10313,39 @@
           "deleted_lines": [
             42.0,
             43.0,
+            3276.0,
             3277.0,
             3278.0,
             3279.0,
             3280.0,
+            3281.0,
             3282.0,
             3283.0,
             3284.0,
+            3285.0,
             3286.0,
             3287.0,
             3288.0
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
+      "newMethods": {
         "src/main/java/com/alibaba/fastjson/parser/deserializer/Jdk8DateCodec.java": [
-          "castToLocalDateTime"
-        ],
-        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java": [
-          "createInstance"
-        ],
-        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
           "castToLocalDateTime"
         ]
       },
-      "newMethods": {},
-      "updatedTests": {},
-      "newTests": {}
+      "newTests": {},
+      "origin": "t-evos",
+      "updatedTests": {}
     },
     "3637": {
       "bug_report": "3637",
       "bugfix_commit": "8d42fd87c00b9691d393c15998135b5281d895f5",
+      "buggyMethods": {
+        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
+          "castToSqlTime"
+        ]
+      },
       "buggy_commit": "00cdc53606111e7802f8f5559d44feeccba2657f",
       "failing_tests": [],
       "log": [
@@ -9501,13 +10357,16 @@
             649.0,
             651.0,
             652.0,
+            655.0,
             656.0,
             658.0,
             659.0,
             660.0,
             661.0,
+            662.0,
             664.0,
-            666.0
+            666.0,
+            669.0
           ],
           "deleted_lines": [
             649.0,
@@ -9524,10 +10383,13 @@
         "src/test/java/com/alibaba/json/bvt/issue_3600/Issue3637.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
             4.0,
             5.0,
+            6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
@@ -9538,25 +10400,25 @@
           ]
         }
       },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
-          "castToSqlTime"
-        ]
-      },
       "newMethods": {},
-      "updatedTests": {},
       "newTests": {
         "src/test/java/com/alibaba/json/bvt/issue_3600/Issue3637.java": [
           "test_for_issue"
         ]
-      }
+      },
+      "origin": "t-evos",
+      "updatedTests": {}
     }
   },
   "junit4": {
     "1178": {
       "bug_report": "1178",
       "bugfix_commit": "e6a20043db694056ac00456f6076091012ecba87",
+      "buggyMethods": {
+        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": [
+          "ArrayComparisonFailure"
+        ]
+      },
       "buggy_commit": "c07965ab1b232b04a13ea84fdbcdd8be04ea0182",
       "failing_tests": [],
       "log": [
@@ -9572,7 +10434,8 @@
             45.0,
             46.0,
             47.0,
-            48.0
+            48.0,
+            49.0
           ],
           "deleted_lines": [
             19.0,
@@ -9593,17 +10456,23 @@
         "src/test/java/org/junit/internal/ArrayComparisonFailureTest.java": {
           "added_lines": [
             1.0,
+            2.0,
             3.0,
+            4.0,
             5.0,
             6.0,
             7.0,
+            8.0,
             9.0,
             10.0,
             11.0,
             12.0,
+            13.0,
             14.0,
+            15.0,
             16.0,
             17.0,
+            18.0,
             19.0,
             20.0,
             21.0,
@@ -9617,16 +10486,20 @@
             29.0,
             30.0,
             31.0,
+            32.0,
             33.0,
             34.0,
+            35.0,
             36.0,
             37.0,
             38.0,
             39.0,
+            40.0,
             41.0,
             42.0,
             43.0,
             44.0,
+            45.0,
             46.0,
             47.0,
             48.0,
@@ -9641,28 +10514,23 @@
             57.0,
             58.0,
             59.0,
+            60.0,
             61.0,
             62.0,
             63.0,
             64.0,
             65.0,
             66.0,
+            67.0,
             68.0
           ]
         }
-      },
-      "origin": "t-evos",
-      "buggyMethods": {
-        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": [
-          "ArrayComparisonFailure"
-        ]
       },
       "newMethods": {
         "src/main/java/org/junit/internal/ArrayComparisonFailure.java": [
           "getCause"
         ]
       },
-      "updatedTests": {},
       "newTests": {
         "src/test/java/org/junit/internal/ArrayComparisonFailureTest.java": [
           "classShouldAccept411Version",
@@ -9670,7 +10538,9 @@
           "assertFailureSerializableFromOthers",
           "deserializeFailureFromFile"
         ]
-      }
+      },
+      "origin": "t-evos",
+      "updatedTests": {}
     }
   }
 }
