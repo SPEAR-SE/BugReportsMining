@@ -10,7 +10,7 @@ import java.util.Map;
 
 class MethodFinder {
 
-  public static String findMethodName(String filename, int lineNumber) throws IOException {
+  public static String findMethodName(String filename, int lineNumber, boolean isTest) throws IOException {
 
     String source = FileUtil.read(filename);
 
@@ -23,7 +23,7 @@ class MethodFinder {
     parser.setSource(source.toCharArray());
     CompilationUnit compilationUnit = (CompilationUnit) parser.createAST(null);
 
-    FindMethodVisitor visitor = new FindMethodVisitor(compilationUnit, lineNumber);
+    FindMethodVisitor visitor = new FindMethodVisitor(compilationUnit, lineNumber, isTest);
     compilationUnit.accept(visitor);
 
 

@@ -7,9 +7,13 @@ public class FindMethodVisitor extends ASTVisitor  {
     private final int lineNumber;
     private String methodName;
     protected final CompilationUnit compilationUnit;
-    public FindMethodVisitor(CompilationUnit compilationUnit, int lineNumber) {
+    private Boolean isTest;
+    private boolean containsAssert = false;
+
+    public FindMethodVisitor(CompilationUnit compilationUnit, int lineNumber, boolean isTest) {
         this.compilationUnit = compilationUnit;
         this.lineNumber = lineNumber;
+        this.isTest = isTest;
     }
 
     @Override
@@ -28,6 +32,10 @@ public class FindMethodVisitor extends ASTVisitor  {
 
     public String getMethodName() {
         return methodName;
+    }
+
+    public boolean containsAssert() {
+        return containsAssert;
     }
 
 }
