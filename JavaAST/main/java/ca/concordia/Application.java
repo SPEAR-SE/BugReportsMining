@@ -64,10 +64,11 @@ public class Application {
                     String bugfixCommit = (String) bug.get("bugfix_commit");
 
                     // Checking the code
-                    List<String> addedLinesMethods;
-                    List<String> deletedLinesMethods;
-                    Map<String, List<String>> buggyMethods = new HashMap<>();
-                    Map<String, List<String>> newMethods = new HashMap<>();
+                    List<MethodData> addedLinesMethods;
+                    List<MethodData> deletedLinesMethods;
+
+                    Map<String,Map<String, Map<String, Integer>>> buggyMethods = new HashMap<>();
+                    Map<String,Map<String, Map<String, Integer>>> newMethods = new HashMap<>();
                     Map<String, Map<String, Object>> modifiedCode = (Map<String, Map<String, Object>>) bug.get("modified_code");
                     for (String filePath : modifiedCode.keySet()) {
                         String filePathFixed = filePath;
@@ -81,33 +82,34 @@ public class Application {
                         List<Double> addedLinesDouble = (List<Double>) fileInfo.get("added_lines");
                         addedLinesMethods = get_touched_methods(bugfixCommit, path_to_repo,addedLinesDouble, absolute_file_path, filePathFixed, false);
 
-                        for (String method : deletedLinesMethods){
-                            String fileName = method.split(" - ")[0];
-                            String methodName = method.split(" - ")[1];
-                            buggyMethods= addNewMethod(buggyMethods, methodName, fileName);
+                        for (MethodData md : deletedLinesMethods){
+                            String fileName = filePathFixed;
+                            String methodName = md.getMethodName();
+                            buggyMethods= addNewMethod(buggyMethods, methodName, fileName, md);
                         }
                         List<Integer> addedLines = convertDoubleListIntoIntegers(addedLinesDouble);
                         // If a method was added in the bugfix commit, it is not a buggy method
                         GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
-                        for (String method : addedLinesMethods){
-                            if (!deletedLinesMethods.contains(method)){
-                                String fileName = method.split(" - ")[0];
-                                String methodName = method.split(" - ")[1];
+                        for (MethodData md : addedLinesMethods){
+                            if (!deletedLinesMethods.contains(md)){
+                                String fileName = filePathFixed;
+                                String methodName = md.getMethodName();
                                 boolean newMethod = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, methodName );
                                 if (newMethod){
-                                    newMethods= addNewMethod(newMethods, methodName, fileName);
+                                    newMethods= addNewMethod(newMethods, methodName, fileName, md);
                                 } else{
-                                    buggyMethods= addNewMethod(buggyMethods, methodName, fileName);
+                                    buggyMethods= addNewMethod(buggyMethods, methodName, fileName, md);
                                 }
                             }
                         }
                     }
 
                     // Checking the tests
-                    List<String> addedLinesTests;
-                    List<String> deletedLinesTests;
-                    Map<String, List<String>> updatedTests = new HashMap<>();
-                    Map<String, List<String>> newTests = new HashMap<>();
+                    List<MethodData> addedLinesTests;
+                    List<MethodData> deletedLinesTests;
+
+                    Map<String,Map<String, Map<String, Integer>>> updatedTests = new HashMap<>();
+                    Map<String,Map<String, Map<String, Integer>>> newTests = new HashMap<>();
                     Map<String, Map<String, Object>> modifiedTests = new HashMap<>();
                     if (bug.get("modified_tests") != null){
                         modifiedTests = (Map<String, Map<String, Object>>) bug.get("modified_tests");
@@ -124,23 +126,23 @@ public class Application {
                         List<Double> addedLinesDouble = (List<Double>) fileInfo.get("added_lines");
                         addedLinesTests = get_touched_methods(bugfixCommit, path_to_repo, addedLinesDouble, absolute_file_path, filePathFixed, true);
 
-                        for (String test : deletedLinesTests){
-                            String fileName = test.split(" - ")[0];
-                            String testName = test.split(" - ")[1];
-                            updatedTests= addNewMethod(updatedTests, testName, fileName);
+                        for (MethodData md : deletedLinesTests){
+                            String fileName = filePathFixed;
+                            String testName = md.getMethodName();
+                            updatedTests= addNewMethod(updatedTests, testName, fileName, md);
                         }
                         List<Integer> addedLines = convertDoubleListIntoIntegers(addedLinesDouble);
                         // If a method was added in the bugfix commit, it is not a buggy method
                         GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
-                        for (String test : addedLinesTests) {
-                            if (!deletedLinesTests.contains(test)) {
-                                String fileName = test.split(" - ")[0];
-                                String testName = test.split(" - ")[1];
+                        for (MethodData md : addedLinesTests) {
+                            if (!deletedLinesTests.contains(md)) {
+                                String fileName = filePathFixed;
+                                String testName = md.getMethodName();
                                 boolean newTest = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, testName);
                                 if (newTest) {
-                                    newTests= addNewMethod(newTests, testName, fileName);
+                                    newTests= addNewMethod(newTests, testName, fileName, md);
                                 } else {
-                                    updatedTests= addNewMethod(updatedTests, testName, fileName);
+                                    updatedTests= addNewMethod(updatedTests, testName, fileName, md);
                                 }
                             }
                         }
@@ -168,20 +170,25 @@ public class Application {
 
     }
 
-    public static List<String> get_touched_methods(String commit, String pathToRepo, List<Double> linesDouble, String absoluteFilePath, String filePath, boolean isTest) throws IOException {
-        List<String> touchedMethods = new ArrayList<>();
+    public static List<MethodData> get_touched_methods(String commit, String pathToRepo, List<Double> linesDouble, String absoluteFilePath, String filePath, boolean isTest) throws IOException {
+        List<MethodData> touchedMethods = new ArrayList<>();
         GitHelper.checkoutCommit(pathToRepo, commit);
         List<Integer> lines = convertDoubleListIntoIntegers(linesDouble);
         if (linesDouble != null) {
             for (Integer line: lines){
                 String methodName = MethodFinder.findMethodName(absoluteFilePath, line, isTest);
+                MethodData methodData = MethodFinder.getmethodData();
                 if (methodName != null && !touchedMethods.contains(filePath+ " - " +methodName)) {
-                    touchedMethods.add(filePath+ " - " + methodName);
+                    touchedMethods.add(methodData);
                 }
             }
         }
         return touchedMethods;
     }
+    public static boolean contains(List<MethodData> methodDataList, MethodData target) {
+        return methodDataList.contains(target);
+    }
+
     public static List<Integer> convertDoubleListIntoIntegers(List<Double> linesDouble) {
         List<Integer> lines = new ArrayList<>();
         if (linesDouble != null) {
@@ -192,12 +199,17 @@ public class Application {
         return lines;
     }
 
-    public static Map<String, List<String>> addNewMethod(Map<String, List<String>> methodsObject,String methodName, String fileName){
+    public static Map<String, Map<String, Map<String, Integer>>> addNewMethod(Map<String, Map<String, Map<String, Integer>>> methodsObject, String methodName, String fileName, MethodData methodData){
         if (!methodsObject.keySet().contains(fileName)) {
-            methodsObject.put(fileName, new ArrayList<>(Arrays.asList()));
+            methodsObject.put(fileName, new HashMap<>());
         }
-        List<String> fileMethods = methodsObject.get(fileName);
-        fileMethods.add(methodName);
+        int startLine = methodData.getStartLine();
+        int endLine = methodData.getEndLine();
+        Map<String, Integer> methodInfo = new HashMap<>();
+        methodInfo.put("startLine",startLine);
+        methodInfo.put("endLine",endLine);
+        Map<String, Map<String, Integer>> fileMethods = methodsObject.get(fileName);
+        fileMethods.put(methodName, methodInfo);
         methodsObject.put(fileName, fileMethods);
         return methodsObject;
     }

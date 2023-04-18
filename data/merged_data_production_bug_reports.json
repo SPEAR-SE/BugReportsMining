@@ -4,9 +4,12 @@
       "bug_report": "CLI-144",
       "bugfix_commit": "c338c8aca40d43efda580057f6d41ba228e26ec1",
       "buggyMethods": {
-        "src/java/org/apache/commons/cli2/option/GroupImpl.java": [
-          "validate"
-        ]
+        "src/java/org/apache/commons/cli2/option/GroupImpl.java": {
+          "validate": {
+            "endLine": 282,
+            "startLine": 237
+          }
+        }
       },
       "buggy_commit": "b7b2069f9d846c6aea5fee98508ec1491fdf1123",
       "failing_tests": [
@@ -110,9 +113,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/org/apache/commons/cli2/bug/BugCLI144Test.java": [
-          "testFileValidator"
-        ]
+        "src/test/org/apache/commons/cli2/bug/BugCLI144Test.java": {
+          "testFileValidator": {
+            "endLine": 65,
+            "startLine": 44
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -121,9 +127,12 @@
       "bug_report": "CLI-133",
       "bugfix_commit": "3880640ee6268a2ecb2912e1ae896153dc2229e5",
       "buggyMethods": {
-        "src/java/org/apache/commons/cli/Util.java": [
-          "stripLeadingHyphens"
-        ]
+        "src/java/org/apache/commons/cli/Util.java": {
+          "stripLeadingHyphens": {
+            "endLine": 49,
+            "startLine": 26
+          }
+        }
       },
       "buggy_commit": "2b0a94aee899d9e7d855c402ad40eb4e318f46e7",
       "failing_tests": [
@@ -218,12 +227,18 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/org/apache/commons/cli/UtilTest.java": [
-          "testStripLeadingHyphens"
-        ],
-        "src/test/org/apache/commons/cli/bug/BugCLI133Test.java": [
-          "testOrder"
-        ]
+        "src/test/org/apache/commons/cli/UtilTest.java": {
+          "testStripLeadingHyphens": {
+            "endLine": 29,
+            "startLine": 25
+          }
+        },
+        "src/test/org/apache/commons/cli/bug/BugCLI133Test.java": {
+          "testOrder": {
+            "endLine": 33,
+            "startLine": 26
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -234,12 +249,18 @@
       "bug_report": "19",
       "bugfix_commit": "e609670bb56e0c7216c9476a5f6a5594e7f1acdb",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/GlobalNamespace.java": [
-          "canCollapseUnannotatedChildNames"
-        ],
-        "src/com/google/javascript/rhino/JSDocInfoBuilder.java": [
-          "recordBlockDescription"
-        ]
+        "src/com/google/javascript/jscomp/GlobalNamespace.java": {
+          "canCollapseUnannotatedChildNames": {
+            "endLine": 917,
+            "startLine": 899
+          }
+        },
+        "src/com/google/javascript/rhino/JSDocInfoBuilder.java": {
+          "recordBlockDescription": {
+            "endLine": 191,
+            "startLine": 183
+          }
+        }
       },
       "buggy_commit": "6a36f04485599820ff86441accee002b4deec2eb",
       "failing_tests": [
@@ -309,14 +330,26 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/com/google/javascript/jscomp/CheckSideEffectsTest.java": [
-          "testJSDocComments"
-        ],
-        "test/com/google/javascript/jscomp/CollapsePropertiesTest.java": [
-          "testCrashInCommaOperator",
-          "testCrashInNestedAssign",
-          "testTwinReferenceCancelsChildCollapsing"
-        ]
+        "test/com/google/javascript/jscomp/CheckSideEffectsTest.java": {
+          "testJSDocComments": {
+            "endLine": 88,
+            "startLine": 85
+          }
+        },
+        "test/com/google/javascript/jscomp/CollapsePropertiesTest.java": {
+          "testTwinReferenceCancelsChildCollapsing": {
+            "endLine": 1113,
+            "startLine": 1110
+          },
+          "testCrashInCommaOperator": {
+            "endLine": 1103,
+            "startLine": 1100
+          },
+          "testCrashInNestedAssign": {
+            "endLine": 1108,
+            "startLine": 1105
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -325,10 +358,16 @@
       "bug_report": "1002",
       "bugfix_commit": "8cef00180a5cf67d047919c89668a6405030dbab",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/TypeCheck.java": [
-          "propertyIsImplicitCast",
-          "visitNew"
-        ]
+        "src/com/google/javascript/jscomp/TypeCheck.java": {
+          "visitNew": {
+            "endLine": 1671,
+            "startLine": 1653
+          },
+          "propertyIsImplicitCast": {
+            "endLine": 1187,
+            "startLine": 1175
+          }
+        }
       },
       "buggy_commit": "ddc1299802e88b9814250c369e3fe6f7ee07d4e5",
       "failing_tests": [
@@ -377,43 +416,91 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
-          "testIssue1002"
-        ]
+        "test/com/google/javascript/jscomp/TypeCheckTest.java": {
+          "testIssue1002": {
+            "endLine": 6753,
+            "startLine": 6740
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
-          "getInstanceType"
-        ]
+        "test/com/google/javascript/jscomp/TypeCheckTest.java": {
+          "getInstanceType": {
+            "endLine": 10141,
+            "startLine": 10134
+          }
+        }
       }
     },
     "143": {
       "bug_report": "139",
       "bugfix_commit": "7eaa0d8eca2549742649af34671eaf3da83b5c08",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/NodeUtil.java": [
-          "nodeTypeMayHaveSideEffects",
-          "canBeSideEffected",
-          "tryMergeBlock",
-          "isHoistedFunctionDeclaration",
-          "isVarArgsFunction",
-          "isObjectCallMethod",
-          "containsTypeInOuterScope",
-          "isValidPropertyName",
-          "getVarsDeclaredInBranch",
-          "isPrototypePropertyDeclaration"
-        ],
-        "src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": [
-          "createJsModules",
-          "createDefineReplacements"
-        ],
-        "src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java": [
-          "build"
-        ],
-        "src/com/google/javascript/jscomp/RemoveConstantExpressions.java": [
-          "trySimplify"
-        ]
+        "src/com/google/javascript/jscomp/NodeUtil.java": {
+          "tryMergeBlock": {
+            "endLine": 1127,
+            "startLine": 1103
+          },
+          "isVarArgsFunction": {
+            "endLine": 1232,
+            "startLine": 1222
+          },
+          "containsTypeInOuterScope": {
+            "endLine": 1403,
+            "startLine": 1396
+          },
+          "isPrototypePropertyDeclaration": {
+            "endLine": 1672,
+            "startLine": 1663
+          },
+          "nodeTypeMayHaveSideEffects": {
+            "endLine": 565,
+            "startLine": 539
+          },
+          "isHoistedFunctionDeclaration": {
+            "endLine": 1183,
+            "startLine": 1174
+          },
+          "canBeSideEffected": {
+            "endLine": 614,
+            "startLine": 576
+          },
+          "isObjectCallMethod": {
+            "endLine": 1251,
+            "startLine": 1234
+          },
+          "isValidPropertyName": {
+            "endLine": 1633,
+            "startLine": 1619
+          },
+          "getVarsDeclaredInBranch": {
+            "endLine": 1661,
+            "startLine": 1651
+          }
+        },
+        "src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
+          "createDefineReplacements": {
+            "endLine": 896,
+            "startLine": 839
+          },
+          "createJsModules": {
+            "endLine": 370,
+            "startLine": 281
+          }
+        },
+        "src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java": {
+          "build": {
+            "endLine": 163,
+            "startLine": 131
+          }
+        },
+        "src/com/google/javascript/jscomp/RemoveConstantExpressions.java": {
+          "trySimplify": {
+            "endLine": 95,
+            "startLine": 80
+          }
+        }
       },
       "buggy_commit": "45fd54a488cfbf27978fc4811a722f1fedb8ddaa",
       "failing_tests": [
@@ -542,16 +629,34 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/com/google/javascript/jscomp/RemoveConstantExpressionsTest.java": [
-          "testCall1",
-          "testCall2",
-          "testNew1",
-          "testNew2"
-        ],
-        "test/com/google/javascript/jscomp/CommandLineRunnerTest.java": [
-          "testDefineFlag2",
-          "testDefineFlag3"
-        ]
+        "test/com/google/javascript/jscomp/RemoveConstantExpressionsTest.java": {
+          "testNew1": {
+            "endLine": 291,
+            "startLine": 289
+          },
+          "testCall1": {
+            "endLine": 283,
+            "startLine": 281
+          },
+          "testNew2": {
+            "endLine": 295,
+            "startLine": 293
+          },
+          "testCall2": {
+            "endLine": 287,
+            "startLine": 285
+          }
+        },
+        "test/com/google/javascript/jscomp/CommandLineRunnerTest.java": {
+          "testDefineFlag2": {
+            "endLine": 139,
+            "startLine": 135
+          },
+          "testDefineFlag3": {
+            "endLine": 145,
+            "startLine": 141
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -560,12 +665,18 @@
       "bug_report": "268",
       "bugfix_commit": "de491e70b971caca03f07531c2caf97b878cd1ff",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": [
-          "inferThisType"
-        ],
-        "src/com/google/javascript/rhino/jstype/FunctionType.java": [
-          "resolveInternal"
-        ]
+        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": {
+          "inferThisType": {
+            "endLine": 436,
+            "startLine": 400
+          }
+        },
+        "src/com/google/javascript/rhino/jstype/FunctionType.java": {
+          "resolveInternal": {
+            "endLine": 895,
+            "startLine": 861
+          }
+        }
       },
       "buggy_commit": "08fc2551ca3c811a02407d593b6ae39d2439a88c",
       "failing_tests": [
@@ -671,16 +782,28 @@
         }
       },
       "newMethods": {
-        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": [
-          "apply"
-        ]
+        "src/com/google/javascript/jscomp/FunctionTypeBuilder.java": {
+          "apply": {
+            "endLine": 189,
+            "startLine": 176
+          }
+        }
       },
       "newTests": {
-        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
-          "testBackwardsTypedefUse1",
-          "testBackwardsTypedefUse2",
-          "testBackwardsTypedefUse3"
-        ]
+        "test/com/google/javascript/jscomp/TypeCheckTest.java": {
+          "testBackwardsTypedefUse1": {
+            "endLine": 2615,
+            "startLine": 2609
+          },
+          "testBackwardsTypedefUse2": {
+            "endLine": 2621,
+            "startLine": 2617
+          },
+          "testBackwardsTypedefUse3": {
+            "endLine": 2629,
+            "startLine": 2623
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -689,9 +812,12 @@
       "bug_report": "884",
       "bugfix_commit": "d1cfe67977d8f3aaa85ec20c262171da394d5977",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/TypeCheck.java": [
-          "checkInterfaceConflictProperties"
-        ]
+        "src/com/google/javascript/jscomp/TypeCheck.java": {
+          "checkInterfaceConflictProperties": {
+            "endLine": 1596,
+            "startLine": 1554
+          }
+        }
       },
       "buggy_commit": "61095090415cff7cae4f3645fa76ee7cdd3ee23d",
       "failing_tests": [
@@ -740,9 +866,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/com/google/javascript/jscomp/TypeCheckTest.java": [
-          "testBadInterfaceExtendsNonExistentInterfaces"
-        ]
+        "test/com/google/javascript/jscomp/TypeCheckTest.java": {
+          "testBadInterfaceExtendsNonExistentInterfaces": {
+            "endLine": 3781,
+            "startLine": 3771
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -751,11 +880,20 @@
       "bug_report": "727",
       "bugfix_commit": "7a8983042131c5a9c2b5421ae42075cbb8ef1aeb",
       "buggyMethods": {
-        "src/com/google/javascript/rhino/IR.java": [
-          "tryFinally",
-          "tryCatch",
-          "tryCatchFinally"
-        ]
+        "src/com/google/javascript/rhino/IR.java": {
+          "tryFinally": {
+            "endLine": 231,
+            "startLine": 226
+          },
+          "tryCatch": {
+            "endLine": 238,
+            "startLine": 233
+          },
+          "tryCatchFinally": {
+            "endLine": 246,
+            "startLine": 240
+          }
+        }
       },
       "buggy_commit": "1d9ecb5328bbde5ee84dbfe2d74bbd318b89b6d7",
       "failing_tests": [
@@ -885,17 +1023,32 @@
         }
       },
       "newMethods": {
-        "src/com/google/javascript/rhino/IR.java": [
-          "blockUnchecked"
-        ]
+        "src/com/google/javascript/rhino/IR.java": {
+          "blockUnchecked": {
+            "endLine": 113,
+            "startLine": 111
+          }
+        }
       },
       "newTests": {
-        "test/com/google/javascript/rhino/IRTest.java": [
-          "testIssue727_1",
-          "testIssue727_2",
-          "testIssue727_3",
-          "testIR"
-        ]
+        "test/com/google/javascript/rhino/IRTest.java": {
+          "testIssue727_1": {
+            "endLine": 56,
+            "startLine": 47
+          },
+          "testIR": {
+            "endLine": 90,
+            "startLine": 88
+          },
+          "testIssue727_2": {
+            "endLine": 71,
+            "startLine": 58
+          },
+          "testIssue727_3": {
+            "endLine": 86,
+            "startLine": 73
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -904,12 +1057,18 @@
       "bug_report": "691",
       "bugfix_commit": "87b154f89cba3c67045cd7a783b79231d0630a4c",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/CodePrinter.java": [
-          "appendOp"
-        ],
-        "src/com/google/javascript/jscomp/CodeGenerator.java": [
-          "add"
-        ]
+        "src/com/google/javascript/jscomp/CodePrinter.java": {
+          "appendOp": {
+            "endLine": 342,
+            "startLine": 331
+          }
+        },
+        "src/com/google/javascript/jscomp/CodeGenerator.java": {
+          "add": {
+            "endLine": 730,
+            "startLine": 85
+          }
+        }
       },
       "buggy_commit": "bc018d6c44e70b5c02016431a2f3604b3e6fc45c",
       "failing_tests": [
@@ -1021,15 +1180,24 @@
         }
       },
       "newMethods": {
-        "src/com/google/javascript/jscomp/CodeGenerator.java": [
-          "unrollBinaryOperator"
-        ]
+        "src/com/google/javascript/jscomp/CodeGenerator.java": {
+          "unrollBinaryOperator": {
+            "endLine": 755,
+            "startLine": 732
+          }
+        }
       },
       "newTests": {
-        "test/com/google/javascript/jscomp/CodePrinterTest.java": [
-          "testCommaSpacing",
-          "testManyAdds"
-        ]
+        "test/com/google/javascript/jscomp/CodePrinterTest.java": {
+          "testCommaSpacing": {
+            "endLine": 1362,
+            "startLine": 1357
+          },
+          "testManyAdds": {
+            "endLine": 1398,
+            "startLine": 1382
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1038,12 +1206,18 @@
       "bug_report": "663",
       "bugfix_commit": "7e93d521cb67ce33018315234fafe8a5aa30ee1e",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/NodeTraversal.java": [
-          "traverseFunction"
-        ],
-        "src/com/google/javascript/jscomp/parsing/IRFactory.java": [
-          "processFunctionNode"
-        ]
+        "src/com/google/javascript/jscomp/NodeTraversal.java": {
+          "traverseFunction": {
+            "endLine": 545,
+            "startLine": 507
+          }
+        },
+        "src/com/google/javascript/jscomp/parsing/IRFactory.java": {
+          "processFunctionNode": {
+            "endLine": 677,
+            "startLine": 609
+          }
+        }
       },
       "buggy_commit": "375879beef8fcffaae51749a7ac537d2eb140802",
       "failing_tests": [
@@ -1115,10 +1289,16 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/com/google/javascript/jscomp/IntegrationTest.java": [
-          "testIncompleteFunction",
-          "test"
-        ]
+        "test/com/google/javascript/jscomp/IntegrationTest.java": {
+          "testIncompleteFunction": {
+            "endLine": 1950,
+            "startLine": 1937
+          },
+          "test": {
+            "endLine": 2052,
+            "startLine": 2035
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1127,9 +1307,12 @@
       "bug_report": "538",
       "bugfix_commit": "f2c0cb1f67ecb3315c0cb11326c9cb04db07ee8a",
       "buggyMethods": {
-        "src/com/google/javascript/jscomp/FunctionRewriter.java": [
-          "reduce"
-        ]
+        "src/com/google/javascript/jscomp/FunctionRewriter.java": {
+          "reduce": {
+            "endLine": 500,
+            "startLine": 482
+          }
+        }
       },
       "buggy_commit": "1d13eac7441b980804c7ddfbe48a10a2ec3431d0",
       "failing_tests": [
@@ -1184,14 +1367,20 @@
         }
       },
       "newMethods": {
-        "src/com/google/javascript/jscomp/FunctionRewriter.java": [
-          "isReduceableFunctionExpression"
-        ]
+        "src/com/google/javascript/jscomp/FunctionRewriter.java": {
+          "isReduceableFunctionExpression": {
+            "endLine": 119,
+            "startLine": 116
+          }
+        }
       },
       "newTests": {
-        "test/com/google/javascript/jscomp/FunctionRewriterTest.java": [
-          "testIssue538"
-        ]
+        "test/com/google/javascript/jscomp/FunctionRewriterTest.java": {
+          "testIssue538": {
+            "endLine": 180,
+            "startLine": 165
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1202,15 +1391,30 @@
       "bug_report": "CODEC-105",
       "bugfix_commit": "2c13032a16e37b7bc9e0272d25fc185b5c82b42e",
       "buggyMethods": {
-        "src/java/org/apache/commons/codec/binary/Base64InputStream.java": [
-          "read"
-        ],
-        "src/java/org/apache/commons/codec/binary/Base64.java": [
-          "readResults",
-          "setInitialBuffer",
-          "encode",
-          "decode"
-        ]
+        "src/java/org/apache/commons/codec/binary/Base64InputStream.java": {
+          "read": {
+            "endLine": 184,
+            "startLine": 119
+          }
+        },
+        "src/java/org/apache/commons/codec/binary/Base64.java": {
+          "setInitialBuffer": {
+            "endLine": 444,
+            "startLine": 425
+          },
+          "encode": {
+            "endLine": 920,
+            "startLine": 903
+          },
+          "readResults": {
+            "endLine": 417,
+            "startLine": 394
+          },
+          "decode": {
+            "endLine": 769,
+            "startLine": 742
+          }
+        }
       },
       "buggy_commit": "931e25921dc0ec705a0055655aa2b2237a0888d7",
       "failing_tests": [
@@ -1378,12 +1582,18 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java": [
-          "read"
-        ],
-        "src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java": [
-          "testCodec105"
-        ]
+        "src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java": {
+          "read": {
+            "endLine": 52,
+            "startLine": 45
+          }
+        },
+        "src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java": {
+          "testCodec105": {
+            "endLine": 60,
+            "startLine": 52
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1488,16 +1698,28 @@
         }
       },
       "newMethods": {
-        "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java": [
-          "clear"
-        ]
+        "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java": {
+          "clear": {
+            "endLine": 2271,
+            "startLine": 2262
+          }
+        }
       },
       "newTests": {
-        "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java": [
-          "testPrefixMapClear",
-          "testPrefixMapClearNothing",
-          "testPrefixMapClearUsingRemove"
-        ]
+        "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java": {
+          "testPrefixMapClearNothing": {
+            "endLine": 406,
+            "startLine": 394
+          },
+          "testPrefixMapClearUsingRemove": {
+            "endLine": 429,
+            "startLine": 408
+          },
+          "testPrefixMapClear": {
+            "endLine": 392,
+            "startLine": 373
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1508,13 +1730,28 @@
       "bug_report": "COMPRESS-28",
       "bugfix_commit": "004124ac5dbf5edbf925078652526267468821e7",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java": [
-          "putNextEntry",
-          "closeEntry",
-          "finish",
-          "closeArchiveEntry",
-          "close"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java": {
+          "putNextEntry": {
+            "endLine": 171,
+            "startLine": 136
+          },
+          "closeArchiveEntry": {
+            "endLine": 271,
+            "startLine": 250
+          },
+          "closeEntry": {
+            "endLine": 274,
+            "startLine": 245
+          },
+          "finish": {
+            "endLine": 335,
+            "startLine": 311
+          },
+          "close": {
+            "endLine": 350,
+            "startLine": 337
+          }
+        }
       },
       "buggy_commit": "728b4e814ec88cab556533fa114be0efdde963be",
       "failing_tests": [
@@ -1726,25 +1963,37 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java": [
-          "testCpioUnarchive"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStreamTest.java": {
+          "testCpioUnarchive": {
+            "endLine": 30,
+            "startLine": 9
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java": [
-          "testCpioArchiveCreation",
-          "testCpioUnarchive"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java": {
+          "testCpioUnarchive": {
+            "endLine": 102,
+            "startLine": 54
+          },
+          "testCpioArchiveCreation": {
+            "endLine": 52,
+            "startLine": 35
+          }
+        }
       }
     },
     "12": {
       "bug_report": "COMPRESS-178",
       "bugfix_commit": "bc84d2083e4b1da77547bb4e810a06553e8f0bed",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
-          "getNextTarEntry"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": {
+          "getNextTarEntry": {
+            "endLine": 244,
+            "startLine": 159
+          }
+        }
       },
       "buggy_commit": "b23b5c8533846374a22b417f7d66c7cb8ceb8962",
       "failing_tests": [
@@ -1792,9 +2041,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/TarTestCase.java": [
-          "testCOMPRESS178"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/TarTestCase.java": {
+          "testCOMPRESS178": {
+            "endLine": 316,
+            "startLine": 304
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1803,9 +2055,12 @@
       "bug_report": "COMPRESS-181",
       "bugfix_commit": "40f2e6380094ebfdc73e4adaf4059b80e1327aad",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
-          "parseOctal"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": {
+          "parseOctal": {
+            "endLine": 105,
+            "startLine": 35
+          }
+        }
       },
       "buggy_commit": "d39ba76c50f65698213787901ec8dffbda77e43a",
       "failing_tests": [
@@ -1888,24 +2143,33 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
-          "workaroundForBrokenTimeHeader"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": {
+          "workaroundForBrokenTimeHeader": {
+            "endLine": 66,
+            "startLine": 50
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": [
-          "testParseOctalInvalid"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": {
+          "testParseOctalInvalid": {
+            "endLine": 111,
+            "startLine": 61
+          }
+        }
       }
     },
     "17": {
       "bug_report": "COMPRESS-197",
       "bugfix_commit": "ab456436d20f386641e605c17de24cc8cd3c1770",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": [
-          "parseOctal"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": {
+          "parseOctal": {
+            "endLine": 152,
+            "startLine": 81
+          }
+        }
       },
       "buggy_commit": "db6dda34281d95d495ff4c935b65cf84310bf6be",
       "failing_tests": [
@@ -1963,10 +2227,16 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
-          "testCompress197",
-          "getTestStream"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": {
+          "testCompress197": {
+            "endLine": 138,
+            "startLine": 125
+          },
+          "getTestStream": {
+            "endLine": 143,
+            "startLine": 140
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -1975,9 +2245,12 @@
       "bug_report": "COMPRESS-203",
       "bugfix_commit": "09b8f6d78e18b927491fc299973146fa74fd977f",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java": [
-          "writePaxHeaders"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java": {
+          "writePaxHeaders": {
+            "endLine": 494,
+            "startLine": 450
+          }
+        }
       },
       "buggy_commit": "716666a267169689e3b4559458c1f0d53a96ae0a",
       "failing_tests": [
@@ -2060,12 +2333,24 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStreamTest.java": [
-          "testWriteLongDirectoryNameGnuMode",
-          "testWriteLongDirectoryNamePosixMode",
-          "testWriteLongDirectoryName",
-          "testWriteNonAsciiDirectoryNamePosixMode"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStreamTest.java": {
+          "testWriteLongDirectoryName": {
+            "endLine": 407,
+            "startLine": 389
+          },
+          "testWriteLongDirectoryNameGnuMode": {
+            "endLine": 380,
+            "startLine": 375
+          },
+          "testWriteNonAsciiDirectoryNamePosixMode": {
+            "endLine": 428,
+            "startLine": 409
+          },
+          "testWriteLongDirectoryNamePosixMode": {
+            "endLine": 387,
+            "startLine": 382
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2074,9 +2359,12 @@
       "bug_report": "COMPRESS-256",
       "bugfix_commit": "cbb5a1ad9b0b80f717ee71dc0fc765afdc1601c0",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java": [
-          "decode"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java": {
+          "decode": {
+            "endLine": 118,
+            "startLine": 106
+          }
+        }
       },
       "buggy_commit": "71e4eeadcfc5eb390eca1142fc1f6ee5b1b4d5c1",
       "failing_tests": [
@@ -2119,9 +2407,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/sevenz/SevenZFileTest.java": [
-          "testCompressedHeaderWithNonDefaultDictionarySize"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/sevenz/SevenZFileTest.java": {
+          "testCompressedHeaderWithNonDefaultDictionarySize": {
+            "endLine": 89,
+            "startLine": 75
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2130,9 +2421,12 @@
       "bug_report": "COMPRESS-314",
       "bugfix_commit": "3c4a09bf28e7cd600b919b8c799fbbfd19a94c0b",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": [
-          "applyPaxHeadersToCurrentEntry"
-        ]
+        "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": {
+          "applyPaxHeadersToCurrentEntry": {
+            "endLine": 518,
+            "startLine": 481
+          }
+        }
       },
       "buggy_commit": "24a3100e9897837b513a0d9f2ae26fd02ec91246",
       "failing_tests": [
@@ -2182,9 +2476,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": [
-          "shouldReadBigGid"
-        ]
+        "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStreamTest.java": {
+          "shouldReadBigGid": {
+            "endLine": 257,
+            "startLine": 238
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2515,44 +2812,113 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
-          "testExcelHeaderCountLessThanData"
-        ]
+        "src/test/java/org/apache/commons/csv/CSVParserTest.java": {
+          "testExcelHeaderCountLessThanData": {
+            "endLine": 387,
+            "startLine": 371
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
-          "testBackslashEscaping",
-          "testBackslashEscaping2",
-          "testBackslashEscapingOld",
-          "testBOM",
-          "testBOMInputStream",
-          "testDefaultFormat",
-          "testEmptyLineBehaviourCSV",
-          "testEmptyLineBehaviourExcel",
-          "testEndOfFileBehaviorCSV",
-          "testEndOfFileBehaviourExcel",
-          "testExcelFormat1",
-          "testExcelFormat2",
-          "testForEach",
-          "testDuplicateHeaders",
-          "testGetRecordWithMultiLineValues",
-          "testHeadersMissingException",
-          "testIgnoreEmptyLines",
-          "testIterator",
-          "testMultipleIterators",
-          "validateLineNumbers",
-          "validateRecordNumbers"
-        ]
+        "src/test/java/org/apache/commons/csv/CSVParserTest.java": {
+          "testMultipleIterators": {
+            "endLine": 721,
+            "startLine": 703
+          },
+          "testBackslashEscaping": {
+            "endLine": 111,
+            "startLine": 74
+          },
+          "testEmptyLineBehaviourCSV": {
+            "endLine": 283,
+            "startLine": 268
+          },
+          "testExcelFormat1": {
+            "endLine": 355,
+            "startLine": 341
+          },
+          "testExcelFormat2": {
+            "endLine": 369,
+            "startLine": 357
+          },
+          "testEndOfFileBehaviourExcel": {
+            "endLine": 339,
+            "startLine": 321
+          },
+          "testBackslashEscaping2": {
+            "endLine": 138,
+            "startLine": 113
+          },
+          "testDefaultFormat": {
+            "endLine": 259,
+            "startLine": 232
+          },
+          "testIterator": {
+            "endLine": 657,
+            "startLine": 630
+          },
+          "testHeadersMissingException": {
+            "endLine": 582,
+            "startLine": 578
+          },
+          "testEmptyLineBehaviourExcel": {
+            "endLine": 300,
+            "startLine": 285
+          },
+          "testDuplicateHeaders": {
+            "endLine": 432,
+            "startLine": 429
+          },
+          "testBOMInputStream": {
+            "endLine": 192,
+            "startLine": 177
+          },
+          "testBackslashEscapingOld": {
+            "endLine": 159,
+            "startLine": 140
+          },
+          "testGetRecordWithMultiLineValues": {
+            "endLine": 543,
+            "startLine": 520
+          },
+          "testIgnoreEmptyLines": {
+            "endLine": 622,
+            "startLine": 613
+          },
+          "testBOM": {
+            "endLine": 175,
+            "startLine": 161
+          },
+          "testEndOfFileBehaviorCSV": {
+            "endLine": 319,
+            "startLine": 302
+          },
+          "validateRecordNumbers": {
+            "endLine": 886,
+            "startLine": 869
+          },
+          "testForEach": {
+            "endLine": 403,
+            "startLine": 389
+          },
+          "validateLineNumbers": {
+            "endLine": 867,
+            "startLine": 852
+          }
+        }
       }
     },
     "4": {
       "bug_report": "CSV-100",
       "bugfix_commit": "22601f647f2ce9a05fa4ce20ea356492c670940c",
       "buggyMethods": {
-        "src/main/java/org/apache/commons/csv/CSVParser.java": [
-          "getHeaderMap"
-        ]
+        "src/main/java/org/apache/commons/csv/CSVParser.java": {
+          "getHeaderMap": {
+            "endLine": 289,
+            "startLine": 280
+          }
+        }
       },
       "buggy_commit": "2b5f84ede12cfadd7946ffb07a56709b8322a02f",
       "failing_tests": [
@@ -2587,9 +2953,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/apache/commons/csv/CSVParserTest.java": [
-          "testNoHeaderMap"
-        ]
+        "src/test/java/org/apache/commons/csv/CSVParserTest.java": {
+          "testNoHeaderMap": {
+            "endLine": 671,
+            "startLine": 667
+          }
+        }
       },
       "origin": "defects4j/t-evos",
       "updatedTests": {}
@@ -2600,9 +2969,12 @@
       "bug_report": "1013",
       "bugfix_commit": "9e6f2bab20257b6823a5b753739f047d79e9dcbd",
       "buggyMethods": {
-        "gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": [
-          "skipValue"
-        ]
+        "gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": {
+          "skipValue": {
+            "endLine": 269,
+            "startLine": 256
+          }
+        }
       },
       "buggy_commit": "7719e73a108c450666613c279bedaed724cd9cc9",
       "failing_tests": [
@@ -2686,10 +3058,16 @@
       },
       "newMethods": {},
       "newTests": {
-        "gson/src/test/java/com/google/gson/internal/bind/JsonTreeReaderTest.java": [
-          "testSkipValue_emptyJsonObject",
-          "testSkipValue_filledJsonObject"
-        ]
+        "gson/src/test/java/com/google/gson/internal/bind/JsonTreeReaderTest.java": {
+          "testSkipValue_filledJsonObject": {
+            "endLine": 49,
+            "startLine": 33
+          },
+          "testSkipValue_emptyJsonObject": {
+            "endLine": 31,
+            "startLine": 27
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2698,9 +3076,12 @@
       "bug_report": "817",
       "bugfix_commit": "0f66f4fac441f7d7d7bc4afc907454f3fe4c0faa",
       "buggyMethods": {
-        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": [
-          "newInstance"
-        ]
+        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": {
+          "newInstance": {
+            "endLine": 95,
+            "startLine": 90
+          }
+        }
       },
       "buggy_commit": "6f6af8050799bec5321d2c06cd3230daadbb6535",
       "failing_tests": [
@@ -2820,16 +3201,28 @@
         }
       },
       "newMethods": {
-        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": [
-          "assertInstantiable"
-        ]
+        "gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": {
+          "assertInstantiable": {
+            "endLine": 122,
+            "startLine": 109
+          }
+        }
       },
       "newTests": {
-        "gson/src/test/java/com/google/gson/internal/UnsafeAllocatorInstantiationTest.java": [
-          "testInterfaceInstantiation",
-          "testAbstractClassInstantiation",
-          "testConcreteClassInstantiation"
-        ]
+        "gson/src/test/java/com/google/gson/internal/UnsafeAllocatorInstantiationTest.java": {
+          "testInterfaceInstantiation": {
+            "endLine": 47,
+            "startLine": 35
+          },
+          "testAbstractClassInstantiation": {
+            "endLine": 61,
+            "startLine": 49
+          },
+          "testConcreteClassInstantiation": {
+            "endLine": 73,
+            "startLine": 63
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2840,9 +3233,12 @@
       "bug_report": "152",
       "bugfix_commit": "3baa7d6742f7460bfb0af8edf48bf1575658109a",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java": [
-          "expandCurrentSegment"
-        ]
+        "src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java": {
+          "expandCurrentSegment": {
+            "endLine": 591,
+            "startLine": 575
+          }
+        }
       },
       "buggy_commit": "7317dc95b0c9d09b94f37c8ae3a48de8b37729cc",
       "failing_tests": [
@@ -2891,9 +3287,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java": [
-          "testExpand"
-        ]
+        "src/test/java/com/fasterxml/jackson/core/util/TestTextBuffer.java": {
+          "testExpand": {
+            "endLine": 79,
+            "startLine": 67
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -2902,39 +3301,108 @@
       "bug_report": "177",
       "bugfix_commit": "5cddffa133e7de41fa9efb5962cf3d0cff9b3e89",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java": [
-          "writeValue"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": [
-          "writeString",
-          "writeBinary",
-          "writeNumber",
-          "writeBoolean",
-          "writeNull"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": [
-          "writeStartObject",
-          "writeEndObject",
-          "writeFieldName",
-          "writeString"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/JsonGeneratorImpl.java": [
-          "writeStringField"
-        ],
-        "src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java": [
-          "writeString",
-          "writeRawUTF8String",
-          "writeUTF8String",
-          "writeRawValue",
-          "writeBinary",
-          "writeNumber",
-          "writeBoolean",
-          "writeNull",
-          "_verifyValueWrite",
-          "_verifyPrettyValueWrite",
-          "flush",
-          "close"
-        ]
+        "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java": {
+          "writeValue": {
+            "endLine": 188,
+            "startLine": 166
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": {
+          "writeNumber": {
+            "endLine": 705,
+            "startLine": 696
+          },
+          "writeNull": {
+            "endLine": 748,
+            "startLine": 744
+          },
+          "writeString": {
+            "endLine": 383,
+            "startLine": 355
+          },
+          "writeBinary": {
+            "endLine": 556,
+            "startLine": 524
+          },
+          "writeBoolean": {
+            "endLine": 742,
+            "startLine": 720
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": {
+          "writeFieldName": {
+            "endLine": 683,
+            "startLine": 672
+          },
+          "writeStartObject": {
+            "endLine": 647,
+            "startLine": 638
+          },
+          "writeEndObject": {
+            "endLine": 659,
+            "startLine": 649
+          },
+          "writeString": {
+            "endLine": 719,
+            "startLine": 709
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/core/json/JsonGeneratorImpl.java": {
+          "writeStringField": {
+            "endLine": 170,
+            "startLine": 165
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java": {
+          "_verifyPrettyValueWrite": {
+            "endLine": 1025,
+            "startLine": 1000
+          },
+          "flush": {
+            "endLine": 1042,
+            "startLine": 1033
+          },
+          "_verifyValueWrite": {
+            "endLine": 998,
+            "startLine": 961
+          },
+          "writeRawUTF8String": {
+            "endLine": 521,
+            "startLine": 508
+          },
+          "writeRawValue": {
+            "endLine": 598,
+            "startLine": 591
+          },
+          "writeUTF8String": {
+            "endLine": 541,
+            "startLine": 523
+          },
+          "writeNumber": {
+            "endLine": 918,
+            "startLine": 908
+          },
+          "writeNull": {
+            "endLine": 953,
+            "startLine": 947
+          },
+          "writeString": {
+            "endLine": 506,
+            "startLine": 488
+          },
+          "writeBinary": {
+            "endLine": 759,
+            "startLine": 727
+          },
+          "close": {
+            "endLine": 1084,
+            "startLine": 1044
+          },
+          "writeBoolean": {
+            "endLine": 945,
+            "startLine": 933
+          }
+        }
       },
       "buggy_commit": "b0ceb4eeb69f20f0e4242736ae3e19ed2b9c5da3",
       "failing_tests": [
@@ -3272,21 +3740,45 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": [
-          "testDupFieldNameWrites",
-          "testFailOnWritingStringNotFieldNameBytes",
-          "testFailOnWritingStringNotFieldNameChars",
-          "_testDupFieldNameWrites",
-          "_testFailOnWritingStringNotFieldName"
-        ]
+        "src/test/java/com/fasterxml/jackson/core/json/GeneratorFailTest.java": {
+          "testDupFieldNameWrites": {
+            "endLine": 21,
+            "startLine": 17
+          },
+          "testFailOnWritingStringNotFieldNameChars": {
+            "endLine": 33,
+            "startLine": 31
+          },
+          "_testDupFieldNameWrites": {
+            "endLine": 62,
+            "startLine": 41
+          },
+          "_testFailOnWritingStringNotFieldName": {
+            "endLine": 84,
+            "startLine": 64
+          },
+          "testFailOnWritingStringNotFieldNameBytes": {
+            "endLine": 28,
+            "startLine": 26
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java": [
-          "testDupFieldNameWrites",
-          "_testDupFieldNameWrites",
-          "_testFailOnWritingStringNotFieldName"
-        ]
+        "src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java": {
+          "testDupFieldNameWrites": {
+            "endLine": 235,
+            "startLine": 230
+          },
+          "_testDupFieldNameWrites": {
+            "endLine": 276,
+            "startLine": 255
+          },
+          "_testFailOnWritingStringNotFieldName": {
+            "endLine": 298,
+            "startLine": 278
+          }
+        }
       }
     }
   },
@@ -3295,10 +3787,16 @@
       "bug_report": "2167",
       "bugfix_commit": "83c7c4347055c3a70a3115fa106aa69c9cb56456",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": [
-          "_format",
-          "pad4"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": {
+          "pad4": {
+            "endLine": 540,
+            "startLine": 527
+          },
+          "_format": {
+            "endLine": 488,
+            "startLine": 432
+          }
+        }
       },
       "buggy_commit": "54c744c2c2007eb93dd756cc8581573c9bec97ac",
       "failing_tests": [
@@ -3404,31 +3902,49 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": [
-          "_formatBCEYear"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": {
+          "_formatBCEYear": {
+            "endLine": 503,
+            "startLine": 490
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": [
-          "testDateISO8601_10k"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": {
+          "testDateISO8601_10k": {
+            "endLine": 137,
+            "startLine": 130
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": [
-          "testDateISO8601",
-          "serialize",
-          "testDateISO8601_BCE"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": {
+          "serialize": {
+            "endLine": 367,
+            "startLine": 365
+          },
+          "testDateISO8601": {
+            "endLine": 127,
+            "startLine": 115
+          },
+          "testDateISO8601_BCE": {
+            "endLine": 152,
+            "startLine": 140
+          }
+        }
       }
     },
     "14": {
       "bug_report": "744",
       "bugfix_commit": "817a45a07040297a5db45dd04e79b010146b7e0d",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": [
-          "_bindAsTree"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": {
+          "_bindAsTree": {
+            "endLine": 1486,
+            "startLine": 1468
+          }
+        }
       },
       "buggy_commit": "0ec81c07bc4be13e1382f7191981ed3f0bf9ef39",
       "failing_tests": [
@@ -3561,16 +4077,28 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": [
-          "_findTreeDeserializer"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": {
+          "_findTreeDeserializer": {
+            "endLine": 1590,
+            "startLine": 1574
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/convert/TestUpdateValue.java": [
-          "DataADeserializer",
-          "deserialize",
-          "testIssue744"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/convert/TestUpdateValue.java": {
+          "testIssue744": {
+            "endLine": 225,
+            "startLine": 187
+          },
+          "DataADeserializer": {
+            "endLine": 68,
+            "startLine": 66
+          },
+          "deserialize": {
+            "endLine": 81,
+            "startLine": 70
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -3579,22 +4107,46 @@
       "bug_report": "731",
       "bugfix_commit": "119ddc9701c94ac184362166742ceaa7437eec8f",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": [
-          "createContextual",
-          "serialize",
-          "serializeWithType",
-          "isEmpty",
-          "acceptJsonFormatVisitor"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java": [
-          "createSerializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdSerializer.java": [
-          "findConvertingContentSerializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java": [
-          "findConvertingSerializer"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": {
+          "serialize": {
+            "endLine": 170,
+            "startLine": 155
+          },
+          "serializeWithType": {
+            "endLine": 185,
+            "startLine": 172
+          },
+          "acceptJsonFormatVisitor": {
+            "endLine": 245,
+            "startLine": 234
+          },
+          "isEmpty": {
+            "endLine": 206,
+            "startLine": 198
+          },
+          "createContextual": {
+            "endLine": 132,
+            "startLine": 106
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializerFactory.java": {
+          "createSerializer": {
+            "endLine": 167,
+            "startLine": 115
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdSerializer.java": {
+          "findConvertingContentSerializer": {
+            "endLine": 270,
+            "startLine": 235
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java": {
+          "findConvertingSerializer": {
+            "endLine": 377,
+            "startLine": 350
+          }
+        }
       },
       "buggy_commit": "fa1c2ff7eefd68061ae0cc3f630e87d16d1b2bb5",
       "failing_tests": [
@@ -3758,20 +4310,38 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": [
-          "_findSerializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": [
-          "isJavaLangObject"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": {
+          "_findSerializer": {
+            "endLine": 281,
+            "startLine": 268
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": {
+          "isJavaLangObject": {
+            "endLine": 302,
+            "startLine": 293
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/convert/TestConvertingSerializer.java": [
-          "DummyBean",
-          "ConvertingBeanWithUntypedConverter",
-          "convert",
-          "testIssue731"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/convert/TestConvertingSerializer.java": {
+          "testIssue731": {
+            "endLine": 204,
+            "startLine": 199
+          },
+          "convert": {
+            "endLine": 149,
+            "startLine": 146
+          },
+          "ConvertingBeanWithUntypedConverter": {
+            "endLine": 141,
+            "startLine": 138
+          },
+          "DummyBean": {
+            "endLine": 132,
+            "startLine": 129
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -3780,9 +4350,12 @@
       "bug_report": "793",
       "bugfix_commit": "a143c05db7a911f98f8bf59beb13cfcb7689395d",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
-          "useForType"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "useForType": {
+            "endLine": 193,
+            "startLine": 159
+          }
+        }
       },
       "buggy_commit": "7db1f44069bbcac9d884d829f8052a89b5ec271b",
       "failing_tests": [
@@ -3838,42 +4411,75 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": [
-          "testArrayWithDefaultTyping"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": {
+          "testArrayWithDefaultTyping": {
+            "endLine": 122,
+            "startLine": 109
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": [
-          "testBinary",
-          "testPOJO"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": {
+          "testPOJO": {
+            "endLine": 109,
+            "startLine": 93
+          },
+          "testBinary": {
+            "endLine": 91,
+            "startLine": 70
+          }
+        }
       }
     },
     "25": {
       "bug_report": "890",
       "bugfix_commit": "9917c94d94a285ece80e6c9f3d2b9fba06d98fd7",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.java": [
-          "deserialize",
-          "constructSet",
-          "EnumSetDeserializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java": [
-          "_findDeserializer"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver.java": [
-          "findTypeMapping"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java": [
-          "modifyTypeByAnnotation"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": [
-          "narrowBy"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
-          "modifyTypeByAnnotation"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.java": {
+          "EnumSetDeserializer": {
+            "endLine": 47,
+            "startLine": 36
+          },
+          "constructSet": {
+            "endLine": 136,
+            "startLine": 131
+          },
+          "deserialize": {
+            "endLine": 121,
+            "startLine": 88
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java": {
+          "_findDeserializer": {
+            "endLine": 184,
+            "startLine": 144
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver.java": {
+          "findTypeMapping": {
+            "endLine": 81,
+            "startLine": 70
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java": {
+          "modifyTypeByAnnotation": {
+            "endLine": 1811,
+            "startLine": 1731
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/JavaType.java": {
+          "narrowBy": {
+            "endLine": 161,
+            "startLine": 136
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
+          "modifyTypeByAnnotation": {
+            "endLine": 543,
+            "startLine": 452
+          }
+        }
       },
       "buggy_commit": "b4ef0a65150a7311ebb9119b1ac6898e33dc0baf",
       "failing_tests": [
@@ -3993,9 +4599,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/deser/TestArrayDeserialization.java": [
-          "testByteArrayTypeOverride890"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/deser/TestArrayDeserialization.java": {
+          "testByteArrayTypeOverride890": {
+            "endLine": 568,
+            "startLine": 561
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4004,12 +4613,18 @@
       "bug_report": "941",
       "bugfix_commit": "b049739cc66a0f79c19dd1cea47e922d95645023",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": [
-          "deserialize"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": [
-          "deserialize"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": {
+          "deserialize": {
+            "endLine": 127,
+            "startLine": 120
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
+          "deserialize": {
+            "endLine": 137,
+            "startLine": 113
+          }
+        }
       },
       "buggy_commit": "e258ee60edc692c80907fd6e4bb16e641692b721",
       "failing_tests": [
@@ -4090,11 +4705,20 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/node/TestObjectNode.java": [
-          "MyValue",
-          "getObject",
-          "testIssue941"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/node/TestObjectNode.java": {
+          "getObject": {
+            "endLine": 60,
+            "startLine": 59
+          },
+          "MyValue": {
+            "endLine": 57,
+            "startLine": 56
+          },
+          "testIssue941": {
+            "endLine": 413,
+            "startLine": 401
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4103,11 +4727,20 @@
       "bug_report": "989",
       "bugfix_commit": "d5a25f4300a93f4c411a7b8364d34122bc0a1b62",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializer.java": [
-          "deserialize",
-          "deserializeWithType",
-          "mapObject"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializer.java": {
+          "deserializeWithType": {
+            "endLine": 333,
+            "startLine": 278
+          },
+          "deserialize": {
+            "endLine": 545,
+            "startLine": 484
+          },
+          "mapObject": {
+            "endLine": 442,
+            "startLine": 385
+          }
+        }
       },
       "buggy_commit": "fe25f7e14d92f5d4746549e7df22e9af35fdf54b",
       "failing_tests": [
@@ -4186,29 +4819,47 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": [
-          "Untyped989",
-          "testNestedUntyped989"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": {
+          "Untyped989": {
+            "endLine": 101,
+            "startLine": 98
+          },
+          "testNestedUntyped989": {
+            "endLine": 268,
+            "startLine": 254
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": [
-          "testSampleDoc",
-          "testNestedUntypes"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": {
+          "testNestedUntypes": {
+            "endLine": 180,
+            "startLine": 166
+          },
+          "testSampleDoc": {
+            "endLine": 164,
+            "startLine": 112
+          }
+        }
       }
     },
     "58": {
       "bug_report": "877",
       "bugfix_commit": "b2ccdee0fdc52cd46577a90cb50dc011d6d681bf",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": [
-          "checkAndFixAccess"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
-          "constructSettableProperty"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": {
+          "checkAndFixAccess": {
+            "endLine": 790,
+            "startLine": 756
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
+          "constructSettableProperty": {
+            "endLine": 757,
+            "startLine": 696
+          }
+        }
       },
       "buggy_commit": "d71de544624bec27e6f4e76548527ae727eb193d",
       "failing_tests": [
@@ -4301,11 +4952,20 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/misc/AccessFixTest.java": [
-          "checkPermission",
-          "testCauseOfThrowableIgnoral",
-          "_testCauseOfThrowableIgnoral"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/misc/AccessFixTest.java": {
+          "checkPermission": {
+            "endLine": 19,
+            "startLine": 14
+          },
+          "testCauseOfThrowableIgnoral": {
+            "endLine": 33,
+            "startLine": 24
+          },
+          "_testCauseOfThrowableIgnoral": {
+            "endLine": 41,
+            "startLine": 35
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4314,13 +4974,22 @@
       "bug_report": "1395",
       "bugfix_commit": "82c346ae999e1e250fb52732419aff9a86b1f455",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": [
-          "useForType"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java": [
-          "buildTypeSerializer",
-          "buildTypeDeserializer"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "useForType": {
+            "endLine": 266,
+            "startLine": 220
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.java": {
+          "buildTypeDeserializer": {
+            "endLine": 150,
+            "startLine": 100
+          },
+          "buildTypeSerializer": {
+            "endLine": 92,
+            "startLine": 67
+          }
+        }
       },
       "buggy_commit": "be114a9a286c4d194cd268ac8153173c52619a8d",
       "failing_tests": [
@@ -4414,9 +5083,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/jsontype/DefaultTypingWithPrimitivesTest.java": [
-          "testDefaultTypingWithLong"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/jsontype/DefaultTypingWithPrimitivesTest.java": {
+          "testDefaultTypingWithLong": {
+            "endLine": 41,
+            "startLine": 17
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4425,11 +5097,20 @@
       "bug_report": "1476",
       "bugfix_commit": "d44600d3750e5dba9fac68aee7248ed2a80a2225",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java": [
-          "addDelegatingCreator",
-          "addPropertyCreator",
-          "verifyNonDup"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java": {
+          "addDelegatingCreator": {
+            "endLine": 173,
+            "startLine": 161
+          },
+          "addPropertyCreator": {
+            "endLine": 198,
+            "startLine": 175
+          },
+          "verifyNonDup": {
+            "endLine": 345,
+            "startLine": 299
+          }
+        }
       },
       "buggy_commit": "002a9a3e9b98ebebf53e43aed0536d3c50851c84",
       "failing_tests": [
@@ -4551,12 +5232,24 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/creators/Creator1476Test.java": [
-          "SimplePojo",
-          "getIntField",
-          "getStringField",
-          "testConstructorChoice"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/creators/Creator1476Test.java": {
+          "getIntField": {
+            "endLine": 29,
+            "startLine": 27
+          },
+          "testConstructorChoice": {
+            "endLine": 42,
+            "startLine": 36
+          },
+          "getStringField": {
+            "endLine": 33,
+            "startLine": 31
+          },
+          "SimplePojo": {
+            "endLine": 25,
+            "startLine": 21
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4565,10 +5258,16 @@
       "bug_report": "1493",
       "bugfix_commit": "d7155de6c37db3301b92b755bd0a02388f7dd07f",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": [
-          "init",
-          "remove"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": {
+          "init": {
+            "endLine": 139,
+            "startLine": 92
+          },
+          "remove": {
+            "endLine": 453,
+            "startLine": 422
+          }
+        }
       },
       "buggy_commit": "7fe2d4f1aaab61e41f31f792f8a988157a34b34c",
       "failing_tests": [
@@ -4666,9 +5365,12 @@
       "newTests": {},
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/com/fasterxml/jackson/databind/struct/TestUnwrapped.java": [
-          "testCaseInsensitiveUnwrap"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/struct/TestUnwrapped.java": {
+          "testCaseInsensitiveUnwrap": {
+            "endLine": 217,
+            "startLine": 211
+          }
+        }
       }
     },
     "72": {
@@ -4736,18 +5438,36 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.java": [
-          "assignIndex",
-          "getPropertyIndex",
-          "getCreatorIndex"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.java": {
+          "getPropertyIndex": {
+            "endLine": 91,
+            "startLine": 90
+          },
+          "getCreatorIndex": {
+            "endLine": 94,
+            "startLine": 93
+          },
+          "assignIndex": {
+            "endLine": 88,
+            "startLine": 87
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/creators/InnerClassCreatorTest.java": [
-          "Something",
-          "InnerSomething",
-          "testIssue1501"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/creators/InnerClassCreatorTest.java": {
+          "InnerSomething": {
+            "endLine": 21,
+            "startLine": 20
+          },
+          "testIssue1501": {
+            "endLine": 31,
+            "startLine": 25
+          },
+          "Something": {
+            "endLine": 17,
+            "startLine": 17
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4756,12 +5476,18 @@
       "bug_report": "682",
       "bugfix_commit": "00bb11edc3581f42e1f3c78a047538c8ea9eb0d9",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializer.java": [
-          "serialize"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": [
-          "getStdKeySerializer"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializer.java": {
+          "serialize": {
+            "endLine": 40,
+            "startLine": 24
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": {
+          "getStdKeySerializer": {
+            "endLine": 51,
+            "startLine": 21
+          }
+        }
       },
       "buggy_commit": "ae101c63bc8c74466fc137b766faa8793c1e1f10",
       "failing_tests": [
@@ -4824,15 +5550,24 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": [
-          "ClassKeySerializer",
-          "serialize"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/ser/std/StdKeySerializers.java": {
+          "serialize": {
+            "endLine": 111,
+            "startLine": 108
+          },
+          "ClassKeySerializer": {
+            "endLine": 106,
+            "startLine": 106
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/ser/TestMapSerialization.java": [
-          "testClassKey"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/ser/TestMapSerialization.java": {
+          "testClassKey": {
+            "endLine": 257,
+            "startLine": 251
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4841,16 +5576,28 @@
       "bug_report": "1804",
       "bugfix_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/ValueInstantiator.java": [
-          "canInstantiate"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": [
-          "canCreateUsingDelegate",
-          "canCreateUsingArrayDelegate"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": [
-          "buildBeanDeserializer"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/ValueInstantiator.java": {
+          "canInstantiate": {
+            "endLine": 76,
+            "startLine": 65
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": {
+          "canCreateUsingDelegate": {
+            "endLine": 220,
+            "startLine": 217
+          },
+          "canCreateUsingArrayDelegate": {
+            "endLine": 225,
+            "startLine": 222
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
+          "buildBeanDeserializer": {
+            "endLine": 300,
+            "startLine": 243
+          }
+        }
       },
       "buggy_commit": "467589680add00ab49108bbbe7db375d81a75837",
       "failing_tests": [
@@ -4960,17 +5707,32 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": [
-          "canInstantiate"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": {
+          "canInstantiate": {
+            "endLine": 239,
+            "startLine": 232
+          }
+        }
       },
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/creators/DelegatingArrayCreator1804Test.java": [
-          "MyTypeImpl",
-          "getValues",
-          "of",
-          "testDelegatingArray1804"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/creators/DelegatingArrayCreator1804Test.java": {
+          "MyTypeImpl": {
+            "endLine": 17,
+            "startLine": 15
+          },
+          "getValues": {
+            "endLine": 27,
+            "startLine": 26
+          },
+          "of": {
+            "endLine": 32,
+            "startLine": 29
+          },
+          "testDelegatingArray1804": {
+            "endLine": 40,
+            "startLine": 36
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -4979,13 +5741,28 @@
       "bug_report": "1809",
       "bugfix_commit": "dfaca81ae7a82b7c3018f265815e98a5138118f7",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": [
-          "_findCachedDeserializer",
-          "_createAndCache2",
-          "_hasCustomValueHandler",
-          "_handleUnknownValueDeserializer",
-          "_hasCustomHandlers"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
+          "_handleUnknownValueDeserializer": {
+            "endLine": 588,
+            "startLine": 578
+          },
+          "_createAndCache2": {
+            "endLine": 300,
+            "startLine": 254
+          },
+          "_hasCustomHandlers": {
+            "endLine": 554,
+            "startLine": 530
+          },
+          "_findCachedDeserializer": {
+            "endLine": 211,
+            "startLine": 202
+          },
+          "_hasCustomValueHandler": {
+            "endLine": 544,
+            "startLine": 530
+          }
+        }
       },
       "buggy_commit": "a1404d5684783ccf28dc1b0a2791ce7c0c311907",
       "failing_tests": [
@@ -5087,10 +5864,16 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/deser/jdk/MapDeserializerCachingTest.java": [
-          "deserializeKey",
-          "testCachedSerialize"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/deser/jdk/MapDeserializerCachingTest.java": {
+          "deserializeKey": {
+            "endLine": 26,
+            "startLine": 23
+          },
+          "testCachedSerialize": {
+            "endLine": 51,
+            "startLine": 35
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -5099,9 +5882,12 @@
       "bug_report": "1872",
       "bugfix_commit": "755e3bc0cbea30de0102f6a88519a0c34d571bbd",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.java": [
-          "validateSubType"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.java": {
+          "validateSubType": {
+            "endLine": 99,
+            "startLine": 67
+          }
+        }
       },
       "buggy_commit": "d9bbae43dd474f51b01899bbd83116ab4e2b33ed",
       "failing_tests": [
@@ -5168,9 +5954,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/interop/IllegalTypesCheckTest.java": [
-          "testJDKTypes1872"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/interop/IllegalTypesCheckTest.java": {
+          "testJDKTypes1872": {
+            "endLine": 114,
+            "startLine": 105
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -5179,13 +5968,22 @@
       "bug_report": "1328",
       "bugfix_commit": "12f82c60782f05015336bb6305fd72c133a410b5",
       "buggyMethods": {
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java": [
-          "complete"
-        ],
-        "src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": [
-          "getParameters",
-          "assignParameter"
-        ]
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java": {
+          "complete": {
+            "endLine": 320,
+            "startLine": 251
+          }
+        },
+        "src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": {
+          "getParameters": {
+            "endLine": 182,
+            "startLine": 141
+          },
+          "assignParameter": {
+            "endLine": 286,
+            "startLine": 254
+          }
+        }
       },
       "buggy_commit": "bf261d404c2f79fd3406237710d40ebb03c99d84",
       "failing_tests": [
@@ -5324,17 +6122,44 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": [
-          "AnimalAndType",
-          "init",
-          "idFromValue",
-          "idFromValueAndType",
-          "idFromBaseType",
-          "typeFromId",
-          "getDescForKnownTypeIds",
-          "getMechanism",
-          "testExample"
-        ]
+        "src/test/java/com/fasterxml/jackson/databind/jsontype/ext/ExternalTypeIdWithEnum1328Test.java": {
+          "init": {
+            "endLine": 46,
+            "startLine": 45
+          },
+          "getMechanism": {
+            "endLine": 79,
+            "startLine": 76
+          },
+          "getDescForKnownTypeIds": {
+            "endLine": 74,
+            "startLine": 71
+          },
+          "testExample": {
+            "endLine": 90,
+            "startLine": 82
+          },
+          "AnimalAndType": {
+            "endLine": 41,
+            "startLine": 37
+          },
+          "typeFromId": {
+            "endLine": 69,
+            "startLine": 63
+          },
+          "idFromBaseType": {
+            "endLine": 61,
+            "startLine": 58
+          },
+          "idFromValue": {
+            "endLine": 51,
+            "startLine": 48
+          },
+          "idFromValueAndType": {
+            "endLine": 56,
+            "startLine": 53
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -5345,15 +6170,30 @@
       "bug_report": "1098",
       "bugfix_commit": "e02085409f0bdd7e71441fc62448192720305444",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "fromJsoup",
-          "asString",
-          "convert",
-          "head"
-        ],
-        "src/main/java/org/jsoup/nodes/DocumentType.java": [
-          "DocumentType"
-        ]
+        "src/main/java/org/jsoup/helper/W3CDom.java": {
+          "head": {
+            "endLine": 235,
+            "startLine": 200
+          },
+          "fromJsoup": {
+            "endLine": 155,
+            "startLine": 128
+          },
+          "asString": {
+            "endLine": 197,
+            "startLine": 176
+          },
+          "convert": {
+            "endLine": 171,
+            "startLine": 157
+          }
+        },
+        "src/main/java/org/jsoup/nodes/DocumentType.java": {
+          "DocumentType": {
+            "endLine": 66,
+            "startLine": 53
+          }
+        }
       },
       "buggy_commit": "fb50d9635874185fc050735057b8a7363cd53f3f",
       "failing_tests": [],
@@ -5707,66 +6547,151 @@
         }
       },
       "newMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "W3CDom",
-          "propertiesFromMap",
-          "OutputHtml",
-          "OutputXml",
-          "methodMap"
-        ],
-        "src/main/java/org/jsoup/nodes/DocumentType.java": [
-          "updatePubSyskey",
-          "name",
-          "publicId",
-          "systemId"
-        ],
-        "src/main/java/org/jsoup/nodes/Document.java": [
-          "documentType"
-        ]
+        "src/main/java/org/jsoup/helper/W3CDom.java": {
+          "OutputHtml": {
+            "endLine": 115,
+            "startLine": 112
+          },
+          "methodMap": {
+            "endLine": 126,
+            "startLine": 122
+          },
+          "OutputXml": {
+            "endLine": 120,
+            "startLine": 117
+          },
+          "W3CDom": {
+            "endLine": 42,
+            "startLine": 39
+          },
+          "asString": {
+            "endLine": 182,
+            "startLine": 173
+          },
+          "propertiesFromMap": {
+            "endLine": 110,
+            "startLine": 106
+          }
+        },
+        "src/main/java/org/jsoup/nodes/DocumentType.java": {
+          "systemId": {
+            "endLine": 101,
+            "startLine": 95
+          },
+          "name": {
+            "endLine": 85,
+            "startLine": 79
+          },
+          "updatePubSyskey": {
+            "endLine": 77,
+            "startLine": 72
+          },
+          "publicId": {
+            "endLine": 93,
+            "startLine": 87
+          }
+        },
+        "src/main/java/org/jsoup/nodes/Document.java": {
+          "documentType": {
+            "endLine": 76,
+            "startLine": 63
+          }
+        }
       },
       "newTests": {
-        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
-          "resolveEntity",
-          "testRoundTripDoctype",
-          "output"
-        ],
-        "src/test/java/org/jsoup/nodes/DocumentTest.java": [
-          "testDocumentTypeGet"
-        ]
+        "src/test/java/org/jsoup/helper/W3CDomTest.java": {
+          "output": {
+            "endLine": 285,
+            "startLine": 279
+          },
+          "testRoundTripDoctype": {
+            "endLine": 277,
+            "startLine": 254
+          },
+          "resolveEntity": {
+            "endLine": 48,
+            "startLine": 40
+          }
+        },
+        "src/test/java/org/jsoup/nodes/DocumentTest.java": {
+          "testDocumentTypeGet": {
+            "endLine": 464,
+            "startLine": 458
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {
-        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
-          "parseXml",
-          "simpleConversion",
-          "convertsGoogle"
-        ],
-        "src/test/java/org/jsoup/nodes/DocumentTest.java": [
-          "testLocation",
-          "DocumentsWithSameContentAreVerifialbe",
-          "DocumentsWithSameContentAreVerifiable"
-        ],
-        "src/test/java/org/jsoup/nodes/DocumentTypeTest.java": [
-          "outerHtmlGeneration"
-        ]
+        "src/test/java/org/jsoup/helper/W3CDomTest.java": {
+          "simpleConversion": {
+            "endLine": 83,
+            "startLine": 58
+          },
+          "parseXml": {
+            "endLine": 56,
+            "startLine": 34
+          },
+          "convertsGoogle": {
+            "endLine": 107,
+            "startLine": 85
+          }
+        },
+        "src/test/java/org/jsoup/nodes/DocumentTest.java": {
+          "testLocation": {
+            "endLine": 115,
+            "startLine": 102
+          },
+          "DocumentsWithSameContentAreVerifialbe": {
+            "endLine": 186,
+            "startLine": 179
+          },
+          "DocumentsWithSameContentAreVerifiable": {
+            "endLine": 186,
+            "startLine": 179
+          }
+        },
+        "src/test/java/org/jsoup/nodes/DocumentTypeTest.java": {
+          "outerHtmlGeneration": {
+            "endLine": 45,
+            "startLine": 30
+          }
+        }
       }
     },
     "1218": {
       "bug_report": "1218",
       "bugfix_commit": "a0b87bf10a9a520b49748c619c868caed8d7a109",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Tokeniser.java": [
-          "read",
-          "consumeCharacterReference"
-        ],
-        "src/main/java/org/jsoup/parser/TokeniserState.java": [
-          "read"
-        ],
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "bufferUp",
-          "mark",
-          "rewindToMark"
-        ]
+        "src/main/java/org/jsoup/parser/Tokeniser.java": {
+          "read": {
+            "endLine": 81,
+            "startLine": 55
+          },
+          "consumeCharacterReference": {
+            "endLine": 217,
+            "startLine": 140
+          }
+        },
+        "src/main/java/org/jsoup/parser/TokeniserState.java": {
+          "read": {
+            "endLine": 301,
+            "startLine": 281
+          }
+        },
+        "src/main/java/org/jsoup/parser/CharacterReader.java": {
+          "rewindToMark": {
+            "endLine": 156,
+            "startLine": 150
+          },
+          "bufferUp": {
+            "endLine": 84,
+            "startLine": 52
+          },
+          "mark": {
+            "endLine": 144,
+            "startLine": 137
+          }
+        }
       },
       "buggy_commit": "8d1d503913a68e549b5c4a94717c62cf3f64507a",
       "failing_tests": [],
@@ -5907,34 +6832,55 @@
         }
       },
       "newMethods": {
-        "src/main/java/org/jsoup/helper/Validate.java": [
-          "wtf"
-        ],
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "unmark"
-        ]
+        "src/main/java/org/jsoup/helper/Validate.java": {
+          "wtf": {
+            "endLine": 111,
+            "startLine": 105
+          }
+        },
+        "src/main/java/org/jsoup/parser/CharacterReader.java": {
+          "unmark": {
+            "endLine": 148,
+            "startLine": 146
+          }
+        }
       },
       "newTests": {
-        "src/test/java/org/jsoup/integration/ConnectTest.java": [
-          "handlesUnknownEscapesAcrossBuffer"
-        ]
+        "src/test/java/org/jsoup/integration/ConnectTest.java": {
+          "handlesUnknownEscapesAcrossBuffer": {
+            "endLine": 505,
+            "startLine": 490
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {
-        "src/test/java/org/jsoup/parser/CharacterReaderTest.java": [
-          "unconsume",
-          "mark",
-          "notEmptyAtBufferSplitPoint"
-        ]
+        "src/test/java/org/jsoup/parser/CharacterReaderTest.java": {
+          "notEmptyAtBufferSplitPoint": {
+            "endLine": 308,
+            "startLine": 288
+          },
+          "unconsume": {
+            "endLine": 64,
+            "startLine": 36
+          },
+          "mark": {
+            "endLine": 79,
+            "startLine": 66
+          }
+        }
       }
     },
     "1251": {
       "bug_report": "1251",
       "bugfix_commit": "c2b1fe73129e9c23d93e5393ce8007995c1630dc",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/TokeniserState.java": [
-          "read"
-        ]
+        "src/main/java/org/jsoup/parser/TokeniserState.java": {
+          "read": {
+            "endLine": 908,
+            "startLine": 891
+          }
+        }
       },
       "buggy_commit": "de97030ff54ee0bd306cbc58bd8093645cc8a5dc",
       "failing_tests": [],
@@ -6045,15 +6991,30 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/parser/TokeniserStateTest.java": [
-          "testUnconsumeAtBufferBoundary",
-          "testOpeningAngleBracketInsteadOfAttribute",
-          "testMalformedSelfClosingTag",
-          "testOpeningAngleBracketInTagName"
-        ],
-        "src/test/java/org/jsoup/parser/ParserIT.java": [
-          "testIssue1251"
-        ]
+        "src/test/java/org/jsoup/parser/TokeniserStateTest.java": {
+          "testOpeningAngleBracketInsteadOfAttribute": {
+            "endLine": 231,
+            "startLine": 223
+          },
+          "testOpeningAngleBracketInTagName": {
+            "endLine": 251,
+            "startLine": 243
+          },
+          "testMalformedSelfClosingTag": {
+            "endLine": 241,
+            "startLine": 233
+          },
+          "testUnconsumeAtBufferBoundary": {
+            "endLine": 221,
+            "startLine": 210
+          }
+        },
+        "src/test/java/org/jsoup/parser/ParserIT.java": {
+          "testIssue1251": {
+            "endLine": 22,
+            "startLine": 10
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -6062,9 +7023,12 @@
       "bug_report": "1274",
       "bugfix_commit": "f5fc1bb04c224865f8eee5ed718f4ffee0e18712",
       "buggyMethods": {
-        "src/main/java/org/jsoup/select/QueryParser.java": [
-          "QueryParser"
-        ]
+        "src/main/java/org/jsoup/select/QueryParser.java": {
+          "QueryParser": {
+            "endLine": 34,
+            "startLine": 25
+          }
+        }
       },
       "buggy_commit": "de1ced99d4dae991a546534454d5f7d9dc26f0b1",
       "failing_tests": [],
@@ -6116,14 +7080,26 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/select/QueryParserTest.java": [
-          "exceptOnEmptySelector",
-          "exceptOnNullSelector",
-          "okOnSpacesForeAndAft"
-        ],
-        "src/test/java/org/jsoup/select/SelectorTest.java": [
-          "trimSelector"
-        ]
+        "src/test/java/org/jsoup/select/QueryParserTest.java": {
+          "exceptOnEmptySelector": {
+            "endLine": 55,
+            "startLine": 52
+          },
+          "okOnSpacesForeAndAft": {
+            "endLine": 65,
+            "startLine": 62
+          },
+          "exceptOnNullSelector": {
+            "endLine": 60,
+            "startLine": 57
+          }
+        },
+        "src/test/java/org/jsoup/select/SelectorTest.java": {
+          "trimSelector": {
+            "endLine": 935,
+            "startLine": 928
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -6132,12 +7108,18 @@
       "bug_report": "1324",
       "bugfix_commit": "62c0595813b817ec593b0941ca4c3f29d10fac55",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Token.java": [
-          "toString"
-        ],
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "bufferUp"
-        ]
+        "src/main/java/org/jsoup/parser/Token.java": {
+          "toString": {
+            "endLine": 256,
+            "startLine": 253
+          }
+        },
+        "src/main/java/org/jsoup/parser/CharacterReader.java": {
+          "bufferUp": {
+            "endLine": 87,
+            "startLine": 48
+          }
+        }
       },
       "buggy_commit": "528ba552b19ab2ae949feecb373ef85a0b126566",
       "failing_tests": [],
@@ -6211,9 +7193,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/integration/ParseTest.java": [
-          "testXwiki"
-        ]
+        "src/test/java/org/jsoup/integration/ParseTest.java": {
+          "testXwiki": {
+            "endLine": 186,
+            "startLine": 175
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -6222,9 +7207,12 @@
       "bug_report": "349",
       "bugfix_commit": "88730bf9f399aab6a150212faeea012598be9ec6",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/CharacterReader.java": [
-          "nextIndexOf"
-        ]
+        "src/main/java/org/jsoup/parser/CharacterReader.java": {
+          "nextIndexOf": {
+            "endLine": 98,
+            "startLine": 76
+          }
+        }
       },
       "buggy_commit": "2518e92a052d922d81d11e28b8e5205639fed9a7",
       "failing_tests": [
@@ -6272,12 +7260,18 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/parser/CharacterReaderTest.java": [
-          "nextIndexOfUnmatched"
-        ],
-        "src/test/java/org/jsoup/parser/HtmlParserTest.java": [
-          "handlesUnclosedCdataAtEOF"
-        ]
+        "src/test/java/org/jsoup/parser/CharacterReaderTest.java": {
+          "nextIndexOfUnmatched": {
+            "endLine": 101,
+            "startLine": 98
+          }
+        },
+        "src/test/java/org/jsoup/parser/HtmlParserTest.java": {
+          "handlesUnclosedCdataAtEOF": {
+            "endLine": 295,
+            "startLine": 290
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6286,9 +7280,12 @@
       "bug_report": "32",
       "bugfix_commit": "62afbdf6a85fec75fde38d327928a180bc5bccb3",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/Parser.java": [
-          "parseAttribute"
-        ]
+        "src/main/java/org/jsoup/parser/Parser.java": {
+          "parseAttribute": {
+            "endLine": 211,
+            "startLine": 181
+          }
+        }
       },
       "buggy_commit": "5e52f1b266173593fab32fe9d8a4963066b2f2fe",
       "failing_tests": [
@@ -6329,9 +7326,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/parser/ParserTest.java": [
-          "parsesQuiteRoughAttributes"
-        ]
+        "src/test/java/org/jsoup/parser/ParserTest.java": {
+          "parsesQuiteRoughAttributes": {
+            "endLine": 53,
+            "startLine": 43
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6340,9 +7340,12 @@
       "bug_report": "721",
       "bugfix_commit": "f148f88de365c50eea28d3e14093e13c33104483",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "copyAttributes"
-        ]
+        "src/main/java/org/jsoup/helper/W3CDom.java": {
+          "copyAttributes": {
+            "endLine": 129,
+            "startLine": 122
+          }
+        }
       },
       "buggy_commit": "9e8ba01343f2b39185846821407e93ca5240bdb1",
       "failing_tests": [
@@ -6385,9 +7388,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
-          "handlesInvalidAttributeNames"
-        ]
+        "src/test/java/org/jsoup/helper/W3CDomTest.java": {
+          "handlesInvalidAttributeNames": {
+            "endLine": 94,
+            "startLine": 84
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6396,9 +7402,12 @@
       "bug_report": "34",
       "bugfix_commit": "20ed24cefb5df53c48021459af98bef83c55f241",
       "buggyMethods": {
-        "src/main/java/org/jsoup/nodes/Entities.java": [
-          "unescape"
-        ]
+        "src/main/java/org/jsoup/nodes/Entities.java": {
+          "unescape": {
+            "endLine": 77,
+            "startLine": 45
+          }
+        }
       },
       "buggy_commit": "0b56f3e5e012e689af8dda0e96d6e0c9f31853b6",
       "failing_tests": [
@@ -6448,12 +7457,18 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/nodes/EntitiesTest.java": [
-          "quoteReplacements"
-        ],
-        "src/test/java/org/jsoup/integration/ParseTest.java": [
-          "testYahooArticle"
-        ]
+        "src/test/java/org/jsoup/nodes/EntitiesTest.java": {
+          "quoteReplacements": {
+            "endLine": 43,
+            "startLine": 38
+          }
+        },
+        "src/test/java/org/jsoup/integration/ParseTest.java": {
+          "testYahooArticle": {
+            "endLine": 148,
+            "startLine": 142
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6462,10 +7477,16 @@
       "bug_report": "740",
       "bugfix_commit": "3b2440a257df45fc49884a5c67bb0c9ce631781d",
       "buggyMethods": {
-        "src/main/java/org/jsoup/nodes/Document.java": [
-          "charset",
-          "encoder"
-        ]
+        "src/main/java/org/jsoup/nodes/Document.java": {
+          "charset": {
+            "endLine": 426,
+            "startLine": 417
+          },
+          "encoder": {
+            "endLine": 438,
+            "startLine": 436
+          }
+        }
       },
       "buggy_commit": "222feb1791388d1e94e2c99bb5858cf160904d16",
       "failing_tests": [],
@@ -6493,12 +7514,18 @@
       "bug_report": "980",
       "bugfix_commit": "2c4e79b104c0ff32566ce247617d47c0b39cc2c7",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ],
-        "src/main/java/org/jsoup/Connection.java": [
-          "bufferUp"
-        ]
+        "src/main/java/org/jsoup/helper/DataUtil.java": {
+          "parseInputStream": {
+            "endLine": 162,
+            "startLine": 94
+          }
+        },
+        "src/main/java/org/jsoup/Connection.java": {
+          "bufferUp": {
+            "endLine": 729,
+            "startLine": 722
+          }
+        }
       },
       "buggy_commit": "71561e09e0f29ec5fd1bb918206f3d8e42876518",
       "failing_tests": [
@@ -6621,13 +7648,22 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/integration/servlets/InterruptedServlet.java": [
-          "doGet"
-        ],
-        "src/test/java/org/jsoup/integration/ConnectTest.java": [
-          "handlesEmptyStreamDuringParseRead",
-          "handlesEmtpyStreamDuringBufferdRead"
-        ]
+        "src/test/java/org/jsoup/integration/servlets/InterruptedServlet.java": {
+          "doGet": {
+            "endLine": 30,
+            "startLine": 14
+          }
+        },
+        "src/test/java/org/jsoup/integration/ConnectTest.java": {
+          "handlesEmtpyStreamDuringBufferdRead": {
+            "endLine": 419,
+            "startLine": 405
+          },
+          "handlesEmptyStreamDuringParseRead": {
+            "endLine": 403,
+            "startLine": 387
+          }
+        }
       },
       "origin": "defects4j/t-evos",
       "updatedTests": {}
@@ -6636,9 +7672,12 @@
       "bug_report": "1015",
       "bugfix_commit": "e9feec90dbd3e428dc1930c3b5efbd9271160d01",
       "buggyMethods": {
-        "src/main/java/org/jsoup/parser/XmlTreeBuilder.java": [
-          "insert"
-        ]
+        "src/main/java/org/jsoup/parser/XmlTreeBuilder.java": {
+          "insert": {
+            "endLine": 99,
+            "startLine": 83
+          }
+        }
       },
       "buggy_commit": "47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9",
       "failing_tests": [
@@ -6678,9 +7717,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java": [
-          "handlesDodgyXmlDecl"
-        ]
+        "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java": {
+          "handlesDodgyXmlDecl": {
+            "endLine": 229,
+            "startLine": 224
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6689,9 +7731,12 @@
       "bug_report": "1007",
       "bugfix_commit": "6be19a6fa26e6e5e3d716283bad4b5de0348a8b7",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ]
+        "src/main/java/org/jsoup/helper/DataUtil.java": {
+          "parseInputStream": {
+            "endLine": 178,
+            "startLine": 95
+          }
+        }
       },
       "buggy_commit": "77966f79996f3fc4c7828b4d02a926c071faf040",
       "failing_tests": [
@@ -6737,9 +7782,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/parser/HtmlParserTest.java": [
-          "fallbackToUtfIfCantEncode"
-        ]
+        "src/test/java/org/jsoup/parser/HtmlParserTest.java": {
+          "fallbackToUtfIfCantEncode": {
+            "endLine": 1210,
+            "startLine": 1199
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6748,9 +7796,12 @@
       "bug_report": "848",
       "bugfix_commit": "a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/W3CDom.java": [
-          "head"
-        ]
+        "src/main/java/org/jsoup/helper/W3CDom.java": {
+          "head": {
+            "endLine": 116,
+            "startLine": 82
+          }
+        }
       },
       "buggy_commit": "bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664",
       "failing_tests": [
@@ -6799,9 +7850,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/helper/W3CDomTest.java": [
-          "treatsUndeclaredNamespaceAsLocalName"
-        ]
+        "src/test/java/org/jsoup/helper/W3CDomTest.java": {
+          "treatsUndeclaredNamespaceAsLocalName": {
+            "endLine": 156,
+            "startLine": 140
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6810,9 +7864,12 @@
       "bug_report": "1172",
       "bugfix_commit": "7de614ffd01161d8718d7458bab9d9690ad2334f",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/HttpConnection.java": [
-          "looksLikeUtf8"
-        ]
+        "src/main/java/org/jsoup/helper/HttpConnection.java": {
+          "looksLikeUtf8": {
+            "endLine": 436,
+            "startLine": 398
+          }
+        }
       },
       "buggy_commit": "315655cc11c9d49bb821dd800d45580696b02185",
       "failing_tests": [
@@ -6844,9 +7901,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/helper/HttpConnectionTest.java": [
-          "handlesHeaderEncodingOnRequest"
-        ]
+        "src/test/java/org/jsoup/helper/HttpConnectionTest.java": {
+          "handlesHeaderEncodingOnRequest": {
+            "endLine": 257,
+            "startLine": 254
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -6855,9 +7915,12 @@
       "bug_report": "968",
       "bugfix_commit": "c19acbb96c1c02deb310488677201683f6309708",
       "buggyMethods": {
-        "src/main/java/org/jsoup/internal/ConstrainableInputStream.java": [
-          "expired"
-        ]
+        "src/main/java/org/jsoup/internal/ConstrainableInputStream.java": {
+          "expired": {
+            "endLine": 120,
+            "startLine": 113
+          }
+        }
       },
       "buggy_commit": "d32321351ced83c7c2edff2abe4a8b2fa17a6bd7",
       "failing_tests": [],
@@ -6895,9 +7958,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/jsoup/integration/ConnectTest.java": [
-          "infiniteReadSupported"
-        ]
+        "src/test/java/org/jsoup/integration/ConnectTest.java": {
+          "infiniteReadSupported": {
+            "endLine": 275,
+            "startLine": 266
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -6906,9 +7972,12 @@
       "bug_report": "990",
       "bugfix_commit": "45c54996c4e8d74cf84304e767934ff584c24702",
       "buggyMethods": {
-        "src/main/java/org/jsoup/helper/DataUtil.java": [
-          "parseInputStream"
-        ]
+        "src/main/java/org/jsoup/helper/DataUtil.java": {
+          "parseInputStream": {
+            "endLine": 156,
+            "startLine": 93
+          }
+        }
       },
       "buggy_commit": "02668f757c59f0c1a7ad8f3169faf061b4b787c1",
       "failing_tests": [],
@@ -6938,9 +8007,12 @@
       "bug_report": "JXPATH-89",
       "bugfix_commit": "2a01dfaf8d6abbabc7e4cd5cfd05d2e0b4886708",
       "buggyMethods": {
-        "src/java/org/apache/commons/jxpath/ri/model/NodePointer.java": [
-          "compareNodePointers"
-        ]
+        "src/java/org/apache/commons/jxpath/ri/model/NodePointer.java": {
+          "compareNodePointers": {
+            "endLine": 673,
+            "startLine": 642
+          }
+        }
       },
       "buggy_commit": "458f562cdbe13b42ae325ac88a082047fe05ab89",
       "failing_tests": [
@@ -6995,15 +8067,21 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": [
-          "testUnionOfVariableAndNode"
-        ]
+        "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": {
+          "testUnionOfVariableAndNode": {
+            "endLine": 290,
+            "startLine": 277
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": [
-          "testInvalidVariableName"
-        ]
+        "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": {
+          "testInvalidVariableName": {
+            "endLine": 105,
+            "startLine": 83
+          }
+        }
       }
     }
   },
@@ -7741,13 +8819,22 @@
       "bug_report": "152",
       "bugfix_commit": "77cb2037314dd024eb53ffe2e9e06304088a2d53",
       "buggyMethods": {
-        "src/org/mockito/internal/util/MockUtil.java": [
-          "createMock"
-        ],
-        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
-          "serializable",
-          "isSerializable"
-        ]
+        "src/org/mockito/internal/util/MockUtil.java": {
+          "createMock": {
+            "endLine": 61,
+            "startLine": 34
+          }
+        },
+        "src/org/mockito/internal/creation/MockSettingsImpl.java": {
+          "isSerializable": {
+            "endLine": 77,
+            "startLine": 75
+          },
+          "serializable": {
+            "endLine": 25,
+            "startLine": 22
+          }
+        }
       },
       "buggy_commit": "b6790ee34d8d858a89b80a9ae40f19d87ce1dab8",
       "failing_tests": [
@@ -7880,46 +8967,85 @@
         }
       },
       "newMethods": {
-        "src/org/mockito/internal/util/ArrayUtils.java": [
-          "concat"
-        ]
+        "src/org/mockito/internal/util/ArrayUtils.java": {
+          "concat": {
+            "endLine": 10,
+            "startLine": 4
+          }
+        }
       },
       "newTests": {
-        "test/org/mockito/internal/util/ArrayUtilsTest.java": [
-          "shouldConcatenateItemToAnEmptyArray",
-          "shouldConcatenateItemToFullArray"
-        ],
-        "test/org/mockitousage/basicapi/MocksSerializationTest.java": [
-          "shouldBeSerializeAndHaveExtraInterfaces"
-        ]
+        "test/org/mockito/internal/util/ArrayUtilsTest.java": {
+          "shouldConcatenateItemToFullArray": {
+            "endLine": 31,
+            "startLine": 24
+          },
+          "shouldConcatenateItemToAnEmptyArray": {
+            "endLine": 22,
+            "startLine": 15
+          }
+        },
+        "test/org/mockitousage/basicapi/MocksSerializationTest.java": {
+          "shouldBeSerializeAndHaveExtraInterfaces": {
+            "endLine": 308,
+            "startLine": 299
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/org/mockito/internal/creation/MockSettingsImplTest.java": [
-          "shouldSetMockToBeSerializable"
-        ]
+        "test/org/mockito/internal/creation/MockSettingsImplTest.java": {
+          "shouldSetMockToBeSerializable": {
+            "endLine": 61,
+            "startLine": 54
+          }
+        }
       }
     },
     "25": {
       "bug_report": "230",
       "bugfix_commit": "a6ccf070a267e0a165b8efaaefa8938e787bb6a0",
       "buggyMethods": {
-        "src/org/mockito/internal/creation/settings/CreationSettings.java": [
-          "getInvocationListeners",
-          "CreationSettings"
-        ],
-        "src/org/mockito/internal/util/ConsoleMockitoLogger.java": [
-          "log"
-        ],
-        "src/org/mockito/internal/creation/MockSettingsImpl.java": [
-          "defaultAnswer"
-        ],
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": [
-          "answer",
-          "getMock",
-          "recordDeepStubMock",
-          "createNewDeepStubMock"
-        ]
+        "src/org/mockito/internal/creation/settings/CreationSettings.java": {
+          "CreationSettings": {
+            "endLine": 47,
+            "startLine": 36
+          },
+          "getInvocationListeners": {
+            "endLine": 96,
+            "startLine": 94
+          }
+        },
+        "src/org/mockito/internal/util/ConsoleMockitoLogger.java": {
+          "log": {
+            "endLine": 14,
+            "startLine": 12
+          }
+        },
+        "src/org/mockito/internal/creation/MockSettingsImpl.java": {
+          "defaultAnswer": {
+            "endLine": 80,
+            "startLine": 74
+          }
+        },
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": {
+          "createNewDeepStubMock": {
+            "endLine": 85,
+            "startLine": 74
+          },
+          "getMock": {
+            "endLine": 72,
+            "startLine": 59
+          },
+          "answer": {
+            "endLine": 57,
+            "startLine": 47
+          },
+          "recordDeepStubMock": {
+            "endLine": 115,
+            "startLine": 106
+          }
+        }
       },
       "buggy_commit": "d8b18f2e77c3f352677a6993225c4333b98d0481",
       "failing_tests": [
@@ -9078,139 +10204,451 @@
         }
       },
       "newMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "defaultAnswerDoesNotAcceptNullParameter"
-        ],
-        "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java": [
-          "registerTypeVariablesOn",
-          "registerTypeParametersOn",
-          "boundsOf",
-          "rawType",
-          "extraInterfaces",
-          "rawExtraInterfaces",
-          "actualTypeArguments",
-          "getActualTypeArgumentFor",
-          "resolveGenericReturnType",
-          "inferFrom",
-          "FromClassGenericMetadataSupport",
-          "readActualTypeParametersOnDeclaringClass",
-          "FromParameterizedTypeGenericMetadataSupport",
-          "readActualTypeParameters",
-          "ParameterizedReturnType",
-          "readTypeParameters",
-          "readTypeVariables",
-          "TypeVariableReturnType",
-          "extractRawTypeOf",
-          "extractActualBoundedTypeOf",
-          "NotGenericReturnTypeSupport",
-          "firstBound",
-          "interfaceBounds",
-          "TypeVarBoundedType",
-          "equals",
-          "hashCode",
-          "toString",
-          "typeVariable",
-          "WildCardBoundedType",
-          "wildCard"
-        ],
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": [
-          "withSettingsUsing",
-          "returnsDeepStubsAnswerUsing",
-          "actualParameterizedType"
-        ]
+        "src/org/mockito/internal/creation/settings/CreationSettings.java": {
+          "getInvocationListeners": {
+            "endLine": 94,
+            "startLine": 92
+          }
+        },
+        "src/org/mockito/exceptions/Reporter.java": {
+          "defaultAnswerDoesNotAcceptNullParameter": {
+            "endLine": 753,
+            "startLine": 751
+          }
+        },
+        "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java": {
+          "typeVariable": {
+            "endLine": 548,
+            "startLine": 546
+          },
+          "rawType": {
+            "endLine": 456,
+            "startLine": 453
+          },
+          "FromClassGenericMetadataSupport": {
+            "endLine": 252,
+            "startLine": 249
+          },
+          "extractRawTypeOf": {
+            "endLine": 388,
+            "startLine": 370
+          },
+          "boundsOf": {
+            "endLine": 131,
+            "startLine": 113
+          },
+          "ParameterizedReturnType": {
+            "endLine": 314,
+            "startLine": 307
+          },
+          "TypeVariableReturnType": {
+            "endLine": 349,
+            "startLine": 342
+          },
+          "registerTypeVariablesOn": {
+            "endLine": 92,
+            "startLine": 74
+          },
+          "extractActualBoundedTypeOf": {
+            "endLine": 438,
+            "startLine": 422
+          },
+          "resolveGenericReturnType": {
+            "endLine": 209,
+            "startLine": 188
+          },
+          "hashCode": {
+            "endLine": 596,
+            "startLine": 593
+          },
+          "inferFrom": {
+            "endLine": 233,
+            "startLine": 211
+          },
+          "getActualTypeArgumentFor": {
+            "endLine": 184,
+            "startLine": 176
+          },
+          "readTypeVariables": {
+            "endLine": 360,
+            "startLine": 355
+          },
+          "TypeVarBoundedType": {
+            "endLine": 501,
+            "startLine": 499
+          },
+          "firstBound": {
+            "endLine": 575,
+            "startLine": 567
+          },
+          "WildCardBoundedType": {
+            "endLine": 565,
+            "startLine": 563
+          },
+          "actualTypeArguments": {
+            "endLine": 174,
+            "startLine": 158
+          },
+          "readActualTypeParameters": {
+            "endLine": 291,
+            "startLine": 288
+          },
+          "registerTypeParametersOn": {
+            "endLine": 99,
+            "startLine": 94
+          },
+          "rawExtraInterfaces": {
+            "endLine": 420,
+            "startLine": 405
+          },
+          "FromParameterizedTypeGenericMetadataSupport": {
+            "endLine": 286,
+            "startLine": 283
+          },
+          "interfaceBounds": {
+            "endLine": 582,
+            "startLine": 577
+          },
+          "equals": {
+            "endLine": 591,
+            "startLine": 584
+          },
+          "extraInterfaces": {
+            "endLine": 403,
+            "startLine": 390
+          },
+          "toString": {
+            "endLine": 604,
+            "startLine": 598
+          },
+          "readTypeParameters": {
+            "endLine": 353,
+            "startLine": 351
+          },
+          "wildCard": {
+            "endLine": 608,
+            "startLine": 606
+          },
+          "readActualTypeParametersOnDeclaringClass": {
+            "endLine": 260,
+            "startLine": 254
+          },
+          "NotGenericReturnTypeSupport": {
+            "endLine": 451,
+            "startLine": 449
+          }
+        },
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java": {
+          "actualParameterizedType": {
+            "endLine": 120,
+            "startLine": 117
+          },
+          "withSettingsUsing": {
+            "endLine": 95,
+            "startLine": 87
+          },
+          "returnsDeepStubsAnswerUsing": {
+            "endLine": 104,
+            "startLine": 97
+          }
+        }
       },
       "newTests": {
-        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": [
-          "numberList",
-          "numberComparable",
-          "rawList",
-          "typeList"
-        ],
-        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsGenericDeepStubsTest.java": [
-          "remove",
-          "returningWildcard",
-          "returningNonMockableNestedGeneric",
-          "returningK",
-          "paramTypeWithTypeParams",
-          "twoTypeParams",
-          "typeVarWithTypeParams",
-          "returnsNormalType",
-          "generic_deep_mock_frenzy__look_at_these_chained_calls",
-          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class",
-          "can_create_mock_from_return_types_declared_with_a_bounded_wildcard",
-          "can_still_work_with_raw_type_in_the_return_type",
-          "will_return_default_value_on_non_mockable_nested_generic",
-          "as_expected_fail_with_a_CCE_on_callsite_when_erasure_takes_place_for_example___StringBuilder_is_subject_to_erasure"
-        ],
-        "test/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java": [
-          "get",
-          "remove",
-          "returning_wildcard_with_class_lower_bound",
-          "returning_wildcard_with_typeVar_lower_bound",
-          "returning_wildcard_with_typeVar_upper_bound",
-          "returningK",
-          "paramType_with_type_params",
-          "two_type_params",
-          "typeVar_with_type_params",
-          "can_get_raw_type_from_Class",
-          "can_get_raw_type_from_ParameterizedType",
-          "can_get_type_variables_from_Class",
-          "can_get_type_variables_from_ParameterizedType",
-          "typeVariable_return_type_of____get____resolved_to_Set_and_type_argument_to_Number",
-          "bounded_typeVariable_return_type_of____returningK____resolved_to_Comparable_and_with_BoundedType",
-          "fixed_ParamType_return_type_of____remove____resolved_to_Set_and_type_argument_to_Number",
-          "paramType_return_type_of____values____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
-          "paramType_with_type_parameters_return_type_of____paramType_with_type_params____resolved_to_Collection_and_type_argument_to_Parameterized_Set",
-          "typeVariable_with_type_parameters_return_type_of____typeVar_with_type_params____resolved_K_hence_to_Comparable_and_with_BoundedType",
-          "class_return_type_of____append____resolved_to_StringBuilder_and_type_arguments",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_class_lower_bound____resolved_to_List_and_type_argument_to_Integer",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_lower_bound____resolved_to_List_and_type_argument_to_Integer",
-          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_upper_bound____resolved_to_List_and_type_argument_to_Integer",
-          "typeVariableValue",
-          "firstNamedMethod"
-        ]
+        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": {
+          "numberComparable": {
+            "endLine": 31,
+            "startLine": 31
+          },
+          "typeList": {
+            "endLine": 33,
+            "startLine": 33
+          },
+          "numberList": {
+            "endLine": 30,
+            "startLine": 30
+          },
+          "rawList": {
+            "endLine": 32,
+            "startLine": 32
+          }
+        },
+        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsGenericDeepStubsTest.java": {
+          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class": {
+            "endLine": 73,
+            "startLine": 67
+          },
+          "will_return_default_value_on_non_mockable_nested_generic": {
+            "endLine": 99,
+            "startLine": 92
+          },
+          "typeVarWithTypeParams": {
+            "endLine": 29,
+            "startLine": 29
+          },
+          "as_expected_fail_with_a_CCE_on_callsite_when_erasure_takes_place_for_example___StringBuilder_is_subject_to_erasure": {
+            "endLine": 108,
+            "startLine": 101
+          },
+          "returningK": {
+            "endLine": 26,
+            "startLine": 26
+          },
+          "can_still_work_with_raw_type_in_the_return_type": {
+            "endLine": 90,
+            "startLine": 84
+          },
+          "returningNonMockableNestedGeneric": {
+            "endLine": 25,
+            "startLine": 25
+          },
+          "generic_deep_mock_frenzy__look_at_these_chained_calls": {
+            "endLine": 47,
+            "startLine": 33
+          },
+          "remove": {
+            "endLine": 23,
+            "startLine": 23
+          },
+          "paramTypeWithTypeParams": {
+            "endLine": 27,
+            "startLine": 27
+          },
+          "returningWildcard": {
+            "endLine": 24,
+            "startLine": 24
+          },
+          "can_create_mock_from_return_types_declared_with_a_bounded_wildcard": {
+            "endLine": 82,
+            "startLine": 75
+          },
+          "can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class": {
+            "endLine": 65,
+            "startLine": 59
+          },
+          "twoTypeParams": {
+            "endLine": 28,
+            "startLine": 28
+          },
+          "returnsNormalType": {
+            "endLine": 30,
+            "startLine": 30
+          },
+          "can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class": {
+            "endLine": 57,
+            "startLine": 49
+          }
+        },
+        "test/org/mockito/internal/util/reflection/GenericMetadataSupportTest.java": {
+          "two_type_params": {
+            "endLine": 41,
+            "startLine": 41
+          },
+          "typeVariableValue": {
+            "endLine": 182,
+            "startLine": 173
+          },
+          "can_get_type_variables_from_ParameterizedType": {
+            "endLine": 75,
+            "startLine": 69
+          },
+          "paramType_with_type_params": {
+            "endLine": 40,
+            "startLine": 40
+          },
+          "class_return_type_of____append____resolved_to_StringBuilder_and_type_arguments": {
+            "endLine": 136,
+            "startLine": 130
+          },
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_lower_bound____resolved_to_List_and_type_argument_to_Integer": {
+            "endLine": 158,
+            "startLine": 150
+          },
+          "remove": {
+            "endLine": 35,
+            "startLine": 35
+          },
+          "can_get_type_variables_from_Class": {
+            "endLine": 67,
+            "startLine": 60
+          },
+          "paramType_with_type_parameters_return_type_of____paramType_with_type_params____resolved_to_Collection_and_type_argument_to_Parameterized_Set": {
+            "endLine": 119,
+            "startLine": 112
+          },
+          "bounded_typeVariable_return_type_of____returningK____resolved_to_Comparable_and_with_BoundedType": {
+            "endLine": 92,
+            "startLine": 85
+          },
+          "returning_wildcard_with_class_lower_bound": {
+            "endLine": 36,
+            "startLine": 36
+          },
+          "get": {
+            "endLine": 29,
+            "startLine": 29
+          },
+          "returning_wildcard_with_typeVar_lower_bound": {
+            "endLine": 37,
+            "startLine": 37
+          },
+          "typeVariable_return_type_of____get____resolved_to_Set_and_type_argument_to_Number": {
+            "endLine": 83,
+            "startLine": 77
+          },
+          "paramType_return_type_of____values____resolved_to_Collection_and_type_argument_to_Parameterized_Set": {
+            "endLine": 110,
+            "startLine": 102
+          },
+          "returning_wildcard_with_typeVar_upper_bound": {
+            "endLine": 38,
+            "startLine": 38
+          },
+          "fixed_ParamType_return_type_of____remove____resolved_to_Set_and_type_argument_to_Number": {
+            "endLine": 100,
+            "startLine": 94
+          },
+          "returningK": {
+            "endLine": 39,
+            "startLine": 39
+          },
+          "typeVariable_with_type_parameters_return_type_of____typeVar_with_type_params____resolved_K_hence_to_Comparable_and_with_BoundedType": {
+            "endLine": 128,
+            "startLine": 121
+          },
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_typeVar_upper_bound____resolved_to_List_and_type_argument_to_Integer": {
+            "endLine": 169,
+            "startLine": 160
+          },
+          "paramType_with_wildcard_return_type_of____returning_wildcard_with_class_lower_bound____resolved_to_List_and_type_argument_to_Integer": {
+            "endLine": 148,
+            "startLine": 140
+          },
+          "can_get_raw_type_from_ParameterizedType": {
+            "endLine": 58,
+            "startLine": 53
+          },
+          "firstNamedMethod": {
+            "endLine": 191,
+            "startLine": 184
+          },
+          "typeVar_with_type_params": {
+            "endLine": 42,
+            "startLine": 42
+          },
+          "can_get_raw_type_from_Class": {
+            "endLine": 50,
+            "startLine": 45
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": [
-          "shouldFindGenericClass",
-          "shouldGetObjectForNonGeneric",
-          "shouldDealWithNestedGenerics",
-          "should_find_generic_class",
-          "should_get_object_for_non_generic",
-          "should_deal_with_nested_generics"
-        ],
-        "test/org/concurrentmockito/ThreadsRunAllTestsHalfManualTest.java": [
-          "run"
-        ]
+        "test/org/mockito/internal/util/reflection/GenericMasterTest.java": {
+          "should_find_generic_class": {
+            "endLine": 42,
+            "startLine": 37
+          },
+          "shouldFindGenericClass": {
+            "endLine": 33,
+            "startLine": 28
+          },
+          "shouldGetObjectForNonGeneric": {
+            "endLine": 38,
+            "startLine": 35
+          },
+          "shouldDealWithNestedGenerics": {
+            "endLine": 44,
+            "startLine": 40
+          },
+          "should_deal_with_nested_generics": {
+            "endLine": 53,
+            "startLine": 49
+          },
+          "should_get_object_for_non_generic": {
+            "endLine": 47,
+            "startLine": 44
+          }
+        },
+        "test/org/concurrentmockito/ThreadsRunAllTestsHalfManualTest.java": {
+          "run": {
+            "endLine": 135,
+            "startLine": 65
+          }
+        }
       }
     },
     "30": {
       "bug_report": "225",
       "bugfix_commit": "3c924f80a4db3692a13341f0da4517052ab77a2a",
       "buggyMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "unfinishedVerificationException",
-          "nullPassedToVerify",
-          "nullPassedToWhenMethod",
-          "notAMockPassedWhenCreatingInOrder",
-          "invalidUseOfMatchers",
-          "argumentsAreDifferent",
-          "wantedButNotInvoked",
-          "neverWantedButInvoked",
-          "createTooLittleInvocationsMessage",
-          "tooLittleActualInvocations",
-          "tooLittleActualInvocationsInOrder",
-          "noMoreInteractionsWanted",
-          "smartNullPointerException",
-          "extraInterfacesCannotContainMockedType",
-          "unsupportedCombinationOfAnnotations"
-        ],
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
-          "intercept"
-        ]
+        "src/org/mockito/exceptions/Reporter.java": {
+          "unsupportedCombinationOfAnnotations": {
+            "endLine": 530,
+            "startLine": 527
+          },
+          "extraInterfacesCannotContainMockedType": {
+            "endLine": 483,
+            "startLine": 477
+          },
+          "unfinishedVerificationException": {
+            "endLine": 106,
+            "startLine": 92
+          },
+          "tooLittleActualInvocationsInOrder": {
+            "endLine": 348,
+            "startLine": 342
+          },
+          "nullPassedToWhenMethod": {
+            "endLine": 145,
+            "startLine": 138
+          },
+          "invalidUseOfMatchers": {
+            "endLine": 224,
+            "startLine": 210
+          },
+          "wantedButNotInvoked": {
+            "endLine": 262,
+            "startLine": 247
+          },
+          "neverWantedButInvoked": {
+            "endLine": 312,
+            "startLine": 303
+          },
+          "notAMockPassedWhenCreatingInOrder": {
+            "endLine": 181,
+            "startLine": 174
+          },
+          "nullPassedToVerify": {
+            "endLine": 128,
+            "startLine": 119
+          },
+          "smartNullPointerException": {
+            "endLine": 447,
+            "startLine": 438
+          },
+          "tooLittleActualInvocations": {
+            "endLine": 340,
+            "startLine": 336
+          },
+          "argumentsAreDifferent": {
+            "endLine": 241,
+            "startLine": 226
+          },
+          "createTooLittleInvocationsMessage": {
+            "endLine": 334,
+            "startLine": 321
+          },
+          "noMoreInteractionsWanted": {
+            "endLine": 362,
+            "startLine": 350
+          }
+        },
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": {
+          "intercept": {
+            "endLine": 58,
+            "startLine": 51
+          }
+        }
       },
       "buggy_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
       "failing_tests": [
@@ -9340,9 +10778,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
-          "shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
-        ]
+        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
+          "shouldPrintTheParametersOnSmartNullPointerExceptionMessage": {
+            "endLine": 74,
+            "startLine": 60
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {}
@@ -9351,9 +10792,12 @@
       "bug_report": "225",
       "bugfix_commit": "62b6bdf44baeee172b2b1684835fb995bad2a47d",
       "buggyMethods": {
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
-          "intercept"
-        ]
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": {
+          "intercept": {
+            "endLine": 58,
+            "startLine": 51
+          }
+        }
       },
       "buggy_commit": "81a380951402d2a158af115ed616ab36e94793b8",
       "failing_tests": [
@@ -9422,37 +10866,73 @@
         }
       },
       "newMethods": {
-        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": [
-          "formatMethodCall"
-        ]
+        "src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java": {
+          "formatMethodCall": {
+            "endLine": 63,
+            "startLine": 60
+          }
+        }
       },
       "newTests": {
-        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
-          "withArgs",
-          "shouldPrintTheParametersWhenCallingAMethodWithArgs"
-        ]
+        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
+          "withArgs": {
+            "endLine": 27,
+            "startLine": 27
+          },
+          "shouldPrintTheParametersWhenCallingAMethodWithArgs": {
+            "endLine": 58,
+            "startLine": 51
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": [
-          "shouldReturnAnObjectThatFailsOnAnyMethodInvocationForNonPrimitives",
-          "shouldReturnAnObjectThatAllowsObjectMethods"
-        ]
+        "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
+          "shouldReturnAnObjectThatFailsOnAnyMethodInvocationForNonPrimitives": {
+            "endLine": 40,
+            "startLine": 30
+          },
+          "shouldReturnAnObjectThatAllowsObjectMethods": {
+            "endLine": 49,
+            "startLine": 42
+          }
+        }
       }
     },
     "4": {
       "bug_report": "187",
       "bugfix_commit": "42b391d4209024292b6101048389570e4ec36b2a",
       "buggyMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "noMoreInteractionsWanted",
-          "noMoreInteractionsWantedInOrder",
-          "cannotInjectDependency",
-          "invalidArgumentPositionRangeAtInvocationTime",
-          "wrongTypeOfArgumentToReturn",
-          "delegatedMethodHasWrongReturnType",
-          "delegatedMethodDoesNotExistOnDelegate"
-        ]
+        "src/org/mockito/exceptions/Reporter.java": {
+          "wrongTypeOfArgumentToReturn": {
+            "endLine": 759,
+            "startLine": 739
+          },
+          "delegatedMethodDoesNotExistOnDelegate": {
+            "endLine": 795,
+            "startLine": 787
+          },
+          "invalidArgumentPositionRangeAtInvocationTime": {
+            "endLine": 718,
+            "startLine": 707
+          },
+          "noMoreInteractionsWantedInOrder": {
+            "endLine": 437,
+            "startLine": 430
+          },
+          "delegatedMethodHasWrongReturnType": {
+            "endLine": 785,
+            "startLine": 777
+          },
+          "cannotInjectDependency": {
+            "endLine": 674,
+            "startLine": 666
+          },
+          "noMoreInteractionsWanted": {
+            "endLine": 428,
+            "startLine": 417
+          }
+        }
       },
       "buggy_commit": "c25cb6bff7eb4774efda345e8bf9eaad4c66a652",
       "failing_tests": [
@@ -9615,45 +11095,99 @@
         }
       },
       "newMethods": {
-        "src/org/mockito/exceptions/Reporter.java": [
-          "exceptionCauseMessageIfAvailable",
-          "safelyGetMockName"
-        ]
+        "src/org/mockito/exceptions/Reporter.java": {
+          "exceptionCauseMessageIfAvailable": {
+            "endLine": 681,
+            "startLine": 676
+          },
+          "safelyGetMockName": {
+            "endLine": 803,
+            "startLine": 801
+          }
+        }
       },
       "newTests": {
-        "test/org/mockitousage/bugs/ClassCastExOnVerifyZeroInteractionsTest.java": [
-          "m1",
-          "should_not_throw_a_ClassCastException",
-          "answer"
-        ],
-        "test/org/mockito/exceptions/ReporterTest.java": [
-          "should_throw_correct_exception_for_null_invocation_listener",
-          "can_use_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted_in_order",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_invalid_argument_position",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_wrong_argument_to_return",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_dont_exists",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_injection_failure",
-          "someField"
-        ]
+        "test/org/mockitousage/bugs/ClassCastExOnVerifyZeroInteractionsTest.java": {
+          "m1": {
+            "endLine": 13,
+            "startLine": 13
+          },
+          "answer": {
+            "endLine": 21,
+            "startLine": 19
+          },
+          "should_not_throw_a_ClassCastException": {
+            "endLine": 25,
+            "startLine": 16
+          }
+        },
+        "test/org/mockito/exceptions/ReporterTest.java": {
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_dont_exists": {
+            "endLine": 67,
+            "startLine": 62
+          },
+          "can_use_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted": {
+            "endLine": 42,
+            "startLine": 38
+          },
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_invalid_argument_position": {
+            "endLine": 54,
+            "startLine": 50
+          },
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_injection_failure": {
+            "endLine": 80,
+            "startLine": 76
+          },
+          "someField": {
+            "endLine": 84,
+            "startLine": 82
+          },
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted_in_order": {
+            "endLine": 48,
+            "startLine": 44
+          },
+          "should_throw_correct_exception_for_null_invocation_listener": {
+            "endLine": 36,
+            "startLine": 33
+          },
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_wrong_argument_to_return": {
+            "endLine": 60,
+            "startLine": 56
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/org/mockito/exceptions/ReporterTest.java": [
-          "shouldLetPassingNullLastActualStackTrace",
-          "shouldThrowCorrectExceptionForNullInvocationListener",
-          "should_let_passing_null_last_actual_stack_trace",
-          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_has_wrong_return_type"
-        ]
+        "test/org/mockito/exceptions/ReporterTest.java": {
+          "should_let_passing_null_last_actual_stack_trace": {
+            "endLine": 31,
+            "startLine": 28
+          },
+          "shouldThrowCorrectExceptionForNullInvocationListener": {
+            "endLine": 25,
+            "startLine": 22
+          },
+          "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_has_wrong_return_type": {
+            "endLine": 74,
+            "startLine": 69
+          },
+          "shouldLetPassingNullLastActualStackTrace": {
+            "endLine": 20,
+            "startLine": 17
+          }
+        }
       }
     },
     "5": {
       "bug_report": "152",
       "bugfix_commit": "42a24dde02923185db3f79ae57e7819f7d70af55",
       "buggyMethods": {
-        "src/org/mockito/internal/verification/VerificationOverTimeImpl.java": [
-          "verify"
-        ]
+        "src/org/mockito/internal/verification/VerificationOverTimeImpl.java": {
+          "verify": {
+            "endLine": 99,
+            "startLine": 60
+          }
+        }
       },
       "buggy_commit": "fff76563d9e0ed412dc828c53cfdc7d142997a31",
       "failing_tests": [
@@ -9955,49 +11489,145 @@
       },
       "newMethods": {},
       "newTests": {
-        "test/org/mockitoutil/ClassLoadersTest.java": [
-          "cannot_load_a_class_file_not_in_parent",
-          "can_list_all_classes_reachable_in_a_classloader",
-          "return_bootstrap_classloader",
-          "return_current_classloader"
-        ],
-        "test/org/mockitoutil/ClassLoaders.java": [
-          "in",
-          "jdkClassLoader",
-          "systemClassLoader",
-          "currentClassLoader",
-          "withParent",
-          "getResources",
-          "inMemoryOnly",
-          "hasMoreElements",
-          "nextElement",
-          "MemHandler",
-          "openConnection",
-          "MemURLConnection",
-          "connect",
-          "getInputStream",
-          "ReachableClassesFinder",
-          "omit",
-          "listOwnedClasses",
-          "addFromFileBasedClassLoader",
-          "addFromInMemoryBasedClassLoader",
-          "findClassQualifiedNames",
-          "excludes",
-          "classNameFor"
-        ],
-        "test/org/mockitointegration/NoJUnitDependenciesTest.java": [
-          "pure_mockito_should_not_depend_JUnit",
-          "checkDependency"
-        ]
+        "test/org/mockitoutil/ClassLoadersTest.java": {
+          "return_bootstrap_classloader": {
+            "endLine": 215,
+            "startLine": 209
+          },
+          "return_current_classloader": {
+            "endLine": 220,
+            "startLine": 217
+          },
+          "cannot_load_a_class_file_not_in_parent": {
+            "endLine": 193,
+            "startLine": 175
+          },
+          "can_list_all_classes_reachable_in_a_classloader": {
+            "endLine": 207,
+            "startLine": 195
+          }
+        },
+        "test/org/mockitoutil/ClassLoaders.java": {
+          "ReachableClassesFinder": {
+            "endLine": 296,
+            "startLine": 294
+          },
+          "excludes": {
+            "endLine": 358,
+            "startLine": 353
+          },
+          "systemClassLoader": {
+            "endLine": 45,
+            "startLine": 43
+          },
+          "classNameFor": {
+            "endLine": 363,
+            "startLine": 360
+          },
+          "in": {
+            "endLine": 37,
+            "startLine": 35
+          },
+          "withParent": {
+            "endLine": 173,
+            "startLine": 170
+          },
+          "openConnection": {
+            "endLine": 238,
+            "startLine": 235
+          },
+          "currentClassLoader": {
+            "endLine": 49,
+            "startLine": 47
+          },
+          "addFromInMemoryBasedClassLoader": {
+            "endLine": 331,
+            "startLine": 326
+          },
+          "addFromFileBasedClassLoader": {
+            "endLine": 324,
+            "startLine": 321
+          },
+          "jdkClassLoader": {
+            "endLine": 41,
+            "startLine": 39
+          },
+          "getInputStream": {
+            "endLine": 254,
+            "startLine": 251
+          },
+          "MemHandler": {
+            "endLine": 233,
+            "startLine": 231
+          },
+          "inMemoryOnly": {
+            "endLine": 225,
+            "startLine": 207
+          },
+          "getResources": {
+            "endLine": 205,
+            "startLine": 202
+          },
+          "hasMoreElements": {
+            "endLine": 215,
+            "startLine": 213
+          },
+          "listOwnedClasses": {
+            "endLine": 319,
+            "startLine": 303
+          },
+          "findClassQualifiedNames": {
+            "endLine": 351,
+            "startLine": 334
+          },
+          "MemURLConnection": {
+            "endLine": 247,
+            "startLine": 243
+          },
+          "omit": {
+            "endLine": 301,
+            "startLine": 298
+          },
+          "connect": {
+            "endLine": 249,
+            "startLine": 248
+          },
+          "nextElement": {
+            "endLine": 223,
+            "startLine": 217
+          }
+        },
+        "test/org/mockitointegration/NoJUnitDependenciesTest.java": {
+          "pure_mockito_should_not_depend_JUnit": {
+            "endLine": 30,
+            "startLine": 13
+          },
+          "checkDependency": {
+            "endLine": 38,
+            "startLine": 32
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "test/org/mockitoutil/ClassLoaders.java": [
-          "LocalIsolatedURLClassLoader",
-          "LocalExcludingURLClassLoader",
-          "build",
-          "InMemoryClassLoader"
-        ]
+        "test/org/mockitoutil/ClassLoaders.java": {
+          "LocalIsolatedURLClassLoader": {
+            "endLine": 94,
+            "startLine": 91
+          },
+          "build": {
+            "endLine": 182,
+            "startLine": 180
+          },
+          "InMemoryClassLoader": {
+            "endLine": 192,
+            "startLine": 189
+          },
+          "LocalExcludingURLClassLoader": {
+            "endLine": 151,
+            "startLine": 148
+          }
+        }
       }
     }
   },
@@ -10006,9 +11636,12 @@
       "bug_report": "22",
       "bugfix_commit": "3a413d7844c22dc6ddd50bf5d0d55ff3589e47ac",
       "buggyMethods": {
-        "src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java": [
-          "between"
-        ]
+        "src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java": {
+          "between": {
+            "endLine": 107,
+            "startLine": 77
+          }
+        }
       },
       "buggy_commit": "efce99164f0bbd2c70e7f9d71884a32473e02c6d",
       "failing_tests": [
@@ -10117,25 +11750,49 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/org/joda/time/TestMonths.java": [
-          "testFactory_monthsBetween_RPartial_YearMonth",
-          "testFactory_monthsBetween_RPartial_MonthDay"
-        ],
-        "src/test/java/org/joda/time/TestDays.java": [
-          "testFactory_daysBetween_RPartial_YearMonth",
-          "testFactory_daysBetween_RPartial_MonthDay"
-        ]
+        "src/test/java/org/joda/time/TestMonths.java": {
+          "testFactory_monthsBetween_RPartial_YearMonth": {
+            "endLine": 128,
+            "startLine": 120
+          },
+          "testFactory_monthsBetween_RPartial_MonthDay": {
+            "endLine": 143,
+            "startLine": 130
+          }
+        },
+        "src/test/java/org/joda/time/TestDays.java": {
+          "testFactory_daysBetween_RPartial_YearMonth": {
+            "endLine": 121,
+            "startLine": 110
+          },
+          "testFactory_daysBetween_RPartial_MonthDay": {
+            "endLine": 138,
+            "startLine": 123
+          }
+        }
       },
       "origin": "defects4j",
       "updatedTests": {
-        "src/test/java/org/joda/time/TestMonths.java": [
-          "testFactory_monthsBetween_RPartial",
-          "testFactory_monthsBetween_RPartial_LocalDate"
-        ],
-        "src/test/java/org/joda/time/TestDays.java": [
-          "testFactory_daysBetween_RPartial",
-          "testFactory_daysBetween_RPartial_LocalDate"
-        ]
+        "src/test/java/org/joda/time/TestMonths.java": {
+          "testFactory_monthsBetween_RPartial_LocalDate": {
+            "endLine": 118,
+            "startLine": 108
+          },
+          "testFactory_monthsBetween_RPartial": {
+            "endLine": 117,
+            "startLine": 107
+          }
+        },
+        "src/test/java/org/joda/time/TestDays.java": {
+          "testFactory_daysBetween_RPartial": {
+            "endLine": 107,
+            "startLine": 97
+          },
+          "testFactory_daysBetween_RPartial_LocalDate": {
+            "endLine": 108,
+            "startLine": 98
+          }
+        }
       }
     }
   },
@@ -10144,12 +11801,18 @@
       "bug_report": "2351",
       "bugfix_commit": "d30069235d846b910d8371171aa855e4eea3a97b",
       "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/parser/JSONLexerBase.java": [
-          "scanString"
-        ],
-        "src/main/java/com/alibaba/fastjson/parser/deserializer/ASMDeserializerFactory.java": [
-          "_deserialzeArrayMapping"
-        ]
+        "src/main/java/com/alibaba/fastjson/parser/JSONLexerBase.java": {
+          "scanString": {
+            "endLine": 1407,
+            "startLine": 1320
+          }
+        },
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/ASMDeserializerFactory.java": {
+          "_deserialzeArrayMapping": {
+            "endLine": 546,
+            "startLine": 113
+          }
+        }
       },
       "buggy_commit": "8e985930057c21c95a3065ca9f2cad3b5e42d4ba",
       "failing_tests": [],
@@ -10231,11 +11894,20 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/alibaba/json/bvt/issue_2300/Issue2351.java": [
-          "test_for_issue",
-          "getC",
-          "setC"
-        ]
+        "src/test/java/com/alibaba/json/bvt/issue_2300/Issue2351.java": {
+          "test_for_issue": {
+            "endLine": 27,
+            "startLine": 13
+          },
+          "setC": {
+            "endLine": 45,
+            "startLine": 43
+          },
+          "getC": {
+            "endLine": 41,
+            "startLine": 39
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -10244,9 +11916,12 @@
       "bug_report": "3119",
       "bugfix_commit": "2a603b9d03a2de3fd48dfeaaf5df64a08955ed56",
       "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/serializer/ASMSerializerFactory.java": [
-          "createJavaBeanSerializer"
-        ]
+        "src/main/java/com/alibaba/fastjson/serializer/ASMSerializerFactory.java": {
+          "createJavaBeanSerializer": {
+            "endLine": 417,
+            "startLine": 106
+          }
+        }
       },
       "buggy_commit": "307f6637b9f8502a081468443c2b3c85cea5e545",
       "failing_tests": [],
@@ -10271,12 +11946,18 @@
       "bug_report": "3280",
       "bugfix_commit": "92fd0cb92cd876e01384418b6dbcae557a8a630c",
       "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java": [
-          "createInstance"
-        ],
-        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
-          "castToLocalDateTime"
-        ]
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java": {
+          "createInstance": {
+            "endLine": 1583,
+            "startLine": 1365
+          }
+        },
+        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": {
+          "castToLocalDateTime": {
+            "endLine": 3288,
+            "startLine": 3277
+          }
+        }
       },
       "buggy_commit": "cc7dfab3dde888b81577fb18c0eb223761b5e31f",
       "failing_tests": [],
@@ -10330,9 +12011,12 @@
         }
       },
       "newMethods": {
-        "src/main/java/com/alibaba/fastjson/parser/deserializer/Jdk8DateCodec.java": [
-          "castToLocalDateTime"
-        ]
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/Jdk8DateCodec.java": {
+          "castToLocalDateTime": {
+            "endLine": 607,
+            "startLine": 596
+          }
+        }
       },
       "newTests": {},
       "origin": "t-evos",
@@ -10342,9 +12026,12 @@
       "bug_report": "3637",
       "bugfix_commit": "8d42fd87c00b9691d393c15998135b5281d895f5",
       "buggyMethods": {
-        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": [
-          "castToSqlTime"
-        ]
+        "src/main/java/com/alibaba/fastjson/util/TypeUtils.java": {
+          "castToSqlTime": {
+            "endLine": 676,
+            "startLine": 628
+          }
+        }
       },
       "buggy_commit": "00cdc53606111e7802f8f5559d44feeccba2657f",
       "failing_tests": [],
@@ -10402,9 +12089,12 @@
       },
       "newMethods": {},
       "newTests": {
-        "src/test/java/com/alibaba/json/bvt/issue_3600/Issue3637.java": [
-          "test_for_issue"
-        ]
+        "src/test/java/com/alibaba/json/bvt/issue_3600/Issue3637.java": {
+          "test_for_issue": {
+            "endLine": 14,
+            "startLine": 10
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}
@@ -10415,9 +12105,12 @@
       "bug_report": "1178",
       "bugfix_commit": "e6a20043db694056ac00456f6076091012ecba87",
       "buggyMethods": {
-        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": [
-          "ArrayComparisonFailure"
-        ]
+        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": {
+          "ArrayComparisonFailure": {
+            "endLine": 39,
+            "startLine": 26
+          }
+        }
       },
       "buggy_commit": "c07965ab1b232b04a13ea84fdbcdd8be04ea0182",
       "failing_tests": [],
@@ -10527,17 +12220,32 @@
         }
       },
       "newMethods": {
-        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": [
-          "getCause"
-        ]
+        "src/main/java/org/junit/internal/ArrayComparisonFailure.java": {
+          "getCause": {
+            "endLine": 48,
+            "startLine": 45
+          }
+        }
       },
       "newTests": {
-        "src/test/java/org/junit/internal/ArrayComparisonFailureTest.java": [
-          "classShouldAccept411Version",
-          "classShouldAccept412Version",
-          "assertFailureSerializableFromOthers",
-          "deserializeFailureFromFile"
-        ]
+        "src/test/java/org/junit/internal/ArrayComparisonFailureTest.java": {
+          "deserializeFailureFromFile": {
+            "endLine": 66,
+            "startLine": 61
+          },
+          "classShouldAccept412Version": {
+            "endLine": 44,
+            "startLine": 41
+          },
+          "assertFailureSerializableFromOthers": {
+            "endLine": 59,
+            "startLine": 46
+          },
+          "classShouldAccept411Version": {
+            "endLine": 39,
+            "startLine": 36
+          }
+        }
       },
       "origin": "t-evos",
       "updatedTests": {}

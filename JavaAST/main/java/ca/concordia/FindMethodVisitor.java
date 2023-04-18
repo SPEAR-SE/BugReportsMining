@@ -6,9 +6,9 @@ import org.eclipse.jdt.core.dom.*;
 public class FindMethodVisitor extends ASTVisitor  {
     private final int lineNumber;
     private String methodName;
+    private MethodData methodData;
     protected final CompilationUnit compilationUnit;
     private Boolean isTest;
-    private boolean containsAssert = false;
 
     public FindMethodVisitor(CompilationUnit compilationUnit, int lineNumber, boolean isTest) {
         this.compilationUnit = compilationUnit;
@@ -25,6 +25,7 @@ public class FindMethodVisitor extends ASTVisitor  {
 
         if (lineNumber >= startLine && lineNumber <= endLine) {
             methodName = node.getName().toString();
+            methodData = new MethodData(methodName, startLine, endLine);
         }
 
         return super.visit(node);
@@ -33,9 +34,9 @@ public class FindMethodVisitor extends ASTVisitor  {
     public String getMethodName() {
         return methodName;
     }
-
-    public boolean containsAssert() {
-        return containsAssert;
+    public MethodData getmethodData() {
+        return methodData;
     }
+
 
 }

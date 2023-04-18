@@ -10,6 +10,8 @@ import java.util.Map;
 
 class MethodFinder {
 
+  private static MethodData methodData;
+
   public static String findMethodName(String filename, int lineNumber, boolean isTest) throws IOException {
 
     String source = FileUtil.read(filename);
@@ -26,7 +28,12 @@ class MethodFinder {
     FindMethodVisitor visitor = new FindMethodVisitor(compilationUnit, lineNumber, isTest);
     compilationUnit.accept(visitor);
 
+    methodData = visitor.getmethodData();
 
     return visitor.getMethodName();
+  }
+
+  public static MethodData getmethodData() {
+    return methodData;
   }
 }
