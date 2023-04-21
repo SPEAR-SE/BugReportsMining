@@ -121,6 +121,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "FileValidator.java",
+                "ArgumentImpl.java",
+                "ParentImpl.java",
+                "DefaultOption.java",
+                "GroupImpl.java",
+                "Parser.java",
+                "Parser.java",
+                "CLI2Sample.java"
+            ],
+            "stack_trace_methods": [
+                "validate",
+                "validate",
+                "validate",
+                "validate",
+                "validate",
+                "parse",
+                "parseAndHelp",
+                "main"
+            ],
             "updatedTests": {}
         },
         "5": {
@@ -241,6 +261,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Util.java",
+                "CommandLine.java",
+                "CommandLine.java"
+            ],
+            "stack_trace_methods": [
+                "stripLeadingHyphens",
+                "resolveOption",
+                "hasOption"
+            ],
             "updatedTests": {}
         }
     },
@@ -352,6 +382,60 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Preconditions.java",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "doRun",
+                "run",
+                "main",
+                "checkArgument",
+                "addStubsForUndeclaredProperties",
+                "updateObjLitOrFunctionDeclarationAtAssignNode",
+                "updateObjLitOrFunctionDeclaration",
+                "collapseDeclarationOfNameAndDescendants",
+                "collapseDeclarationOfNameAndDescendants",
+                "collapseDeclarationOfNameAndDescendants",
+                "collapseDeclarationOfNameAndDescendants",
+                "process",
+                "processInternal",
+                "process",
+                "process",
+                "optimize",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         },
         "125": {
@@ -424,6 +508,90 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "AbstractCommandLineRunner.java",
+                "AbstractCommandLineRunner.java",
+                "CommandLineRunner.java",
+                "Preconditions.java",
+                "FunctionType.java",
+                "TypeCheck.java",
+                "TypeCheck.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "TypeCheck.java",
+                "TypeCheck.java",
+                "DefaultPassConfig.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "FutureTask.java",
+                "FutureTask.java",
+                "ThreadPoolExecutor.java",
+                "ThreadPoolExecutor.java",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "doRun",
+                "run",
+                "main",
+                "checkState",
+                "getInstanceType",
+                "visitNew",
+                "visit",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseFunction",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseWithScope",
+                "check",
+                "process",
+                "process",
+                "process",
+                "process",
+                "check",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "call",
+                "innerRun",
+                "run",
+                "runTask",
+                "run",
+                "run"
+            ],
             "updatedTests": {
                 "test/com/google/javascript/jscomp/TypeCheckTest.java": {
                     "getInstanceType": {
@@ -659,6 +827,22 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source"
+            ],
+            "stack_trace_methods": [
+                "createDefineReplacements",
+                "initOptionsFromFlags",
+                "createOptions",
+                "doRun",
+                "run",
+                "main"
+            ],
             "updatedTests": {}
         },
         "152": {
@@ -806,6 +990,102 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Unknown Source",
+                "Thread.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "AbstractCommandLineRunner.java",
+                "AbstractCommandLineRunner.java",
+                "CommandLineRunner.java",
+                "FunctionType.java",
+                "JSType.java",
+                "TypedScopeCreator.java",
+                "TypedScopeCreator.java",
+                "TypedScopeCreator.java",
+                "MemoizedScopeCreator.java",
+                "DefaultPassConfig.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "doRun",
+                "run",
+                "main",
+                "resolveInternal",
+                "resolve",
+                "resolve",
+                "resolveTypes",
+                "createScope",
+                "createScope",
+                "process",
+                "processInternal",
+                "process",
+                "process",
+                "check",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "run",
+                "run",
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "doRun",
+                "run",
+                "main",
+                "resolveInternal",
+                "resolve",
+                "resolve",
+                "resolveTypes",
+                "createScope",
+                "createScope",
+                "process",
+                "processInternal",
+                "process",
+                "process",
+                "check",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         },
         "2": {
@@ -874,6 +1154,126 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "TypeCheck.java",
+                "TypeCheck.java",
+                "TypeCheck.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "TypeCheck.java",
+                "TypeCheck.java",
+                "DefaultPassConfig.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "CompilerInvokerImpl.java",
+                "ServerController.java",
+                "CompilationRequestHandler.java",
+                "CompilationRequestHandler.java",
+                "CompilationServlet.java",
+                "HttpServlet.java",
+                "HttpServlet.java",
+                "ServletHolder.java",
+                "ServletHandler.java",
+                "ParseBlobUploadFilter.java",
+                "ServletHandler.java",
+                "SaveSessionFilter.java",
+                "ServletHandler.java",
+                "TransactionCleanupFilter.java",
+                "ServletHandler.java",
+                "ServletHandler.java",
+                "SecurityHandler.java",
+                "SessionHandler.java",
+                "ContextHandler.java",
+                "WebAppContext.java",
+                "AppVersionHandlerMap.java",
+                "HandlerWrapper.java",
+                "Server.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "RpcRequestParser.java",
+                "HttpConnection.java",
+                "JettyServletEngineAdapter.java",
+                "JavaRuntime.java",
+                "TraceContext.java",
+                "TraceContext.java",
+                "TraceContext.java",
+                "TraceContext.java",
+                "TraceContext.java",
+                "TraceContext.java",
+                "ThreadGroupPool.java",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "checkInterfaceConflictProperties",
+                "visitFunction",
+                "visit",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseBranch",
+                "traverseWithScope",
+                "check",
+                "process",
+                "process",
+                "processInternal",
+                "process",
+                "process",
+                "check",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "compile",
+                "executeRequest",
+                "serviceParsedRequest",
+                "service",
+                "doPost",
+                "service",
+                "service",
+                "handle",
+                "doFilter",
+                "doFilter",
+                "doFilter",
+                "doFilter",
+                "doFilter",
+                "doFilter",
+                "doFilter",
+                "handle",
+                "handle",
+                "handle",
+                "handle",
+                "handle",
+                "handle",
+                "handle",
+                "handle",
+                "handleRequest",
+                "headerComplete",
+                "parseAvailable",
+                "handle",
+                "serviceRequest",
+                "run",
+                "runInContext",
+                "run",
+                "runInContext",
+                "runInInheritedContextNoUnref",
+                "runInInheritedContext",
+                "run",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         },
         "27": {
@@ -1051,6 +1451,8 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [],
+            "stack_trace_methods": [],
             "updatedTests": {}
         },
         "34": {
@@ -1200,6 +1602,38 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "AbstractCommandLineRunner.java",
+                "AbstractCommandLineRunner.java",
+                "AbstractCommandLineRunner.java",
+                "CommandLineRunner.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Unknown Source"
+            ],
+            "stack_trace_methods": [
+                "runCallable",
+                "runInCompilerThread",
+                "toSource",
+                "processResults",
+                "doRun",
+                "run",
+                "main",
+                "runCallable",
+                "runInCompilerThread",
+                "toSource",
+                "call",
+                "call",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         },
         "37": {
@@ -1301,6 +1735,36 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Preconditions.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "NodeTraversal.java",
+                "PrepareAst.java",
+                "Compiler.java",
+                "JsAst.java",
+                "JsAst.java",
+                "CompilerInput.java",
+                "Compiler.java",
+                "Compiler.java"
+            ],
+            "stack_trace_methods": [
+                "checkState",
+                "traverseFunction",
+                "traverseBranch",
+                "traverseBranch",
+                "traverse",
+                "traverse",
+                "process",
+                "prepareAst",
+                "parse",
+                "getAstRoot",
+                "getAstRoot",
+                "parseInputs",
+                "parse"
+            ],
             "updatedTests": {}
         },
         "55": {
@@ -1383,6 +1847,74 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "AbstractCommandLineRunner.java",
+                "AbstractCommandLineRunner.java",
+                "CommandLineRunner.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "AstValidator.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "PhaseOptimizer.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Compiler.java",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "runCallable",
+                "runInCompilerThread",
+                "compile",
+                "compile",
+                "doRun",
+                "run",
+                "main",
+                "handleViolation",
+                "violation",
+                "validateNodeType",
+                "validateFunctionExpression",
+                "validateObjectLitGetKey",
+                "validateObjectLitKey",
+                "validateObjectLit",
+                "validateExpression",
+                "validateAssignmentExpression",
+                "validateExpression",
+                "validateExprStmt",
+                "validateStatement",
+                "validateScript",
+                "validateCodeRoot",
+                "process",
+                "processInternal",
+                "process",
+                "process",
+                "optimize",
+                "compileInternal",
+                "access$000",
+                "call",
+                "call",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         }
     },
@@ -1596,6 +2128,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Base64.java",
+                "Base64InputStream.java",
+                "Base64InputStream.java"
+            ],
+            "stack_trace_methods": [
+                "encode",
+                "read",
+                "read"
+            ],
             "updatedTests": {}
         }
     },
@@ -1722,6 +2264,18 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "AbstractPatriciaTrie.java",
+                "AbstractCollection.java",
+                "AbstractMap.java",
+                "PatriciaTrieTest.java"
+            ],
+            "stack_trace_methods": [
+                "remove",
+                "clear",
+                "clear",
+                "testPrefixMapClear"
+            ],
             "updatedTests": {}
         }
     },
@@ -1971,6 +2525,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "CpioArchiveInputStream.java",
+                "CpioArchiveInputStream.java",
+                "CpioArchiveInputStreamTest.java"
+            ],
+            "stack_trace_methods": [
+                "readFully",
+                "getNextCPIOEntry",
+                "testCpioUnpack"
+            ],
             "updatedTests": {
                 "src/test/java/org/apache/commons/compress/archivers/CpioTestCase.java": {
                     "testCpioArchiveCreation": {
@@ -2049,6 +2613,68 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "TarUtils.java",
+                "TarArchiveEntry.java",
+                "TarArchiveEntry.java",
+                "TarArchiveInputStream.java",
+                "TarArchiveInputStream.java",
+                "TarInputShop.java",
+                "TarDriver.java",
+                "TarGZipDriver.java",
+                "TarDriver.java",
+                "TarDriver.java",
+                "FsDefaultArchiveController.java",
+                "FsFileSystemArchiveController.java",
+                "FsFileSystemArchiveController.java",
+                "FsArchiveController.java",
+                "FsArchiveController.java",
+                "FsContextController.java",
+                "FsDecoratingController.java",
+                "FsDecoratingController.java",
+                "FsConcurrentController.java",
+                "FsSyncController.java",
+                "FsFederatingController.java",
+                "TFileSystem.java",
+                "TPath.java",
+                "TFileSystemProvider.java",
+                "Files.java",
+                "GetSourcesMojo.java",
+                "GetSourcesMojo.java",
+                "GetSourcesMojo.java",
+                "DefaultBuildPluginManager.java"
+            ],
+            "stack_trace_methods": [
+                "parseOctal",
+                "parseTarHeader",
+                "<init>",
+                "getNextTarEntry",
+                "getNextEntry",
+                "<init>",
+                "newTarInputShop",
+                "newTarInputShop",
+                "newInputShop",
+                "newInputShop",
+                "mount",
+                "autoMount",
+                "autoMount",
+                "autoMount",
+                "getEntry",
+                "getEntry",
+                "getEntry",
+                "getEntry",
+                "getEntry",
+                "getEntry",
+                "getEntry",
+                "newDirectoryStream",
+                "newDirectoryStream",
+                "newDirectoryStream",
+                "newDirectoryStream",
+                "convertToJar",
+                "download",
+                "execute",
+                "executeMojo"
+            ],
             "updatedTests": {}
         },
         "14": {
@@ -2151,6 +2777,78 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "TarArchiveInputStream.java",
+                "Extractor.java",
+                "Extractor.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "ExecuteJava.java",
+                "ExecuteJava.java",
+                "Java.java",
+                "Java.java",
+                "Java.java",
+                "Java.java",
+                "UnknownElement.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "DispatchUtils.java",
+                "Task.java",
+                "Target.java",
+                "Target.java",
+                "Project.java",
+                "Project.java",
+                "DefaultExecutor.java",
+                "Project.java",
+                "Main.java",
+                "Main.java",
+                "Launcher.java",
+                "Launcher.java",
+                "TarUtils.java",
+                "TarArchiveEntry.java",
+                "TarArchiveEntry.java",
+                "TarArchiveInputStream.java"
+            ],
+            "stack_trace_methods": [
+                "getNextTarEntry",
+                "extract",
+                "main",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "run",
+                "execute",
+                "run",
+                "executeJava",
+                "executeJava",
+                "execute",
+                "execute",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "execute",
+                "perform",
+                "execute",
+                "performTasks",
+                "executeSortedTargets",
+                "executeTarget",
+                "executeTargets",
+                "executeTargets",
+                "runBuild",
+                "startAnt",
+                "run",
+                "main",
+                "parseOctal",
+                "parseTarHeader",
+                "<init>",
+                "getNextTarEntry"
+            ],
             "updatedTests": {
                 "src/test/java/org/apache/commons/compress/archivers/tar/TarUtilsTest.java": {
                     "testParseOctalInvalid": {
@@ -2239,6 +2937,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "TarUtils.java",
+                "TarArchiveEntry.java",
+                "TarArchiveEntry.java"
+            ],
+            "stack_trace_methods": [
+                "parseOctal",
+                "parseTarHeader",
+                "<init>"
+            ],
             "updatedTests": {}
         },
         "18": {
@@ -2353,6 +3061,50 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "TarArchiveOutputStream.java",
+                "Unknown Source",
+                "TarArchiveOutputStream.java",
+                "TarArchiveOutputStream.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TarUtilities.java",
+                "TileCacheSetExporter.java",
+                "TileCacheSetExporter.java",
+                "ExportController.java"
+            ],
+            "stack_trace_methods": [
+                "write",
+                "write",
+                "writePaxHeaders",
+                "putArchiveEntry",
+                "addFile",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "addDirectory",
+                "tar",
+                "tar",
+                "tarTreeStructure",
+                "export",
+                "run"
+            ],
             "updatedTests": {}
         },
         "23": {
@@ -2415,6 +3167,28 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "Coders.java",
+                "Coders.java",
+                "SevenZFile.java",
+                "SevenZFile.java",
+                "SevenZFile.java",
+                "SevenZFile.java",
+                "SevenZipError.java"
+            ],
+            "stack_trace_methods": [
+                "initialize",
+                "<init>",
+                "decode",
+                "addDecoder",
+                "readEncodedHeader",
+                "readHeaders",
+                "<init>",
+                "<init>",
+                "main"
+            ],
             "updatedTests": {}
         },
         "32": {
@@ -2484,6 +3258,22 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "NumberFormatException.java",
+                "Integer.java",
+                "Integer.java",
+                "TarArchiveInputStream.java",
+                "TarArchiveInputStream.java",
+                "TarArchiveInputStream.java"
+            ],
+            "stack_trace_methods": [
+                "forInputString",
+                "parseInt",
+                "parseInt",
+                "applyPaxHeadersToCurrentEntry",
+                "paxHeaders",
+                "getNextTarEntry"
+            ],
             "updatedTests": {}
         }
     },
@@ -2820,6 +3610,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "CSVParser.java",
+                "CSVParser.java",
+                "CSVParser.java"
+            ],
+            "stack_trace_methods": [
+                "initializeHeader",
+                "<init>",
+                "parse"
+            ],
             "updatedTests": {
                 "src/test/java/org/apache/commons/csv/CSVParserTest.java": {
                     "testBOM": {
@@ -2961,6 +3761,16 @@
                 }
             },
             "origin": "defects4j/t-evos",
+            "stack_trace_files": [
+                "HashMap.java",
+                "LinkedHashMap.java",
+                "CSVParser.java"
+            ],
+            "stack_trace_methods": [
+                "<init>",
+                "<init>",
+                "getHeaderMap"
+            ],
             "updatedTests": {}
         }
     },
@@ -3070,6 +3880,12 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "JsonTreeReader.java"
+            ],
+            "stack_trace_methods": [
+                "skipValue"
+            ],
             "updatedTests": {}
         },
         "8": {
@@ -3225,6 +4041,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Native Method",
+                "Method.java",
+                "UnsafeAllocator.java"
+            ],
+            "stack_trace_methods": [
+                "invokeNative",
+                "invoke",
+                "newInstance"
+            ],
             "updatedTests": {}
         }
     },
@@ -3295,6 +4121,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Native Method",
+                "TextBuffer.java",
+                "UTF8StreamJsonParser.java",
+                "UTF8StreamJsonParser.java",
+                "UTF8StreamJsonParser.java",
+                "UTF8StreamJsonParser.java",
+                "UTF8StreamJsonParser.java",
+                "UTF8StreamJsonParser.java"
+            ],
+            "stack_trace_methods": [
+                "arraycopy",
+                "expandCurrentSegment",
+                "addName",
+                "findName",
+                "parseLongFieldName",
+                "parseMediumFieldName",
+                "_parseFieldName",
+                "nextToken"
+            ],
             "updatedTests": {}
         },
         "7": {
@@ -3764,6 +4610,46 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "JsonGenerator.java",
+                "WriterBasedJsonGenerator.java",
+                "BeanPropertyWriter.java",
+                "BeanSerializerBase.java",
+                "BeanSerializer.java",
+                "IndexedListSerializer.java",
+                "IndexedListSerializer.java",
+                "IndexedListSerializer.java",
+                "BeanPropertyWriter.java",
+                "BeanSerializerBase.java",
+                "BeanSerializer.java",
+                "BeanPropertyWriter.java",
+                "BeanSerializerBase.java",
+                "BeanSerializerBase.java",
+                "TypeWrappedSerializer.java",
+                "DefaultSerializerProvider.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "_reportError",
+                "writeFieldName",
+                "serializeAsField",
+                "serializeFields",
+                "serialize",
+                "serializeContents",
+                "serialize",
+                "serialize",
+                "serializeAsField",
+                "serializeFields",
+                "serialize",
+                "serializeAsField",
+                "serializeFields",
+                "serializeWithType",
+                "serialize",
+                "serializeValue",
+                "_configAndWriteValue",
+                "writeValueAsString"
+            ],
             "updatedTests": {
                 "src/test/java/com/fasterxml/jackson/core/json/TestJsonGenerator.java": {
                     "_testDupFieldNameWrites": {
@@ -3918,6 +4804,14 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "\"yyyy-MM-dd'T'HH",
+                "StdDateFormat.java"
+            ],
+            "stack_trace_methods": [
+                "192+0000\": not compatible with any of standard forms ",
+                "parse"
+            ],
             "updatedTests": {
                 "src/test/java/com/fasterxml/jackson/databind/ser/jdk/DateSerializationTest.java": {
                     "serialize": {
@@ -4101,6 +4995,96 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "class myorg.TestDeserTest$DataB), not marked as ignorable (2 known properties",
+                "through reference chain",
+                "UnrecognizedPropertyException.java",
+                "DeserializationContext.java",
+                "StdDeserializer.java",
+                "BeanDeserializerBase.java",
+                "BeanDeserializerBase.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "ObjectReader.java",
+                "ObjectReader.java",
+                "TestDeserTest.java",
+                "TestDeserTest.java",
+                "SettableBeanProperty.java",
+                "FieldProperty.java",
+                "BeanPropertyMap.java",
+                "BeanDeserializer.java",
+                "ObjectReader.java",
+                "ObjectReader.java",
+                "TestDeserTest.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "FrameworkMethod.java",
+                "ReflectiveCallable.java",
+                "FrameworkMethod.java",
+                "InvokeMethod.java",
+                "ParentRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "JUnit4TestReference.java",
+                "TestExecution.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java"
+            ],
+            "stack_trace_methods": [
+                "UnrecognizedPropertyException: Unrecognized field \"i\" ",
+                " at [Source: N/A; line: -1, column: -1] ",
+                "from",
+                "reportUnknownProperty",
+                "handleUnknownProperty",
+                "handleUnknownProperty",
+                "handleUnknownVanilla",
+                "vanillaDeserialize",
+                "deserialize",
+                "_bindAsTree",
+                "readTree",
+                "deserialize",
+                "deserialize",
+                "deserialize",
+                "deserializeAndSet",
+                "findDeserializeAndSet",
+                "deserialize",
+                "_bindAndClose",
+                "readValue",
+                "test",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runReflectiveCall",
+                "run",
+                "invokeExplosively",
+                "evaluate",
+                "runLeaf",
+                "runChild",
+                "runChild",
+                "run",
+                "schedule",
+                "runChildren",
+                "access$000",
+                "evaluate",
+                "run",
+                "run",
+                "run",
+                "runTests",
+                "runTests",
+                "run",
+                "main"
+            ],
             "updatedTests": {}
         },
         "15": {
@@ -4344,6 +5328,30 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) ) (through reference chain",
+                "UnknownSerializer.java",
+                "UnknownSerializer.java",
+                "StdDelegatingSerializer.java",
+                "BeanPropertyWriter.java",
+                "BeanSerializerBase.java",
+                "BeanSerializer.java",
+                "DefaultSerializerProvider.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "String and no properties discovered to create BeanSerializer ",
+                "failForEmpty",
+                "serialize",
+                "serialize",
+                "serializeAsField",
+                "serializeFields",
+                "serialize",
+                "serializeValue",
+                "_configAndWriteValue",
+                "writeValueAsString"
+            ],
             "updatedTests": {}
         },
         "17": {
@@ -4419,6 +5427,32 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "JsonMappingException.java",
+                "DeserializationContext.java",
+                "AsArrayTypeDeserializer.java",
+                "AsArrayTypeDeserializer.java",
+                "AsArrayTypeDeserializer.java",
+                "JsonNodeDeserializer.java",
+                "JsonNodeDeserializer.java",
+                "TypeWrappedDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "App.java"
+            ],
+            "stack_trace_methods": [
+                "from",
+                "wrongTokenException",
+                "_locateTypeId",
+                "_deserialize",
+                "deserializeTypedFromAny",
+                "deserializeWithType",
+                "deserializeWithType",
+                "deserialize",
+                "_readMapAndClose",
+                "readTree",
+                "main"
+            ],
             "updatedTests": {
                 "src/test/java/com/fasterxml/jackson/databind/node/TestJsonNode.java": {
                     "testBinary": {
@@ -4607,6 +5641,46 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "of type array",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializationContext.java",
+                "StdDeserializer.java",
+                "BeanDeserializerBase.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializationContext.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "IllegalArgumentException: Can not deserialize Class [B ",
+                "isPotentialBeanType",
+                "createBeanDeserializer",
+                "_createDeserializer2",
+                "_createDeserializer",
+                "_createAndCache2",
+                "_createAndCacheValueDeserializer",
+                "findValueDeserializer",
+                "findContextualValueDeserializer",
+                "findDeserializer",
+                "resolve",
+                "_createAndCache2",
+                "_createAndCacheValueDeserializer",
+                "findValueDeserializer",
+                "findRootValueDeserializer",
+                "_findRootDeserializer",
+                "_convert",
+                "convertValue"
+            ],
             "updatedTests": {}
         },
         "28": {
@@ -4721,6 +5795,32 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "JsonMappingException.java",
+                "DeserializationContext.java",
+                "DeserializationContext.java",
+                "JsonNodeDeserializer.java",
+                "JsonNodeDeserializer.java",
+                "BeanDeserializerBase.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "Main.java"
+            ],
+            "stack_trace_methods": [
+                "from",
+                "mappingException",
+                "mappingException",
+                "deserialize",
+                "deserialize",
+                "deserializeFromObjectUsingNonDefault",
+                "deserializeFromObject",
+                "deserialize",
+                "_readMapAndClose",
+                "readValue",
+                "main"
+            ],
             "updatedTests": {}
         },
         "32": {
@@ -4831,6 +5931,30 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "or END_OBJECT marker",
+                "JsonParser.java",
+                "ParserMinimalBase.java",
+                "SmileParser.java",
+                "SmileParser.java",
+                "MapDeserializer.java",
+                "MapDeserializer.java",
+                "MapDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "JsonParseException: Invalid type marker byte 0xfa for expected field name ",
+                "_constructError",
+                "_reportError",
+                "_handleFieldName",
+                "nextToken",
+                "_readAndBindStringMap",
+                "deserialize",
+                "deserialize",
+                "_readMapAndClose",
+                "readValue"
+            ],
             "updatedTests": {
                 "src/test/java/com/fasterxml/jackson/databind/deser/TestUntypedDeserialization.java": {
                     "testNestedUntypes": {
@@ -4968,6 +6092,24 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "from class java.lang.Throwable; failed to set access",
+                "ClassUtil.java",
+                "AnnotatedMember.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java"
+            ],
+            "stack_trace_methods": [
+                "cause ",
+                "checkAndFixAccess",
+                "fixAccess",
+                "constructSettableProperty",
+                "addBeanProps",
+                "buildThrowableDeserializer",
+                "createBeanDeserializer"
+            ],
             "updatedTests": {}
         },
         "61": {
@@ -5091,6 +6233,30 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "through reference chain",
+                "JsonMappingException.java",
+                "JsonMappingException.java",
+                "BeanDeserializerBase.java",
+                "BeanDeserializer.java",
+                "TypeFactory.java",
+                "ClassNameIdResolver.java",
+                "ClassNameIdResolver.java",
+                "VALUE_NUMBER_INT), expected START_ARRAY",
+                "String"
+            ],
+            "stack_trace_methods": [
+                "Long not subtype of [simple type, class long] ",
+                "wrapWithPath",
+                "wrapWithPath",
+                "wrapAndThrow",
+                "vanillaDeserialize",
+                "constructSpecializedType",
+                "_typeFromId",
+                "typeFromId",
+                "MismatchedInputException: Unexpected token ",
+                " at [Source: "
+            ],
             "updatedTests": {}
         },
         "69": {
@@ -5252,6 +6418,88 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "in class org.apache.drill.TestJackson$SimplePojo",
+                "JsonMappingException.java",
+                "DeserializationContext.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializationContext.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "TestJackson.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "FrameworkMethod.java",
+                "ReflectiveCallable.java",
+                "FrameworkMethod.java",
+                "InvokeMethod.java",
+                "ParentRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "JUnit4TestReference.java",
+                "TestExecution.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java"
+            ],
+            "stack_trace_methods": [
+                "JsonMappingException: Could not find creator property with name 'stringField' ",
+                "from",
+                "reportMappingException",
+                "addBeanProps",
+                "buildBeanDeserializer",
+                "createBeanDeserializer",
+                "_createDeserializer2",
+                "_createDeserializer",
+                "_createAndCache2",
+                "_createAndCacheValueDeserializer",
+                "findValueDeserializer",
+                "findRootValueDeserializer",
+                "_findRootDeserializer",
+                "_readMapAndClose",
+                "readValue",
+                "testJackson",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runReflectiveCall",
+                "run",
+                "invokeExplosively",
+                "evaluate",
+                "runLeaf",
+                "runChild",
+                "runChild",
+                "run",
+                "schedule",
+                "runChildren",
+                "access$000",
+                "evaluate",
+                "run",
+                "run",
+                "run",
+                "runTests",
+                "runTests",
+                "run",
+                "main"
+            ],
             "updatedTests": {}
         },
         "70": {
@@ -5364,6 +6612,16 @@
             "newMethods": {},
             "newTests": {},
             "origin": "defects4j",
+            "stack_trace_files": [
+                "BeanPropertyMap.java",
+                "BeanDeserializerBase.java",
+                "DeserializerCache.java"
+            ],
+            "stack_trace_methods": [
+                "remove",
+                "resolve",
+                "_createAndCache2"
+            ],
             "updatedTests": {
                 "src/test/java/com/fasterxml/jackson/databind/struct/TestUnwrapped.java": {
                     "testCaseInsensitiveUnwrap": {
@@ -5470,6 +6728,24 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "PropertyValueBuffer.java",
+                "BeanDeserializer.java",
+                "BeanDeserializerBase.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "assignParameter",
+                "_deserializeUsingPropertyBased",
+                "deserializeFromObjectUsingNonDefault",
+                "deserializeFromObject",
+                "deserialize",
+                "_readMapAndClose",
+                "readValue"
+            ],
             "updatedTests": {}
         },
         "9": {
@@ -5570,6 +6846,8 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [],
+            "stack_trace_methods": [],
             "updatedTests": {}
         },
         "90": {
@@ -5735,6 +7013,28 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "no Creators, like default construct, exist)",
+                "String)\"[]\"; line",
+                "InvalidDefinitionException.java",
+                "DeserializationContext.java",
+                "DeserializationContext.java",
+                "AbstractDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "ArrayDelegateDeserializationTest.java"
+            ],
+            "stack_trace_methods": [
+                "InvalidDefinitionException: Cannot construct instance of `ArrayDelegateDeserializationTest$MyType` ",
+                " at [Source: ",
+                "from",
+                "reportBadDefinition",
+                "handleMissingInstantiator",
+                "deserialize",
+                "_readMapAndClose",
+                "readValue",
+                "main"
+            ],
             "updatedTests": {}
         },
         "91": {
@@ -5876,6 +7176,14 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "although at least one Creator exists)",
+                "byte[]"
+            ],
+            "stack_trace_methods": [
+                "Level` ",
+                " at [Source: "
+            ],
             "updatedTests": {}
         },
         "93": {
@@ -5962,6 +7270,50 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "SubTypeValidator.java",
+                "BeanDeserializerFactory.java",
+                "BeanDeserializerFactory.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializationContext.java",
+                "CollectionDeserializer.java",
+                "CollectionDeserializer.java",
+                "DeserializationContext.java",
+                "BeanDeserializerBase.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializerCache.java",
+                "DeserializationContext.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java"
+            ],
+            "stack_trace_methods": [
+                "validateSubType",
+                "_validateSubType",
+                "createBeanDeserializer",
+                "_createDeserializer2",
+                "_createDeserializer",
+                "_createAndCache2",
+                "_createAndCacheValueDeserializer",
+                "findValueDeserializer",
+                "findContextualValueDeserializer",
+                "createContextual",
+                "createContextual",
+                "handlePrimaryContextualization",
+                "resolve",
+                "_createAndCache2",
+                "_createAndCacheValueDeserializer",
+                "findValueDeserializer",
+                "findRootValueDeserializer",
+                "_findRootDeserializer",
+                "_readMapAndClose",
+                "readValue"
+            ],
             "updatedTests": {}
         },
         "98": {
@@ -6162,6 +7514,62 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "JsonMappingException.java",
+                "DeserializationContext.java",
+                "StdValueInstantiator.java",
+                "StdValueInstantiator.java",
+                "StdValueInstantiator.java",
+                "KotlinValueInstantiator.kt",
+                "PropertyBasedCreator.java",
+                "ExternalTypeHandler.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "BeanDeserializer.java",
+                "ObjectMapper.java",
+                "ObjectMapper.java",
+                "Reproduction-KindEnum.kt",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "AppMain.java",
+                "Native Method",
+                "NativeConstructorAccessorImpl.java",
+                "DelegatingConstructorAccessorImpl.java",
+                "Constructor.java",
+                "AnnotatedConstructor.java",
+                "StdValueInstantiator.java"
+            ],
+            "stack_trace_methods": [
+                "from",
+                "instantiationException",
+                "wrapAsJsonMappingException",
+                "rewrapCtorProblem",
+                "createFromObjectWith",
+                "createFromObjectWith",
+                "build",
+                "complete",
+                "deserializeUsingPropertyBasedWithExternalTypeId",
+                "deserializeWithExternalTypeId",
+                "deserializeFromObject",
+                "deserialize",
+                "_readMapAndClose",
+                "readValue",
+                "main",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "main",
+                "newInstance0",
+                "newInstance",
+                "newInstance",
+                "newInstance",
+                "call",
+                "createFromObjectWith"
+            ],
             "updatedTests": {}
         }
     },
@@ -6621,6 +8029,20 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "DocumentBuilder.java",
+                "Test130.java",
+                "Test130.java"
+            ],
+            "stack_trace_methods": [
+                "parse",
+                "parse",
+                "parse",
+                "parseXml",
+                "main"
+            ],
             "updatedTests": {
                 "src/test/java/org/jsoup/helper/W3CDomTest.java": {
                     "convertsGoogle": {
@@ -6854,6 +8276,36 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "CharacterReader.java",
+                "Tokeniser.java",
+                "TokeniserState.java",
+                "TokeniserState.java",
+                "TokeniserState.java",
+                "Tokeniser.java",
+                "TreeBuilder.java",
+                "TreeBuilder.java",
+                "Parser.java",
+                "DataUtil.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "JsoupIssue1218.java"
+            ],
+            "stack_trace_methods": [
+                "rewindToMark",
+                "consumeCharacterReference",
+                "readCharRef",
+                "access$100",
+                "read",
+                "read",
+                "runParser",
+                "parse",
+                "parseInput",
+                "parseInputStream",
+                "parse",
+                "get",
+                "main"
+            ],
             "updatedTests": {
                 "src/test/java/org/jsoup/parser/CharacterReaderTest.java": {
                     "mark": {
@@ -7017,6 +8469,22 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "CharacterReader.java",
+                "TokeniserState.java",
+                "Tokeniser.java",
+                "TreeBuilder.java",
+                "HtmlTreeBuilder.java",
+                "Parser.java"
+            ],
+            "stack_trace_methods": [
+                "unconsume",
+                "read",
+                "read",
+                "runParser",
+                "parseFragment",
+                "parseFragment"
+            ],
             "updatedTests": {}
         },
         "1274": {
@@ -7102,6 +8570,74 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "QueryParser.java",
+                "QueryParser.java",
+                "QueryParser.java",
+                "QueryParser.java",
+                "QueryParser.java",
+                "QueryParser.java",
+                "Selector.java",
+                "Element.java",
+                "TestJsoup.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "FrameworkMethod.java",
+                "ReflectiveCallable.java",
+                "FrameworkMethod.java",
+                "InvokeMethod.java",
+                "ParentRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "JUnit4TestReference.java",
+                "TestExecution.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java"
+            ],
+            "stack_trace_methods": [
+                "findElements",
+                "parse",
+                "parse",
+                "combinator",
+                "parse",
+                "parse",
+                "select",
+                "select",
+                "demo",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runReflectiveCall",
+                "run",
+                "invokeExplosively",
+                "evaluate",
+                "runLeaf",
+                "runChild",
+                "runChild",
+                "run",
+                "schedule",
+                "runChildren",
+                "access$000",
+                "evaluate",
+                "run",
+                "run",
+                "run",
+                "runTests",
+                "runTests",
+                "run",
+                "main"
+            ],
             "updatedTests": {}
         },
         "1324": {
@@ -7201,6 +8737,32 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "CharacterReader.java",
+                "Tokeniser.java",
+                "TokeniserState.java",
+                "Tokeniser.java",
+                "TreeBuilder.java",
+                "TreeBuilder.java",
+                "Parser.java",
+                "DataUtil.java",
+                "DataUtil.java",
+                "Jsoup.java",
+                "Main.java"
+            ],
+            "stack_trace_methods": [
+                "rewindToMark",
+                "consumeCharacterReference",
+                "read",
+                "read",
+                "runParser",
+                "parse",
+                "parseInput",
+                "parseInputStream",
+                "load",
+                "parse",
+                "main"
+            ],
             "updatedTests": {}
         },
         "34": {
@@ -7274,6 +8836,28 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "CharacterReader.java",
+                "CharacterReader.java",
+                "TokeniserState.java",
+                "Tokeniser.java",
+                "TreeBuilder.java",
+                "TreeBuilder.java",
+                "HtmlTreeBuilder.java",
+                "Parser.java",
+                "Jsoup.java"
+            ],
+            "stack_trace_methods": [
+                "nextIndexOf",
+                "consumeTo",
+                "read",
+                "read",
+                "runParser",
+                "parse",
+                "parse",
+                "parse",
+                "parse"
+            ],
             "updatedTests": {}
         },
         "5": {
@@ -7334,6 +8918,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "String.java",
+                "TokenQueue.java",
+                "Parser.java",
+                "Parser.java",
+                "Parser.java",
+                "Parser.java",
+                "Jsoup.java",
+                "Jsoup.java"
+            ],
+            "stack_trace_methods": [
+                "charAt",
+                "consume",
+                "parseAttribute",
+                "parseStartTag",
+                "parse",
+                "parseBodyFragment",
+                "parseBodyFragment",
+                "isValid"
+            ],
             "updatedTests": {}
         },
         "54": {
@@ -7396,6 +9000,24 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Unknown Source",
+                "Unknown Source",
+                "W3CDom.java",
+                "W3CDom.java",
+                "NodeTraversor.java",
+                "W3CDom.java",
+                "W3CDom.java"
+            ],
+            "stack_trace_methods": [
+                "createAttribute",
+                "setAttribute",
+                "copyAttributes",
+                "head",
+                "traverse",
+                "convert",
+                "fromJsoup"
+            ],
             "updatedTests": {}
         },
         "6": {
@@ -7471,6 +9093,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "String.java",
+                "Matcher.java",
+                "Entities.java",
+                "TextNode.java",
+                "Parser.java",
+                "Parser.java",
+                "Parser.java",
+                "Jsoup.java"
+            ],
+            "stack_trace_methods": [
+                "charAt",
+                "appendReplacement",
+                "unescape",
+                "createFromEncoded",
+                "parseTextNode",
+                "parse",
+                "parse",
+                "parse"
+            ],
             "updatedTests": {}
         },
         "740": {
@@ -7508,6 +9150,32 @@
             "newMethods": {},
             "newTests": {},
             "origin": "t-evos",
+            "stack_trace_files": [
+                "CharsetEncoder.java",
+                "CharsetEncoder.java",
+                "CharsetEncoder.java",
+                "Entities.java",
+                "TextNode.java",
+                "Node.java",
+                "NodeTraversor.java",
+                "Node.java",
+                "Element.java",
+                "Element.java",
+                "Jsoup.java"
+            ],
+            "stack_trace_methods": [
+                "throwIllegalStateException",
+                "canEncode",
+                "canEncode",
+                "escape",
+                "outerHtmlHead",
+                "head",
+                "traverse",
+                "outerHtml",
+                "html",
+                "html",
+                "clean"
+            ],
             "updatedTests": {}
         },
         "78": {
@@ -7666,6 +9334,52 @@
                 }
             },
             "origin": "defects4j/t-evos",
+            "stack_trace_files": [
+                "CharacterReader.java",
+                "CharacterReader.java",
+                "CharacterReader.java",
+                "TreeBuilder.java",
+                "HtmlTreeBuilder.java",
+                "TreeBuilder.java",
+                "Parser.java",
+                "DataUtil.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "CharacterReader.java",
+                "CharacterReader.java",
+                "TokeniserState.java",
+                "TokeniserState.java",
+                "TokeniserState.java",
+                "Tokeniser.java",
+                "TreeBuilder.java",
+                "TreeBuilder.java",
+                "Parser.java",
+                "DataUtil.java",
+                "HttpConnection.java"
+            ],
+            "stack_trace_methods": [
+                "bufferUp",
+                "",
+                "",
+                "defaultSettings",
+                "initialiseParse",
+                "parse",
+                "parseInput",
+                "parseInputStream",
+                "parse",
+                "get",
+                "bufferUp",
+                "current",
+                "readData",
+                "access$200",
+                "read",
+                "read",
+                "runParser",
+                "parse",
+                "parseInput",
+                "parseInputStream",
+                "parse"
+            ],
             "updatedTests": {}
         },
         "80": {
@@ -7725,6 +9439,28 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "ArrayList.java",
+                "ArrayList.java",
+                "Element.java",
+                "XmlTreeBuilder.java",
+                "XmlTreeBuilder.java",
+                "TreeBuilder.java",
+                "TreeBuilder.java",
+                "Parser.java",
+                "Jsoup.java"
+            ],
+            "stack_trace_methods": [
+                "rangeCheck",
+                "get",
+                "child",
+                "insert",
+                "process",
+                "runParser",
+                "parse",
+                "parseInput",
+                "parse"
+            ],
             "updatedTests": {}
         },
         "82": {
@@ -7790,6 +9526,30 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "ISO2022_CN.java",
+                "Document.java",
+                "Node.java",
+                "Node.java",
+                "Element.java",
+                "Element.java",
+                "Document.java",
+                "Element.java",
+                "String.java",
+                "PrintStream.java"
+            ],
+            "stack_trace_methods": [
+                "newEncoder",
+                "prepareEncoder",
+                "",
+                "outerHtml",
+                "html",
+                "html",
+                "outerHtml",
+                "toString",
+                "valueOf",
+                "println"
+            ],
             "updatedTests": {}
         },
         "84": {
@@ -7858,6 +9618,86 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "ElementNSImpl.java",
+                "ElementNSImpl.java",
+                "CoreDocumentImpl.java",
+                "W3CDom.java",
+                "NodeTraversor.java",
+                "W3CDom.java",
+                "W3CDom.java",
+                "AmpConverterParser.java",
+                "AmpConverterParserTest.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "FrameworkMethod.java",
+                "ReflectiveCallable.java",
+                "FrameworkMethod.java",
+                "InvokeMethod.java",
+                "ParentRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "BlockJUnit4ClassRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "ParentRunner.java",
+                "JUnit4TestSet.java",
+                "JUnit4Provider.java",
+                "JUnit4Provider.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "ReflectionUtils.java",
+                "ProviderFactory.java",
+                "SurefireStarter.java",
+                "SurefireStarter.java",
+                "ForkedBooter.java"
+            ],
+            "stack_trace_methods": [
+                "setName",
+                "",
+                "createElementNS",
+                "head",
+                "traverse",
+                "convert",
+                "fromJsoup",
+                "parseMetadata",
+                "testAdd",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runReflectiveCall",
+                "run",
+                "invokeExplosively",
+                "evaluate",
+                "runLeaf",
+                "runChild",
+                "runChild",
+                "run",
+                "schedule",
+                "runChildren",
+                "access$000",
+                "evaluate",
+                "run",
+                "execute",
+                "executeTestSet",
+                "invoke",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "invokeMethodWithArray",
+                "invoke",
+                "invokeProvider",
+                "runSuitesInProcessWhenForked",
+                "main"
+            ],
             "updatedTests": {}
         },
         "90": {
@@ -7909,6 +9749,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java"
+            ],
+            "stack_trace_methods": [
+                "looksLikeUtf8",
+                "fixHeaderEncoding",
+                "addHeader",
+                "processResponseHeaders",
+                "setupFromConnection",
+                "execute",
+                "execute",
+                "execute"
+            ],
             "updatedTests": {}
         },
         "968": {
@@ -7966,6 +9826,18 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "Validate.java",
+                "HttpConnection.java",
+                "HttpConnection.java",
+                "HttpConnection.java"
+            ],
+            "stack_trace_methods": [
+                "isTrue",
+                "timeout",
+                "timeout",
+                "timeout"
+            ],
             "updatedTests": {}
         },
         "990": {
@@ -7999,6 +9871,20 @@
             "newMethods": {},
             "newTests": {},
             "origin": "t-evos",
+            "stack_trace_files": [
+                "BufferedInputStream.java",
+                "ConstrainableInputStream.java",
+                "DataUtil.java",
+                "HttpConnection.java",
+                "HttpConnection.java"
+            ],
+            "stack_trace_methods": [
+                "reset",
+                "reset",
+                "parseInputStream",
+                "parse",
+                "get"
+            ],
             "updatedTests": {}
         }
     },
@@ -8075,6 +9961,32 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "NodePointer.java",
+                "NodePointer.java",
+                "NodePointer.java",
+                "NodePointer.java",
+                "Arrays.java",
+                "Arrays.java",
+                "Collections.java",
+                "EvalContext.java",
+                "EvalContext.java",
+                "JXPathContext.java",
+                "VariablePointerTestCase.java"
+            ],
+            "stack_trace_methods": [
+                "compareNodePointers",
+                "compareNodePointers",
+                "compareNodePointers",
+                "compareTo",
+                "mergeSort",
+                "sort",
+                "sort",
+                "constructIterator",
+                "hasNext",
+                "selectNodes",
+                "testUnionOfVariableAndNode"
+            ],
             "updatedTests": {
                 "src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java": {
                     "testInvalidVariableName": {
@@ -8149,7 +10061,15 @@
                     ]
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "Native Method",
+                "ArrayUtils.java"
+            ],
+            "stack_trace_methods": [
+                "arraycopy",
+                "addAll"
+            ]
         },
         "6": {
             "bug_report": "LANG-857",
@@ -8186,7 +10106,21 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "String.java",
+                "Character.java",
+                "CharSequenceTranslator.java",
+                "CharSequenceTranslator.java",
+                "StringEscapeUtils.java"
+            ],
+            "stack_trace_methods": [
+                "charAt",
+                "codePointAt",
+                "translate",
+                "translate",
+                "escapeCsv"
+            ]
         },
         "61": {
             "bug_report": "LANG-294",
@@ -8229,7 +10163,99 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "Native Method",
+                "StrBuilder.java",
+                "StrBuilder.java",
+                "StrBuilderTest.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "TestCase.java",
+                "TestCase.java",
+                "TestResult.java",
+                "TestResult.java",
+                "TestResult.java",
+                "TestCase.java",
+                "TestSuite.java",
+                "TestSuite.java",
+                "JUnit3TestReference.java",
+                "TestExecution.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "Native Method",
+                "StrBuilder.java",
+                "StrBuilder.java",
+                "StrBuilderTest.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "TestCase.java",
+                "TestCase.java",
+                "TestResult.java",
+                "TestResult.java",
+                "TestResult.java",
+                "TestCase.java",
+                "TestSuite.java",
+                "TestSuite.java",
+                "JUnit3TestReference.java",
+                "TestExecution.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java",
+                "RemoteTestRunner.java"
+            ],
+            "stack_trace_methods": [
+                "arraycopy",
+                "deleteImpl",
+                "deleteAll",
+                "testDeleteAll_String",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runTest",
+                "runBare",
+                "protect",
+                "runProtected",
+                "run",
+                "run",
+                "runTest",
+                "run",
+                "run",
+                "run",
+                "runTests",
+                "runTests",
+                "run",
+                "main",
+                "arraycopy",
+                "replaceImpl",
+                "replaceAll",
+                "testReplaceAll_String_String",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runTest",
+                "runBare",
+                "protect",
+                "runProtected",
+                "run",
+                "run",
+                "runTest",
+                "run",
+                "run",
+                "run",
+                "runTests",
+                "runTests",
+                "run",
+                "main"
+            ]
         }
     },
     "Math": {
@@ -8287,7 +10313,21 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "MathRuntimeException.java",
+                "OpenIntToDoubleHashMap.java",
+                "OpenMapRealVector.java",
+                "OpenMapRealVector.java",
+                "DemoBugOpenMapRealVector.java"
+            ],
+            "stack_trace_methods": [
+                "createConcurrentModificationException",
+                "advance",
+                "ebeMultiply",
+                "ebeMultiply",
+                "main"
+            ]
         },
         "58": {
             "bug_report": "MATH-519",
@@ -8525,7 +10565,17 @@
                     ]
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "0",
+                "Gaussian.java",
+                "Gaussian.java"
+            ],
+            "stack_trace_methods": [
+                "277 is smaller than, or equal to, the minimum ",
+                "validateParameters",
+                "value"
+            ]
         },
         "79": {
             "bug_report": "MATH-305",
@@ -8576,7 +10626,13 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "KMeansPlusPlusClusterer.java"
+            ],
+            "stack_trace_methods": [
+                "assignPointsToClusters"
+            ]
         },
         "81": {
             "bug_report": "MATH-308",
@@ -8647,7 +10703,25 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImpl.java",
+                "EigenDecompositionImplTest.java"
+            ],
+            "stack_trace_methods": [
+                "computeShiftIncrement",
+                "goodStep",
+                "processGeneralBlock",
+                "findEigenvalues",
+                "decompose",
+                "<init>",
+                "testMath308"
+            ]
         },
         "85": {
             "bug_report": "MATH-280",
@@ -8711,7 +10785,17 @@
                     "deleted_lines": []
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "a",
+                "AbstractContinuousDistribution.java",
+                "NormalDistributionImpl.java"
+            ],
+            "stack_trace_methods": [
+                "MathException: Number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f",
+                "inverseCumulativeProbability",
+                "inverseCumulativeProbability"
+            ]
         },
         "97": {
             "bug_report": "MATH-204",
@@ -8811,7 +10895,15 @@
                     ]
                 }
             },
-            "origin": "defects4j"
+            "origin": "defects4j",
+            "stack_trace_files": [
+                "BrentSolver.java",
+                "BrentSolver.java"
+            ],
+            "stack_trace_methods": [
+                "solve",
+                "solve"
+            ]
         }
     },
     "Mockito": {
@@ -8993,6 +11085,34 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "URLClassLoader.java",
+                "Native Method",
+                "URLClassLoader.java",
+                "ClassLoader.java",
+                "Launcher.java",
+                "ClassLoader.java",
+                "URLClassLoader.java",
+                "Native Method",
+                "URLClassLoader.java",
+                "ClassLoader.java",
+                "Launcher.java",
+                "ClassLoader.java"
+            ],
+            "stack_trace_methods": [
+                "run",
+                "doPrivileged",
+                "findClass",
+                "loadClass",
+                "loadClass",
+                "loadClass",
+                "run",
+                "doPrivileged",
+                "findClass",
+                "loadClass",
+                "loadClass",
+                "loadClass"
+            ],
             "updatedTests": {
                 "test/org/mockito/internal/creation/MockSettingsImplTest.java": {
                     "shouldSetMockToBeSerializable": {
@@ -10542,6 +12662,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "Native Method",
+                "WhiteboxImpl.java",
+                "WhiteboxImpl.java",
+                "WhiteboxImpl.java",
+                "WhiteboxImpl.java",
+                "WhiteboxImpl.java",
+                "WhiteboxImpl.java",
+                "Whitebox.java"
+            ],
+            "stack_trace_methods": [
+                "isAssignableFrom",
+                "checkIfParameterTypesAreSame",
+                "getMethods",
+                "getBestMethodCandidate",
+                "findMethodOrThrowException",
+                "doInvokeMethod",
+                "invokeMethod",
+                "invokeMethod"
+            ],
             "updatedTests": {
                 "test/org/concurrentmockito/ThreadsRunAllTestsHalfManualTest.java": {
                     "run": {
@@ -10786,6 +12926,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "ClassLoaders.java",
+                "ClassLoader.java",
+                "ClassLoader.java"
+            ],
+            "stack_trace_methods": [
+                "findClass",
+                "loadClass",
+                "loadClass"
+            ],
             "updatedTests": {}
         },
         "31": {
@@ -10886,6 +13036,16 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "ClassLoaders.java",
+                "ClassLoader.java",
+                "ClassLoader.java"
+            ],
+            "stack_trace_methods": [
+                "findClass",
+                "loadClass",
+                "loadClass"
+            ],
             "updatedTests": {
                 "test/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java": {
                     "shouldReturnAnObjectThatAllowsObjectMethods": {
@@ -11157,6 +13317,26 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "<generated>",
+                "String.java",
+                "StringBuilder.java",
+                "Reporter.java",
+                "NoMoreInteractions.java",
+                "MockitoCore.java",
+                "Mockito.java",
+                "ClassCastExOnVerifyZeroInteractionsTest.java"
+            ],
+            "stack_trace_methods": [
+                "toString",
+                "valueOf",
+                "append",
+                "noMoreInteractionsWanted",
+                "verify",
+                "verifyNoMoreInteractions",
+                "verifyZeroInteractions",
+                "test"
+            ],
             "updatedTests": {
                 "test/org/mockito/exceptions/ReporterTest.java": {
                     "can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_delegate_method_has_wrong_return_type": {
@@ -11609,6 +13789,34 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "URLClassLoader.java",
+                "Native Method",
+                "URLClassLoader.java",
+                "ClassLoader.java",
+                "Launcher.java",
+                "ClassLoader.java",
+                "URLClassLoader.java",
+                "Native Method",
+                "URLClassLoader.java",
+                "ClassLoader.java",
+                "Launcher.java",
+                "ClassLoader.java"
+            ],
+            "stack_trace_methods": [
+                "run",
+                "doPrivileged",
+                "findClass",
+                "loadClass",
+                "loadClass",
+                "loadClass",
+                "run",
+                "doPrivileged",
+                "findClass",
+                "loadClass",
+                "loadClass",
+                "loadClass"
+            ],
             "updatedTests": {
                 "test/org/mockitoutil/ClassLoaders.java": {
                     "InMemoryClassLoader": {
@@ -11772,6 +13980,32 @@
                 }
             },
             "origin": "defects4j",
+            "stack_trace_files": [
+                "FieldUtils.java",
+                "PreciseDurationDateTimeField.java",
+                "BaseChronology.java",
+                "BaseSingleFieldPeriod.java",
+                "Days.java",
+                "FieldUtils.java",
+                "PreciseDurationDateTimeField.java",
+                "BasicMonthOfYearDateTimeField.java",
+                "BaseDateTimeField.java",
+                "MonthDay.java",
+                "MonthDay.java"
+            ],
+            "stack_trace_methods": [
+                "verifyValueBounds",
+                "set",
+                "set",
+                "between",
+                "daysBetween",
+                "verifyValueBounds",
+                "set",
+                "add",
+                "add",
+                "withFieldAdded",
+                "minusDays"
+            ],
             "updatedTests": {
                 "src/test/java/org/joda/time/TestDays.java": {
                     "testFactory_daysBetween_RPartial": {
@@ -11910,6 +14144,24 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "DefaultJSONParser.java",
+                "Unknown Source",
+                "Unknown Source",
+                "JavaBeanDeserializer.java",
+                "DefaultJSONParser.java",
+                "JSON.java",
+                "JSON.java"
+            ],
+            "stack_trace_methods": [
+                "throwException",
+                "deserialzeArrayMapping",
+                "deserialze",
+                "deserialze",
+                "parseObject",
+                "parseObject",
+                "parseObject"
+            ],
             "updatedTests": {}
         },
         "3119": {
@@ -11940,6 +14192,110 @@
             "newMethods": {},
             "newTests": {},
             "origin": "t-evos",
+            "stack_trace_files": [
+                "SerializeConfig.java",
+                "SerializeConfig.java",
+                "SerializeConfig.java",
+                "SerializeConfig.java",
+                "JSONSerializer.java",
+                "ListSerializer.java",
+                "JSONSerializer.java",
+                "JSON.java",
+                "JSON.java",
+                "JSON.java",
+                "AddrServiceTest.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "TestMethod.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "MethodRoadie.java",
+                "MethodRoadie.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "PowerMockJUnit47RunnerDelegateImpl.java",
+                "PowerMockJUnit47RunnerDelegateImpl.java",
+                "PowerMockJUnit47RunnerDelegateImpl.java",
+                "PowerMockJUnit47RunnerDelegateImpl.java",
+                "PowerMockJUnit47RunnerDelegateImpl.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "MethodRoadie.java",
+                "MethodRoadie.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "ClassRoadie.java",
+                "ClassRoadie.java",
+                "PowerMockJUnit44RunnerDelegateImpl.java",
+                "JUnit4TestSuiteChunkerImpl.java",
+                "AbstractCommonPowerMockRunner.java",
+                "PowerMockRunner.java",
+                "JUnitCore.java",
+                "JUnit4IdeaTestRunner.java",
+                "IdeaTestRunner.java",
+                "JUnitStarter.java",
+                "JUnitStarter.java",
+                "Native Method",
+                "NativeMethodAccessorImpl.java",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "CommandLineWrapper.java",
+                "ASMSerializerFactory.java",
+                "SerializeConfig.java",
+                "SerializeConfig.java"
+            ],
+            "stack_trace_methods": [
+                "createJavaBeanSerializer",
+                "createJavaBeanSerializer",
+                "getObjectWriter",
+                "getObjectWriter",
+                "getObjectWriter",
+                "write",
+                "write",
+                "toJSONString",
+                "toJSONString",
+                "toJSONString",
+                "testList",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "invoke",
+                "runTestMethod",
+                "run",
+                "runBeforesThenTestThenAfters",
+                "executeTest",
+                "executeTestInSuper",
+                "access$100",
+                "evaluate",
+                "evaluateStatement",
+                "executeTest",
+                "runBeforesThenTestThenAfters",
+                "runTest",
+                "run",
+                "invokeTestMethod",
+                "runMethods",
+                "run",
+                "runUnprotected",
+                "runProtected",
+                "run",
+                "run",
+                "run",
+                "run",
+                "run",
+                "startRunnerWithArgs",
+                "startRunnerWithArgs",
+                "prepareStreamsAndStart",
+                "main",
+                "invoke0",
+                "invoke",
+                "invoke",
+                "invoke",
+                "main",
+                "createJavaBeanSerializer",
+                "createASMSerializer",
+                "createJavaBeanSerializer"
+            ],
             "updatedTests": {}
         },
         "3280": {
@@ -12020,6 +14376,50 @@
             },
             "newTests": {},
             "origin": "t-evos",
+            "stack_trace_files": [
+                "Native Method",
+                "Class.java",
+                "Class.java",
+                "Class.java",
+                "ASMDeserializerFactory.java",
+                "ParserConfig.java",
+                "ParserConfig.java",
+                "ParserConfig.java",
+                "DefaultJSONParser.java",
+                "JSON.java",
+                "JSON.java",
+                "JSON.java",
+                "DbInfoTest.java",
+                "URLClassLoader.java",
+                "URLClassLoader.java",
+                "Native Method",
+                "URLClassLoader.java",
+                "ClassLoader.java",
+                "Launcher.java",
+                "ClassLoader.java"
+            ],
+            "stack_trace_methods": [
+                "getDeclaredConstructors0",
+                "privateGetDeclaredConstructors",
+                "getConstructor0",
+                "getConstructor",
+                "createJavaBeanDeserializer",
+                "createJavaBeanDeserializer",
+                "getDeserializer",
+                "getDeserializer",
+                "parseObject",
+                "parseObject",
+                "parseObject",
+                "parseObject",
+                "main",
+                "run",
+                "run",
+                "doPrivileged",
+                "findClass",
+                "loadClass",
+                "loadClass",
+                "loadClass"
+            ],
             "updatedTests": {}
         },
         "3637": {
@@ -12097,6 +14497,18 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "TypeUtils.java",
+                "TypeUtils.java",
+                "TypeUtils.java",
+                "JavaBeanDeserializer.java"
+            ],
+            "stack_trace_methods": [
+                "castToSqlTime",
+                "cast",
+                "cast",
+                "createInstance"
+            ],
             "updatedTests": {}
         }
     },
@@ -12248,6 +14660,78 @@
                 }
             },
             "origin": "t-evos",
+            "stack_trace_files": [
+                "ArrayComparisonFailure.java",
+                "ArrayComparisonFailure.java",
+                "String.java",
+                "PrintWriter.java",
+                "Throwable.java",
+                "Throwable.java",
+                "Throwable.java",
+                "TestReportDataCollector.java",
+                "TestReportDataCollector.java",
+                "Unknown Source",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "ReflectionDispatch.java",
+                "ReflectionDispatch.java",
+                "BroadcastDispatch.java",
+                "BroadcastDispatch.java",
+                "ProxyDispatchAdapter.java",
+                "Unknown Source",
+                "TestListenerAdapter.java",
+                "StateTrackingTestResultProcessor.java",
+                "AttachParentTestResultProcessor.java",
+                "Unknown Source",
+                "DelegatingMethodAccessorImpl.java",
+                "Method.java",
+                "ReflectionDispatch.java",
+                "ReflectionDispatch.java",
+                "FailureHandlingDispatch.java",
+                "AsyncDispatch.java",
+                "AsyncDispatch.java",
+                "AsyncDispatch.java",
+                "DefaultExecutorFactory.java",
+                "ThreadPoolExecutor.java",
+                "ThreadPoolExecutor.java",
+                "Thread.java"
+            ],
+            "stack_trace_methods": [
+                "getMessage",
+                "toString",
+                "valueOf",
+                "println",
+                "println",
+                "printStackTrace",
+                "printStackTrace",
+                "stackTrace",
+                "afterTest",
+                "invoke",
+                "invoke",
+                "invoke",
+                "dispatch",
+                "dispatch",
+                "dispatch",
+                "dispatch",
+                "invoke",
+                "afterTest",
+                "completed",
+                "completed",
+                "completed",
+                "invoke",
+                "invoke",
+                "invoke",
+                "dispatch",
+                "dispatch",
+                "dispatch",
+                "dispatchMessages",
+                "access$000",
+                "run",
+                "run",
+                "runWorker",
+                "run",
+                "run"
+            ],
             "updatedTests": {}
         }
     }
