@@ -8,11 +8,11 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 import java.io.IOException;
 import java.util.Map;
 
-class MethodFinder {
+class MethodFinderFromName {
 
   private static MethodData methodData;
 
-  public static String findMethodName(String filename, int lineNumber, boolean isTest) throws IOException {
+  public static MethodData findMethodLines(String filename, int aproxlineNumber, String methodName) throws IOException {
 
     String source = FileUtil.read(filename);
 
@@ -25,12 +25,12 @@ class MethodFinder {
     parser.setSource(source.toCharArray());
     CompilationUnit compilationUnit = (CompilationUnit) parser.createAST(null);
 
-    FindMethodVisitor visitor = new FindMethodVisitor(compilationUnit, lineNumber, isTest);
+    FindMethodFromNameVisitor visitor = new FindMethodFromNameVisitor(compilationUnit, methodName, aproxlineNumber);
     compilationUnit.accept(visitor);
 
     methodData = visitor.getmethodData();
 
-    return visitor.getMethodName();
+    return methodData;
   }
 
   public static MethodData getmethodData() {

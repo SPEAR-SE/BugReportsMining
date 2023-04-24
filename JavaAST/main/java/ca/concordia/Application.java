@@ -7,9 +7,12 @@ import com.google.gson.reflect.TypeToken;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 import java.util.*;
 
 import java.lang.reflect.Type;
+
+import static java.lang.Math.floor;
 
 
 public class Application {
@@ -52,12 +55,14 @@ public class Application {
 
             // Access data from the object
             for (String project : data.keySet()) {
-                if (project.equals("Lang") || project.equals("Math")){ //Skipping them for now since I can not run git checkout -
-                    continue; // TODO: see how to handle
+                if (project.equals("Lang") || project.equals("Math")){ //Skipping them for now since I can not run git checkout
+                    continue;
                 }
+                System.out.println(project);
                 String path_to_repo = projectsList.get(project);
                 Map<String, Object> bugs = data.get(project);
                 for (String bugID : bugs.keySet()) {
+                    System.out.println(bugID);
 
                     Map<String, Object> bug = (Map<String, Object>) bugs.get(bugID);
                     String buggyCommit = (String) bug.get("buggy_commit");
@@ -91,14 +96,23 @@ public class Application {
                         // If a method was added in the bugfix commit, it is not a buggy method
                         GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
                         for (MethodData md : addedLinesMethods){
-                            if (!deletedLinesMethods.contains(md)){
-                                String fileName = filePathFixed;
-                                String methodName = md.getMethodName();
-                                boolean newMethod = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, methodName );
-                                if (newMethod){
+                            String fileName = filePathFixed;
+                            String methodName = md.getMethodName();
+                            int aproxLineNumber = (int) floor((md.getEndLine() - md.getStartLine()) / 2);
+                            GitHelper.checkoutCommit(path_to_repo, buggyCommit);
+                            MethodData newMd = null;
+                            try {
+                                newMd = MethodFinderFromName.findMethodLines(absolute_file_path, aproxLineNumber, methodName);
+                            } catch (NoSuchFileException exception){
+                                // newMethod
+                            }
+                            GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
+                            if (newMd != null && !deletedLinesMethods.contains(newMd)){
+                                boolean isNewMethod = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, methodName );
+                                if (isNewMethod){
                                     newMethods= addNewMethod(newMethods, methodName, fileName, md);
                                 } else{
-                                    buggyMethods= addNewMethod(buggyMethods, methodName, fileName, md);
+                                    buggyMethods= addNewMethod(buggyMethods, methodName, fileName, newMd);
                                 }
                             }
                         }
@@ -176,8 +190,8 @@ public class Application {
         List<Integer> lines = convertDoubleListIntoIntegers(linesDouble);
         if (linesDouble != null) {
             for (Integer line: lines){
-                String methodName = MethodFinder.findMethodName(absoluteFilePath, line, isTest);
-                MethodData methodData = MethodFinder.getmethodData();
+                String methodName = MethodFinderFromLine.findMethodName(absoluteFilePath, line);
+                MethodData methodData = MethodFinderFromLine.getmethodData();
                 if (methodName != null && !touchedMethods.contains(filePath+ " - " +methodName)) {
                     touchedMethods.add(methodData);
                 }

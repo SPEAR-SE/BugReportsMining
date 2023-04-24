@@ -3,17 +3,15 @@ package ca.concordia;
 import org.eclipse.jdt.core.dom.*;
 
 
-public class FindMethodVisitor extends ASTVisitor  {
+public class FindMethodFromLineVisitor extends ASTVisitor  {
     private final int lineNumber;
     private String methodName;
     private MethodData methodData;
     protected final CompilationUnit compilationUnit;
-    private Boolean isTest;
 
-    public FindMethodVisitor(CompilationUnit compilationUnit, int lineNumber, boolean isTest) {
+    public FindMethodFromLineVisitor(CompilationUnit compilationUnit, int lineNumber) {
         this.compilationUnit = compilationUnit;
         this.lineNumber = lineNumber;
-        this.isTest = isTest;
     }
 
     @Override
@@ -32,7 +30,10 @@ public class FindMethodVisitor extends ASTVisitor  {
     }
 
     public String getMethodName() {
-        return methodName;
+        if (methodData != null) {
+            return methodData.getMethodName();
+        }
+        return null;
     }
     public MethodData getmethodData() {
         return methodData;
