@@ -8,10 +8,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.NoSuchFileException;
+import java.nio.file.Paths;
 import java.util.*;
 
 import java.lang.reflect.Type;
 
+import static ca.concordia.FileUtil.findFile;
 import static java.lang.Math.floor;
 
 
@@ -161,10 +163,45 @@ public class Application {
                             }
                         }
                     }
+                    List<String> st_files = (List<String>) bug.get("stack_trace_files");
+                    List<String> st_methods = (List<String>) bug.get("stack_trace_methods");
+                    List<String> st_lines = (List<String>) bug.get("stack_trace_lines");
+
+                    Map<String,Map<String, Map<String, Integer>>> st_methods_details = new HashMap<>();
+                    for (int i = 0; i < st_files.size(); i++) {
+                        String fileName = st_files.get(i);
+                        String method = st_methods.get(i);
+                        String[] parts = method.split("\\.");
+                        String methodName = parts[parts.length - 1].split("\\$")[0];
+                        String line = st_lines.get(i);
+                        if (line == "-1"){
+                            continue;
+                        }
+                        GitHelper.checkoutCommit(path_to_repo, buggyCommit);
+                        String absolute_st_file_path = null;
+                        try {
+                            absolute_st_file_path = findFile(Paths.get(path_to_repo), fileName);
+                        } catch (IOException | NullPointerException e) {
+                            // Not an internal file
+                        }
+                        MethodData md = null;
+                        if (absolute_st_file_path != null) {
+                            try {
+                                md = MethodFinderFromName.findMethodLines(absolute_st_file_path, Integer.parseInt(line), methodName);
+                            } catch (NoSuchFileException exception) {
+                                // newMethod
+                            }
+                        }
+                        if (md!=null){
+                            st_methods_details= addNewMethod(st_methods_details, methodName, fileName, md);
+                        }
+                    }
+
                     bug.put("buggyMethods", buggyMethods);
                     bug.put("newMethods", newMethods);
                     bug.put("updatedTests", updatedTests);
                     bug.put("newTests", newTests);
+                    bug.put("stackTraceMethodsDetails", st_methods_details);
                 }
             }
             Gson gsonPretty = new GsonBuilder().setPrettyPrinting().create();

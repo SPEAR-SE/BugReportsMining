@@ -27,7 +27,7 @@ public class FindMethodFromNameVisitor extends ASTVisitor  {
         int endLine = compilationUnit.getLineNumber(endPosition);
 
         String nodeMethodName = node.getName().toString();
-        if (methodName == nodeMethodName) {
+        if (methodName.equals(nodeMethodName)) {
             if (methodData != null){
                 if (distFromAproxLine(aproxLineNumber, startLine, endLine) < distFromAproxLine(aproxLineNumber, methodData.getStartLine(), methodData.getEndLine())){
                     methodData = new MethodData(nodeMethodName, startLine, endLine);
