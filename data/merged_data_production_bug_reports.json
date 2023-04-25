@@ -153,13 +153,31 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "DefaultOption.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/option/ParentImpl.java": {
+          "validate": {
+            "endLine": 131,
+            "startLine": 120
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/option/DefaultOption.java": {
           "validate": {
             "endLine": 177,
             "startLine": 169
           }
         },
-        "Parser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/validation/FileValidator.java": {
+          "validate": {
+            "endLine": 138,
+            "startLine": 114
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/option/GroupImpl.java": {
+          "validate": {
+            "endLine": 285,
+            "startLine": 237
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/commandline/Parser.java": {
           "parseAndHelp": {
             "endLine": 138,
             "startLine": 110
@@ -169,28 +187,10 @@
             "startLine": 44
           }
         },
-        "FileValidator.java": {
-          "validate": {
-            "endLine": 138,
-            "startLine": 114
-          }
-        },
-        "ArgumentImpl.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli2/option/ArgumentImpl.java": {
           "validate": {
             "endLine": 257,
             "startLine": 235
-          }
-        },
-        "GroupImpl.java": {
-          "validate": {
-            "endLine": 285,
-            "startLine": 237
-          }
-        },
-        "ParentImpl.java": {
-          "validate": {
-            "endLine": 131,
-            "startLine": 120
           }
         }
       }
@@ -330,13 +330,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Util.java": {
-          "stripLeadingHyphens": {
-            "endLine": 46,
-            "startLine": 26
-          }
-        },
-        "CommandLine.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli/CommandLine.java": {
           "resolveOption": {
             "endLine": 181,
             "startLine": 159
@@ -344,6 +338,12 @@
           "hasOption": {
             "endLine": 69,
             "startLine": 60
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-cli/src/java/org/apache/commons/cli/Util.java": {
+          "stripLeadingHyphens": {
+            "endLine": 46,
+            "startLine": 26
           }
         }
       }
@@ -677,31 +677,37 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "FunctionType.java": {
-          "getInstanceType": {
-            "endLine": 1073,
-            "startLine": 1065
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/NodeTraversal.java": {
+          "traverseBranch": {
+            "endLine": 541,
+            "startLine": 512
+          },
+          "traverseFunction": {
+            "endLine": 577,
+            "startLine": 543
+          },
+          "traverseWithScope": {
+            "endLine": 355,
+            "startLine": 341
           }
         },
-        "PhaseOptimizer.java": {
-          "process": {
-            "endLine": 242,
-            "startLine": 224
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
+          "doRun": {
+            "endLine": 811,
+            "startLine": 730
+          },
+          "run": {
+            "endLine": 407,
+            "startLine": 365
           }
         },
-        "CommandLineRunner.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/CommandLineRunner.java": {
           "main": {
             "endLine": 978,
             "startLine": 968
           }
         },
-        "DefaultPassConfig.java": {
-          "process": {
-            "endLine": 1241,
-            "startLine": 1233
-          }
-        },
-        "Compiler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
           "call": {
             "endLine": 689,
             "startLine": 670
@@ -723,7 +729,19 @@
             "startLine": 664
           }
         },
-        "TypeCheck.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/rhino/jstype/FunctionType.java": {
+          "getInstanceType": {
+            "endLine": 1073,
+            "startLine": 1065
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/PhaseOptimizer.java": {
+          "process": {
+            "endLine": 242,
+            "startLine": 224
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/TypeCheck.java": {
           "process": {
             "endLine": 394,
             "startLine": 373
@@ -741,28 +759,10 @@
             "startLine": 417
           }
         },
-        "NodeTraversal.java": {
-          "traverseBranch": {
-            "endLine": 541,
-            "startLine": 512
-          },
-          "traverseFunction": {
-            "endLine": 577,
-            "startLine": 543
-          },
-          "traverseWithScope": {
-            "endLine": 355,
-            "startLine": 341
-          }
-        },
-        "AbstractCommandLineRunner.java": {
-          "doRun": {
-            "endLine": 811,
-            "startLine": 730
-          },
-          "run": {
-            "endLine": 407,
-            "startLine": 365
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/DefaultPassConfig.java": {
+          "process": {
+            "endLine": 1241,
+            "startLine": 1233
           }
         }
       }
@@ -1224,41 +1224,37 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "FunctionType.java": {
-          "resolveInternal": {
-            "endLine": 888,
-            "startLine": 861
-          }
-        },
-        "PhaseOptimizer.java": {
-          "process": {
-            "endLine": 172,
-            "startLine": 162
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
+          "doRun": {
+            "endLine": 593,
+            "startLine": 552
           },
-          "processInternal": {
-            "endLine": 272,
-            "startLine": 269
+          "run": {
+            "endLine": 273,
+            "startLine": 239
           }
         },
-        "CommandLineRunner.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/CommandLineRunner.java": {
           "main": {
             "endLine": 622,
             "startLine": 612
           }
         },
-        "DefaultPassConfig.java": {
-          "process": {
-            "endLine": 1057,
-            "startLine": 1048
-          }
-        },
-        "JSType.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/TypedScopeCreator.java": {
           "resolve": {
-            "endLine": 897,
-            "startLine": 871
+            "endLine": 147,
+            "startLine": 145
+          },
+          "createScope": {
+            "endLine": 210,
+            "startLine": 163
+          },
+          "resolveTypes": {
+            "endLine": 379,
+            "startLine": 364
           }
         },
-        "Compiler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
           "call": {
             "endLine": 532,
             "startLine": 529
@@ -1284,34 +1280,38 @@
             "startLine": 544
           }
         },
-        "TypedScopeCreator.java": {
-          "resolve": {
-            "endLine": 147,
-            "startLine": 145
-          },
-          "createScope": {
-            "endLine": 210,
-            "startLine": 163
-          },
-          "resolveTypes": {
-            "endLine": 379,
-            "startLine": 364
-          }
-        },
-        "MemoizedScopeCreator.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/MemoizedScopeCreator.java": {
           "createScope": {
             "endLine": 59,
             "startLine": 49
           }
         },
-        "AbstractCommandLineRunner.java": {
-          "doRun": {
-            "endLine": 593,
-            "startLine": 552
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/rhino/jstype/FunctionType.java": {
+          "resolveInternal": {
+            "endLine": 888,
+            "startLine": 861
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/PhaseOptimizer.java": {
+          "process": {
+            "endLine": 172,
+            "startLine": 162
           },
-          "run": {
-            "endLine": 273,
-            "startLine": 239
+          "processInternal": {
+            "endLine": 272,
+            "startLine": 269
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/rhino/jstype/JSType.java": {
+          "resolve": {
+            "endLine": 897,
+            "startLine": 871
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/DefaultPassConfig.java": {
+          "process": {
+            "endLine": 1057,
+            "startLine": 1048
           }
         }
       }
@@ -1564,19 +1564,17 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "PhaseOptimizer.java": {
-          "process": {
-            "endLine": 195,
-            "startLine": 176
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/NodeTraversal.java": {
+          "traverseBranch": {
+            "endLine": 506,
+            "startLine": 474
+          },
+          "traverseWithScope": {
+            "endLine": 345,
+            "startLine": 331
           }
         },
-        "DefaultPassConfig.java": {
-          "process": {
-            "endLine": 1200,
-            "startLine": 1192
-          }
-        },
-        "Compiler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
           "call": {
             "endLine": 637,
             "startLine": 633
@@ -1598,7 +1596,13 @@
             "startLine": 649
           }
         },
-        "TypeCheck.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/PhaseOptimizer.java": {
+          "process": {
+            "endLine": 195,
+            "startLine": 176
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/TypeCheck.java": {
           "process": {
             "endLine": 375,
             "startLine": 354
@@ -1620,14 +1624,10 @@
             "startLine": 398
           }
         },
-        "NodeTraversal.java": {
-          "traverseBranch": {
-            "endLine": 506,
-            "startLine": 474
-          },
-          "traverseWithScope": {
-            "endLine": 345,
-            "startLine": 331
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/DefaultPassConfig.java": {
+          "process": {
+            "endLine": 1200,
+            "startLine": 1192
           }
         }
       }
@@ -1993,13 +1993,27 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "CommandLineRunner.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
+          "doRun": {
+            "endLine": 736,
+            "startLine": 685
+          },
+          "run": {
+            "endLine": 364,
+            "startLine": 322
+          },
+          "processResults": {
+            "endLine": 863,
+            "startLine": 738
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/CommandLineRunner.java": {
           "main": {
             "endLine": 875,
             "startLine": 865
           }
         },
-        "Compiler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
           "call": {
             "endLine": 1529,
             "startLine": 1512
@@ -2019,20 +2033,6 @@
           "runInCompilerThread": {
             "endLine": 596,
             "startLine": 594
-          }
-        },
-        "AbstractCommandLineRunner.java": {
-          "doRun": {
-            "endLine": 736,
-            "startLine": 685
-          },
-          "run": {
-            "endLine": 364,
-            "startLine": 322
-          },
-          "processResults": {
-            "endLine": 863,
-            "startLine": 738
           }
         }
       }
@@ -2183,19 +2183,21 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "CompilerInput.java": {
-          "getAstRoot": {
-            "endLine": 126,
-            "startLine": 117
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/NodeTraversal.java": {
+          "traverseBranch": {
+            "endLine": 505,
+            "startLine": 473
+          },
+          "traverse": {
+            "endLine": 456,
+            "startLine": 449
+          },
+          "traverseFunction": {
+            "endLine": 545,
+            "startLine": 507
           }
         },
-        "PrepareAst.java": {
-          "process": {
-            "endLine": 74,
-            "startLine": 56
-          }
-        },
-        "Compiler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
           "parseInputs": {
             "endLine": 1369,
             "startLine": 1213
@@ -2209,7 +2211,13 @@
             "startLine": 1832
           }
         },
-        "JsAst.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/CompilerInput.java": {
+          "getAstRoot": {
+            "endLine": 126,
+            "startLine": 117
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/JsAst.java": {
           "parse": {
             "endLine": 105,
             "startLine": 83
@@ -2219,18 +2227,10 @@
             "startLine": 49
           }
         },
-        "NodeTraversal.java": {
-          "traverseBranch": {
-            "endLine": 505,
-            "startLine": 473
-          },
-          "traverse": {
-            "endLine": 456,
-            "startLine": 449
-          },
-          "traverseFunction": {
-            "endLine": 545,
-            "startLine": 507
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/PrepareAst.java": {
+          "process": {
+            "endLine": 74,
+            "startLine": 56
           }
         }
       }
@@ -2412,7 +2412,53 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "PhaseOptimizer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/AbstractCommandLineRunner.java": {
+          "doRun": {
+            "endLine": 696,
+            "startLine": 645
+          },
+          "run": {
+            "endLine": 345,
+            "startLine": 303
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/CommandLineRunner.java": {
+          "main": {
+            "endLine": 762,
+            "startLine": 752
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/Compiler.java": {
+          "call": {
+            "endLine": 561,
+            "startLine": 557
+          },
+          "compile": {
+            "endLine": 521,
+            "startLine": 502
+          },
+          "optimize": {
+            "endLine": 1638,
+            "startLine": 1621
+          },
+          "runCallable": {
+            "endLine": 633,
+            "startLine": 581
+          },
+          "compileInternal": {
+            "endLine": 675,
+            "startLine": 635
+          },
+          "run": {
+            "endLine": 609,
+            "startLine": 595
+          },
+          "runInCompilerThread": {
+            "endLine": 575,
+            "startLine": 573
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/PhaseOptimizer.java": {
           "process": {
             "endLine": 173,
             "startLine": 162
@@ -2422,13 +2468,7 @@
             "startLine": 271
           }
         },
-        "CommandLineRunner.java": {
-          "main": {
-            "endLine": 762,
-            "startLine": 752
-          }
-        },
-        "AstValidator.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/closure-compiler/src/com/google/javascript/jscomp/AstValidator.java": {
           "validateAssignmentExpression": {
             "endLine": 604,
             "startLine": 600
@@ -2484,46 +2524,6 @@
           "validateNodeType": {
             "endLine": 772,
             "startLine": 766
-          }
-        },
-        "Compiler.java": {
-          "call": {
-            "endLine": 561,
-            "startLine": 557
-          },
-          "compile": {
-            "endLine": 521,
-            "startLine": 502
-          },
-          "optimize": {
-            "endLine": 1638,
-            "startLine": 1621
-          },
-          "runCallable": {
-            "endLine": 633,
-            "startLine": 581
-          },
-          "compileInternal": {
-            "endLine": 675,
-            "startLine": 635
-          },
-          "run": {
-            "endLine": 609,
-            "startLine": 595
-          },
-          "runInCompilerThread": {
-            "endLine": 575,
-            "startLine": 573
-          }
-        },
-        "AbstractCommandLineRunner.java": {
-          "doRun": {
-            "endLine": 696,
-            "startLine": 645
-          },
-          "run": {
-            "endLine": 345,
-            "startLine": 303
           }
         }
       }
@@ -2756,16 +2756,16 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Base64.java": {
-          "encode": {
-            "endLine": 525,
-            "startLine": 446
-          }
-        },
-        "Base64InputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-codec/src/java/org/apache/commons/codec/binary/Base64InputStream.java": {
           "read": {
             "endLine": 117,
             "startLine": 101
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-codec/src/java/org/apache/commons/codec/binary/Base64.java": {
+          "encode": {
+            "endLine": 525,
+            "startLine": 446
           }
         }
       }
@@ -2914,7 +2914,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "AbstractPatriciaTrie.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-collections/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java": {
           "remove": {
             "endLine": 2407,
             "startLine": 2383
@@ -3197,7 +3197,7 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "CpioArchiveInputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java": {
           "readFully": {
             "endLine": 298,
             "startLine": 284
@@ -3369,19 +3369,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TarArchiveEntry.java": {
-          "parseTarHeader": {
-            "endLine": 866,
-            "startLine": 800
-          }
-        },
-        "TarUtils.java": {
-          "parseOctal": {
-            "endLine": 107,
-            "startLine": 35
-          }
-        },
-        "TarArchiveInputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": {
           "getNextEntry": {
             "endLine": 396,
             "startLine": 393
@@ -3389,6 +3377,18 @@
           "getNextTarEntry": {
             "endLine": 238,
             "startLine": 159
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java": {
+          "parseTarHeader": {
+            "endLine": 866,
+            "startLine": 800
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": {
+          "parseOctal": {
+            "endLine": 107,
+            "startLine": 35
           }
         }
       }
@@ -3604,19 +3604,19 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "TarArchiveEntry.java": {
-          "parseTarHeader": {
-            "endLine": 866,
-            "startLine": 800
-          }
-        },
-        "TarArchiveInputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": {
           "getNextTarEntry": {
             "endLine": 244,
             "startLine": 159
           }
         },
-        "TarUtils.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java": {
+          "parseTarHeader": {
+            "endLine": 866,
+            "startLine": 800
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": {
           "parseOctal": {
             "endLine": 107,
             "startLine": 35
@@ -3720,13 +3720,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TarArchiveEntry.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java": {
           "parseTarHeader": {
             "endLine": 925,
             "startLine": 908
           }
         },
-        "TarUtils.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java": {
           "parseOctal": {
             "endLine": 151,
             "startLine": 81
@@ -3911,7 +3911,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TarArchiveOutputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java": {
           "writePaxHeaders": {
             "endLine": 489,
             "startLine": 450
@@ -4016,7 +4016,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Coders.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java": {
           "decode": {
             "endLine": 118,
             "startLine": 106
@@ -4026,7 +4026,7 @@
             "startLine": 44
           }
         },
-        "SevenZFile.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/sevenz/SevenZFile.java": {
           "readEncodedHeader": {
             "endLine": 292,
             "startLine": 261
@@ -4131,7 +4131,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TarArchiveInputStream.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-compress/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java": {
           "paxHeaders": {
             "endLine": 432,
             "startLine": 428
@@ -4585,7 +4585,7 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "CSVParser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-csv/src/main/java/org/apache/commons/csv/CSVParser.java": {
           "parse": {
             "endLine": 207,
             "startLine": 181
@@ -4666,7 +4666,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "CSVParser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-csv/src/main/java/org/apache/commons/csv/CSVParser.java": {
           "getHeaderMap": {
             "endLine": 289,
             "startLine": 280
@@ -4792,7 +4792,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "JsonTreeReader.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java": {
           "skipValue": {
             "endLine": 265,
             "startLine": 256
@@ -4960,7 +4960,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "UnsafeAllocator.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/gson/gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java": {
           "newInstance": {
             "endLine": 49,
             "startLine": 45
@@ -5065,13 +5065,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TextBuffer.java": {
-          "expandCurrentSegment": {
-            "endLine": 604,
-            "startLine": 590
-          }
-        },
-        "UTF8StreamJsonParser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java": {
           "findName": {
             "endLine": 1986,
             "startLine": 1974
@@ -5083,6 +5077,12 @@
           "addName": {
             "endLine": 2130,
             "startLine": 2017
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java": {
+          "expandCurrentSegment": {
+            "endLine": 604,
+            "startLine": 590
           }
         }
       }
@@ -5631,13 +5631,13 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "JsonGenerator.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/JsonGenerator.java": {
           "_reportError": {
             "endLine": 1575,
             "startLine": 1566
           }
         },
-        "WriterBasedJsonGenerator.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-core/src/main/java/com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.java": {
           "writeFieldName": {
             "endLine": 116,
             "startLine": 107
@@ -5801,7 +5801,7 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "StdDateFormat.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/util/StdDateFormat.java": {
           "parse": {
             "endLine": 375,
             "startLine": 353
@@ -6096,13 +6096,19 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "SettableBeanProperty.java": {
-          "deserialize": {
-            "endLine": 524,
-            "startLine": 500
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/FieldProperty.java": {
+          "deserializeAndSet": {
+            "endLine": 107,
+            "startLine": 97
           }
         },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/StdDeserializer.java": {
+          "handleUnknownProperty": {
+            "endLine": 964,
+            "startLine": 929
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "handleUnknownVanilla": {
             "endLine": 1304,
             "startLine": 1283
@@ -6112,13 +6118,7 @@
             "startLine": 1306
           }
         },
-        "BeanPropertyMap.java": {
-          "findDeserializeAndSet": {
-            "endLine": 292,
-            "startLine": 261
-          }
-        },
-        "ObjectReader.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectReader.java": {
           "readValue": {
             "endLine": 1155,
             "startLine": 1140
@@ -6136,19 +6136,7 @@
             "startLine": 1004
           }
         },
-        "UnrecognizedPropertyException.java": {
-          "from": {
-            "endLine": 56,
-            "startLine": 27
-          }
-        },
-        "FieldProperty.java": {
-          "deserializeAndSet": {
-            "endLine": 107,
-            "startLine": 97
-          }
-        },
-        "BeanDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
           "vanillaDeserialize": {
             "endLine": 266,
             "startLine": 233
@@ -6158,16 +6146,28 @@
             "startLine": 186
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/exc/UnrecognizedPropertyException.java": {
+          "from": {
+            "endLine": 56,
+            "startLine": 27
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": {
+          "findDeserializeAndSet": {
+            "endLine": 292,
+            "startLine": 261
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/SettableBeanProperty.java": {
+          "deserialize": {
+            "endLine": 524,
+            "startLine": 500
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "reportUnknownProperty": {
             "endLine": 819,
             "startLine": 799
-          }
-        },
-        "StdDeserializer.java": {
-          "handleUnknownProperty": {
-            "endLine": 964,
-            "startLine": 929
           }
         }
       }
@@ -6435,17 +6435,19 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
-          "_configAndWriteValue": {
-            "endLine": 3402,
-            "startLine": 3370
-          },
-          "writeValueAsString": {
-            "endLine": 2786,
-            "startLine": 2764
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.java": {
+          "serialize": {
+            "endLine": 158,
+            "startLine": 148
           }
         },
-        "UnknownSerializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.java": {
+          "serializeAsField": {
+            "endLine": 579,
+            "startLine": 527
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/impl/UnknownSerializer.java": {
           "serialize": {
             "endLine": 31,
             "startLine": 20
@@ -6455,31 +6457,29 @@
             "startLine": 57
           }
         },
-        "DefaultSerializerProvider.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "_configAndWriteValue": {
+            "endLine": 3402,
+            "startLine": 3370
+          },
+          "writeValueAsString": {
+            "endLine": 2786,
+            "startLine": 2764
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/DefaultSerializerProvider.java": {
           "serializeValue": {
             "endLine": 142,
             "startLine": 93
           }
         },
-        "BeanSerializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/BeanSerializer.java": {
           "serialize": {
             "endLine": 159,
             "startLine": 137
           }
         },
-        "StdDelegatingSerializer.java": {
-          "serialize": {
-            "endLine": 158,
-            "startLine": 148
-          }
-        },
-        "BeanPropertyWriter.java": {
-          "serializeAsField": {
-            "endLine": 579,
-            "startLine": 527
-          }
-        },
-        "BeanSerializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.java": {
           "serializeFields": {
             "endLine": 683,
             "startLine": 650
@@ -6612,7 +6612,13 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": {
+          "deserializeWithType": {
+            "endLine": 145,
+            "startLine": 136
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "_readMapAndClose": {
             "endLine": 3078,
             "startLine": 3046
@@ -6622,25 +6628,19 @@
             "startLine": 1865
           }
         },
-        "JsonNodeDeserializer.java": {
-          "deserializeWithType": {
-            "endLine": 145,
-            "startLine": 136
-          }
-        },
-        "JsonMappingException.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
           "from": {
             "endLine": 149,
             "startLine": 147
           }
         },
-        "TypeWrappedDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/TypeWrappedDeserializer.java": {
           "deserialize": {
             "endLine": 42,
             "startLine": 37
           }
         },
-        "AsArrayTypeDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeDeserializer.java": {
           "deserializeTypedFromAny": {
             "endLine": 69,
             "startLine": 66
@@ -6654,7 +6654,7 @@
             "startLine": 77
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "wrongTokenException": {
             "endLine": 855,
             "startLine": 845
@@ -6896,21 +6896,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
-          "convertValue": {
-            "endLine": 3352,
-            "startLine": 3333
-          },
-          "_convert": {
-            "endLine": 3427,
-            "startLine": 3370
-          },
-          "_findRootDeserializer": {
-            "endLine": 3810,
-            "startLine": 3791
-          }
-        },
-        "DeserializerCache.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
           "_createAndCacheValueDeserializer": {
             "endLine": 252,
             "startLine": 213
@@ -6932,13 +6918,33 @@
             "startLine": 311
           }
         },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/StdDeserializer.java": {
+          "findDeserializer": {
+            "endLine": 948,
+            "startLine": 934
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "convertValue": {
+            "endLine": 3352,
+            "startLine": 3333
+          },
+          "_convert": {
+            "endLine": 3427,
+            "startLine": 3370
+          },
+          "_findRootDeserializer": {
+            "endLine": 3810,
+            "startLine": 3791
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "resolve": {
             "endLine": 565,
             "startLine": 399
           }
         },
-        "BeanDeserializerFactory.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
           "isPotentialBeanType": {
             "endLine": 821,
             "startLine": 796
@@ -6948,7 +6954,7 @@
             "startLine": 92
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "findRootValueDeserializer": {
             "endLine": 474,
             "startLine": 454
@@ -6956,12 +6962,6 @@
           "findContextualValueDeserializer": {
             "endLine": 433,
             "startLine": 420
-          }
-        },
-        "StdDeserializer.java": {
-          "findDeserializer": {
-            "endLine": 948,
-            "startLine": 934
           }
         }
       }
@@ -7119,7 +7119,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.java": {
+          "deserialize": {
+            "endLine": 75,
+            "startLine": 59
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "readValue": {
             "endLine": 2725,
             "startLine": 2706
@@ -7129,25 +7135,19 @@
             "startLine": 3711
           }
         },
-        "JsonNodeDeserializer.java": {
-          "deserialize": {
-            "endLine": 75,
-            "startLine": 59
-          }
-        },
-        "JsonMappingException.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
           "from": {
             "endLine": 149,
             "startLine": 147
           }
         },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "deserializeFromObjectUsingNonDefault": {
             "endLine": 1108,
             "startLine": 1091
           }
         },
-        "BeanDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
           "deserializeFromObject": {
             "endLine": 347,
             "startLine": 268
@@ -7157,7 +7157,7 @@
             "startLine": 113
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "mappingException": {
             "endLine": 851,
             "startLine": 846
@@ -7319,7 +7319,7 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "readValue": {
             "endLine": 2699,
             "startLine": 2682
@@ -7329,7 +7329,7 @@
             "startLine": 3716
           }
         },
-        "MapDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/MapDeserializer.java": {
           "_readAndBindStringMap": {
             "endLine": 511,
             "startLine": 453
@@ -7491,19 +7491,19 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ClassUtil.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/util/ClassUtil.java": {
           "checkAndFixAccess": {
             "endLine": 754,
             "startLine": 743
           }
         },
-        "AnnotatedMember.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotatedMember.java": {
           "fixAccess": {
             "endLine": 137,
             "startLine": 123
           }
         },
-        "BeanDeserializerFactory.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
           "addBeanProps": {
             "endLine": 563,
             "startLine": 436
@@ -7673,31 +7673,31 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "JsonMappingException.java": {
-          "wrapWithPath": {
-            "endLine": 340,
-            "startLine": 329
-          }
-        },
-        "BeanDeserializerBase.java": {
-          "wrapAndThrow": {
-            "endLine": 1592,
-            "startLine": 1575
-          }
-        },
-        "BeanDeserializer.java": {
-          "vanillaDeserialize": {
-            "endLine": 286,
-            "startLine": 257
-          }
-        },
-        "TypeFactory.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java": {
           "constructSpecializedType": {
             "endLine": 475,
             "startLine": 335
           }
         },
-        "ClassNameIdResolver.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
+          "wrapWithPath": {
+            "endLine": 340,
+            "startLine": 329
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
+          "wrapAndThrow": {
+            "endLine": 1592,
+            "startLine": 1575
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
+          "vanillaDeserialize": {
+            "endLine": 286,
+            "startLine": 257
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.java": {
           "typeFromId": {
             "endLine": 43,
             "startLine": 40
@@ -7987,21 +7987,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
-          "readValue": {
-            "endLine": 2845,
-            "startLine": 2838
-          },
-          "_findRootDeserializer": {
-            "endLine": 3915,
-            "startLine": 3895
-          },
-          "_readMapAndClose": {
-            "endLine": 3819,
-            "startLine": 3787
-          }
-        },
-        "DeserializerCache.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
           "_createAndCacheValueDeserializer": {
             "endLine": 252,
             "startLine": 213
@@ -8023,13 +8009,37 @@
             "startLine": 311
           }
         },
-        "JsonMappingException.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "readValue": {
+            "endLine": 2845,
+            "startLine": 2838
+          },
+          "_findRootDeserializer": {
+            "endLine": 3915,
+            "startLine": 3895
+          },
+          "_readMapAndClose": {
+            "endLine": 3819,
+            "startLine": 3787
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
           "from": {
             "endLine": 271,
             "startLine": 266
           }
         },
-        "BeanDeserializerFactory.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
+          "reportMappingException": {
+            "endLine": 865,
+            "startLine": 855
+          },
+          "findRootValueDeserializer": {
+            "endLine": 490,
+            "startLine": 470
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
           "addBeanProps": {
             "endLine": 563,
             "startLine": 436
@@ -8041,16 +8051,6 @@
           "createBeanDeserializer": {
             "endLine": 144,
             "startLine": 91
-          }
-        },
-        "DeserializationContext.java": {
-          "reportMappingException": {
-            "endLine": 865,
-            "startLine": 855
-          },
-          "findRootValueDeserializer": {
-            "endLine": 490,
-            "startLine": 470
           }
         }
       }
@@ -8189,22 +8189,22 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "DeserializerCache.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
           "_createAndCache2": {
             "endLine": 300,
             "startLine": 254
           }
         },
-        "BeanPropertyMap.java": {
-          "remove": {
-            "endLine": 450,
-            "startLine": 422
-          }
-        },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "resolve": {
             "endLine": 625,
             "startLine": 452
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.java": {
+          "remove": {
+            "endLine": 450,
+            "startLine": 422
           }
         }
       }
@@ -8320,7 +8320,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.java": {
+          "assignParameter": {
+            "endLine": 230,
+            "startLine": 202
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "readValue": {
             "endLine": 2798,
             "startLine": 2779
@@ -8330,13 +8336,13 @@
             "startLine": 3787
           }
         },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "deserializeFromObjectUsingNonDefault": {
             "endLine": 1133,
             "startLine": 1116
           }
         },
-        "BeanDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
           "deserializeFromObject": {
             "endLine": 351,
             "startLine": 272
@@ -8348,12 +8354,6 @@
           "deserialize": {
             "endLine": 136,
             "startLine": 113
-          }
-        },
-        "PropertyValueBuffer.java": {
-          "assignParameter": {
-            "endLine": 230,
-            "startLine": 202
           }
         }
       }
@@ -8643,7 +8643,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/AbstractDeserializer.java": {
+          "deserialize": {
+            "endLine": 218,
+            "startLine": 212
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "readValue": {
             "endLine": 2991,
             "startLine": 2986
@@ -8653,13 +8659,7 @@
             "startLine": 3794
           }
         },
-        "AbstractDeserializer.java": {
-          "deserialize": {
-            "endLine": 218,
-            "startLine": 212
-          }
-        },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "handleMissingInstantiator": {
             "endLine": 1013,
             "startLine": 974
@@ -8960,21 +8960,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
-          "readValue": {
-            "endLine": 2991,
-            "startLine": 2986
-          },
-          "_findRootDeserializer": {
-            "endLine": 3922,
-            "startLine": 3902
-          },
-          "_readMapAndClose": {
-            "endLine": 3822,
-            "startLine": 3794
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.java": {
+          "validateSubType": {
+            "endLine": 98,
+            "startLine": 67
           }
         },
-        "DeserializerCache.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/DeserializerCache.java": {
           "_createAndCacheValueDeserializer": {
             "endLine": 252,
             "startLine": 213
@@ -8996,13 +8988,33 @@
             "startLine": 308
           }
         },
-        "BeanDeserializerBase.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
+          "readValue": {
+            "endLine": 2991,
+            "startLine": 2986
+          },
+          "_findRootDeserializer": {
+            "endLine": 3922,
+            "startLine": 3902
+          },
+          "_readMapAndClose": {
+            "endLine": 3822,
+            "startLine": 3794
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.java": {
+          "createContextual": {
+            "endLine": 216,
+            "startLine": 164
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerBase.java": {
           "resolve": {
             "endLine": 582,
             "startLine": 448
           }
         },
-        "BeanDeserializerFactory.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.java": {
           "_validateSubType": {
             "endLine": 868,
             "startLine": 860
@@ -9012,7 +9024,7 @@
             "startLine": 92
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "findRootValueDeserializer": {
             "endLine": 489,
             "startLine": 469
@@ -9024,18 +9036,6 @@
           "handlePrimaryContextualization": {
             "endLine": 656,
             "startLine": 633
-          }
-        },
-        "SubTypeValidator.java": {
-          "validateSubType": {
-            "endLine": 98,
-            "startLine": 67
-          }
-        },
-        "CollectionDeserializer.java": {
-          "createContextual": {
-            "endLine": 216,
-            "startLine": 164
           }
         }
       }
@@ -9312,7 +9312,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "ObjectMapper.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator.java": {
+          "build": {
+            "endLine": 208,
+            "startLine": 193
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java": {
           "readValue": {
             "endLine": 2903,
             "startLine": 2886
@@ -9322,39 +9328,19 @@
             "startLine": 3995
           }
         },
-        "AnnotatedConstructor.java": {
-          "call": {
-            "endLine": 125,
-            "startLine": 122
-          }
-        },
-        "JsonMappingException.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/JsonMappingException.java": {
           "from": {
             "endLine": 271,
             "startLine": 266
           }
         },
-        "StdValueInstantiator.java": {
-          "createFromObjectWith": {
-            "endLine": 287,
-            "startLine": 276
-          },
-          "rewrapCtorProblem": {
-            "endLine": 504,
-            "startLine": 487
-          },
-          "wrapAsJsonMappingException": {
-            "endLine": 485,
-            "startLine": 474
-          }
-        },
-        "ExternalTypeHandler.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java": {
           "complete": {
             "endLine": 249,
             "startLine": 197
           }
         },
-        "BeanDeserializer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java": {
           "deserializeUsingPropertyBasedWithExternalTypeId": {
             "endLine": 998,
             "startLine": 913
@@ -9372,13 +9358,27 @@
             "startLine": 142
           }
         },
-        "PropertyBasedCreator.java": {
-          "build": {
-            "endLine": 208,
-            "startLine": 193
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.java": {
+          "createFromObjectWith": {
+            "endLine": 287,
+            "startLine": 276
+          },
+          "rewrapCtorProblem": {
+            "endLine": 504,
+            "startLine": 487
+          },
+          "wrapAsJsonMappingException": {
+            "endLine": 485,
+            "startLine": 474
           }
         },
-        "DeserializationContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/introspect/AnnotatedConstructor.java": {
+          "call": {
+            "endLine": 125,
+            "startLine": 122
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-databind/src/main/java/com/fasterxml/jackson/databind/DeserializationContext.java": {
           "instantiationException": {
             "endLine": 1604,
             "startLine": 1587
@@ -10283,7 +10283,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "QueryParser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/select/QueryParser.java": {
           "findElements": {
             "endLine": 208,
             "startLine": 148
@@ -10500,7 +10500,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "TreeBuilder.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TreeBuilder.java": {
           "runParser": {
             "endLine": 53,
             "startLine": 45
@@ -10510,13 +10510,25 @@
             "startLine": 39
           }
         },
-        "Jsoup.java": {
-          "parse": {
-            "endLine": 59,
-            "startLine": 48
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TokeniserState.java": {
+          "read": {
+            "endLine": 1642,
+            "startLine": 1642
           }
         },
-        "CharacterReader.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Tokeniser.java": {
+          "read": {
+            "endLine": 53,
+            "startLine": 35
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Parser.java": {
+          "parse": {
+            "endLine": 91,
+            "startLine": 80
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/CharacterReader.java": {
           "consumeTo": {
             "endLine": 120,
             "startLine": 111
@@ -10526,28 +10538,16 @@
             "startLine": 76
           }
         },
-        "Parser.java": {
-          "parse": {
-            "endLine": 91,
-            "startLine": 80
-          }
-        },
-        "TokeniserState.java": {
-          "read": {
-            "endLine": 1642,
-            "startLine": 1642
-          }
-        },
-        "Tokeniser.java": {
-          "read": {
-            "endLine": 53,
-            "startLine": 35
-          }
-        },
-        "HtmlTreeBuilder.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java": {
           "parse": {
             "endLine": 39,
             "startLine": 35
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/Jsoup.java": {
+          "parse": {
+            "endLine": 59,
+            "startLine": 48
           }
         }
       }
@@ -10642,17 +10642,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Jsoup.java": {
-          "isValid": {
-            "endLine": 159,
-            "startLine": 147
-          },
-          "parseBodyFragment": {
-            "endLine": 101,
-            "startLine": 90
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TokenQueue.java": {
+          "consume": {
+            "endLine": 165,
+            "startLine": 157
           }
         },
-        "Parser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Parser.java": {
           "parseAttribute": {
             "endLine": 209,
             "startLine": 181
@@ -10670,10 +10666,14 @@
             "startLine": 57
           }
         },
-        "TokenQueue.java": {
-          "consume": {
-            "endLine": 165,
-            "startLine": 157
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/Jsoup.java": {
+          "isValid": {
+            "endLine": 159,
+            "startLine": 147
+          },
+          "parseBodyFragment": {
+            "endLine": 101,
+            "startLine": 90
           }
         }
       }
@@ -10761,13 +10761,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "NodeTraversor.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/select/NodeTraversor.java": {
           "traverse": {
             "endLine": 47,
             "startLine": 22
           }
         },
-        "W3CDom.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/W3CDom.java": {
           "head": {
             "endLine": 114,
             "startLine": 84
@@ -10892,13 +10892,19 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Jsoup.java": {
-          "parse": {
-            "endLine": 32,
-            "startLine": 22
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Entities.java": {
+          "unescape": {
+            "endLine": 76,
+            "startLine": 45
           }
         },
-        "Parser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/TextNode.java": {
+          "createFromEncoded": {
+            "endLine": 97,
+            "startLine": 89
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Parser.java": {
           "parse": {
             "endLine": 55,
             "startLine": 46
@@ -10908,16 +10914,10 @@
             "startLine": 214
           }
         },
-        "Entities.java": {
-          "unescape": {
-            "endLine": 76,
-            "startLine": 45
-          }
-        },
-        "TextNode.java": {
-          "createFromEncoded": {
-            "endLine": 97,
-            "startLine": 89
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/Jsoup.java": {
+          "parse": {
+            "endLine": 32,
+            "startLine": 22
           }
         }
       }
@@ -11184,17 +11184,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "HttpConnection.java": {
-          "get": {
-            "endLine": 292,
-            "startLine": 288
-          },
-          "parse": {
-            "endLine": 842,
-            "startLine": 830
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/DataUtil.java": {
+          "parseInputStream": {
+            "endLine": 156,
+            "startLine": 93
           }
         },
-        "TreeBuilder.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TreeBuilder.java": {
           "runParser": {
             "endLine": 58,
             "startLine": 49
@@ -11208,29 +11204,17 @@
             "startLine": 27
           }
         },
-        "DataUtil.java": {
-          "parseInputStream": {
-            "endLine": 156,
-            "startLine": 93
-          }
-        },
-        "CharacterReader.java": {
-          "current": {
-            "endLine": 95,
-            "startLine": 88
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/HttpConnection.java": {
+          "get": {
+            "endLine": 292,
+            "startLine": 288
           },
-          "bufferUp": {
-            "endLine": 65,
-            "startLine": 46
+          "parse": {
+            "endLine": 842,
+            "startLine": 830
           }
         },
-        "Parser.java": {
-          "parseInput": {
-            "endLine": 40,
-            "startLine": 37
-          }
-        },
-        "TokeniserState.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TokeniserState.java": {
           "readData": {
             "endLine": 1688,
             "startLine": 1670
@@ -11240,16 +11224,32 @@
             "startLine": 75
           }
         },
-        "HtmlTreeBuilder.java": {
-          "initialiseParse": {
-            "endLine": 82,
-            "startLine": 65
-          }
-        },
-        "Tokeniser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Tokeniser.java": {
           "read": {
             "endLine": 61,
             "startLine": 43
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Parser.java": {
+          "parseInput": {
+            "endLine": 40,
+            "startLine": 37
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/CharacterReader.java": {
+          "current": {
+            "endLine": 95,
+            "startLine": 88
+          },
+          "bufferUp": {
+            "endLine": 65,
+            "startLine": 46
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java": {
+          "initialiseParse": {
+            "endLine": 82,
+            "startLine": 65
           }
         }
       }
@@ -11346,17 +11346,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "XmlTreeBuilder.java": {
-          "process": {
-            "endLine": 63,
-            "startLine": 38
-          },
-          "insert": {
-            "endLine": 97,
-            "startLine": 83
-          }
-        },
-        "TreeBuilder.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/TreeBuilder.java": {
           "runParser": {
             "endLine": 58,
             "startLine": 49
@@ -11366,22 +11356,32 @@
             "startLine": 43
           }
         },
-        "Jsoup.java": {
-          "parse": {
-            "endLine": 46,
-            "startLine": 34
-          }
-        },
-        "Parser.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/Parser.java": {
           "parseInput": {
             "endLine": 35,
             "startLine": 32
           }
         },
-        "Element.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Element.java": {
           "child": {
             "endLine": 255,
             "startLine": 242
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/parser/XmlTreeBuilder.java": {
+          "process": {
+            "endLine": 63,
+            "startLine": 38
+          },
+          "insert": {
+            "endLine": 97,
+            "startLine": 83
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/Jsoup.java": {
+          "parse": {
+            "endLine": 46,
+            "startLine": 34
           }
         }
       }
@@ -11487,7 +11487,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "Node.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Node.java": {
           "Node": {
             "endLine": 26,
             "startLine": 22
@@ -11497,7 +11497,7 @@
             "startLine": 562
           }
         },
-        "Document.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Document.java": {
           "prepareEncoder": {
             "endLine": 450,
             "startLine": 444
@@ -11507,7 +11507,7 @@
             "startLine": 196
           }
         },
-        "Element.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/nodes/Element.java": {
           "html": {
             "endLine": 1401,
             "startLine": 1390
@@ -11697,13 +11697,13 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "NodeTraversor.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/select/NodeTraversor.java": {
           "traverse": {
             "endLine": 61,
             "startLine": 35
           }
         },
-        "W3CDom.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/W3CDom.java": {
           "head": {
             "endLine": 113,
             "startLine": 82
@@ -11800,7 +11800,7 @@
       ],
       "updatedTests": {},
       "stackTraceMethodsDetails": {
-        "HttpConnection.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jsoup/src/main/java/org/jsoup/helper/HttpConnection.java": {
           "looksLikeUtf8": {
             "endLine": 433,
             "startLine": 398
@@ -12048,7 +12048,13 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "EvalContext.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-jxpath/src/java/org/apache/commons/jxpath/JXPathContext.java": {
+          "selectNodes": {
+            "endLine": 653,
+            "startLine": 639
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-jxpath/src/java/org/apache/commons/jxpath/ri/EvalContext.java": {
           "hasNext": {
             "endLine": 106,
             "startLine": 92
@@ -12058,7 +12064,7 @@
             "startLine": 159
           }
         },
-        "NodePointer.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-jxpath/src/java/org/apache/commons/jxpath/ri/model/NodePointer.java": {
           "compareNodePointers": {
             "endLine": 675,
             "startLine": 642
@@ -12066,12 +12072,6 @@
           "compareTo": {
             "endLine": 640,
             "startLine": 619
-          }
-        },
-        "JXPathContext.java": {
-          "selectNodes": {
-            "endLine": 653,
-            "startLine": 639
           }
         }
       }
@@ -15365,28 +15365,28 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "Reporter.java": {
-          "noMoreInteractionsWanted": {
-            "endLine": 427,
-            "startLine": 416
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/Mockito.java": {
+          "verifyZeroInteractions": {
+            "endLine": 1675,
+            "startLine": 1658
           }
         },
-        "NoMoreInteractions.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/internal/verification/NoMoreInteractions.java": {
           "verify": {
             "endLine": 26,
             "startLine": 20
           }
         },
-        "MockitoCore.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/internal/MockitoCore.java": {
           "verifyNoMoreInteractions": {
             "endLine": 118,
             "startLine": 103
           }
         },
-        "Mockito.java": {
-          "verifyZeroInteractions": {
-            "endLine": 1675,
-            "startLine": 1658
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/src/org/mockito/exceptions/Reporter.java": {
+          "noMoreInteractionsWanted": {
+            "endLine": 427,
+            "startLine": 416
           }
         }
       }
@@ -16084,43 +16084,13 @@
         }
       },
       "stackTraceMethodsDetails": {
-        "BaseSingleFieldPeriod.java": {
-          "between": {
-            "endLine": 105,
-            "startLine": 75
-          }
-        },
-        "FieldUtils.java": {
-          "verifyValueBounds": {
-            "endLine": 222,
-            "startLine": 207
-          }
-        },
-        "PreciseDurationDateTimeField.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/field/PreciseDurationDateTimeField.java": {
           "set": {
             "endLine": 81,
             "startLine": 69
           }
         },
-        "Days.java": {
-          "daysBetween": {
-            "endLine": 143,
-            "startLine": 122
-          }
-        },
-        "BaseDateTimeField.java": {
-          "add": {
-            "endLine": 349,
-            "startLine": 270
-          }
-        },
-        "BasicMonthOfYearDateTimeField.java": {
-          "add": {
-            "endLine": 225,
-            "startLine": 203
-          }
-        },
-        "MonthDay.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/MonthDay.java": {
           "withFieldAdded": {
             "endLine": 521,
             "startLine": 495
@@ -16130,10 +16100,40 @@
             "startLine": 655
           }
         },
-        "BaseChronology.java": {
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java": {
+          "add": {
+            "endLine": 225,
+            "startLine": 203
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/field/FieldUtils.java": {
+          "verifyValueBounds": {
+            "endLine": 222,
+            "startLine": 207
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/field/BaseDateTimeField.java": {
+          "add": {
+            "endLine": 349,
+            "startLine": 270
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/chrono/BaseChronology.java": {
           "set": {
             "endLine": 243,
             "startLine": 231
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java": {
+          "between": {
+            "endLine": 105,
+            "startLine": 75
+          }
+        },
+        "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/src/main/java/org/joda/time/Days.java": {
+          "daysBetween": {
+            "endLine": 143,
+            "startLine": 122
           }
         }
       }
