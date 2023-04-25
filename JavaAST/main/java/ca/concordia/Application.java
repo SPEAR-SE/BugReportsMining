@@ -193,7 +193,7 @@ public class Application {
                             }
                         }
                         if (md!=null){
-                            st_methods_details= addNewMethod(st_methods_details, methodName, fileName, md);
+                            st_methods_details= addNewMethod(st_methods_details, methodName, absolute_st_file_path, md);
                         }
                     }
 
