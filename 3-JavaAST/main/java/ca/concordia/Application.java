@@ -7,6 +7,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.*;
@@ -19,7 +20,7 @@ import static java.lang.Math.floor;
 
 public class Application {
 
-    static String data_file_path = "../data/merged_data_production_bug_reports.json";
+    static String data_file_path = "/Users/lorenapacheco/Concordia/Masters/TEMP/BugReportsMining/defects4j/bug_reports_data.json";
 
 
     static Map<String, String> projectsList = new HashMap<>() {{
@@ -38,8 +39,7 @@ public class Application {
         put("JxPath", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/commons-jxpath/");
         put("Mockito", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/mockito/");
         put("Time", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/joda-time/");
-        put("fastjson", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/fastjson/");
-        put("junit4", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/junit4/");
+        put("JacksonXml", "/Users/lorenapacheco/Concordia/Masters/open_source_repos_being_studied/jackson-dataformat-xml");
     }};
 
 
@@ -56,14 +56,21 @@ public class Application {
             Map<String, Map<String, Object>> data = gson.fromJson(reader, type);
 
             // Access data from the object
-            for (String project : data.keySet()) {
+            for (String project : projectsList.keySet()) {
                 if (project.equals("Lang") || project.equals("Math")){ //Skipping them for now since I can not run git checkout
+                    continue;
+                }
+                if (project.equals("JacksonXml")){ // It is failing
                     continue;
                 }
                 System.out.println(project);
                 String path_to_repo = projectsList.get(project);
                 Map<String, Object> bugs = data.get(project);
                 for (String bugID : bugs.keySet()) {
+                    if (project.equals("Mockito") && bugID.equals("3")){ // it is failing
+                        System.out.println("Skipping bug report mockito 3");
+                        continue;
+                    }
                     System.out.println(bugID);
 
                     Map<String, Object> bug = (Map<String, Object>) bugs.get(bugID);
@@ -120,99 +127,20 @@ public class Application {
                         }
                     }
 
-                    // Checking the tests
-                    List<MethodData> addedLinesTests;
-                    List<MethodData> deletedLinesTests;
-
-                    Map<String,Map<String, Map<String, Integer>>> updatedTests = new HashMap<>();
-                    Map<String,Map<String, Map<String, Integer>>> newTests = new HashMap<>();
-                    Map<String, Map<String, Object>> modifiedTests = new HashMap<>();
-                    if (bug.get("modified_tests") != null){
-                        modifiedTests = (Map<String, Map<String, Object>>) bug.get("modified_tests");
-                    }
-                    for (String filePath : modifiedTests.keySet()) {
-                        String filePathFixed = filePath;
-                        if (filePath.startsWith("b/")) {
-                            filePathFixed = filePath.substring(2);
-                        }
-                        String absolute_file_path = path_to_repo + filePath;
-                        Map<String, Object> fileInfo = modifiedTests.get(filePath);
-                        List<Double> deletedLinesDouble = (List<Double>) fileInfo.get("deleted_lines");
-                        deletedLinesTests = get_touched_methods(buggyCommit, path_to_repo, deletedLinesDouble, absolute_file_path, filePathFixed, true);
-                        List<Double> addedLinesDouble = (List<Double>) fileInfo.get("added_lines");
-                        addedLinesTests = get_touched_methods(bugfixCommit, path_to_repo, addedLinesDouble, absolute_file_path, filePathFixed, true);
-
-                        for (MethodData md : deletedLinesTests){
-                            String fileName = filePathFixed;
-                            String testName = md.getMethodName();
-                            updatedTests= addNewMethod(updatedTests, testName, fileName, md);
-                        }
-                        List<Integer> addedLines = convertDoubleListIntoIntegers(addedLinesDouble);
-                        // If a method was added in the bugfix commit, it is not a buggy method
-                        GitHelper.checkoutCommit(path_to_repo, bugfixCommit);
-                        for (MethodData md : addedLinesTests) {
-                            if (!deletedLinesTests.contains(md)) {
-                                String fileName = filePathFixed;
-                                String testName = md.getMethodName();
-                                boolean newTest = CheckIfMethodWasCreatedFinder.checkIfMethodWasCreated(absolute_file_path, addedLines, testName);
-                                if (newTest) {
-                                    newTests= addNewMethod(newTests, testName, fileName, md);
-                                } else {
-                                    updatedTests= addNewMethod(updatedTests, testName, fileName, md);
-                                }
-                            }
-                        }
-                    }
-                    List<String> st_files = (List<String>) bug.get("stack_trace_files");
-                    List<String> st_methods = (List<String>) bug.get("stack_trace_methods");
-                    List<String> st_lines = (List<String>) bug.get("stack_trace_lines");
-
-                    Map<String,Map<String, Map<String, Integer>>> st_methods_details = new HashMap<>();
-                    for (int i = 0; i < st_files.size(); i++) {
-                        String fileName = st_files.get(i);
-                        String method = st_methods.get(i);
-                        String[] parts = method.split("\\.");
-                        String methodName = parts[parts.length - 1].split("\\$")[0];
-                        String line = st_lines.get(i);
-                        if (line == "-1"){
-                            continue;
-                        }
-                        GitHelper.checkoutCommit(path_to_repo, buggyCommit);
-                        String absolute_st_file_path = null;
-                        try {
-                            absolute_st_file_path = findFile(Paths.get(path_to_repo), fileName);
-                        } catch (IOException | NullPointerException e) {
-                            // Not an internal file
-                        }
-                        MethodData md = null;
-                        if (absolute_st_file_path != null) {
-                            try {
-                                md = MethodFinderFromName.findMethodLines(absolute_st_file_path, Integer.parseInt(line), methodName);
-                            } catch (NoSuchFileException exception) {
-                                // newMethod
-                            }
-                        }
-                        if (md!=null){
-                            st_methods_details= addNewMethod(st_methods_details, methodName, absolute_st_file_path, md);
-                        }
-                    }
-
                     bug.put("buggyMethods", buggyMethods);
                     bug.put("newMethods", newMethods);
-                    bug.put("updatedTests", updatedTests);
-                    bug.put("newTests", newTests);
-                    bug.put("stackTraceMethodsDetails", st_methods_details);
                 }
-            }
-            Gson gsonPretty = new GsonBuilder().setPrettyPrinting().create();
-            String updatedJson = gsonPretty.toJson(data);
 
-            // Write the updated JSON string to the file
-            try (FileWriter writer = new FileWriter(data_file_path)) {
-                writer.write(updatedJson);
-                System.out.println("Json file data/merged_data_production_bug_reports.json update with the extract information: buggyMethods, newMethods, updatedTests and newTests");
-            } catch (IOException e) {
-                e.printStackTrace();
+                Gson gsonPretty = new GsonBuilder().setPrettyPrinting().create();
+                String updatedJson = gsonPretty.toJson(data);
+
+                // Write the updated JSON string to the file
+                try (FileWriter writer = new FileWriter(data_file_path)) {
+                    writer.write(updatedJson);
+                    System.out.println("Json file data/merged_data_production_bug_reports.json update with the extract information: buggyMethods, newMethods, updatedTests and newTests");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
