@@ -1,8 +1,0 @@
-{
-    "CharacterReader.unconsume":  1,
-    "TokeniserState$41.read":  2,
-    "Tokeniser.read":  3,
-    "TreeBuilder.runParser":  4,
-    "HtmlTreeBuilder.parseFragment":  5,
-    "Parser.parseFragment":  6
-}

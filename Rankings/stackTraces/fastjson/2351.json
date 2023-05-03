@@ -1,8 +1,0 @@
-{
-    "DefaultJSONParser.throwException":  1,
-    "FastjsonASMDeserializer_1_Bean1.deserialzeArrayMapping": 2,
-    "FastjsonASMDeserializer_1_Bean1.deserialze": 3,
-    "JavaBeanDeserializer.deserialze":  4,
-    "DefaultJSONParser.parseObject": 5,
-    "JSON.parseObject": 6
-}

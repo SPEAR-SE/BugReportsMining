@@ -1,7 +1,0 @@
-{
-    "CLI-121": {
-        "commit": "4ee0d6c4f1b553858aeabf3ee6fb37d764f263e2",
-        "previous_commit": "73276486b1f39510bf27cb6c0684da805b121f5d",
-        "stack_trace": "Exception in thread \"Thread-1\" javax.xml.transform.TransformerFactoryConfigurationError: Provider for javax.xml.transform.TransformerFactory cannot be found\n        at javax.xml.transform.TransformerFactory.newInstance(Unknown Source)\n        at java.util.prefs.XmlSupport.writeDoc(XmlSupport.java:246)\n        at java.util.prefs.XmlSupport.exportMap(XmlSupport.java:333)\n        at java.util.prefs.FileSystemPreferences$8.run(FileSystemPreferences.java:607)"
-    }
-}

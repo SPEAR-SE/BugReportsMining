@@ -1,7 +1,0 @@
-{
-    "QueryParser.findElements":  1,
-    "QueryParser.parse":  2,
-    "QueryParser.combinator":  4,
-    "Selector.select":  7,
-    "Element.select":  8
-}

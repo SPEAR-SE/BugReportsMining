@@ -1,9 +1,0 @@
-{
-    "Entities.escape":  4,
-    "TextNode.outerHtmlHead":  5,
-    "Node$OuterHtmlVisitor.head":  6,
-    "NodeTraversor.traverse":  7,
-    "Node.outerHtml":  8,
-    "Element.html":  9,
-    "Jsoup.clean":  11
-}
