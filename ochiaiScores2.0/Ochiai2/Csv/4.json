@@ -1,0 +1,16 @@
+{
+    "org.apache.commons.csv$Assertions": 0.10783277320343841,
+    "org.apache.commons.csv$CSVFormat": 0.0,
+    "org.apache.commons.csv$CSVParser": 0.14744195615489714,
+    "org.apache.commons.csv$CSVParser$1": 0.0,
+    "org.apache.commons.csv$CSVParser$2": 0.14744195615489714,
+    "org.apache.commons.csv$CSVPrinter": 0.0,
+    "org.apache.commons.csv$CSVPrinter$1": 0.0,
+    "org.apache.commons.csv$CSVRecord": 0.0,
+    "org.apache.commons.csv$Constants": 0.08164965809277261,
+    "org.apache.commons.csv$ExtendedBufferedReader": 0.0,
+    "org.apache.commons.csv$Lexer": 0.0,
+    "org.apache.commons.csv$Quote": 0.1091089451179962,
+    "org.apache.commons.csv$Token": 0,
+    "org.apache.commons.csv$Token$Type": 0.11322770341445956
+}
